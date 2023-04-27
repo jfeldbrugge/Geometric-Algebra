@@ -24,6 +24,10 @@
   <a href="https://jfeldbrugge.github.io/">Home</a>
   <a href="https://jfeldbrugge.github.io/Projects-and-Codes/">Projects
   and Code</a>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -33,6 +37,52 @@
 <h1 class="title">Geometric Algebra</h1>
 <p class="author">Job Feldbrugge</p>
 </header>
-<p>Geometric algebra</p>
+<p>Geometric algebra is an extension of vector algebra introducing the
+notion of a multi-vector. As an example, consider the two dimensional
+geometric algebra spanned by the vectors <span
+class="math inline">\(\hat{\textbf{x}}\)</span> and <span
+class="math inline">\(\hat{\textbf{y}}\)</span>. The geometric algebra
+is spanned by the elements <span class="math inline">\(\{1,
+\hat{\textbf{x}}, \hat{\textbf{y}},
+\hat{\textbf{x}}\hat{\textbf{y}}\}\)</span> where <span
+class="math inline">\(1\)</span> is the unit scalar, <span
+class="math inline">\(\hat{\textbf{x}}\)</span> and <span
+class="math inline">\(\hat{\textbf{y}}\)</span> are the unit vectors and
+<span class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\)</span> is
+the unique bivector representing an oriented area element. A
+multi-vector is an object of the form <span
+class="math inline">\(\textbf{v} = a + b \hat{\textbf{x}} + c
+\hat{\textbf{y}} + d \hat{\textbf{x}}\hat{\textbf{y}}\)</span> with for
+example real numbers <span class="math inline">\(a,b,c,d\)</span>. The
+product of two multi-vectors is defined by the rules <span
+class="math inline">\(\hat{\textbf{x}}^2=\hat{\textbf{y}}^2=1\)</span>
+and <span
+class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}=-\hat{\textbf{x}}\hat{\textbf{y}}\)</span>.
+The geometric product of two vectors takes the form <span
+class="math display">\[\begin{align}
+\textbf{v} \textbf{w}
+&amp;= (a_v \hat{\textbf{x}} + b_v \hat{\textbf{y}})(a_w
+\hat{\textbf{x}} + b_w \hat{\textbf{y}})\\
+&amp;=(a_v a_w + b_v b_w) + (a_v b_w - b_v
+a_w)\hat{\textbf{x}}\hat{\textbf{y}}\\
+&amp;=\textbf{a}\cdot\textbf{b} + \textbf{a}\wedge\textbf{b}\
+\hat{\textbf{x}}\hat{\textbf{y}}
+\end{align}\]</span> where we identify the inner and outer products. Now
+since <span class="math display">\[\begin{align}
+(\hat{\textbf{x}}\hat{\textbf{y}})^2&amp;=\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{x}}\hat{\textbf{y}}\\
+&amp;=-\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{y}}\hat{\textbf{x}}\\
+&amp;=-\hat{\textbf{x}}\hat{\textbf{x}}\\
+&amp;=-1
+\end{align}\]</span> it is common to identify <span
+class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\)</span> with the
+square root of minus one <span
+class="math inline">\(i=\sqrt{-1}\)</span> and write the geometric
+product of two vectors as the complex number <span
+class="math inline">\(\textbf{v} \textbf{w} =\textbf{a}\cdot\textbf{b} +
+\textbf{a}\wedge\textbf{b}\ i\)</span>. Note that the geometric product
+of multi-vectors, unlike the inner or outer products, are invertible,
+<em>i.e.</em>, <span class="math display">\[ \textbf{a}^{-1} =
+\textbf{a}/\|\textbf{a}\|\]</span> with the norm <span
+class="math inline">\(\|\textbf{a}\|^2=\textbf{a}^2\)</span>.</p>
 </body>
 </html>
