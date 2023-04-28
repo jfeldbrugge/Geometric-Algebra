@@ -38,106 +38,274 @@
 <p class="author">Job Feldbrugge</p>
 </header>
 <p>Geometric algebra is an extension of vector algebra introducing the
-notion of a multi-vector.</p>
-<h3 id="two-dimensional-geometric-algebra">Two-dimensional geometric
-algebra</h3>
-<p>As an example, consider the two-dimensional geometric algebra spanned
-by the vectors <span class="math inline">\(\hat{\textbf{x}}\)</span> and
-<span class="math inline">\(\hat{\textbf{y}}\)</span>. The geometric
-algebra is spanned by the elements <span class="math inline">\(\{1,
-\hat{\textbf{x}}, \hat{\textbf{y}},
-\hat{\textbf{x}}\hat{\textbf{y}}\}\)</span> where <span
-class="math inline">\(1\)</span> is the unit scalar, <span
-class="math inline">\(\hat{\textbf{x}}\)</span> and <span
-class="math inline">\(\hat{\textbf{y}}\)</span> are the unit vectors and
-<span class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\)</span> is
-the unique bi-vector representing an oriented area element. A
-multi-vector is an object of the form <span
-class="math inline">\(\textbf{v} = a + b \hat{\textbf{x}} + c
-\hat{\textbf{y}} + d \hat{\textbf{x}}\hat{\textbf{y}}\)</span> with for
-example real numbers <span class="math inline">\(a,b,c,d\)</span>. The
-product of two multi-vectors is defined by the rules <span
-class="math inline">\(\hat{\textbf{x}}^2=\hat{\textbf{y}}^2=1\)</span>
-and <span
-class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}=-\hat{\textbf{x}}\hat{\textbf{y}}\)</span>.
-The geometric product of two vectors takes the form <span
+notion of a multi-vector, uniting different fields of mathematics in a
+single language.</p>
+<p><strong>Definition:</strong> <em>The geometric algebra <span
+class="math inline">\(\mathbb{G}^n\)</span> is an extension of the <span
+class="math inline">\(n\)</span>-dimensional vector space <span
+class="math inline">\(\mathbb{R}^n\)</span>. The geometric algebra <span
+class="math inline">\(\mathbb{R}^n \subset \mathbb{G}^n\)</span> is an
+associative algebra with a unit <span class="math inline">\(1\)</span>,
+satisfying the four conditions:</em></p>
+<ul>
+<li>G1: <span class="math inline">\(A(B+C) = AB + AC, (B+C)A = BA +
+CA\)</span>,</li>
+<li>G2: <span class="math inline">\((aA)B = A(aB)= a(AB)\)</span>,</li>
+<li>G3: <span class="math inline">\((AB)C= A(BC)\)</span>,</li>
+<li>G4: <span class="math inline">\(1A=A1=A\)</span>,</li>
+</ul>
+<p><em>with the scalar <span class="math inline">\(a \in
+\mathbb{R}\)</span> and the multi-vectors <span
+class="math inline">\(A,B, C \in \mathbb{G}^n.\)</span> In addition,
+this geometric product satisfies two conditions linking the geometric
+algebra <span class="math inline">\(\mathbb{G}^n\)</span> to the vector
+space <span class="math inline">\(\mathbb{R}^n\)</span>:</em></p>
+<ul>
+<li>G5: <span
+class="math inline">\(\textbf{u}\textbf{u}=\textbf{u}\cdot\textbf{u} =
+\|\textbf{u}\|^2\)</span> <em>for all vectors</em> <span
+class="math inline">\(\textbf{u} \in \mathbb{R}^n\)</span>,</li>
+</ul>
+<p><em>by which nonzero vectors have an inverse in <span
+class="math inline">\(\mathbb{G}^n\)</span> given by <span
+class="math inline">\(\textbf{u}^{-1}=\textbf{u}/\|\textbf{u}\|\)</span>
+and a way to construct the multivectors in <span
+class="math inline">\(\mathbb{G}^n\)</span> from the vectors in <span
+class="math inline">\(\mathbb{R}^n\)</span></em></p>
+<ul>
+<li>G6: <em>Every orthonormal basis of <span
+class="math inline">\(\mathbb{R}^n\)</span> determines a canonical basis
+for the vector space <span class="math inline">\(\mathbb{G}^n\)</span>
+(to be constructed below).</em></li>
+</ul>
+<p>From these simple conditions, the theory develops, leading to a
+richer way to do geometry and calculus.</p>
+<p>In particular, from the condition G5 we obtain an identity relating
+the inner product to the geometric product for general vectors <span
 class="math display">\[\begin{align}
-\textbf{v} \textbf{w}
-&amp;= (a_v \hat{\textbf{x}} + b_v \hat{\textbf{y}})(a_w
-\hat{\textbf{x}} + b_w \hat{\textbf{y}})\\
-&amp;=(a_v a_w + b_v b_w) + (a_v b_w - b_v
-a_w)\hat{\textbf{x}}\hat{\textbf{y}}\\
-\end{align}\]</span> where we identify the inner and outer products
-<span class="math inline">\(\textbf{v} \textbf{w}
-=\textbf{a}\cdot\textbf{b} + \textbf{a}\wedge\textbf{b}\)</span>. Now
-since <span class="math display">\[\begin{align}
-(\hat{\textbf{x}}\hat{\textbf{y}})^2&amp;=\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{x}}\hat{\textbf{y}}\\
-&amp;=-\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{y}}\hat{\textbf{x}}\\
-&amp;=-\hat{\textbf{x}}\hat{\textbf{x}}\\
-&amp;=-1
-\end{align}\]</span> it is common to identify <span
-class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\)</span> with the
-square root of minus one <span
-class="math inline">\(i=\sqrt{-1}\)</span>. In the two-dimensional
-setting, geometric algebra unifies vector analysis with complex
-analysis. Note that the geometric product of multi-vectors, unlike the
-inner or outer products, is invertible, <em>i.e.</em>, <span
-class="math display">\[ \textbf{a}^{-1} =
-\textbf{a}/\|\textbf{a}\|\]</span> with the norm <span
-class="math inline">\(\|\textbf{a}\|^2=\textbf{a}^2\)</span>.</p>
-<p>The geometric product of two general multi-vectors takes the form
-<span class="math display">\[\begin{align}
-\textbf{v} \textbf{w}
-&amp;=
-(a_v + b_v \hat{\textbf{x}} + c_v \hat{\textbf{y}} + d_v
-\hat{\textbf{x}}\hat{\textbf{y}})
-(a_w + b_w \hat{\textbf{x}} + c_w \hat{\textbf{y}} + d_w
-\hat{\textbf{x}}\hat{\textbf{y}})\\
-&amp;= (a_v a_w + b_v b_w + c_v c_w - d_v d_w) + \\
-&amp;\phantom{=}(a_v b_w + b_v a_w - c_v d_w + d_v c_w )\hat{\textbf{x}}
-+
-(a_v c_w + c_v a_w + b_v d_w - d_v b_w)\hat{\textbf{y}} + \\
-&amp;\phantom{=}(a_v d_w + b_v c_w - c_v b_w+ d_v
-a_w)\hat{\textbf{x}}\hat{\textbf{y}}
+\textbf{u}\cdot\textbf{v}
+&amp;= \frac{1}{2}((\textbf{u} +  \textbf{v})\cdot(\textbf{u}
++  \textbf{v}) - \textbf{u}\cdot\textbf{u} -\textbf{v} \cdot
+\textbf{v})\\
+&amp;= \frac{1}{2}((\textbf{u} +  \textbf{v})^2- \textbf{u}\textbf{u}
+-\textbf{v}\textbf{v})\\
+&amp;= \frac{1}{2}(\textbf{u} \textbf{v} + \textbf{v}\textbf{u})\,.
+\end{align}\]</span> When two vectors are orthogonal, <em>i.e.,</em>
+<span class="math inline">\(\textbf{u} \cdot \textbf{v}=0\)</span>, the
+geometric product of the vectors is skew-symmetric <span
+class="math display">\[ \textbf{u} \textbf{v} = -\textbf{v}
+\textbf{u}\,.\]</span></p>
+<p>The product of two orthogonal vectors is neither a scalar nor a
+vector, since its square is negative <span
+class="math inline">\((\textbf{u}\textbf{v})^2=\textbf{u}\textbf{v}\textbf{u}\textbf{v}=-\textbf{u}\textbf{u}
+\textbf{v}\textbf{v}=-\|\textbf{u}\|^2 \|\textbf{v}\|^2\)</span>. It is
+an object known as a bi-vector representing an oriented area element
+(spanned by <span class="math inline">\(\textbf{u}\)</span> and <span
+class="math inline">\(\textbf{v}\)</span>), the first instance of an
+element of the geometric algebra <span
+class="math inline">\(\mathbb{G}^n\)</span> that is not present in
+vector algebra <span class="math inline">\(\mathbb{R}^n\)</span>.</p>
+<p>Condition G5 shows how the vector norm ankers the geometric product
+to <span class="math inline">\(\mathbb{R}^n\)</span>, and leads to an
+alternative definition of the inner product of vectors as the
+symmetrized product,</p>
+<p><span class="math display">\[\textbf{u}\cdot \textbf{v} =
+\frac{1}{2}(\textbf{u}\textbf{v} + \textbf{v}
+\textbf{u})\,.\]</span></p>
+<p>The anti-symmetrized product is known as the outer product of the
+vectors</p>
+<p><span class="math display">\[\textbf{u}\wedge \textbf{v} =
+\frac{1}{2}(\textbf{u}\textbf{v} - \textbf{v}
+\textbf{u})\,.\]</span></p>
+<p>We will see that this outer product coincides with the outer product
+of vector analysis.</p>
+<p>From these definitions, it follows that the geometric product of two
+vectors can be expressed in terms of the more familiar inner and outer
+poducts</p>
+<p><span class="math display">\[\textbf{u}\textbf{v} =
+\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\textbf{v}\textbf{u} =
+\textbf{u}\cdot\textbf{v} - \textbf{u}\wedge \textbf{v}\,.\]</span></p>
+<p>Note that the geometric product of vectors is invertible, unlike the
+inner or outer products that constitute them. For parallel vectors (with
+<span class="math inline">\(\textbf{u} = a \textbf{v}\)</span> with
+<span class="math inline">\(a \in \mathbb{R}\)</span>), the geometric
+product reduces to the inner product <span
+class="math inline">\(\textbf{u}\textbf{v} = \textbf{u}\cdot
+\textbf{v}\)</span> (using condition G2). For orthogonal vectors, the
+geometric product reduces to the outer product <span
+class="math inline">\(\textbf{u}\textbf{v} = \textbf{u}\wedge
+\textbf{v}\)</span>. For a general set of vectors, the geometric product
+leads to a multi-vector, where the scalar part represents the inner and
+the bi-vector part represents the outer product.</p>
+<h3 id="two-dimensional-plane">Two-dimensional plane</h3>
+<p>Consider the two-dimensional plane <span
+class="math inline">\(\mathbb{R}^2\)</span> spanned by the orthonormal
+unit vectors <span
+class="math inline">\(\textbf{e}_1=\hat{\textbf{x}}\)</span> and <span
+class="math inline">\(\textbf{e}_2=\hat{\textbf{y}}\)</span>. The
+geometric algebra is spanned by the elements</p>
+<p><span class="math display">\[\{1, \textbf{e}_1, \textbf{e}_2,
+\textbf{e}_1\textbf{e}_2\}\]</span></p>
+<p>where <span class="math inline">\(1\)</span> is the unit scalar,
+<span class="math inline">\(\textbf{e}_1\)</span> and <span
+class="math inline">\(\textbf{e}_2\)</span> are the unit vectors and
+<span class="math inline">\(\textbf{e}_1\textbf{e}_2\)</span> is the
+unique bi-vector representing an oriented area element. This is the
+<em>cannonical basis</em> of the geometric algebra <span
+class="math inline">\(\mathbb{G}^2\)</span>. A multi-vector is an object
+of the form <span class="math inline">\(A = a + b \textbf{e}_1 + c
+\textbf{e}_2 + d \textbf{e}_1\textbf{e}_2\)</span> with for example real
+numbers <span class="math inline">\(a,b,c,d\)</span>. The product of two
+multi-vectors follows from associative nature of the geometric product
+and the multiplication tabel of the basis elements <span
+class="math inline">\(\textbf{e}_1^2=\textbf{e}_2^2=1\)</span> and <span
+class="math inline">\(\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2\)</span>
+as we saw above.</p>
+<p>The geometric product of two vectors takes the form <span
+class="math display">\[\begin{align}
+\textbf{u} \textbf{v}
+&amp;= (a_1 \textbf{e}_1 + b_1 \textbf{e}_2)(a_2 \textbf{e}_1 + b_2
+\textbf{e}_2)\\
+&amp;=(a_1 a_2 + b_1 b_2) + (a_1 b_2 - b_1
+a_2)\textbf{e}_1\textbf{e}_2\\
+&amp;=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,.
+\end{align}\]</span> The familiar inner product <span
+class="math inline">\(\textbf{u}\cdot\textbf{v}=a_1 a_2 + b_1 b_2 =
+\|\textbf{u}\| \|\textbf{v}\| \cos\theta\)</span> written in terms of
+the angle between the two vectors <span
+class="math inline">\(\theta\)</span>. The outer products <span
+class="math inline">\(\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1
+a_2)\textbf{e}_1\textbf{e}_2 = \|\textbf{u}\| \|\textbf{v}\| \sin \theta
+\ \textbf{e}_1\textbf{e}_2\)</span> is the signed area of the
+paralelogram spanned by the two vectors <span
+class="math inline">\(\textbf{u}\)</span> and <span
+class="math inline">\(\textbf{v}\)</span>. As <span
+class="math inline">\(\textbf{e}_1\)</span> and <span
+class="math inline">\(\textbf{e}_2\)</span> are orthogonal, <span
+class="math inline">\((\textbf{e}_1\textbf{e}_2)^2=-1\)</span>, from
+which it follows that we can identify this bi-vector with the square
+root of unity <span class="math inline">\(\textbf{e}_1\textbf{e}_2 =
+\textbf{i}=\sqrt{-1}\)</span>. In the two-dimensional setting, geometric
+algebra unifies vector analysis with complex analysis. We can thus write
+the outer product of two vectors as <span
+class="math inline">\(\textbf{u}\wedge \textbf{v} =
+\|\textbf{u}\|\|\textbf{v}\| \sin\theta\, \textbf{i}\)</span> and the
+geometric product independent of the basis elements</p>
+<p><span class="math display">\[
+\begin{align}
+\textbf{u} \textbf{v} &amp;= \|\textbf{u}\| \|\textbf{v}\| (\cos \theta
++ \textbf{i} \sin \theta)\\
+&amp;= \|\textbf{u}\| \|\textbf{v}\| e^{\textbf{i}\ \theta}\,,
+\end{align}
+\]</span></p>
+<p>where we define the exponentiation of a bi-vector using Euler’s
+identity <span class="math inline">\(e^{\textbf{i}\theta}=\cos\theta +
+\textbf{i}\sin \theta\)</span>. The cross-product of two two-dimensional
+vectors can be expressed in terms of the outer product using the
+identity</p>
+<p><span class="math display">\[\textbf{u} \times \textbf{v} = -
+\textbf{u} \wedge \textbf{v}\ \textbf{i}\,.\]</span></p>
+<p>A similar identity holds in 3D. However, the cross-product does not
+generalize beyond three-dimensional space wheras the outer product works
+in general.</p>
+<p>The product of the pseudoscalar and a vector yields its normal</p>
+<p><span class="math display">\[\textbf{i} (a \textbf{e}_1 + b
+\textbf{e}_2)  = a \textbf{e}_1 \textbf{e}_2 \textbf{e}_1 + b
+\textbf{e}_1 \textbf{e}_2 \textbf{e}_2 = b \textbf{e}_1 - a
+\textbf{e}_2.\]</span></p>
+<p>As this is a common procedure in geometry, we introduce the duality
+operator</p>
+<p><span class="math display">\[ \textbf{u}^* = \textbf{u}\
+\textbf{i}^{-1}\,,\]</span></p>
+<p>where <span class="math inline">\(\textbf{i}^{-1} =
+\textbf{e}_2\textbf{e}_1 = - \textbf{i}\)</span> is the inverse of the
+speudoscalar <span class="math inline">\(\textbf{i}\)</span>. Note that
+using the duality operator,</p>
+<p><span class="math display">\[\textbf{u}\times \textbf{v} =
+(\textbf{u}\wedge \textbf{v})^*\,.\]</span></p>
+<p>Given two vectors <span class="math inline">\(\textbf{u}\)</span> and
+<span class="math inline">\(\textbf{v}\)</span>, we can decompose the
+first one into a component parallel and orthogonal to the second,
+<em>i.e.,</em> <span class="math inline">\(\textbf{u} = \textbf{u}_{\|}
++ \textbf{u}_\perp\)</span> where we write the components using the
+language of geometric algebra,</p>
+<p><span class="math display">\[\begin{align}
+\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1}\,,\\
+\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
+\textbf{v})\textbf{v}^{-1}\,,
 \end{align}\]</span></p>
-<h3 id="three-dimensional-geometric-algebra">Three-dimensional geometric
-algebra</h3>
-<p>The three-dimensional geometric algebra is spanned by the elements
-<span class="math inline">\(\{1, \hat{\textbf{{x}}}, \hat{\textbf{{y}}},
-\hat{\textbf{{z}}}, \hat{\textbf{{x}}} \hat{\textbf{{y}}},
-\hat{\textbf{{x}}} \hat{\textbf{{z}}}, \hat{\textbf{{y}}}
-\hat{\textbf{{z}}}, \hat{\textbf{{x}}}
-\hat{\textbf{{y}}}\hat{\textbf{{z}}}\}\)</span> consisting of the unit
-scalar, three vectors corresponding to the three independent directions,
-three bi-vectors corresponding to the three independent two-dimensional
-hyperplanes, and a unique tri-vector corresponding to the volume
-element. The product of two vectors takes the form <span
-class="math display">\[\begin{align}
-\textbf{v}\textbf{w}
-&amp;= (a_v \hat{\textbf{x}}+b_v \hat{\textbf{y}}+c_v \hat{\textbf{x}})
-(a_w \hat{\textbf{x}}+b_w \hat{\textbf{y}}+c_w \hat{\textbf{x}}) \\
-&amp;= (a_v a_w + b_v b_w + c_v c_w) + (a_v b_w - b_v a_w)
-\hat{\textbf{x}}\hat{\textbf{y}}+ (a_v c_w - c_v
-a_w)\hat{\textbf{x}}\hat{\textbf{z}}+ (b_v c_w - c_v
-b_w)\hat{\textbf{y}}\hat{\textbf{z}}
-\end{align}\]</span> using the rules <span
-class="math inline">\(\hat{\textbf{x}}^2=\hat{\textbf{y}}^2=\hat{\textbf{z}}^2=1\)</span>
-and <span
-class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}=-\hat{\textbf{y}}\hat{\textbf{x}},\hat{\textbf{x}}\hat{\textbf{z}}=-\hat{\textbf{z}}\hat{\textbf{x}},\hat{\textbf{y}}\hat{\textbf{z}}=-\hat{\textbf{z}}\hat{\textbf{y}}\)</span>,
-where we again can identify the inner and outer products of the vectors
-<span class="math inline">\(\textbf{v}\)</span> and <span
-class="math inline">\(\textbf{w}\)</span>. We again write this product
-of vectors as <span class="math inline">\(\textbf{v}\textbf{w} =
-\textbf{v}\cdot \textbf{w} + \textbf{v} \wedge \textbf{w}\)</span>. The
-bi-vectors <span
-class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}},\hat{\textbf{x}}\hat{\textbf{z}},\hat{\textbf{y}}\hat{\textbf{z}}\)</span>
-are again roots of unity and can be identified with the quaternions
-<span class="math inline">\(\textbf{i}, \textbf{j},\)</span> and <span
-class="math inline">\(\textbf{k}\)</span>. The tri-vector <span
-class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{z}}\)</span>
-is also a root of unity, <em>i.e.</em>, <span
-class="math inline">\((\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{z}})^2=-1\)</span>.
-The quaternions are dual to the vectors. This is a special property of
-the three-dimensional geometric algebra.</p>
+<p>which can be proven by substituting <span
+class="math inline">\(\textbf{u} = \textbf{u}_{\|} +
+\textbf{u}_\perp\)</span> in the above equations with the conditions
+<span class="math inline">\(\textbf{u}_\perp \cdot \textbf{v}=0\)</span>
+and <span class="math inline">\(\textbf{u}_{\|} \wedge
+\textbf{v}=0\)</span>.</p>
+<p>Just like the duality operator, geometric algebra leads to a very
+simple implementation of the reflection and rotation operation in
+geometry. The reflection of a vector <span
+class="math inline">\(\textbf{u}\)</span> through the line spanned by
+<span class="math inline">\(\textbf{v}\)</span> is given by the
+conjugation. Given <span class="math inline">\(\textbf{u} =
+\textbf{u}_{\|} + \textbf{u}_\perp\)</span>, the reflection assumes the
+form</p>
+<p><span class="math display">\[\begin{align}
+\textbf{u}_{ref}
+&amp;= \textbf{u}_{\|} - \textbf{u}_\perp\\
+&amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1} -(\textbf{u}\wedge
+\textbf{v})\textbf{v}^{-1}\\
+&amp;= (\textbf{u}\cdot \textbf{v} - \textbf{u}\wedge
+\textbf{v})\textbf{v}^{-1}\\
+&amp;= \textbf{v}\textbf{u}\textbf{v}^{-1}
+\end{align}\]</span></p>
+<p>A rotation of a vector <span
+class="math inline">\(\textbf{u}\)</span> by an angle <span
+class="math inline">\(\theta\)</span> can be written as the product</p>
+<p><span class="math display">\[\textbf{u}_{rot} = e^{-\textbf{i}\
+\theta/2}\ \textbf{u}\ e^{\textbf{i}\ \theta /2}\,.\]</span></p>
+<h3 id="three-dimensional-space">Three-dimensional space</h3>
+<p>Consider the orthonormal basis <span
+class="math inline">\(\{\textbf{e}_1,\textbf{e}_2,\textbf{e}_3\}\)</span>
+of the three-dimensional Euclidean plane <span
+class="math inline">\(\mathbb{R}^3\)</span>. The corresponding geometric
+algebra <span class="math inline">\(\mathbb{G}^3\)</span> is spanned by
+the elements</p>
+<p><span class="math display">\[\{1, \textbf{e}_1, \textbf{e}_2,
+\textbf{e}_3, \textbf{e}_1\textbf{e}_2, \textbf{e}_1\textbf{e}_3,
+\textbf{e}_2\textbf{e}_3,
+\textbf{e}_1\textbf{e}_2\textbf{e}_3\}\]</span></p>
+<p>consisting of the unit scalar, three vectors corresponding to the
+three independent directions, three bi-vectors corresponding to the
+three independent two-dimensional hyperplanes, and a unique tri-vector
+corresponding to the volume element. The product of two vectors takes
+the form <span class="math display">\[\begin{align}
+\textbf{u}\textbf{v}
+&amp;= (a_1 \textbf{e}_1+b_1 \textbf{e}_2+c_1 \textbf{e}_1) (a_2
+\textbf{e}_1+b_2 \textbf{e}_2+c_2 \textbf{e}_1) \\
+&amp;= (a_1 a_2 + b_1 b_2 + c_1 c_2) + (a_1 b_2 - b_1 a_2)
+\textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+
+(b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\\
+&amp;=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,
+\end{align}\]</span> where we again can identify the inner product <span
+class="math inline">\(\textbf{u} \cdot \textbf{v} = a_1 a_2 + b_1 b_2 +
+c_1 c_2\)</span> and the outer product <span
+class="math inline">\(\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2)
+\textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+
+(b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\)</span>. The outer product
+is related to the cross-product using the identity <span
+class="math inline">\(\textbf{u} \times \textbf{v} = -\textbf{I}\
+\textbf{u}\wedge \textbf{v}\)</span> with the pseudoscalar <span
+class="math inline">\(\textbf{I} =
+\textbf{e}_1\textbf{e}_2\textbf{e}_3\)</span> consisting of the
+geometric product of the bases. Note that <span
+class="math inline">\(\textbf{I}
+\textbf{e}_1\textbf{e}_2=-\textbf{e}_3,\)</span> <span
+class="math inline">\(\textbf{I}
+\textbf{e}_1\textbf{e}_3=\textbf{e}_2\)</span>, <span
+class="math inline">\(\textbf{I}
+\textbf{e}_2\textbf{e}_3=-\textbf{e}_1.\)</span></p>
+<h3 id="n-dimensional-space"><span
+class="math inline">\(n\)</span>-dimensional space</h3>
 </body>
 </html>
