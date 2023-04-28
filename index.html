@@ -38,18 +38,20 @@
 <p class="author">Job Feldbrugge</p>
 </header>
 <p>Geometric algebra is an extension of vector algebra introducing the
-notion of a multi-vector. As an example, consider the two dimensional
-geometric algebra spanned by the vectors <span
-class="math inline">\(\hat{\textbf{x}}\)</span> and <span
-class="math inline">\(\hat{\textbf{y}}\)</span>. The geometric algebra
-is spanned by the elements <span class="math inline">\(\{1,
+notion of a multi-vector.</p>
+<h3 id="two-dimensional-geometric-algebra">Two-dimensional geometric
+algebra</h3>
+<p>As an example, consider the two-dimensional geometric algebra spanned
+by the vectors <span class="math inline">\(\hat{\textbf{x}}\)</span> and
+<span class="math inline">\(\hat{\textbf{y}}\)</span>. The geometric
+algebra is spanned by the elements <span class="math inline">\(\{1,
 \hat{\textbf{x}}, \hat{\textbf{y}},
 \hat{\textbf{x}}\hat{\textbf{y}}\}\)</span> where <span
 class="math inline">\(1\)</span> is the unit scalar, <span
 class="math inline">\(\hat{\textbf{x}}\)</span> and <span
 class="math inline">\(\hat{\textbf{y}}\)</span> are the unit vectors and
 <span class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\)</span> is
-the unique bivector representing an oriented area element. A
+the unique bi-vector representing an oriented area element. A
 multi-vector is an object of the form <span
 class="math inline">\(\textbf{v} = a + b \hat{\textbf{x}} + c
 \hat{\textbf{y}} + d \hat{\textbf{x}}\hat{\textbf{y}}\)</span> with for
@@ -79,10 +81,61 @@ square root of minus one <span
 class="math inline">\(i=\sqrt{-1}\)</span> and write the geometric
 product of two vectors as the complex number <span
 class="math inline">\(\textbf{v} \textbf{w} =\textbf{a}\cdot\textbf{b} +
-\textbf{a}\wedge\textbf{b}\ i\)</span>. Note that the geometric product
-of multi-vectors, unlike the inner or outer products, are invertible,
-<em>i.e.</em>, <span class="math display">\[ \textbf{a}^{-1} =
-\textbf{a}/\|\textbf{a}\|\]</span> with the norm <span
+\textbf{a}\wedge\textbf{b}\)</span>. In the two-dimensional setting,
+geometric algebra unifies vector analysis with complex analysis. Note
+that the geometric product of multi-vectors, unlike the inner or outer
+products, is invertible, <em>i.e.</em>, <span class="math display">\[
+\textbf{a}^{-1} = \textbf{a}/\|\textbf{a}\|\]</span> with the norm <span
 class="math inline">\(\|\textbf{a}\|^2=\textbf{a}^2\)</span>.</p>
+<p>The geometric product of two general multi-vectors takes the form
+<span class="math display">\[\begin{align}
+\textbf{v} \textbf{w}
+&amp;=
+(a_v + b_v \hat{\textbf{x}} + c_v \hat{\textbf{y}} + d_v
+\hat{\textbf{x}}\hat{\textbf{y}})
+(a_w + b_w \hat{\textbf{x}} + c_w \hat{\textbf{y}} + d_w
+\hat{\textbf{x}}\hat{\textbf{y}})\\
+&amp;= (a_v a_w + b_v b_w + c_v c_w - d_v d_w) + \\
+&amp;\phantom{=}(a_v b_w + b_v a_w - c_v d_w + d_v c_w )\hat{\textbf{x}}
++
+(a_v c_w + c_v a_w + b_v d_w - d_v b_w)\hat{\textbf{y}} + \\
+&amp;\phantom{=}(a_v d_w + b_v c_w - c_v b_w+ d_v
+a_w)\hat{\textbf{x}}\hat{\textbf{y}}
+\end{align}\]</span></p>
+<h3 id="three-dimensional-geometric-algebra">Three-dimensional geometric
+algebra</h3>
+<p>The three-dimensional geometric algebra is spanned by the elements
+<span class="math inline">\(\{1, \hat{\textbf{{x}}}, \hat{\textbf{{y}}},
+\hat{\textbf{{z}}}, \hat{\textbf{{x}}} \hat{\textbf{{y}}},
+\hat{\textbf{{x}}} \hat{\textbf{{z}}}, \hat{\textbf{{y}}}
+\hat{\textbf{{z}}}, \hat{\textbf{{x}}}
+\hat{\textbf{{y}}}\hat{\textbf{{z}}}\}\)</span> consisting of the unit
+scalar, three vectors corresponding to the three independent directions,
+three bi-vectors corresponding to the three independent two-dimensional
+hyperplanes, and a unique tri-vector corresponding to the volume
+element. The product of two vectors takes the form <span
+class="math display">\[\begin{align}
+\textbf{v}\textbf{w}
+&amp;= (a_v \hat{\textbf{x}}+b_v \hat{\textbf{y}}+c_v \hat{\textbf{x}})
+(a_w \hat{\textbf{x}}+b_w \hat{\textbf{y}}+c_w \hat{\textbf{x}})\\
+&amp;= (a_v a_w + b_v b_w + c_v c_w) + (a_v b_w - b_v a_w)
+\hat{\textbf{x}}\hat{\textbf{y}}+ (a_v c_w - c_v
+a_w)\hat{\textbf{x}}\hat{\textbf{z}}+ (b_v c_w - c_v
+b_w)\hat{\textbf{y}}\hat{\textbf{z}}
+\end{align}\]</span> where we again can identify the inner and outer
+products of the vectors <span class="math inline">\(\textbf{v}\)</span>
+and <span class="math inline">\(\textbf{w}\)</span>. We again write this
+product of vectors as <span class="math inline">\(\textbf{v}\textbf{w} =
+\textbf{v}\cdot \textbf{w} + \textbf{v} \wedge \textbf{w}\)</span>. The
+bi-vectors <span
+class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}},\hat{\textbf{x}}\hat{\textbf{z}},\hat{\textbf{y}}\hat{\textbf{z}}\)</span>
+are again roots of unity and can be identified with the quaternions
+<span class="math inline">\(\textbf{i}, \textbf{j},\)</span> and <span
+class="math inline">\(\textbf{k}\)</span>. The tri-vector <span
+class="math inline">\(\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{z}}\)</span>
+is also a root of unity, <em>i.e.</em>, <span
+class="math inline">\((\hat{\textbf{x}}\hat{\textbf{y}}\hat{\textbf{z}})^2=-1\)</span>.
+The quaternions are dual to the vectors. This is a special property of
+the three-dimensional geometric algebra.</p>
 </body>
 </html>
