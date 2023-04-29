@@ -13,12 +13,12 @@ Geometric algebra is an extension of vector algebra introducing the notion of a 
 
 **Definition:** *The geometric algebra $\mathbb{G}^n$ is an extension of the $n$-dimensional vector space $\mathbb{R}^n$. The geometric algebra $\mathbb{R}^n \subset \mathbb{G}^n$ is an associative algebra with a unit $1$, satisfying the four conditions:*
 
-* G1: $\textbf{A}(\textbf{B}+\textbf{C}) = \textbf{A}\textbf{B} + \textbf{A}\textbf{C}, (\textbf{B}+\textbf{C})\textbf{A} = \textbf{B}\textbf{A} + \textbf{C}\textbf{A}$,
-* G2: $(a\textbf{A})\textbf{B} = \textbf{A}(a\textbf{B})= a(\textbf{A}\textbf{B})$,
-* G3: $(\textbf{A}\textbf{B})\textbf{C}= \textbf{A}(\textbf{B}\textbf{C})$,
-* G4: $1\textbf{A}=\textbf{A}1=\textbf{A}$,
+* G1: $A(B+C) = AB + AC$, $(B+C)A = BA + CA$,
+* G2: $(aA)B = A(aB)= a(AB)$,
+* G3: $(AB)C = A(BC)$,
+* G4: $1A=A1=A$,
 
-*with the scalar $a \in \mathbb{R}$ and the multi-vectors $\textbf{A},\textbf{B}, \textbf{C} \in \mathbb{G}^n.$ In addition, this geometric product satisfies two conditions linking the geometric algebra $\mathbb{G}^n$ to the vector space $\mathbb{R}^n$:*
+*with the scalar $a \in \mathbb{R}$ and the multi-vectors $A, B, C \in \mathbb{G}^n.$ In addition, this geometric product satisfies two conditions linking the geometric algebra $\mathbb{G}^n$ to the vector space $\mathbb{R}^n$:*
 
 * G5: $\textbf{u}\textbf{u}=\textbf{u}\cdot\textbf{u} = \|\textbf{u}\|^2$ *for all vectors* $\textbf{u} \in \mathbb{R}^n$,
 
@@ -67,7 +67,11 @@ Consider the two-dimensional plane $\mathbb{R}^2$ spanned by the orthonormal uni
 
 $$\{1, \textbf{e}_1, \textbf{e}_2, \textbf{e}_1\textbf{e}_2\}$$ 
 
-where $1$ is the unit scalar, $\textbf{e}_1$ and $\textbf{e}_2$ are the unit vectors and $\textbf{e}_1\textbf{e}_2$ is the unique bi-vector representing an oriented area element. This is the *canonical basis* of the geometric algebra $\mathbb{G}^2$. We cannot generate more bases elements, as the unit vectors $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal and objects consisting of the geometric product of three or more bases elements of $\mathbb{R}^2$ can be reduced to these four combinations using the anti-commutative property, *e.g.*, $\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2$. A multi-vector is an object of the form $A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2$ with for example real numbers $a,b,c,d \in \mathbb{R}$. The product of two multi-vectors follows from the associative nature of the geometric product and the multiplication table of the bases elements of $\mathbb{R}^2$, $\textbf{e}_1^2=\textbf{e}_2^2=1$ and $\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2$, as we saw above. 
+where $1$ is the unit scalar, $\textbf{e}_1$ and $\textbf{e}_2$ are the unit vectors and $\textbf{e}_1\textbf{e}_2$ is the unique bi-vector representing an oriented area element. This is the *canonical basis* of the geometric algebra $\mathbb{G}^2$. We cannot generate more bases elements, as the unit vectors $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal and objects consisting of the geometric product of three or more bases elements of $\mathbb{R}^2$ can be reduced to these four combinations using the anti-commutative property, *e.g.*, $\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2$. A multi-vector is an object of the form 
+
+$$A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2$$
+
+with for real numbers $a,b,c,d \in \mathbb{R}$. The product of two multi-vectors follows from the associative nature of the geometric product and the multiplication table of the bases elements of $\mathbb{R}^2$, $\textbf{e}_1^2=\textbf{e}_2^2=1$ and $\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2$, as we saw above. 
 
 Explicitly, the geometric product of two vectors takes the form
 
@@ -89,7 +93,7 @@ is the signed area of the parallelogram spanned by the two vectors $\textbf{u}$ 
 
 As $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal, the bi-vector $\textbf{e}_1\textbf{e}_2$ squares to $-1$, from which it follows that we can identify this bi-vector with the square root of unity $\textbf{e}_1\textbf{e}_2 = \textbf{i}=\sqrt{-1}$. The complete product of basis elements in $\mathbb{R}^n$ is generally an important element in geometric algebra, as it is the only $n$-vector in the canonical basis, denoted as the pseudoscalar of the algebra $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$. 
 
-In the two-dimensional setting, geometric algebra unifies two-dimensional vector analysis with complex analysis, $\textbf{A}=(a + \textbf{i}\ d) + (b\ \textbf{e}_1 + c\ \textbf{e}_2)$. Two notions of vectors in the plane with a distinct set of products that normally do not communicate with each other. In geometric algebra the interactions between the vectors and complex numbers are central. Writing the outer product of two vectors as $\textbf{u}\wedge \textbf{v} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta\, \textbf{i}$, with the traditional cross-product $\textbf{u}\times \textbf{v} = -\textbf{u}\wedge\textbf{v}\ \textbf{i} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta$, the geometric product of two vectors assumes the form
+In the two-dimensional setting, geometric algebra unifies two-dimensional vector analysis with complex analysis, $A=(a + \textbf{i}\ d) + (b\ \textbf{e}_1 + c\ \textbf{e}_2)$. Two notions of vectors in the plane with a distinct set of products that normally do not communicate with each other. In geometric algebra the interactions between the vectors and complex numbers are central. Writing the outer product of two vectors as $\textbf{u}\wedge \textbf{v} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta\, \textbf{i}$, with the traditional cross-product $\textbf{u}\times \textbf{v} = -\textbf{u}\wedge\textbf{v}\ \textbf{i} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta$, the geometric product of two vectors assumes the form
 
 $$ 
 \begin{align}
@@ -120,10 +124,10 @@ writing the complex number in its polar decomposition $z=|z| e^{\textbf{i}\ \the
 
 $$\textbf{u}_{rot} = e^{-\textbf{i}\ \theta/2}\ \textbf{u}\ e^{\textbf{i}\ \theta /2}\,,$$
 
-where the multi-vector $\textbf{R}_\theta = e^{-\textbf{i}\ \theta/2}$ is known as the rotor, with its inverse $\textbf{R}_\theta^{-1}=\textbf{R}_{-\theta}$ as
+where the multi-vector $R_\theta = e^{-\textbf{i}\ \theta/2}$ is known as the rotor, with its inverse $R_\theta^{-1}=R_{-\theta}$ as
 
 $$\begin{align}
-\textbf{R}_\theta  \textbf{R}_\theta^{-1} 
+R_\theta  R_\theta^{-1} 
 &= (\cos (\theta/2) - \textbf{i}\ \sin (\theta/2)) (\cos (\theta/2) + \textbf{i}\ \sin (\theta/2))\\
 &= \cos^2 (\theta/2) + \sin^2(\theta/2) =1\,.
 \end{align}$$
@@ -131,9 +135,9 @@ $$\begin{align}
 As we will see, this notion of rotation generalizes to higher-dimensional spaces. The conjugation of a vector with a rotor preserves the length of the vector, as
 
 $$\begin{align}
-\| \textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1}\|^2 &= \textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1} \textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1}\\
-&= \textbf{R}_\theta \textbf{u} \textbf{u} \textbf{R}_\theta^{-1}\\
-&=  \|\textbf{u}\|^2 \textbf{R}_\theta  \textbf{R}_\theta^{-1}\\
+\| R_\theta \textbf{u} R_\theta^{-1}\|^2 &= R_\theta \textbf{u} R_\theta^{-1} R_\theta \textbf{u} R_\theta^{-1}\\
+&= R_\theta \textbf{u} \textbf{u} R_\theta^{-1}\\
+&=  \|\textbf{u}\|^2 R_\theta  R_\theta^{-1}\\
 &=  \|\textbf{u}\|^2\,.
 \end{align}$$
 
@@ -170,7 +174,7 @@ $$\begin{align}
 &= \textbf{v}\textbf{u}\textbf{v}^{-1}
 \end{align}$$
 
-We saw above that the rotor $\textbf{R}_\theta$ can be written as the geometric product of two unit vectors $\textbf{v},\textbf{w}$ with an angular separation $-\theta/2$. It thus follows that every rotation is the result of two reflections 
+We saw above that the rotor $R_\theta$ can be written as the geometric product of two unit vectors $\textbf{v},\textbf{w}$ with an angular separation $-\theta/2$. It thus follows that every rotation is the result of two reflections 
 
 $$ \textbf{u}_{rot} = \textbf{v}(\textbf{w} \textbf{u} \textbf{w}^{-1}) \textbf{v}^{-1}\,.$$
 
@@ -209,7 +213,7 @@ $$\begin{align}
 &= \alpha\ \textbf{I}
 \end{align}$$
 
-with $|\alpha|$ the volume of the parallelepiped spanned by the three vectors. The sign is the orientation of the triple $(\textbf{u}, \textbf{v}, \textbf{w})$. 
+with $|\alpha|$ the volume of the parallelepiped spanned by the three vectors (and the cross-product is defined below). The sign is the orientation of the triple $(\textbf{u}, \textbf{v}, \textbf{w})$. 
 
 The geometric product of the pseudoscalar with a vector is a bi-vector, $\textbf{e}_1 \textbf{I} = \textbf{B}_1,$ $\textbf{e}_2 \textbf{I} = \textbf{B}_2,$ and $\textbf{e}_3 \textbf{I} = \textbf{B}_3$. Note that the pseudovector is normal to the original vector (together they span the space $\textbf{I}$). When acting on the pseudovectors, we retrieve the normal vectors, $\textbf{B}_1 \textbf{I}= -\textbf{e}_1,$ $\textbf{B}_2 \textbf{I}= - \textbf{e}_2,$ and $\textbf{B}_3 \textbf{I}= -\textbf{e}_3$. Hence, the pseudoscalar maps the vectors to the pseudovectors and pseudovectors to vectors. This is again nicely implemented by the duality operator
 
@@ -234,19 +238,21 @@ thus form a representation of the algebra of three-dimensional space.
 #### Rotations
 Rotations of vectors can again be implemented with the rotors. Given a vector $\textbf{u}$. Its rotation by an angle $\theta$ in the plane $\textbf{B} = a\ \textbf{B}_1 + b\ \textbf{B}_2 + c\ \textbf{B}_3$ is given by the conjugation
 
-$$\textbf{u}_{rot} = \textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1}$$
+$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
 
-with the rotor $\textbf{R}_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the pseudovector $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$, which makes sense since the pseudovectors $\textbf{B}_1,\textbf{B}_2,$ and $\textbf{B}_3$ are square to $-1$ like the bi-vector $\textbf{i}$ in the two-dimensional setting. In fact, each pseudovector $\textbf{B}$ represents a two-dimensional plane with an associated geometric subalgebra isomorphic to $\mathbb{G}^2$. The rotor is again the geometric product of two unit vectors spanning the plane with an angle $-\theta/2$. 
+with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the pseudovector is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$, which makes sense since the pseudovectors $\textbf{B}_1,$ $\textbf{B}_2,$ $\textbf{B}_3$ squares to $-1$ like the bi-vector $\textbf{i}$ in the two-dimensional setting. In $\mathbb{G}^3$, we can also express these rotors in terms of the quaternions. In fact, each pseudovector $\textbf{B}$ represents a two-dimensional plane with an associated geometric subalgebra isomorphic to $\mathbb{G}^2$. The rotor is again the geometric product of two unit vectors spanning the plane with an angle $-\theta/2$. 
 
+When rotating around a unit vector $\textbf{n}$ we obtain the rotor $R=e^{-\textbf{n}\, \textbf{I}\, \theta/2}$. 
 #### Normals
 The dual of a multi-vector is given by the operation
 
-$$ \textbf{A}^* = A \textbf{I}^{-1}\,. $$
+$$ A^* = A \textbf{I}^{-1}\,. $$
 
-We again see that the pseudoscalar maps scalars to pseudoscalars, vectors to pseudovectors representing their normal plane, and pseudovectors to vectors representing their normal direction. The cross-product of two vectors again takes the form 
+Scalars are dual to pseudoscalars. Vectors are dual to the pseudovectors representing the normal planes. The traditional cross-product of two vectors is the dual of the outer product
 
 $$ \textbf{u} \times \textbf{v} = (\textbf{u} \wedge \textbf{v})^*\,.$$
 
+Note that the cross-product only makes sense in the two- and three-dimensional context. In higher-dimensional spaces, the pseudovectors do not map so neatly on the vectors. The outer product is well-defined for the geometric algebra of $n$-dimensional Euclidean space.
 
 #### Projections and reflections
 Just like in the two-dimensional case, we can use the language of geometric algebra to define projections and reflections. Given a vector $\textbf{u}$ we can decompose the vector in a component parallel $\textbf{u}_\|$ and normal $\textbf{u}_\perp$ to another vector $\textbf{v}$. These components again look like
@@ -260,7 +266,7 @@ The reflection of the vector $\textbf{u}$ in the line represented by $\textbf{v}
 
 $$\textbf{u}_{ref} = \textbf{u}_{\|} - \textbf{u}_{\perp} = \textbf{v}\textbf{u}\textbf{v}^{-1}.$$
 
-However in the three-dimensional setting, unlike the two-dimensional case, we might want to decompose a vector $\textbf{u}$ into a term parallel and normal to a plane represented by a pseudovector $\textbf{B}$. Geometric algebra beautifully extends to this case by writing 
+However in the three-dimensional setting, unlike the two-dimensional case, we might want to decompose a vector $\textbf{u}$ into a term parallel and normal to a plane represented by a pseudovector $\textbf{B}$. Geometric algebra beautifully extends this formula with the identities
 
 $$\begin{align}
 \textbf{u}_{\|} &= (\textbf{u}\cdot \textbf{B})\textbf{B}^{-1}\,,\\
@@ -269,16 +275,105 @@ $$\begin{align}
 
 A non-zero pseudovector always has an inverse, since $(\textbf{e}_1 \textbf{e}_2)^{-1}=\textbf{e}_2\textbf{e}_1$.
 
-Where the inner product of a $k$- and a $j$-vector $\textbf{A},\textbf{B}$ is defined as the $k-j$-vector part of their geometric product
+Where the inner and outer product of a vector and a bi-vector $\textbf{A},\textbf{B}$ are defined as the $1$- and $3$-vector part of their geometric product
 
-$$\textbf{A}\cdot \textbf{B} = \langle \textbf{A}\textbf{B}\rangle_{k-j}\,.$$
-
-Their outer product is defined as the $k+j$-vector part
-
-$$\textbf{A}\wedge \textbf{B} = \langle \textbf{A}\textbf{B}\rangle_{k+j}\,.$$
+$$\begin{align}
+\textbf{A}\cdot \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{1}\,,\\
+\textbf{A}\wedge \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{3}\,.
+\end{align}$$
 
 The reflection of $\textbf{u}$ with respect to the plane represented by $\textbf{B}$ assumes the form
 
-$$\textbf{u}_{ref} = \textbf{u}_{\|} - \textbf{u}_\perp = \textbf{B} \textbf{u} \textbf{B}^{-1}\,.$$
+$$\textbf{u}_{ref} = \textbf{u}_{\|} - \textbf{u}_\perp = -\textbf{B} \textbf{u} \textbf{B}^{-1}\,,$$
+
+using the observation that the geometric product of a vector with a bi-vector assumes the form
+
+$$\begin{align}
+\textbf{u}\textbf{B} &= \textbf{u}\cdot\textbf{B} + \textbf{u}\wedge \textbf{B}\,,\\
+\textbf{B}\textbf{u} &= \textbf{u}\cdot\textbf{B} - \textbf{u}\wedge \textbf{B}\,.
+\end{align}$$
+
+This decomposition is not generally true for the geometric product of multi-vectors. 
 
 ### $n$-dimensional space
+These notions neatly generalize to the geometric algebra $\mathbb{G}^n$ extending the vector algebra of the $n$-dimensional Euclidean plane $\mathbb{R}^n$. Given an orthonormal basis $\{\textbf{e}_1,\dots,\textbf{e}_n\}$, the geometric algebra has a canonical basis of the form 
+
+$$\{1, \textbf{e}_1, \textbf{e}_2,\dots,\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n \}$$ 
+
+consisting of a scalar and $m$-vectors with $m=1,\dots,n$. In the space $\mathbb{R}^n$ we can identify $k$-dimensional hyperspace, which that can be identified by a *$k$-blade* consisting of the product of a set of $k$ orthogonal vectors $\textbf{B} = \textbf{b}_1\textbf{b}_2\dots\textbf{b}_k$ spanning the hyperspace. Vectors and bi-vectors are examples of grade $1$ and grande $2$ blades (we use boldface capitals for blades and normal capitals for general multi-vectors). In general, every $n$-vector is a blade as it can be written using a suitable orthogonal basis. A blade is included in another blade, $\textbf{A} \subset \textbf{B}$, when the associated hyperplane is included in the larger hyperplane. 
+
+#### Normals
+The pseudoscalar $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$, associated to the space $\mathbb{R}^n$, is an important element of the geometric algebra as it allows us to relate the multi-vectors to their dual, 
+
+$$A^* = A\ \textbf{I}^{-1}\,,$$
+
+with the inverse pseudoscalar $\textbf{I}^{-1}=\textbf{e}_n\dots\textbf{e}_1$. The *orthogonal complement* of a $j$-blade $\textbf{B}$ is the $(n-1)$-blade $\textbf{B}^*$ consisting of the normal basis vectors.
+
+#### Inner and outer products 
+Let $\langle C \rangle_j$ denote the $j$-vector part of $C$. We define the inner and outer product of a $j$- and a $k$-vector $A,B$ as the $(j-k)$- and $(j+k)$-vector part of the geometric product
+
+$$\begin{align}
+\textbf{A}\cdot \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{k-j}\,,\\
+\textbf{A}\wedge \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{k+j}\,.
+\end{align}$$
+
+The geometric product of a $j$- and a $k$-blade consists of multi-vector with a $(k-j)$-, $(k-j+2)$-, $\dots$, $(j+k)$-vector part. The inner and outer products of general multi-vectors are defined using the products of the blades with linearity. 
+
+The geometric product of a vector with a $k$-blade assumes the form
+
+$$\begin{align}
+\textbf{u}\textbf{B} &= \textbf{u}\cdot\textbf{B} + \textbf{u}\wedge \textbf{B}\,.
+\end{align}$$
+
+#### Reflections and projections
+We can always write a vector $\textbf{u}=\textbf{u}_{\|}+\textbf{u}_\perp$ in terms of a parallel and an orthogonal part with respect to a blade $\textbf{B}$, with
+
+$$\begin{align}
+\textbf{u}_{\|} &= (\textbf{u}\cdot \textbf{B})\textbf{B}^{-1}\,,\\
+\textbf{u}_{\perp} &= (\textbf{u}\wedge \textbf{B})\textbf{B}^{-1}\,.
+\end{align}$$
+
+The reflection of $\textbf{u}$ in $\textbf{B}$ takes the form $\textbf{u}_{ref}=(-1)^{k+1}\textbf{B} \textbf{u} \textbf{B}^{-1}$. When working with the dual $\textbf{b}=\textbf{B}^*$, we obtain the relation $\textbf{u}_{ref} = -\textbf{b}\textbf{u}\textbf{b}^{-1}$.
+
+#### Reflections and projections
+Rotations of vectors can again be implemented with the rotors. Given a vector $\textbf{u}$. Its rotation by an angle $\theta$ in the plane $\textbf{B}$ is given by the conjugation
+
+$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
+
+with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the blade is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$.
+
+Two subsequent rotations $R_1$ and $R_2$ lead to a rotation of the rotor, $R_3 = R_2 R_1$. If $\textbf{u}$ is rotates by $R_1$ and $R_2$ we obtain
+
+$$\textbf{u}_{rot} = R_2 R_1 \textbf{u} R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}$$
+
+
+#### Volumes
+The volume (norm) of a $k$-blade $\textbf{B}=\textbf{b}_1 \dots \textbf{b}_k$ is defined as the volume of the space spanned by the vectors $\| \textbf{B}\|=\|\textbf{b}_1\|\dots\|\textbf{b}_k\|$.
+
+#### Complex numbers
+Each hyperplane in $\mathbb{R}^n$, corresponding to a bi-vector yields a geometric subalgebra isomorphic to $\mathbb{G}^2$. In this space, we identify the complex numbers $\{a+\textbf{i}\ b\}$. Analogously, every three-dimensional hyperspace yields a geometric subalgebra isomorphic to $\mathbb{G}^3$ with a quaternion subalgebra with the complex numbers $\{a + \textbf{i}\ b + \textbf{j}\ c + \textbf{k}\ d \}.$
+
+### Geometric calculus
+We can develop calculus on geometric algebra. In geometric calculus, the gradient operator 
+
+$$\nabla = \textbf{e}_1 \partial_1 + \dots + \textbf{e}_n \partial_n$$
+
+on a vector-valued function is defined as
+
+$$\nabla \textbf{f}  = \nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}\,,$$
+
+unifying the divergence and curl.
+
+Working in $\mathbb{G}^2$, the gradient of a complex function $f(x, y) = u(x,y) + \textbf{i}\ v(x,y)$ is defined as
+
+$$\begin{align} 
+\nabla f &= \textbf{e}_1(u_x + \textbf{i}\ v_x) + \textbf{e}_2(u_y + \textbf{i}\ v_y)\\
+&= \textbf{e}_1(u_x -v_y) + \textbf{e}_2 (v_x + u_y)\,,
+\end{align}$$
+
+which vanishes due to the Cauchy-Riemann equations for analytic functions. 
+
+A multi-vector valued function $F$ on $\mathbb{R}^n$ is called analytic when 
+
+$$\nabla F = 0\,.$$
+
