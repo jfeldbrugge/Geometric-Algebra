@@ -182,12 +182,14 @@ $$\{1, \textbf{e}_1, \textbf{e}_2, \textbf{e}_3, \textbf{e}_1\textbf{e}_2, \text
 consisting of the unit scalar, three vectors corresponding to the three independent directions, three bi-vectors corresponding to the three independent two-dimensional hyperplanes, and a unique tri-vector corresponding to the volume element. 
 
 The product of two vectors takes the form
+
 $$\begin{align}
 \textbf{u}\textbf{v} 
 &= (a_1 \textbf{e}_1+b_1 \textbf{e}_2+c_1 \textbf{e}_1) (a_2 \textbf{e}_1+b_2 \textbf{e}_2+c_2 \textbf{e}_1) \\
 &= (a_1 a_2 + b_1 b_2 + c_1 c_2) + (a_1 b_2 - b_1 a_2) \textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+ (b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\\
 &=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,
 \end{align}$$
+
 where we again can identify the inner product $\textbf{u} \cdot \textbf{v} = a_1 a_2 + b_1 b_2 + c_1 c_2$ and the outer product $\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2) \textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+ (b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3$. 
 
 The two-vectors, corresponding to oriented area elements, span a space whose elements are known as pseudovectors. A pseudovector is of the form $\textbf{u} = a\ B_1 + b\ B_2 + c\ B_3$ where $B_1=\textbf{e}_2 \textbf{e}_3,$ $B_2 = \textbf{e}_3 \textbf{e}_1$ and $B_3 = \textbf{e}_1 \textbf{e}_2$ with the product $B_i B_j = -\delta_{ij} - \epsilon_{ijk}B_k$ with $\delta_{ij}$ the Kronneker delta and $\epsilon_{ijk}$ the Levi-Civita symbol. This coincides with the pseudovectors known in physics since they are invariant under the parity operation $\textbf{e}_i \mapsto - \textbf{e}_i$. The product of two pseudovectors yields the multi-vector
@@ -200,21 +202,22 @@ A B &= (a_1\ B_1 + b_1\ B_2 + c_1\ B_3)(a_2\ B_1 + b_2\ B_2 + c_2\ B_3)\\
 The bi-vectors can be associated to the quaternions $\textbf{i} = B_1,$ $\textbf{j} = -B_2$, $\textbf{k}=B_3$.
 The canonical tri-vector is known as the pseudoscalar $\textbf{I} = \textbf{e}_1 \textbf{e}_2 \textbf{e}_3$, representing the oriented volume element. The geometric product of the pseudoscalar with a vector is a bi-vector, $\textbf{e}_1 \textbf{I} = B_1,$ $\textbf{e}_2 \textbf{I} = B_2,$ and $\textbf{e}_3 \textbf{I} = B_3$. Note that the pseudovector is normal to the original vector (together they span the space $\textbf{I}$). When acting on the pseudovectors, we retrieve the normal vectors, $B_1 \textbf{I}= -\textbf{e}_1,$ $B_2 \textbf{I}= - \textbf{e}_2,$ and $B_3 \textbf{I}= -\textbf{e}_3,$. Hence, the pseudoscalar maps the vectors to the pseudovectors and pseudovectors to vectors. This is again nicely implemented by the duality operator
 
-$$ \textbf{u}^* = \textbf{u}\ \textbf{I}^{-1}\,,$$
+$$\textbf{u}^* = \textbf{u}\ \textbf{I}^{-1}\,,$$
 
 with the inverse $\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2 \textbf{e}_1 = -\textbf{I}$.
 
 The multiplication of the bases elements follows the rule
 
-$$ \textbf{e}_i \textbf{e}_j = \delta_{ij} + \textbf{I} \epsilon_{ijk}\textbf{e}_k$$
+$$\textbf{e}_i \textbf{e}_j = \delta_{ij} + \textbf{I} \epsilon_{ijk}\textbf{e}_k$$
 
 which is known as the Pauli algebra of quantum mechanics. The Pauli spin matrices
 
 $$\begin{align}
-\sigma_1=\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix},
-\sigma_2=\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},
+\sigma_1=\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix},\
+\sigma_2=\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},\
 \sigma_3=\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
 \end{align}$$
+
 thus form a representation of the algebra of three-dimensional space.
 
 #### Rotations
