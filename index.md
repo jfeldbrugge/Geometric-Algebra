@@ -340,7 +340,7 @@ Rotations of vectors can again be implemented with the rotors. Given a vector $\
 
 $$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
 
-with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the blade is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$.
+with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the blade is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta.$
 
 Two subsequent rotations $R_1$ and $R_2$ lead to a rotation of the rotor, $R_3 = R_2 R_1$. If $\textbf{u}$ is rotates by $R_1$ and $R_2$ we obtain
 
