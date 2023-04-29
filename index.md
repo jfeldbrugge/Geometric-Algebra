@@ -50,7 +50,7 @@ $$\textbf{u}\wedge \textbf{v} = \frac{1}{2}(\textbf{u}\textbf{v} - \textbf{v} \t
 
 We will see that this outer product coincides with the outer product of vector analysis.
 
-From these definitions, it follows that the geometric product of two vectors can be expressed in terms of the more familiar inner and outer poducts
+From these definitions, it follows that the geometric product of two vectors can be expressed in terms of the more familiar inner and outer products
 
 $$\textbf{u}\textbf{v} = \textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}$$
 
@@ -60,14 +60,14 @@ $$\textbf{v}\textbf{u} = \textbf{u}\cdot\textbf{v} - \textbf{u}\wedge \textbf{v}
 
 Note that the geometric product of vectors is invertible, unlike the inner or outer products that constitute them. For parallel vectors (with $\textbf{u} = a \textbf{v}$ with $a \in \mathbb{R}$), the geometric product reduces to the inner product $\textbf{u}\textbf{v} = \textbf{u}\cdot \textbf{v}$ (using condition G2). For orthogonal vectors, the geometric product reduces to the outer product $\textbf{u}\textbf{v} = \textbf{u}\wedge \textbf{v}$. For a general set of vectors, the geometric product leads to a multi-vector, where the scalar part represents the inner and the bi-vector part represents the outer product.
 
-To develop intuition, we brievely study the geometric implications of this construction on two- and three-dimensional Euclidean space.
+To develop intuition, we briefly study the geometric implications of this construction on two- and three-dimensional Euclidean space.
 
 ### Two-dimensional plane
-Consider the two-dimensional plane $\mathbb{R}^2$ spanned by the orthonormal unit vectors $\textbf{e}_1=\hat{\textbf{x}}$ and $\textbf{e}_2=\hat{\textbf{y}}$. The geometric algebra is spanned by the elements 
+Consider the two-dimensional plane $\mathbb{R}^2$ spanned by the orthonormal unit vectors $\textbf{e}_1=\hat{\textbf{x}}$ and $\textbf{e}_2=\hat{\textbf{y}}$. Geometric algebra is spanned by the elements 
 
 $$\{1, \textbf{e}_1, \textbf{e}_2, \textbf{e}_1\textbf{e}_2\}$$ 
 
-where $1$ is the unit scalar, $\textbf{e}_1$ and $\textbf{e}_2$ are the unit vectors and $\textbf{e}_1\textbf{e}_2$ is the unique bi-vector representing an oriented area element. This is the *cannonical basis* of the geometric algebra $\mathbb{G}^2$. We cannot generate more basis elements, as the unit vectors $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal and objects consisiting of the geometric product of three or more basis elements of $\mathbb{R}^2$ can be reduced to these four combinations using the anti-commutative property, *e.g.*, $\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2$. A multi-vector is an object of the form $A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2$ with for example real numbers $a,b,c,d \in \mathbb{R}$. The product of two multi-vectors follows from associative nature of the geometric product and the multiplication tabel of the basis elements of $\mathbb{R}^2$, $\textbf{e}_1^2=\textbf{e}_2^2=1$ and $\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2$, as we saw above. 
+where $1$ is the unit scalar, $\textbf{e}_1$ and $\textbf{e}_2$ are the unit vectors and $\textbf{e}_1\textbf{e}_2$ is the unique bi-vector representing an oriented area element. This is the *canonical basis* of the geometric algebra $\mathbb{G}^2$. We cannot generate more bases elements, as the unit vectors $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal and objects consisting of the geometric product of three or more bases elements of $\mathbb{R}^2$ can be reduced to these four combinations using the anti-commutative property, *e.g.*, $\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2$. A multi-vector is an object of the form $A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2$ with for example real numbers $a,b,c,d \in \mathbb{R}$. The product of two multi-vectors follows from the associative nature of the geometric product and the multiplication table of the bases elements of $\mathbb{R}^2$, $\textbf{e}_1^2=\textbf{e}_2^2=1$ and $\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2$, as we saw above. 
 
 Explicitly, the geometric product of two vectors takes the form
 
@@ -85,9 +85,9 @@ $$\begin{align}
 &= \|\textbf{u}\| \|\textbf{v}\| \sin \theta \ \textbf{e}_1\textbf{e}_2
 \end{align}$$ 
 
-is the signed area of the paralelogram spanned by the two vectors $\textbf{u}$ and $\textbf{v}$. 
+is the signed area of the parallelogram spanned by the two vectors $\textbf{u}$ and $\textbf{v}$. 
 
-As $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal, the bi-vector $\textbf{e}_1\textbf{e}_2$ squares to $-1$, from which it follows that we can identify this bi-vector with the square root of unity $\textbf{e}_1\textbf{e}_2 = \textbf{i}=\sqrt{-1}$. The complete product of basis elements in $\mathbb{R}^n$ is generally an important element in geometric algebra, as it is the only $n$-vector in the cannonical basis, denoted as the pseudoscalar of the algebra $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$. 
+As $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal, the bi-vector $\textbf{e}_1\textbf{e}_2$ squares to $-1$, from which it follows that we can identify this bi-vector with the square root of unity $\textbf{e}_1\textbf{e}_2 = \textbf{i}=\sqrt{-1}$. The complete product of basis elements in $\mathbb{R}^n$ is generally an important element in geometric algebra, as it is the only $n$-vector in the canonical basis, denoted as the pseudoscalar of the algebra $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$. 
 
 In the two-dimensional setting, geometric algebra unifies two-dimensional vector analysis with complex analysis, $A=(a + \textbf{i}\ d) + (b\ \textbf{e}_1 + c\ \textbf{e}_2)$. Two notions of vectors in the plane with a distinct set of products that normally do not communicate with each other. In geometric algebra the interactions between the vectors and complex numbers are central. Writing the outer product of two vectors as $\textbf{u}\wedge \textbf{v} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta\, \textbf{i}$, with the traditional cross-product $\textbf{u}\times \textbf{v} = -\textbf{u}\wedge\textbf{v}\ \textbf{i} = \|\textbf{u}\|\|\textbf{v}\| \sin\theta$, the geometric product of two vectors assumes the form
 
@@ -98,7 +98,7 @@ $$
 \end{align}
 $$
 
-independent of the basis elements, where we define the exponentiation of a bi-vector using Euler's identity $e^{\textbf{i}\ \theta}=\cos\theta + \textbf{i}\sin \theta$. 
+independent of the bases elements, where we define the exponentiation of a bi-vector using Euler's identity $e^{\textbf{i}\ \theta}=\cos\theta + \textbf{i}\sin \theta$. 
 
 #### Rotations
 The addition of both complex numbers and vectors acts componentwise. The product of two complex numbers $z_1=a_1 +\textbf{i}\ d_1,$ $z_2=a_2 +\textbf{i}\ d_2$, is implemented as the product of the absolute value and a rotation of the arguments
@@ -116,7 +116,7 @@ z \textbf{u} &= (a + \textbf{i}\ d)(b\ \textbf{e}_1 + c\ \textbf{e}_2)\\
 &= |z| \left[(b \cos \theta +c \sin\theta)\textbf{e}_1 + (- b \sin\theta + c \cos \theta )\textbf{e}_2\right]
 \end{align}$$
 
-writing the complex number in its polar decomposition $z=|z| e^{\textbf{i}\ \theta} = |z|\cos \theta + \textbf{i}\ |z| \sin \theta$. The inverse multiplication $\textbf{u}z$ yields a rotation by the same angel in the opposite direction $\theta \mapsto -\theta$. More generally, we can write a rotation of a vector $\textbf{u}$ by an angle $\theta$ more symmetricaly using the conjugation
+writing the complex number in its polar decomposition $z=|z| e^{\textbf{i}\ \theta} = |z|\cos \theta + \textbf{i}\ |z| \sin \theta$. The inverse multiplication $\textbf{u}z$ yields a rotation by the same angle in the opposite direction $\theta \mapsto -\theta$. More generally, we can write a rotation of a vector $\textbf{u}$ by an angle $\theta$ more symmetrically using the conjugation
 
 $$\textbf{u}_{rot} = e^{-\textbf{i}\ \theta/2}\ \textbf{u}\ e^{\textbf{i}\ \theta /2}\,,$$
 
@@ -128,7 +128,7 @@ R_\theta  R_\theta^{-1}
 &= \cos^2 (\theta/2) + \sin^2(\theta/2) =1\,.
 \end{align}$$
 
-As we will see, this notion of rotation generalizes to higher-dimensional spaces. The conjugation of a vector with a rotor preserves the lenght of the vector, as
+As we will see, this notion of rotation generalizes to higher-dimensional spaces. The conjugation of a vector with a rotor preserves the length of the vector, as
 
 $$\begin{align}
 \| R_\theta \textbf{u} R_\theta^{-1}\|^2 &= R_\theta \textbf{u} R_\theta^{-1} R_\theta \textbf{u} R_\theta^{-1}\\
@@ -153,7 +153,7 @@ with the inverse of the pseudoscalar $\textbf{i}^{-1} = \textbf{e}_2\textbf{e}_1
 $$\textbf{u}\times \textbf{v} = (\textbf{u}\wedge \textbf{v})^*\,.$$
 
 #### Projections and reflections
-Another central operation in geometry are reflections. Given two vectors $\textbf{u}$ and $\textbf{v}$, we can decompose the first one into a component parallel and orthogonal to the second, *i.e.,* $\textbf{u} = \textbf{u}_{\|} + \textbf{u}_\perp$. In the language of geometric algebra, we obtain a very simple construction
+Another central operation in geometry is reflections. Given two vectors $\textbf{u}$ and $\textbf{v}$, we can decompose the first one into a component parallel and orthogonal to the second, *i.e.,* $\textbf{u} = \textbf{u}_{\|} + \textbf{u}_\perp$. In the language of geometric algebra, we obtain a very simple construction
 
 $$\begin{align}
 \textbf{u}_{\|} &= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1}\,,\\
@@ -198,14 +198,13 @@ A B &= (a_1\ B_1 + b_1\ B_2 + c_1\ B_3)(a_2\ B_1 + b_2\ B_2 + c_2\ B_3)\\
 \end{align}$$
 
 The bi-vectors can be associated to the quaternions $\textbf{i} = B_1,$ $\textbf{j} = -B_2$, $\textbf{k}=B_3$.
-
-The cannonical tri-vector is known as the pseudoscalar $\textbf{I} = \textbf{e}_1 \textbf{e}_2 \textbf{e}_3$, representing the oriented volume element. The geometric product of the pseudoscalar with a vector is a bi-vector, $\textbf{e}_1 \textbf{I} = B_1,$ $\textbf{e}_2 \textbf{I} = B_2,$ and $\textbf{e}_3 \textbf{I} = B_3$. Note that the pseudovector is normal to the oritinal vector (together they span the space $\textbf{I}$). When acting on the pseudovectors, we retreive the normal vectors, $B_1 \textbf{I}= -\textbf{e}_1,$ $B_2 \textbf{I}= - \textbf{e}_2,$ and $B_3 \textbf{I}= -\textbf{e}_3,$. Hence, the pseudoscalar maps the vectors to the pseudovectors and pseudovectors to vectors. This is again nicely implemented by the duality operator
+The canonical tri-vector is known as the pseudoscalar $\textbf{I} = \textbf{e}_1 \textbf{e}_2 \textbf{e}_3$, representing the oriented volume element. The geometric product of the pseudoscalar with a vector is a bi-vector, $\textbf{e}_1 \textbf{I} = B_1,$ $\textbf{e}_2 \textbf{I} = B_2,$ and $\textbf{e}_3 \textbf{I} = B_3$. Note that the pseudovector is normal to the original vector (together they span the space $\textbf{I}$). When acting on the pseudovectors, we retrieve the normal vectors, $B_1 \textbf{I}= -\textbf{e}_1,$ $B_2 \textbf{I}= - \textbf{e}_2,$ and $B_3 \textbf{I}= -\textbf{e}_3,$. Hence, the pseudoscalar maps the vectors to the pseudovectors and pseudovectors to vectors. This is again nicely implemented by the duality operator
 
 $$ \textbf{u}^* = \textbf{u}\ \textbf{I}^{-1}\,,$$
 
 with the inverse $\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2 \textbf{e}_1 = -\textbf{I}$.
 
-The multiplication of the basis elements follow the rule
+The multiplication of the bases elements follows the rule
 
 $$ \textbf{e}_i \textbf{e}_j = \delta_{ij} + \textbf{I} \epsilon_{ijk}\textbf{e}_k$$
 
@@ -216,7 +215,7 @@ $$\begin{align}
 \sigma_2=\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},
 \sigma_3=\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
 \end{align}$$
-thus form a represenation of the algebra of three-dimensional space.
+thus form a representation of the algebra of three-dimensional space.
 
 #### Rotations
 #### Normals
