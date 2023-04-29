@@ -48,18 +48,24 @@ class="math inline">\(\mathbb{R}^n \subset \mathbb{G}^n\)</span> is an
 associative algebra with a unit <span class="math inline">\(1\)</span>,
 satisfying the four conditions:</em></p>
 <ul>
-<li>G1: <span class="math inline">\(A(B+C) = AB + AC, (B+C)A = BA +
-CA\)</span>,</li>
-<li>G2: <span class="math inline">\((aA)B = A(aB)= a(AB)\)</span>,</li>
-<li>G3: <span class="math inline">\((AB)C= A(BC)\)</span>,</li>
-<li>G4: <span class="math inline">\(1A=A1=A\)</span>,</li>
+<li>G1: <span class="math inline">\(\textbf{A}(\textbf{B}+\textbf{C}) =
+\textbf{A}\textbf{B} + \textbf{A}\textbf{C},
+(\textbf{B}+\textbf{C})\textbf{A} = \textbf{B}\textbf{A} +
+\textbf{C}\textbf{A}\)</span>,</li>
+<li>G2: <span class="math inline">\((a\textbf{A})\textbf{B} =
+\textbf{A}(a\textbf{B})= a(\textbf{A}\textbf{B})\)</span>,</li>
+<li>G3: <span class="math inline">\((\textbf{A}\textbf{B})\textbf{C}=
+\textbf{A}(\textbf{B}\textbf{C})\)</span>,</li>
+<li>G4: <span
+class="math inline">\(1\textbf{A}=\textbf{A}1=\textbf{A}\)</span>,</li>
 </ul>
 <p><em>with the scalar <span class="math inline">\(a \in
 \mathbb{R}\)</span> and the multi-vectors <span
-class="math inline">\(A,B, C \in \mathbb{G}^n.\)</span> In addition,
-this geometric product satisfies two conditions linking the geometric
-algebra <span class="math inline">\(\mathbb{G}^n\)</span> to the vector
-space <span class="math inline">\(\mathbb{R}^n\)</span>:</em></p>
+class="math inline">\(\textbf{A},\textbf{B}, \textbf{C} \in
+\mathbb{G}^n.\)</span> In addition, this geometric product satisfies two
+conditions linking the geometric algebra <span
+class="math inline">\(\mathbb{G}^n\)</span> to the vector space <span
+class="math inline">\(\mathbb{R}^n\)</span>:</em></p>
 <ul>
 <li>G5: <span
 class="math inline">\(\textbf{u}\textbf{u}=\textbf{u}\cdot\textbf{u} =
@@ -212,8 +218,8 @@ as the pseudoscalar of the algebra <span
 class="math inline">\(\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n\)</span>.</p>
 <p>In the two-dimensional setting, geometric algebra unifies
 two-dimensional vector analysis with complex analysis, <span
-class="math inline">\(A=(a + \textbf{i}\ d) + (b\ \textbf{e}_1 + c\
-\textbf{e}_2)\)</span>. Two notions of vectors in the plane with a
+class="math inline">\(\textbf{A}=(a + \textbf{i}\ d) + (b\ \textbf{e}_1
++ c\ \textbf{e}_2)\)</span>. Two notions of vectors in the plane with a
 distinct set of products that normally do not communicate with each
 other. In geometric algebra the interactions between the vectors and
 complex numbers are central. Writing the outer product of two vectors as
@@ -269,12 +275,13 @@ class="math inline">\(\theta\)</span> more symmetrically using the
 conjugation</p>
 <p><span class="math display">\[\textbf{u}_{rot} = e^{-\textbf{i}\
 \theta/2}\ \textbf{u}\ e^{\textbf{i}\ \theta /2}\,,\]</span></p>
-<p>where the multi-vector <span class="math inline">\(R_\theta =
-e^{-\textbf{i}\ \theta/2}\)</span> is known as the rotor, with its
-inverse <span class="math inline">\(R_\theta^{-1}=R_{-\theta}\)</span>
+<p>where the multi-vector <span class="math inline">\(\textbf{R}_\theta
+= e^{-\textbf{i}\ \theta/2}\)</span> is known as the rotor, with its
+inverse <span
+class="math inline">\(\textbf{R}_\theta^{-1}=\textbf{R}_{-\theta}\)</span>
 as</p>
 <p><span class="math display">\[\begin{align}
-R_\theta  R_\theta^{-1}
+\textbf{R}_\theta  \textbf{R}_\theta^{-1}
 &amp;= (\cos (\theta/2) - \textbf{i}\ \sin (\theta/2)) (\cos (\theta/2)
 + \textbf{i}\ \sin (\theta/2))\\
 &amp;= \cos^2 (\theta/2) + \sin^2(\theta/2) =1\,.
@@ -283,10 +290,11 @@ R_\theta  R_\theta^{-1}
 higher-dimensional spaces. The conjugation of a vector with a rotor
 preserves the length of the vector, as</p>
 <p><span class="math display">\[\begin{align}
-\| R_\theta \textbf{u} R_\theta^{-1}\|^2 &amp;= R_\theta \textbf{u}
-R_\theta^{-1} R_\theta \textbf{u} R_\theta^{-1}\\
-&amp;= R_\theta \textbf{u} \textbf{u} R_\theta^{-1}\\
-&amp;=  \|\textbf{u}\|^2 R_\theta  R_\theta^{-1}\\
+\| \textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1}\|^2 &amp;=
+\textbf{R}_\theta \textbf{u} \textbf{R}_\theta^{-1} \textbf{R}_\theta
+\textbf{u} \textbf{R}_\theta^{-1}\\
+&amp;= \textbf{R}_\theta \textbf{u} \textbf{u} \textbf{R}_\theta^{-1}\\
+&amp;=  \|\textbf{u}\|^2 \textbf{R}_\theta  \textbf{R}_\theta^{-1}\\
 &amp;=  \|\textbf{u}\|^2\,.
 \end{align}\]</span></p>
 <p>Rotors are the multi-vectors resulting from the geometric products of
@@ -345,8 +353,8 @@ class="math inline">\(\textbf{u}\)</span> in the line associated to
 &amp;= \textbf{v}\textbf{u}\textbf{v}^{-1}
 \end{align}\]</span></p>
 <p>We saw above that the rotor <span
-class="math inline">\(R_\theta\)</span> can be written as the geometric
-product of two unit vectors <span
+class="math inline">\(\textbf{R}_\theta\)</span> can be written as the
+geometric product of two unit vectors <span
 class="math inline">\(\textbf{v},\textbf{w}\)</span> with an angular
 separation <span class="math inline">\(-\theta/2\)</span>. It thus
 follows that every rotation is the result of two reflections</p>
@@ -368,8 +376,8 @@ the elements</p>
 three independent directions, three bi-vectors corresponding to the
 three independent two-dimensional hyperplanes, and a unique tri-vector
 corresponding to the volume element.</p>
-<p>The product of two vectors takes the form <span
-class="math display">\[\begin{align}
+<p>The product of two vectors takes the form</p>
+<p><span class="math display">\[\begin{align}
 \textbf{u}\textbf{v}
 &amp;= (a_1 \textbf{e}_1+b_1 \textbf{e}_2+c_1 \textbf{e}_1) (a_2
 \textbf{e}_1+b_2 \textbf{e}_2+c_2 \textbf{e}_1) \\
@@ -377,7 +385,8 @@ class="math display">\[\begin{align}
 \textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+
 (b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\\
 &amp;=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,
-\end{align}\]</span> where we again can identify the inner product <span
+\end{align}\]</span></p>
+<p>where we again can identify the inner product <span
 class="math inline">\(\textbf{u} \cdot \textbf{v} = a_1 a_2 + b_1 b_2 +
 c_1 c_2\)</span> and the outer product <span
 class="math inline">\(\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2)
@@ -385,62 +394,160 @@ class="math inline">\(\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2)
 (b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\)</span>.</p>
 <p>The two-vectors, corresponding to oriented area elements, span a
 space whose elements are known as pseudovectors. A pseudovector is of
-the form <span class="math inline">\(\textbf{u} = a\ B_1 + b\ B_2 + c\
-B_3\)</span> where <span class="math inline">\(B_1=\textbf{e}_2
-\textbf{e}_3,\)</span> <span class="math inline">\(B_2 = \textbf{e}_3
-\textbf{e}_1\)</span> and <span class="math inline">\(B_3 = \textbf{e}_1
-\textbf{e}_2\)</span> with the product <span class="math inline">\(B_i
-B_j = -\delta_{ij} - \epsilon_{ijk}B_k\)</span> with <span
-class="math inline">\(\delta_{ij}\)</span> the Kronneker delta and <span
-class="math inline">\(\epsilon_{ijk}\)</span> the Levi-Civita symbol.
-This coincides with the pseudovectors known in physics since they are
-invariant under the parity operation <span
-class="math inline">\(\textbf{e}_i \mapsto - \textbf{e}_i\)</span>. The
-product of two pseudovectors yields the multi-vector</p>
+the form <span class="math inline">\(\textbf{B} = a\ \textbf{B}_1 + b\
+\textbf{B}_2 + c\ \textbf{B}_3\)</span> where <span
+class="math inline">\(\textbf{B}_1=\textbf{e}_2 \textbf{e}_3,\)</span>
+<span class="math inline">\(\textbf{B}_2 = \textbf{e}_3
+\textbf{e}_1\)</span> and <span class="math inline">\(\textbf{B}_3 =
+\textbf{e}_1 \textbf{e}_2\)</span> with the product <span
+class="math inline">\(\textbf{B}_i \textbf{B}_j = -\delta_{ij} -
+\epsilon_{ijk}\textbf{B}_k\)</span> with the Kronneker delta <span
+class="math inline">\(\delta_{ij}\)</span> and the Levi-Civita symbol
+<span class="math inline">\(\epsilon_{ijk}\)</span>. This coincides with
+the pseudovectors known in physics since they are invariant under the
+parity operation <span class="math inline">\(\textbf{e}_i \mapsto -
+\textbf{e}_i\)</span>. The product of two pseudovectors yields the
+multi-vector</p>
 <p><span class="math display">\[\begin{align}
-A B &amp;= (a_1\ B_1 + b_1\ B_2 + c_1\ B_3)(a_2\ B_1 + b_2\ B_2 + c_2\
-B_3)\\
-&amp;= -(a_1 a_2 + b_1 b_2 + c_1 c_2) - (b_1 c_2 - c_1 b_2) B_1 - (c_1
-a_2 - a_1 c_2) B_2  - (a_1 b_2 - b_1 a_2) B_3\,.
+\textbf{A} \textbf{B} &amp;= (a_1\ \textbf{B}_1 + b_1\ \textbf{B}_2 +
+c_1\ \textbf{B}_3)(a_2\ \textbf{B}_1 + b_2\ \textbf{B}_2 + c_2\
+\textbf{B}_3)\\
+&amp;= -(a_1 a_2 + b_1 b_2 + c_1 c_2) - (b_1 c_2 - c_1 b_2) \textbf{B}_1
+- (c_1 a_2 - a_1 c_2) \textbf{B}_2  - (a_1 b_2 - b_1 a_2)
+\textbf{B}_3\,.
 \end{align}\]</span></p>
 <p>The bi-vectors can be associated to the quaternions <span
-class="math inline">\(\textbf{i} = B_1,\)</span> <span
-class="math inline">\(\textbf{j} = -B_2\)</span>, <span
-class="math inline">\(\textbf{k}=B_3\)</span>. The canonical tri-vector
-is known as the pseudoscalar <span class="math inline">\(\textbf{I} =
-\textbf{e}_1 \textbf{e}_2 \textbf{e}_3\)</span>, representing the
-oriented volume element. The geometric product of the pseudoscalar with
-a vector is a bi-vector, <span class="math inline">\(\textbf{e}_1
-\textbf{I} = B_1,\)</span> <span class="math inline">\(\textbf{e}_2
-\textbf{I} = B_2,\)</span> and <span class="math inline">\(\textbf{e}_3
-\textbf{I} = B_3\)</span>. Note that the pseudovector is normal to the
-original vector (together they span the space <span
-class="math inline">\(\textbf{I}\)</span>). When acting on the
-pseudovectors, we retrieve the normal vectors, <span
-class="math inline">\(B_1 \textbf{I}= -\textbf{e}_1,\)</span> <span
-class="math inline">\(B_2 \textbf{I}= - \textbf{e}_2,\)</span> and <span
-class="math inline">\(B_3 \textbf{I}= -\textbf{e}_3,\)</span>. Hence,
-the pseudoscalar maps the vectors to the pseudovectors and pseudovectors
-to vectors. This is again nicely implemented by the duality operator</p>
-<p><span class="math display">\[ \textbf{u}^* = \textbf{u}\
+class="math inline">\(\textbf{i} = \textbf{B}_1,\)</span> <span
+class="math inline">\(\textbf{j} = -\textbf{B}_2\)</span>, <span
+class="math inline">\(\textbf{k}=\textbf{B}_3\)</span>.</p>
+<p>The canonical tri-vector is known as the pseudoscalar <span
+class="math inline">\(\textbf{I} = \textbf{e}_1 \textbf{e}_2
+\textbf{e}_3\)</span>, representing the oriented volume element. The
+exterior product of three vectors</p>
+<p><span class="math display">\[\begin{align}
+\textbf{u}\wedge \textbf{v} \wedge \textbf{w}
+&amp;= \textbf{u} \cdot (\textbf{v} \times \textbf{w})\\
+&amp;= \alpha\ \textbf{I}
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(|\alpha|\)</span> the volume of the
+parallelepiped spanned by the three vectors. The sign is the orientation
+of the triple <span class="math inline">\((\textbf{u}, \textbf{v},
+\textbf{w})\)</span>.</p>
+<p>The geometric product of the pseudoscalar with a vector is a
+bi-vector, <span class="math inline">\(\textbf{e}_1 \textbf{I} =
+\textbf{B}_1,\)</span> <span class="math inline">\(\textbf{e}_2
+\textbf{I} = \textbf{B}_2,\)</span> and <span
+class="math inline">\(\textbf{e}_3 \textbf{I} = \textbf{B}_3\)</span>.
+Note that the pseudovector is normal to the original vector (together
+they span the space <span class="math inline">\(\textbf{I}\)</span>).
+When acting on the pseudovectors, we retrieve the normal vectors, <span
+class="math inline">\(\textbf{B}_1 \textbf{I}= -\textbf{e}_1,\)</span>
+<span class="math inline">\(\textbf{B}_2 \textbf{I}= -
+\textbf{e}_2,\)</span> and <span class="math inline">\(\textbf{B}_3
+\textbf{I}= -\textbf{e}_3\)</span>. Hence, the pseudoscalar maps the
+vectors to the pseudovectors and pseudovectors to vectors. This is again
+nicely implemented by the duality operator</p>
+<p><span class="math display">\[\textbf{u}^* = \textbf{u}\
 \textbf{I}^{-1}\,,\]</span></p>
 <p>with the inverse <span
 class="math inline">\(\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2
 \textbf{e}_1 = -\textbf{I}\)</span>.</p>
 <p>The multiplication of the bases elements follows the rule</p>
-<p><span class="math display">\[ \textbf{e}_i \textbf{e}_j = \delta_{ij}
+<p><span class="math display">\[\textbf{e}_i \textbf{e}_j = \delta_{ij}
 + \textbf{I} \epsilon_{ijk}\textbf{e}_k\]</span></p>
 <p>which is known as the Pauli algebra of quantum mechanics. The Pauli
 spin matrices</p>
 <p><span class="math display">\[\begin{align}
-\sigma_1=\begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix},
-\sigma_2=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix},
+\sigma_1=\begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix},\
+\sigma_2=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix},\
 \sigma_3=\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix},
-\end{align}\]</span> thus form a representation of the algebra of
-three-dimensional space.</p>
+\end{align}\]</span></p>
+<p>thus form a representation of the algebra of three-dimensional
+space.</p>
 <h4 id="rotations-1">Rotations</h4>
+<p>Rotations of vectors can again be implemented with the rotors. Given
+a vector <span class="math inline">\(\textbf{u}\)</span>. Its rotation
+by an angle <span class="math inline">\(\theta\)</span> in the plane
+<span class="math inline">\(\textbf{B} = a\ \textbf{B}_1 + b\
+\textbf{B}_2 + c\ \textbf{B}_3\)</span> is given by the conjugation</p>
+<p><span class="math display">\[\textbf{u}_{rot} = \textbf{R}_\theta
+\textbf{u} \textbf{R}_\theta^{-1}\]</span></p>
+<p>with the rotor <span class="math inline">\(\textbf{R}_\theta =
+e^{-\textbf{B} \theta/2}\)</span>, where the exponentiation of the
+pseudovector <span class="math inline">\(e^{\textbf{B} \theta}=\cos
+\theta + \textbf{B} \sin \theta\)</span>, which makes sense since the
+pseudovectors <span
+class="math inline">\(\textbf{B}_1,\textbf{B}_2,\)</span> and <span
+class="math inline">\(\textbf{B}_3\)</span> are square to <span
+class="math inline">\(-1\)</span> like the bi-vector <span
+class="math inline">\(\textbf{i}\)</span> in the two-dimensional
+setting. In fact, each pseudovector <span
+class="math inline">\(\textbf{B}\)</span> represents a two-dimensional
+plane with an associated geometric subalgebra isomorphic to <span
+class="math inline">\(\mathbb{G}^2\)</span>. The rotor is again the
+geometric product of two unit vectors spanning the plane with an angle
+<span class="math inline">\(-\theta/2\)</span>.</p>
 <h4 id="normals-1">Normals</h4>
+<p>The dual of a multi-vector is given by the operation</p>
+<p><span class="math display">\[ \textbf{A}^* = A \textbf{I}^{-1}\,.
+\]</span></p>
+<p>We again see that the pseudoscalar maps scalars to pseudoscalars,
+vectors to pseudovectors representing their normal plane, and
+pseudovectors to vectors representing their normal direction. The
+cross-product of two vectors again takes the form</p>
+<p><span class="math display">\[ \textbf{u} \times \textbf{v} =
+(\textbf{u} \wedge \textbf{v})^*\,.\]</span></p>
 <h4 id="projections-and-reflections-1">Projections and reflections</h4>
+<p>Just like in the two-dimensional case, we can use the language of
+geometric algebra to define projections and reflections. Given a vector
+<span class="math inline">\(\textbf{u}\)</span> we can decompose the
+vector in a component parallel <span
+class="math inline">\(\textbf{u}_\|\)</span> and normal <span
+class="math inline">\(\textbf{u}_\perp\)</span> to another vector <span
+class="math inline">\(\textbf{v}\)</span>. These components again look
+like</p>
+<p><span class="math display">\[\begin{align}
+\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1}\,,\\
+\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
+\textbf{v})\textbf{v}^{-1}\,.
+\end{align}\]</span></p>
+<p>The reflection of the vector <span
+class="math inline">\(\textbf{u}\)</span> in the line represented by
+<span class="math inline">\(\textbf{v}\)</span> again yields the
+conjugation of <span class="math inline">\(\textbf{u}\)</span> by <span
+class="math inline">\(\textbf{v}\)</span>, <em>i.e.,</em></p>
+<p><span class="math display">\[\textbf{u}_{ref} = \textbf{u}_{\|} -
+\textbf{u}_{\perp} = \textbf{v}\textbf{u}\textbf{v}^{-1}.\]</span></p>
+<p>However in the three-dimensional setting, unlike the two-dimensional
+case, we might want to decompose a vector <span
+class="math inline">\(\textbf{u}\)</span> into a term parallel and
+normal to a plane represented by a pseudovector <span
+class="math inline">\(\textbf{B}\)</span>. Geometric algebra beautifully
+extends to this case by writing</p>
+<p><span class="math display">\[\begin{align}
+\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{B})\textbf{B}^{-1}\,,\\
+\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
+\textbf{B})\textbf{B}^{-1}\,.
+\end{align}\]</span></p>
+<p>A non-zero pseudovector always has an inverse, since <span
+class="math inline">\((\textbf{e}_1
+\textbf{e}_2)^{-1}=\textbf{e}_2\textbf{e}_1\)</span>.</p>
+<p>Where the inner product of a <span class="math inline">\(k\)</span>-
+and a <span class="math inline">\(j\)</span>-vector <span
+class="math inline">\(\textbf{A},\textbf{B}\)</span> is defined as the
+<span class="math inline">\(k-j\)</span>-vector part of their geometric
+product</p>
+<p><span class="math display">\[\textbf{A}\cdot \textbf{B} = \langle
+\textbf{A}\textbf{B}\rangle_{k-j}\,.\]</span></p>
+<p>Their outer product is defined as the <span
+class="math inline">\(k+j\)</span>-vector part</p>
+<p><span class="math display">\[\textbf{A}\wedge \textbf{B} = \langle
+\textbf{A}\textbf{B}\rangle_{k+j}\,.\]</span></p>
+<p>The reflection of <span class="math inline">\(\textbf{u}\)</span>
+with respect to the plane represented by <span
+class="math inline">\(\textbf{B}\)</span> assumes the form</p>
+<p><span class="math display">\[\textbf{u}_{ref} = \textbf{u}_{\|} -
+\textbf{u}_\perp = \textbf{B} \textbf{u} \textbf{B}^{-1}\,.\]</span></p>
 <h3 id="n-dimensional-space"><span
 class="math inline">\(n\)</span>-dimensional space</h3>
 </body>
