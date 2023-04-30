@@ -89,7 +89,7 @@ $$\begin{align}
 &= \|\textbf{u}\| \|\textbf{v}\| \sin \theta \ \textbf{e}_1\textbf{e}_2
 \end{align}$$ 
 
-is the signed area of the parallelogram spanned by the two vectors $\textbf{u}$ and $\textbf{v}$. 
+is the signed area of the parallelogram spanned by the two vectors $\textbf{u}$ and $\textbf{v}.$ 
 
 As $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal, the bi-vector $\textbf{e}_1\textbf{e}_2$ squares to $-1$, from which it follows that we can identify this bi-vector with the square root of unity $\textbf{e}_1\textbf{e}_2 = \textbf{i}=\sqrt{-1}$. The complete product of basis elements in $\mathbb{R}^n$ is generally an important element in geometric algebra, as it is the only $n$-vector in the canonical basis, denoted as the pseudoscalar of the algebra $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$. 
 
@@ -105,7 +105,7 @@ $$
 independent of the bases elements, where we define the exponentiation of a bi-vector using Euler's identity $e^{\textbf{i}\ \theta}=\cos\theta + \textbf{i}\sin \theta$. 
 
 #### Rotations
-The addition of both complex numbers and vectors acts componentwise. The product of two complex numbers $z_1=a_1 +\textbf{i}\ d_1,$ $z_2=a_2 +\textbf{i}\ d_2$, is implemented as the product of the absolute value and a rotation of the arguments
+The addition of both complex numbers and vectors acts componentwise. The product of two complex numbers $z_1=a_1 + \textbf{i}\ d_1,$ $z_2=a_2 +\textbf{i}\ d_2$, is implemented as the product of the absolute value and a rotation of the arguments
 
 $$\begin{align}
 z_1 z_2 &= (a_1 a_2 - d_1 d_2) + (a_1 d_2 + d_1 a_2)\ \textbf{i}\\
@@ -198,7 +198,7 @@ $$\begin{align}
 
 where we again can identify the inner product $\textbf{u} \cdot \textbf{v} = a_1 a_2 + b_1 b_2 + c_1 c_2$ and the outer product $\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2) \textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+ (b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3$. 
 
-The two-vectors, corresponding to oriented area elements, span a space whose elements are known as pseudovectors. A pseudovector is of the form $\textbf{B} = a\ \textbf{B}_1 + b\ \textbf{B}_2 + c\ \textbf{B}_3$ where $\textbf{B}_1=\textbf{e}_2 \textbf{e}_3,$ $\textbf{B}_2 = \textbf{e}_3 \textbf{e}_1$ and $\textbf{B}_3 = \textbf{e}_1 \textbf{e}_2$ with the product $\textbf{B}_i \textbf{B}_j = -\delta_{ij} - \epsilon_{ijk}\textbf{B}_k$ with the Kronneker delta  $\delta_{ij}$ and the Levi-Civita symbol $\epsilon_{ijk}$. This coincides with the pseudovectors known in physics since they are invariant under the parity operation $\textbf{e}_i \mapsto - \textbf{e}_i$. The product of two pseudovectors yields the multi-vector
+The bi-vectors, corresponding to oriented area elements, span a space whose elements are known as pseudovectors. A pseudovector is of the form $\textbf{B} = a\ \textbf{B}_1 + b\ \textbf{B}_2 + c\ \textbf{B}_3$ where $\textbf{B}_1=\textbf{e}_2 \textbf{e}_3,$ $\textbf{B}_2 = \textbf{e}_3 \textbf{e}_1$ and $\textbf{B}_3 = \textbf{e}_1 \textbf{e}_2$ with the product $\textbf{B}_i \textbf{B}_j = -\delta_{ij} - \epsilon_{ijk}\textbf{B}_k$ with the Kronneker delta  $\delta_{ij}$ and the Levi-Civita symbol $\epsilon_{ijk}$. This coincides with the pseudovectors known in physics since they are invariant under the parity operation $\textbf{e}_i\mapsto - \textbf{e}_i$. The product of two pseudovectors yields the multi-vector
 
 $$\begin{align}
 \textbf{A} \textbf{B} &= (a_1\ \textbf{B}_1 + b_1\ \textbf{B}_2 + c_1\ \textbf{B}_3)(a_2\ \textbf{B}_1 + b_2\ \textbf{B}_2 + c_2\ \textbf{B}_3)\\
@@ -245,6 +245,7 @@ $$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
 with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the pseudovector is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$, which makes sense since the pseudovectors $\textbf{B}_1,$ $\textbf{B}_2,$ $\textbf{B}_3$ squares to $-1$ like the bi-vector $\textbf{i}$ in the two-dimensional setting. In $\mathbb{G}^3$, we can also express these rotors in terms of the quaternions. In fact, each pseudovector $\textbf{B}$ represents a two-dimensional plane with an associated geometric subalgebra isomorphic to $\mathbb{G}^2$. The rotor is again the geometric product of two unit vectors spanning the plane with an angle $-\theta/2$. 
 
 When rotating around a unit vector $\textbf{n}$ we obtain the rotor $R=e^{-\textbf{n}\, \textbf{I}\, \theta/2}$. 
+
 #### Normals
 The dual of a multi-vector is given by the operation
 
@@ -306,7 +307,7 @@ These notions neatly generalize to the geometric algebra $\mathbb{G}^n$ extendin
 
 $$\{1, \textbf{e}_1, \textbf{e}_2,\dots,\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n \}$$ 
 
-consisting of a scalar and $m$-vectors with $m=1,\dots,n$. In the space $\mathbb{R}^n$ we can identify $k$-dimensional hyperspace, which that can be identified by a *$k$-blade* consisting of the product of a set of $k$ orthogonal vectors $\textbf{B} = \textbf{b}_1\textbf{b}_2\dots\textbf{b}_k$ spanning the hyperspace. Vectors and bi-vectors are examples of grade $1$ and grande $2$ blades (we use boldface capitals for blades and normal capitals for general multi-vectors). In general, every $n$-vector is a blade as it can be written using a suitable orthogonal basis. A blade is included in another blade, $\textbf{A} \subset \textbf{B}$, when the associated hyperplane is included in the larger hyperplane. 
+consisting of a scalar and $m$-vectors with $m=1,\dots,n$. In the space $\mathbb{R}^n$ we can identify $k$-dimensional hyperspace, which that can be identified by a *$k$-blade* consisting of the product of a set of $k$ orthogonal vectors $\textbf{B} = \textbf{b}_1\textbf{b}_2\dots\textbf{b}_k$ spanning the hyperspace. Vectors and bi-vectors are examples of grade $1$ and grande $2$ blades (we use boldface capitals for blades and normal capitals for general multi-vectors). In general, every $n$-vector is a blade as it can be written using a suitable orthogonal basis. A blade is included in another blade, $\textbf{A} \subset \textbf{B},$ when the associated hyperplane is included in the larger hyperplane. 
 
 #### Normals
 The pseudoscalar $\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n$, associated to the space $\mathbb{R}^n$, is an important element of the geometric algebra as it allows us to relate the multi-vectors to their dual, 
@@ -371,14 +372,14 @@ The volume (norm) of a $k$-blade $\textbf{B}=\textbf{b}_1 \cdots \textbf{b}_k$ i
 Each hyperplane in $\mathbb{R}^n$, corresponding to a bi-vector yields a geometric subalgebra isomorphic to $\mathbb{G}^2$. In this space, we identify the complex numbers $\{a+\textbf{i}\ b\}$. Analogously, every three-dimensional hyperspace yields a geometric subalgebra isomorphic to $\mathbb{G}^3$ with a quaternion subalgebra with the complex numbers $\{a + \textbf{i}\ b + \textbf{j}\ c + \textbf{k}\ d \}.$
 
 ### Geometric calculus
-We now develop calculus in the setting of geometric algebra. In both function and vector calculus, we study both scalar- and vector-valued functions, mapping the points in $\mathbb{R}^n$ to either to the real numbers $\mathbb{R}$ or the vectors $\mathbb{R}^n$. In complex analysis, analytic functions map the points in the complex plane $\mathbb{C}$ to the complex plane $\mathbb{C}$ while satisfying the Cauchy-Riemann equations. In calculus, we not only study study these functions but also their rate of change through the derivative, and in particular the  gradient operator 
+We now develop calculus in the setting of geometric algebra. In both function and vector calculus, we study both scalar- and vector-valued functions, mapping the points in $\mathbb{R}^n$ to either the real numbers $\mathbb{R}$ or the vectors $\mathbb{R}^n$. In complex analysis, analytic functions map the points in the complex plane $\mathbb{C}$ to the complex plane $\mathbb{C}$ while satisfying the Cauchy-Riemann equations. In calculus, we not only study these functions but also their rate of change through the derivative, and in particular the  gradient operator 
 
 $$\nabla = \textbf{e}_1 \partial_1 + \dots + \textbf{e}_n \partial_n\,.$$
 
 These notions of change are unified and generalized in geometric calculus. 
 
 #### Two-dimensional plane
-Let's brievely consider the two-dimensional setting with scalar-valued and vector-valued functions. The gradient operator acting on the real scalar function $f:\mathbb{R}^2\to \mathbb{R}$  yields the standard result
+Let's briefly consider the two-dimensional setting with scalar-valued and vector-valued functions. The gradient operator acting on the real scalar function $f:\mathbb{R}^2\to \mathbb{R}$  yields the standard result
 
 $$\begin{align}
 \nabla f &=  \partial_1 f \textbf{e}_1 +  \partial_2 f \textbf{e}_2\,.\\
@@ -413,9 +414,9 @@ $$\begin{align}
 &= \Delta \textbf{f}
 \end{align}$$
 
-We thus see that geometric calculus simplfies vector calculus in several respects. Moreover, these results generalize to the three-dimensional setting, yielding the three-dimensional gradient, divergence, curl, and Laplace operator in terms of the single operator $\nabla$.
+We thus see that geometric calculus simplifies vector calculus in several respects. Moreover, these results generalize to the three-dimensional setting, yielding the three-dimensional gradient, divergence, curl, and Laplace operator in terms of the single operator $\nabla$.
 
-However, more remarkably, it also allows us to differentiate complex-valued functions $f = u + \textbf{i}\ v:\mathbb{C} \to \mathbb{C}$, when identifying the vectors $\textbf{e}_1$ and $\textbf{e}_2$ with the real and imanginary directions,
+However, more remarkably, it also allows us to differentiate complex-valued functions $f = u + \textbf{i}\ v:\mathbb{C} \to \mathbb{C}$, when identifying the vectors $\textbf{e}_1$ and $\textbf{e}_2$ with the real and imaginary directions,
 
 $$\begin{align} 
 \nabla f &= \textbf{e}_1( \partial_1 u + \textbf{i}\ \partial_1 v) + \textbf{e}_2(\partial_2 u + \textbf{i}\ \partial_2 v)\\
@@ -447,7 +448,7 @@ $$\begin{align}
 \end{align}$$
 
 #### Generalized derivatives
-Of course, there is no reason why we would need to restrict our self to the two-dimensional case nor to scalar-, vector-, and complex-valued functions. Instead, it is natural to consider multi-vector valued functions $\mathbb{R}^n \to \mathbb{G}^n$ or more generally functions mapping the geometric algebra $\mathbb{G}^n$ to itself.
+Of course, there is no reason why we would need to restrict ourselves to the two-dimensional case nor to scalar-, vector-, and complex-valued functions. Instead, it is natural to consider multi-vector valued functions $\mathbb{R}^n \to \mathbb{G}^n$ or more generally functions mapping the geometric algebra $\mathbb{G}^n$ to itself.
 
 For these functions, we define the directional derivative with the limit 
 
@@ -459,7 +460,7 @@ Using the partial derivative, we define the multi-vector gradient
 
 $$ \nabla = \sum_J \textbf{e}_J^{-1} \partial_J$$
 
-where we use multi-index notation, *i.e.*, for the set of increasing indices $J=\{j_1,\dots,j_k\}$, with $1 \leq j_a < j_b \leq n$ when $a < b$, we write the cannonical bases element $\textbf{e}_J=\textbf{e}_{j_1}\dots \textbf{e}_{j_k}$ and the corresponding directional derivative $\partial_J = \partial_{e_J}$. Note that the inverse of a bases element $\textbf{e}_J^{-1}=(-1)^{(|J|-1)|J|/2} \textbf{e}_J$ with $|J|$ the number of elements in $J$. This generalized gradient enables the study of a multitude of problems that not naturally fit in traditional vector analysis.
+where we use multi-index notation, *i.e.*, for the set of increasing indices $J=\{j_1,\dots,j_k\}$, with $1 \leq j_a < j_b \leq n$ when $a < b$, we write the canonical bases element $\textbf{e}_J=\textbf{e}_{j_1}\dots \textbf{e}_{j_k}$ and the corresponding directional derivative $\partial_J = \partial_{e_J}$. Note that the inverse of a bases element $\textbf{e}_J^{-1}=(-1)^{(|J|-1)|J|/2} \textbf{e}_J$ with $|J|$ the number of elements in $J$. This generalized gradient enables the study of a multitude of problems that do not naturally fit in traditional vector analysis.
 
 The divergence and curl of a $k$-vector are defined as
 
@@ -468,7 +469,7 @@ $$\begin{align}
 \nabla \wedge \textbf{f} = \langle \nabla \textbf{f}\rangle_{k+1}\,,
 \end{align}$$
 
-like the inner and cross-product before. The inner and cross-product of a multi-vector function follows from linearity.
+like the inner and cross-product before. The inner and cross-product of a multi-vector function follow from linearity.
 
 A multi-vector valued function $F$ on $\mathbb{R}^n$ is called analytic when 
 
@@ -477,13 +478,13 @@ $$\nabla F = 0\,,$$
 generalizing the Cauchy-Riemann equations.
 
 #### Generalized integrals
-Let $M$ be a compact oriented $m$-dimensional manifold in $\mathbb{R}^n$. The integral of a mulivector $F:\mathbb{R}^n\to \mathbb{G}^n$ is defined as
+Let $M$ be a compact oriented $m$-dimensional manifold in $\mathbb{R}^n$. The integral of a multi-vector $F:\mathbb{R}^n\to \mathbb{G}^n$ is defined as
 
 $$\int_M \mathrm{d}^m\textbf{x}\ F = \int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)$$
 
 where $\mathrm{d}^mx$ is the $m$-volume element of $M$ at the vector $\textbf{x}$ and $\textbf{I}_m(\textbf{x})$ is the pseudoscalar of the tangent space of $M$ at $\textbf{x}$, *i.e.*, $T_\textbf{x}M$.
 
-The fundamental theorem of calculus takes the from 
+The fundamental theorem of calculus assumes
 
 $$\int_M \mathrm{d}^m\textbf{x}\ \partial F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.$$
 
@@ -491,7 +492,7 @@ where the vector derivative $\partial$ can be seen as a projection of $\nabla$ o
 
 $$\int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F = 0\,.$$
 
-More generally, when $F$ is meromorphic and has a set of poles at $\textbf{x}_k$ with the residue $R_k$, that is to say $\partial F(\textbf{x}) = \sum_k \Omega_n R_k \delta(\textbf{x}-\textbf{x}_k)$ with the volume $\Omega_n$ of the $(n-1)$-sphere and the Dirac delta function $\delta$, then the fundamental theorem of calculus yields the $n$-dimensional generalizatino of the residue theorem
+More generally, when $F$ is meromorphic and has a set of poles at $\textbf{x}_k$ with the residue $R_k$, that is to say $\partial F(\textbf{x}) = \sum_k \Omega_n R_k \delta(\textbf{x}-\textbf{x}_k)$ with the volume $\Omega_n$ of the $(n-1)$-sphere and the Dirac delta function $\delta$, then the fundamental theorem of calculus yields the $n$-dimensional generalization of the residue theorem
 
 $$\begin{align}
 \int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F 
@@ -527,3 +528,5 @@ P(\textbf{x}_0) &= \frac{1}{(n-2)\Omega_n}
 &= \frac{1}{(n-2)\Omega_n}
 \int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla^2 P(\textbf{x})\,.
 \end{align}$$
+
+### Aplications in Physics
