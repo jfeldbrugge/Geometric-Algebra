@@ -435,17 +435,29 @@ $$\begin{align}
 
 Hence, analytic functions are harmonic functions for which $\Delta f=0$.
 
-Finally, let $\nabla p = \textbf{f}$ for some vector field $\textbf{f}$, we find $\nabla \textbf{f} = \nabla^2 p = \Delta p.$ We can use this to invert the gradient using the inverse Laplace operator
+Finally, let's invert the gradient operator. First, consider the gradient acting on a (possibly complex) scalar field $\nabla p = \textbf{f}$ for some given vector field $\textbf{f}$. Acting with the gradient operator, we obtain the Poisson equation $\Delta p=\nabla \textbf{f},$ which can be solved with the Green's function method
 
 $$\begin{align}
-p(x_0,y_0) = \int \frac{\nabla \textbf{f}}{}\mathrm{d}x \mathrm{d}y\,.
+p(\textbf{x}_0)
+&\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}\textbf{x}+ \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x} + \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}
 \end{align}$$
 
-When $\nabla \textbf{p} = f$ for some scalar field $f$, we find the analogous identity $\nabla f = \nabla^2 \textbf{p} = \Delta \textbf{p}$, yielding the inversion of the gradient
+with the familiar two-dimensional integration, assuming $\textbf{f}$ and $\nabla \textbf{f}$ to be well-behaved for large $\|\textbf{x}\|$. The decomposition $\nabla \textbf{f} =\nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}$, shows that the divergence $\nabla \cdot \textbf{f}$ corresponds to the real part of $p$ and the curl $\nabla \wedge \textbf{f}$ corresponds to the imaginary part of $p$. In general, we need both the divergence and the curl to invert the gradient equation.
+
+Second, consider the gradient of a vector field $\nabla \textbf{p} = f$ for some (possibly complex) scalar field $f$. Upon acting with the gradient operator, we find the vector Poisson equation $\Delta \textbf{p}=\nabla f$, yielding the solution
 
 $$\begin{align}
-\textbf{p}(x_0,y_0)= \int \frac{\nabla f}{}\mathrm{d}x \mathrm{d}y\,.
+\textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\,.
 \end{align}$$
+
+It thus follows that for general (suitably well-behaved) multi-vector functions in $\mathbb{G}^2$, satisfying the equation $\nabla A = B$, the inverse gradient, 
+
+$$A(\textbf{x}_0) \sim \nabla^{-1} B (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x}) \ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}\textbf{x}$$
+
+using the multi-vector Poisson equation $\Delta A = \nabla B$, up to analytic functions. That is to say, if $A$ solves $\nabla A = B$ and $F$ is analytic, $\nabla F=0$, and then so does the sum $A+F$.
+
 
 #### Generalized derivatives
 Of course, there is no reason why we would need to restrict ourselves to the two-dimensional case nor to scalar-, vector-, and complex-valued functions. Instead, it is natural to consider multi-vector valued functions $\mathbb{R}^n \to \mathbb{G}^n$ or more generally functions mapping the geometric algebra $\mathbb{G}^n$ to itself.

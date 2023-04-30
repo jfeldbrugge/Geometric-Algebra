@@ -824,23 +824,66 @@ equations. Acting twice yields</p>
 \end{align}\]</span></p>
 <p>Hence, analytic functions are harmonic functions for which <span
 class="math inline">\(\Delta f=0\)</span>.</p>
-<p>Finally, let <span class="math inline">\(\nabla p =
-\textbf{f}\)</span> for some vector field <span
-class="math inline">\(\textbf{f}\)</span>, we find <span
-class="math inline">\(\nabla \textbf{f} = \nabla^2 p = \Delta
-p.\)</span> We can use this to invert the gradient using the inverse
-Laplace operator</p>
+<p>Finally, let’s invert the gradient operator. First, consider the
+gradient acting on a (possibly complex) scalar field <span
+class="math inline">\(\nabla p = \textbf{f}\)</span> for some given
+vector field <span class="math inline">\(\textbf{f}\)</span>. Acting
+with the gradient operator, we obtain the Poisson equation <span
+class="math inline">\(\Delta p=\nabla \textbf{f},\)</span> which can be
+solved with the Green’s function method</p>
 <p><span class="math display">\[\begin{align}
-p(x_0,y_0) = \int \frac{\nabla \textbf{f}}{}\mathrm{d}x \mathrm{d}y\,.
+p(\textbf{x}_0)
+&amp;\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
+\textbf{f}(\textbf{x})
+\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+&amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
+\textbf{f}(\textbf{x})
+\ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}\textbf{x}+
+\frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x})
+\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+&amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
+\textbf{f}(\textbf{x})
+\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x} +
+\frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times
+\textbf{f}(\textbf{x})
+\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}
 \end{align}\]</span></p>
-<p>When <span class="math inline">\(\nabla \textbf{p} = f\)</span> for
-some scalar field <span class="math inline">\(f\)</span>, we find the
-analogous identity <span class="math inline">\(\nabla f = \nabla^2
-\textbf{p} = \Delta \textbf{p}\)</span>, yielding the inversion of the
-gradient</p>
+<p>with the familiar two-dimensional integration, assuming <span
+class="math inline">\(\textbf{f}\)</span> and <span
+class="math inline">\(\nabla \textbf{f}\)</span> to be well-behaved for
+large <span class="math inline">\(\|\textbf{x}\|\)</span>. The
+decomposition <span class="math inline">\(\nabla \textbf{f} =\nabla
+\cdot \textbf{f} + \nabla \wedge \textbf{f}\)</span>, shows that the
+divergence <span class="math inline">\(\nabla \cdot \textbf{f}\)</span>
+corresponds to the real part of <span class="math inline">\(p\)</span>
+and the curl <span class="math inline">\(\nabla \wedge
+\textbf{f}\)</span> corresponds to the imaginary part of <span
+class="math inline">\(p\)</span>. In general, we need both the
+divergence and the curl to invert the gradient equation.</p>
+<p>Second, consider the gradient of a vector field <span
+class="math inline">\(\nabla \textbf{p} = f\)</span> for some (possibly
+complex) scalar field <span class="math inline">\(f\)</span>. Upon
+acting with the gradient operator, we find the vector Poisson equation
+<span class="math inline">\(\Delta \textbf{p}=\nabla f\)</span>,
+yielding the solution</p>
 <p><span class="math display">\[\begin{align}
-\textbf{p}(x_0,y_0)= \int \frac{\nabla f}{}\mathrm{d}x \mathrm{d}y\,.
+\textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
+f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\,.
 \end{align}\]</span></p>
+<p>It thus follows that for general (suitably well-behaved) multi-vector
+functions in <span class="math inline">\(\mathbb{G}^2\)</span>,
+satisfying the equation <span class="math inline">\(\nabla A =
+B\)</span>, the inverse gradient,</p>
+<p><span class="math display">\[A(\textbf{x}_0) \sim \nabla^{-1} B
+(\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x})
+\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}\textbf{x}\]</span></p>
+<p>using the multi-vector Poisson equation <span
+class="math inline">\(\Delta A = \nabla B\)</span>, up to analytic
+functions. That is to say, if <span class="math inline">\(A\)</span>
+solves <span class="math inline">\(\nabla A = B\)</span> and <span
+class="math inline">\(F\)</span> is analytic, <span
+class="math inline">\(\nabla F=0\)</span>, and then so does the sum
+<span class="math inline">\(A+F\)</span>.</p>
 <h4 id="generalized-derivatives">Generalized derivatives</h4>
 <p>Of course, there is no reason why we would need to restrict ourselves
 to the two-dimensional case nor to scalar-, vector-, and complex-valued
