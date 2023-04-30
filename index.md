@@ -9,7 +9,7 @@ header-includes:
     </div>
 ---
 
-Geometric algebra is an extension of vector algebra introducing the notion of a multi-vector, uniting different fields of mathematics in a single language. 
+Geometric algebra is an extension of vector algebra introducing the notion of a multi-vector, uniting different fields of mathematics in a single language. In these notes, I try to learn the subject following *"A Survey of Geometric Algebra and Geometric Calculus"* by Alan Macdonald.
 
 **Definition:** *The geometric algebra $\mathbb{G}^n$ is an extension of the $n$-dimensional vector space $\mathbb{R}^n$. The geometric algebra $\mathbb{R}^n \subset \mathbb{G}^n$ is an associative algebra with a unit $1$, satisfying the four conditions:*
 
