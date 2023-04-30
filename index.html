@@ -354,8 +354,13 @@ follows that every rotation is the result of two reflections</p>
 <p><span class="math display">\[ \textbf{u}_{rot} =
 \textbf{v}(\textbf{w} \textbf{u} \textbf{w}^{-1})
 \textbf{v}^{-1}\,.\]</span></p>
-<h3 id="three-dimensional-space">Three-dimensional space</h3>
-<p>Consider the orthonormal basis <span
+<h4 id="volumes">Volumes</h4>
+<p>The area of a bi-vector <span
+class="math inline">\(\textbf{B}=\textbf{b}_1 \textbf{b}_2\)</span> is
+defined as the volume of the space spanned by the vectors <span
+class="math inline">\(\|
+\textbf{B}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\)</span>. ###
+Three-dimensional space Consider the orthonormal basis <span
 class="math inline">\(\{\textbf{e}_1,\textbf{e}_2,\textbf{e}_3\}\)</span>
 of the three-dimensional Euclidean plane <span
 class="math inline">\(\mathbb{R}^3\)</span>. The corresponding geometric
@@ -560,6 +565,16 @@ bi-vector assumes the form</p>
 \end{align}\]</span></p>
 <p>This decomposition is not generally true for the geometric product of
 multi-vectors.</p>
+<h4 id="volumes-1">Volumes</h4>
+<p>The area of a bi-vector <span
+class="math inline">\(\textbf{B}=\textbf{b}_1 \textbf{b}_2\)</span> is
+defined as the volume of the space spanned by the vectors <span
+class="math inline">\(\|
+\textbf{B}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\)</span>. The volume of a
+tri-vector <span class="math inline">\(\textbf{T}=\textbf{b}_1
+\textbf{b}_2\textbf{b}_3\)</span> is defined as the volume of the space
+spanned by the vectors <span class="math inline">\(\|
+\textbf{T}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\|\textbf{b}_3\|\)</span>.</p>
 <h3 id="n-dimensional-space"><span
 class="math inline">\(n\)</span>-dimensional space</h3>
 <p>These notions neatly generalize to the geometric algebra <span
@@ -674,12 +689,29 @@ class="math inline">\(R_1\)</span> and <span
 class="math inline">\(R_2\)</span> we obtain</p>
 <p><span class="math display">\[\textbf{u}_{rot} = R_2 R_1 \textbf{u}
 R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}\]</span></p>
-<h4 id="volumes">Volumes</h4>
+<p>Given a rotation <span class="math inline">\(R_1 = e^{- \textbf{i}\
+\theta/2}\)</span> with a given angle <span
+class="math inline">\(\textbf{i}\ \theta\)</span> with the bi-vector
+<span class="math inline">\(\textbf{i}\)</span> and the angle <span
+class="math inline">\(\theta\)</span> we can rotate the plane of
+rotation with a rotor <span class="math inline">\(R_2\)</span> to the
+plane <span class="math inline">\(\textbf{i}&#39; = R_2 \textbf{i}
+R_2^{-1}\)</span>. The resulting rotor transforms as</p>
+<p><span class="math display">\[\begin{align}
+R_3 &amp;= e^{-\textbf{i}&#39;\ \theta/2} \\
+&amp;= e^{-R_2 \textbf{i} R_2^{-1}\ \theta/2} \\
+&amp;= R_2 e^{-\textbf{i} \ \theta/2}R_2^{-1} \\
+&amp;= e^{-R_2 \textbf{i} R_2^{-1}\ \theta/2} \\
+&amp;= R_2 R_1 R_2^{-1}\,.
+\end{align}\]</span></p>
+<p>Hence the rotor transforms in the same way as vectors under
+rotations.</p>
+<h4 id="volumes-2">Volumes</h4>
 <p>The volume (norm) of a <span class="math inline">\(k\)</span>-blade
-<span class="math inline">\(\textbf{B}=\textbf{b}_1 \dots
+<span class="math inline">\(\textbf{B}=\textbf{b}_1 \cdots
 \textbf{b}_k\)</span> is defined as the volume of the space spanned by
 the vectors <span class="math inline">\(\|
-\textbf{B}\|=\|\textbf{b}_1\|\dots\|\textbf{b}_k\|\)</span>.</p>
+\textbf{B}\|=\|\textbf{b}_1\|\cdots\|\textbf{b}_k\|\)</span>.</p>
 <h4 id="complex-numbers">Complex numbers</h4>
 <p>Each hyperplane in <span class="math inline">\(\mathbb{R}^n\)</span>,
 corresponding to a bi-vector yields a geometric subalgebra isomorphic to
@@ -691,27 +723,270 @@ class="math inline">\(\mathbb{G}^3\)</span> with a quaternion subalgebra
 with the complex numbers <span class="math inline">\(\{a + \textbf{i}\ b
 + \textbf{j}\ c + \textbf{k}\ d \}.\)</span></p>
 <h3 id="geometric-calculus">Geometric calculus</h3>
-<p>We can develop calculus on geometric algebra. In geometric calculus,
-the gradient operator</p>
+<p>We now develop calculus in the setting of geometric algebra. In both
+function and vector calculus, we study both scalar- and vector-valued
+functions, mapping the points in <span
+class="math inline">\(\mathbb{R}^n\)</span> to either to the real
+numbers <span class="math inline">\(\mathbb{R}\)</span> or the vectors
+<span class="math inline">\(\mathbb{R}^n\)</span>. In complex analysis,
+analytic functions map the points in the complex plane <span
+class="math inline">\(\mathbb{C}\)</span> to the complex plane <span
+class="math inline">\(\mathbb{C}\)</span> while satisfying the
+Cauchy-Riemann equations. In calculus, we not only study study these
+functions but also their rate of change through the derivative, and in
+particular the gradient operator</p>
 <p><span class="math display">\[\nabla = \textbf{e}_1 \partial_1 + \dots
-+ \textbf{e}_n \partial_n\]</span></p>
-<p>on a vector-valued function is defined as</p>
-<p><span class="math display">\[\nabla \textbf{f}  = \nabla \cdot
-\textbf{f} + \nabla \wedge \textbf{f}\,,\]</span></p>
-<p>unifying the divergence and curl.</p>
-<p>Working in <span class="math inline">\(\mathbb{G}^2\)</span>, the
-gradient of a complex function <span class="math inline">\(f(x, y) =
-u(x,y) + \textbf{i}\ v(x,y)\)</span> is defined as</p>
++ \textbf{e}_n \partial_n\,.\]</span></p>
+<p>These notions of change are unified and generalized in geometric
+calculus.</p>
+<h4 id="two-dimensional-plane-1">Two-dimensional plane</h4>
+<p>Let’s brievely consider the two-dimensional setting with
+scalar-valued and vector-valued functions. The gradient operator acting
+on the real scalar function <span
+class="math inline">\(f:\mathbb{R}^2\to \mathbb{R}\)</span> yields the
+standard result</p>
 <p><span class="math display">\[\begin{align}
-\nabla f &amp;= \textbf{e}_1(u_x + \textbf{i}\ v_x) + \textbf{e}_2(u_y +
-\textbf{i}\ v_y)\\
-&amp;= \textbf{e}_1(u_x -v_y) + \textbf{e}_2 (v_x + u_y)\,,
+\nabla f &amp;=  \partial_1 f \textbf{e}_1 +  \partial_2 f
+\textbf{e}_2\,.\\
 \end{align}\]</span></p>
-<p>which vanishes due to the Cauchy-Riemann equations for analytic
-functions.</p>
+<p>However, when acting on the vector function <span
+class="math inline">\(\textbf{f} = f_1 \textbf{e}_1 + f_2
+\textbf{e}_2:\mathbb{R}^2\to \mathbb{R}\)</span> (which is not allowed
+in vector calculus),</p>
+<p><span class="math display">\[\begin{align}
+\nabla \textbf{f} &amp;= \textbf{e}_1(\partial_1 f_1 \textbf{e}_1 +
+\partial_1 f_2 \textbf{e}_2) + \textbf{e}_2(\partial_2 f_1 \textbf{e}_1
++ \partial_2 f_2 \textbf{e}_2)\\
+&amp;= (\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
+\partial_2 f_1)\textbf{e}_1\textbf{e}_2\\
+&amp;= (\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
+\partial_2 f_1) \textbf{i}\\
+&amp;= \nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}\,,
+\end{align}\]</span></p>
+<p>we obtain both the divergence <span class="math inline">\(\nabla
+\cdot \textbf{f} = \partial_1 f_1 + \partial_2 f_2\)</span> and the curl
+<span class="math inline">\(\nabla \wedge \textbf{f} = (\partial_1 f_2 -
+\partial_2 f_1)\textbf{i}\)</span> or in more traditional notation <span
+class="math inline">\(\nabla \times \textbf{f} = (\nabla \wedge
+\textbf{f})^* = \partial_1 f_2 - \partial_2 f_1\)</span>. The gradient
+thus unifies the divergence and the curl, giving the flow of the vector
+field in or out of a point and the rotation in the plane <span
+class="math inline">\(\textbf{i}\)</span>. Note that the gradient
+operator on a vector-valued function is invertible unlike the divergence
+or curl (as we will see below).</p>
+<p>When acting twice on a real scalar function, we obtain the Laplace
+operator</p>
+<p><span class="math display">\[\begin{align}
+\nabla^2 f &amp;= (\partial_1^2 f + \partial_2^2 f)  +  (\partial_1
+\partial_2 f - \partial_1 \partial_2 f) \textbf{i}\\
+&amp;= \partial_1^2 f + \partial_2^2 f\\
+&amp;= \Delta f
+\end{align}\]</span> as one might expect. When acting twice on a vector
+function, we obtain the Laplace operator acting on the components</p>
+<p><span class="math display">\[\begin{align}
+\nabla^2 \textbf{f}
+&amp;= (\textbf{e}_1 \partial_1 + \textbf{e}_2
+\partial_2)\left((\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
+\partial_2 f_1) \textbf{i}\right)\\
+&amp;= (\partial_1^2 f_1 + \partial_2^2 f_1)\textbf{e}_1 +
+(\partial_2^2 f_2 + \partial_1^2 f_2)\textbf{e}_2\\
+&amp;= \Delta f_1 \textbf{e}_1 + \Delta f_2 \textbf{e}_2\\
+&amp;= \Delta \textbf{f}
+\end{align}\]</span></p>
+<p>We thus see that geometric calculus simplfies vector calculus in
+several respects. Moreover, these results generalize to the
+three-dimensional setting, yielding the three-dimensional gradient,
+divergence, curl, and Laplace operator in terms of the single operator
+<span class="math inline">\(\nabla\)</span>.</p>
+<p>However, more remarkably, it also allows us to differentiate
+complex-valued functions <span class="math inline">\(f = u + \textbf{i}\
+v:\mathbb{C} \to \mathbb{C}\)</span>, when identifying the vectors <span
+class="math inline">\(\textbf{e}_1\)</span> and <span
+class="math inline">\(\textbf{e}_2\)</span> with the real and imanginary
+directions,</p>
+<p><span class="math display">\[\begin{align}
+\nabla f &amp;= \textbf{e}_1( \partial_1 u + \textbf{i}\ \partial_1 v) +
+\textbf{e}_2(\partial_2 u + \textbf{i}\ \partial_2 v)\\
+&amp;= (\partial_1 u - \partial_2 v)\textbf{e}_1 +  (\partial_1 v +
+\partial_2 u) \textbf{e}_2 \,,
+\end{align}\]</span></p>
+<p>which vanishes for analytic function due to the Cauchy-Riemann
+equations. Acting twice yields</p>
+<p><span class="math display">\[\begin{align}
+\nabla^2 f
+&amp;= (\textbf{e}_1 \partial_1 + \textbf{e}_2
+\partial_2)\left((\partial_1 u - \partial_2 v)\textbf{e}_1
++  (\partial_1 v + \partial_2 u) \textbf{e}_2\right)\\
+&amp;= (\partial_1^2 u + \partial_2^2 u) + (\partial_1^2 v +
+\partial_2^2 v)\textbf{i}\\
+&amp;= \Delta u + \Delta v \ \textbf{i}\\
+&amp;= \Delta f\,.
+\end{align}\]</span></p>
+<p>Hence, analytic functions are harmonic functions for which <span
+class="math inline">\(\Delta f=0\)</span>.</p>
+<p>Finally, let <span class="math inline">\(\nabla p =
+\textbf{f}\)</span> for some vector field <span
+class="math inline">\(\textbf{f}\)</span>, we find <span
+class="math inline">\(\nabla \textbf{f} = \nabla^2 p = \Delta
+p.\)</span> We can use this to invert the gradient using the inverse
+Laplace operator</p>
+<p><span class="math display">\[\begin{align}
+p(x_0,y_0) = \int \frac{\nabla \textbf{f}}{}\mathrm{d}x \mathrm{d}y\,.
+\end{align}\]</span></p>
+<p>When <span class="math inline">\(\nabla \textbf{p} = f\)</span> for
+some scalar field <span class="math inline">\(f\)</span>, we find the
+analogous identity <span class="math inline">\(\nabla f = \nabla^2
+\textbf{p} = \Delta \textbf{p}\)</span>, yielding the inversion of the
+gradient</p>
+<p><span class="math display">\[\begin{align}
+\textbf{p}(x_0,y_0)= \int \frac{\nabla f}{}\mathrm{d}x \mathrm{d}y\,.
+\end{align}\]</span></p>
+<h4 id="generalized-derivatives">Generalized derivatives</h4>
+<p>Of course, there is no reason why we would need to restrict our self
+to the two-dimensional case nor to scalar-, vector-, and complex-valued
+functions. Instead, it is natural to consider multi-vector valued
+functions <span class="math inline">\(\mathbb{R}^n \to
+\mathbb{G}^n\)</span> or more generally functions mapping the geometric
+algebra <span class="math inline">\(\mathbb{G}^n\)</span> to itself.</p>
+<p>For these functions, we define the directional derivative with the
+limit</p>
+<p><span class="math display">\[ \partial_A F(X) = \lim_{\tau \to 0}
+\frac{F(X + \tau \mathcal{P}_X(A)) - F(X)}{\tau}\]</span></p>
+<p>where <span class="math inline">\(\mathcal{P}_X(A)\)</span> is the
+projection of <span class="math inline">\(A\)</span> onto the grades of
+<span class="math inline">\(X\)</span>. When <span
+class="math inline">\(F:\mathbb{R}^n \to \mathbb{G}^n\)</span> the
+projection forces directional derivatives in multi-vector directions
+other than the vectors to zero.</p>
+<p>Using the partial derivative, we define the multi-vector gradient</p>
+<p><span class="math display">\[ \nabla = \sum_J \textbf{e}_J^{-1}
+\partial_J\]</span></p>
+<p>where we use multi-index notation, <em>i.e.</em>, for the set of
+increasing indices <span
+class="math inline">\(J=\{j_1,\dots,j_k\}\)</span>, with <span
+class="math inline">\(1 \leq j_a &lt; j_b \leq n\)</span> when <span
+class="math inline">\(a &lt; b\)</span>, we write the cannonical bases
+element <span class="math inline">\(\textbf{e}_J=\textbf{e}_{j_1}\dots
+\textbf{e}_{j_k}\)</span> and the corresponding directional derivative
+<span class="math inline">\(\partial_J = \partial_{e_J}\)</span>. Note
+that the inverse of a bases element <span
+class="math inline">\(\textbf{e}_J^{-1}=(-1)^{(|J|-1)|J|/2}
+\textbf{e}_J\)</span> with <span class="math inline">\(|J|\)</span> the
+number of elements in <span class="math inline">\(J\)</span>. This
+generalized gradient enables the study of a multitude of problems that
+not naturally fit in traditional vector analysis.</p>
+<p>The divergence and curl of a <span
+class="math inline">\(k\)</span>-vector are defined as</p>
+<p><span class="math display">\[\begin{align}
+\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\\
+\nabla \wedge \textbf{f} = \langle \nabla \textbf{f}\rangle_{k+1}\,,
+\end{align}\]</span></p>
+<p>like the inner and cross-product before. The inner and cross-product
+of a multi-vector function follows from linearity.</p>
 <p>A multi-vector valued function <span class="math inline">\(F\)</span>
 on <span class="math inline">\(\mathbb{R}^n\)</span> is called analytic
 when</p>
-<p><span class="math display">\[\nabla F = 0\,.\]</span></p>
+<p><span class="math display">\[\nabla F = 0\,,\]</span></p>
+<p>generalizing the Cauchy-Riemann equations.</p>
+<h4 id="generalized-integrals">Generalized integrals</h4>
+<p>Let <span class="math inline">\(M\)</span> be a compact oriented
+<span class="math inline">\(m\)</span>-dimensional manifold in <span
+class="math inline">\(\mathbb{R}^n\)</span>. The integral of a
+mulivector <span class="math inline">\(F:\mathbb{R}^n\to
+\mathbb{G}^n\)</span> is defined as</p>
+<p><span class="math display">\[\int_M \mathrm{d}^m\textbf{x}\ F =
+\int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)\]</span></p>
+<p>where <span class="math inline">\(\mathrm{d}^mx\)</span> is the <span
+class="math inline">\(m\)</span>-volume element of <span
+class="math inline">\(M\)</span> at the vector <span
+class="math inline">\(\textbf{x}\)</span> and <span
+class="math inline">\(\textbf{I}_m(\textbf{x})\)</span> is the
+pseudoscalar of the tangent space of <span
+class="math inline">\(M\)</span> at <span
+class="math inline">\(\textbf{x}\)</span>, <em>i.e.</em>, <span
+class="math inline">\(T_\textbf{x}M\)</span>.</p>
+<p>The fundamental theorem of calculus takes the from</p>
+<p><span class="math display">\[\int_M \mathrm{d}^m\textbf{x}\ \partial
+F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.\]</span></p>
+<p>where the vector derivative <span
+class="math inline">\(\partial\)</span> can be seen as a projection of
+<span class="math inline">\(\nabla\)</span> onto <span
+class="math inline">\(M\)</span>. For analytic functions, <span
+class="math inline">\(\partial F = 0\)</span>, we retrieve a
+generalization of Cauchy’s theorem</p>
+<p><span class="math display">\[\int_{\partial M}
+\mathrm{d}^{m-1}\textbf{x}\ F = 0\,.\]</span></p>
+<p>More generally, when <span class="math inline">\(F\)</span> is
+meromorphic and has a set of poles at <span
+class="math inline">\(\textbf{x}_k\)</span> with the residue <span
+class="math inline">\(R_k\)</span>, that is to say <span
+class="math inline">\(\partial F(\textbf{x}) = \sum_k \Omega_n R_k
+\delta(\textbf{x}-\textbf{x}_k)\)</span> with the volume <span
+class="math inline">\(\Omega_n\)</span> of the <span
+class="math inline">\((n-1)\)</span>-sphere and the Dirac delta function
+<span class="math inline">\(\delta\)</span>, then the fundamental
+theorem of calculus yields the <span
+class="math inline">\(n\)</span>-dimensional generalizatino of the
+residue theorem</p>
+<p><span class="math display">\[\begin{align}
+\int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F
+&amp;= \int_M \mathrm{d}^m\textbf{x}\ \partial F \\
+&amp;= \int_M \mathrm{d}^m x\ \textbf{I}(\textbf{x}) \sum_k \Omega_n R_k
+\delta(\textbf{x}-\textbf{x}_k)\\
+&amp;=\Omega_n \sum_k \textbf{I}(\textbf{x}_k)R_k\,.
+\end{align}\]</span></p>
+<p>Now let’s consider the more general identity relating the function to
+its integral</p>
+<p><span class="math display">\[ F(\textbf{x}_0) =
+\frac{(-1)^n}{\Omega_n \textbf{I}} \left[
+\int_{\partial V}
+\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
+\mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x}) - \int_V
+\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
+\mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]\]</span></p>
+<p>where <span class="math inline">\(V\)</span> is a <span
+class="math inline">\(n\)</span>-dimensional region of <span
+class="math inline">\(\mathbb{R}^n\)</span>. Note that when <span
+class="math inline">\(F\)</span> is analytic,</p>
+<p><span class="math display">\[ F(\textbf{x}_0) =
+\frac{(-1)^n}{\Omega_n \textbf{I}}
+\int_{\partial V}
+\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
+\mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x})\,,\]</span></p>
+<p>generalizing Cauchy’s integral formula.</p>
+<p>This relation enables us to invert the gradient operator. Let <span
+class="math inline">\(\nabla P = F\)</span>, we can reconstruct <span
+class="math inline">\(P\)</span> from <span
+class="math inline">\(F\)</span> using the relation</p>
+<p><span class="math display">\[ P(\textbf{x}_0) =
+\frac{1}{(n-2)\Omega_n} \left[
+\int_{V} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla
+F(\textbf{x}) - \int_{\partial V}
+\frac{\mathrm{d}^{m-1}x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}}
+\mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]\]</span></p>
+<p>for <span class="math inline">\(n&gt;2\)</span> where <span
+class="math inline">\(\textbf{n}(\textbf{x})\)</span> is the unit
+outward normal to <span class="math inline">\(\partial V\)</span>
+defined as <span
+class="math inline">\(\textbf{n}=\textbf{I}^{-1}\textbf{I}(\textbf{x})\)</span>
+where <span class="math inline">\(\textbf{I}\)</span> is the
+pseudoscalar of <span class="math inline">\(\mathbb{R}^n\)</span> and
+<span class="math inline">\(\textbf{I}(\textbf{x})\)</span> is the
+pseudoscalar of the tangent space <span
+class="math inline">\(T_\textbf{x}V\)</span>.</p>
+<p>When the gradient <span class="math inline">\(F\)</span> is well
+behaved for large <span class="math inline">\(\textbf{x}\)</span>, in
+particular <span class="math inline">\(\lim_{\textbf{x} \to
+\infty}F(\textbf{x})=0\)</span> and <span class="math inline">\(|\nabla
+F(\textbf{x})| = O(\|\textbf{x}\|^{-2})\)</span>, we find the simpler
+result</p>
+<p><span class="math display">\[\begin{align}
+P(\textbf{x}_0) &amp;= \frac{1}{(n-2)\Omega_n}
+\int_{\mathbb{R}^n} \frac{\mathrm{d}^m
+x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\\
+&amp;= \frac{1}{(n-2)\Omega_n}
+\int_{\mathbb{R}^n} \frac{\mathrm{d}^m
+x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla^2 P(\textbf{x})\,.
+\end{align}\]</span></p>
 </body>
 </html>
