@@ -536,9 +536,7 @@ When the gradient $F$ is well behaved for large $\textbf{x}$, in particular $\li
 
 $$\begin{align}
 P(\textbf{x}_0) &= \frac{1}{(n-2)\Omega_n}
-\int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\\
-&= \frac{1}{(n-2)\Omega_n}
-\int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla^2 P(\textbf{x})\,.
+\int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})
 \end{align}$$
 
 ### Aplications in Physics
