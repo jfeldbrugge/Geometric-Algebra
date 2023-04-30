@@ -547,10 +547,10 @@ class="math inline">\(\textbf{A},\textbf{B}\)</span> are defined as the
 class="math inline">\(3\)</span>-vector part of their geometric
 product</p>
 <p><span class="math display">\[\begin{align}
-\textbf{A}\cdot \textbf{B} &amp;= \langle
-\textbf{A}\textbf{B}\rangle_{1}\,,\\
-\textbf{A}\wedge \textbf{B} &amp;= \langle
-\textbf{A}\textbf{B}\rangle_{3}\,.
+\textbf{A}\cdot \textbf{B} &amp;=
+\langle\textbf{A}\textbf{B}\rangle_{1}\,,\\
+\textbf{A}\wedge \textbf{B} &amp;=
+\langle\textbf{A}\textbf{B}\rangle_{3}\,.
 \end{align}\]</span></p>
 <p>The reflection of <span class="math inline">\(\textbf{u}\)</span>
 with respect to the plane represented by <span
@@ -813,7 +813,11 @@ directions,</p>
 \partial_2 u) \textbf{e}_2 \,,
 \end{align}\]</span></p>
 <p>which vanishes for analytic function due to the Cauchy-Riemann
-equations. Acting twice yields</p>
+equations. We generalize this concept by defining the analytic
+multi-vector-valued functions satisfying the equation</p>
+<p><span class="math display">\[\nabla F = 0\,.\]</span></p>
+<p>Acting twice with the gradient operator yields the Laplace
+operator</p>
 <p><span class="math display">\[\begin{align}
 \nabla^2 f
 &amp;= (\textbf{e}_1 \partial_1 + \textbf{e}_2
@@ -836,21 +840,18 @@ solved with the Green’s function method</p>
 <p><span class="math display">\[\begin{align}
 p(\textbf{x}_0)
 &amp;\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
-\textbf{f}(\textbf{x})
-\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
 &amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
-\textbf{f}(\textbf{x})
-\ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}\textbf{x}+
+\textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}^2x+
 \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x})
-\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
+\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
 &amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
-\textbf{f}(\textbf{x})
-\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x} +
+\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x +
 \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times
-\textbf{f}(\textbf{x})
-\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}
+\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x
 \end{align}\]</span></p>
-<p>with the familiar two-dimensional integration, assuming <span
+<p>upto analytic scalar-valued functions with the familiar
+two-dimensional integration, assuming <span
 class="math inline">\(\textbf{f}\)</span> and <span
 class="math inline">\(\nabla \textbf{f}\)</span> to be well-behaved for
 large <span class="math inline">\(\|\textbf{x}\|\)</span>. The
@@ -870,15 +871,16 @@ acting with the gradient operator, we find the vector Poisson equation
 yielding the solution</p>
 <p><span class="math display">\[\begin{align}
 \textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
-f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\,.
+f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,.
 \end{align}\]</span></p>
-<p>It thus follows that for general (suitably well-behaved) multi-vector
-functions in <span class="math inline">\(\mathbb{G}^2\)</span>,
-satisfying the equation <span class="math inline">\(\nabla A =
-B\)</span>, the inverse gradient,</p>
+<p>upto analytic vector-valued functions. It thus follows that for
+general (suitably well-behaved) multi-vector functions in <span
+class="math inline">\(\mathbb{G}^2\)</span>, satisfying the equation
+<span class="math inline">\(\nabla A = B\)</span>, the inverse
+gradient,</p>
 <p><span class="math display">\[A(\textbf{x}_0) \sim \nabla^{-1} B
 (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x})
-\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}\textbf{x}\]</span></p>
+\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x\]</span></p>
 <p>using the multi-vector Poisson equation <span
 class="math inline">\(\Delta A = \nabla B\)</span>, up to analytic
 functions. That is to say, if <span class="math inline">\(A\)</span>
@@ -956,9 +958,20 @@ F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.\]</span></p>
 <p>where the vector derivative <span
 class="math inline">\(\partial\)</span> can be seen as a projection of
 <span class="math inline">\(\nabla\)</span> onto <span
-class="math inline">\(M\)</span>. For analytic functions, <span
-class="math inline">\(\partial F = 0\)</span>, we retrieve a
-generalization of Cauchy’s theorem</p>
+class="math inline">\(M\)</span>. Given a parametrization <span
+class="math inline">\(\textbf{x}(u_1,\dots,u_m)\)</span> of <span
+class="math inline">\(M\)</span> at <span
+class="math inline">\(\textbf{x}\)</span>, we find the basis <span
+class="math inline">\(\{\partial_{u_1}\textbf{x},\dots,\partial_{u_m}\textbf{x}\}\)</span>
+of the tangent space <span class="math inline">\(T_\textbf{x}M\)</span>.
+Defining the dual basis <span
+class="math inline">\(\{x^{u_j}\}_{j=1,\dots,m}\)</span> by <span
+class="math inline">\(\partial_{u_j} \textbf{x}\cdot
+\textbf{x}^{u_k}=\delta_{jk}\)</span>, the vector derivative yields
+<span class="math inline">\(\partial =\textbf{x}^{u_1} \partial_{u_1} +
+\dots + \textbf{x}^{u_m} \partial_{u_m}.\)</span> For analytic
+functions, <span class="math inline">\(\partial F = 0\)</span>, we
+retrieve a generalization of Cauchy’s theorem</p>
 <p><span class="math display">\[\int_{\partial M}
 \mathrm{d}^{m-1}\textbf{x}\ F = 0\,.\]</span></p>
 <p>More generally, when <span class="math inline">\(F\)</span> is

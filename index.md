@@ -281,8 +281,8 @@ A non-zero pseudovector always has an inverse, since $(\textbf{e}_1 \textbf{e}_2
 Where the inner and outer product of a vector and a bi-vector $\textbf{A},\textbf{B}$ are defined as the $1$- and $3$-vector part of their geometric product
 
 $$\begin{align}
-\textbf{A}\cdot \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{1}\,,\\
-\textbf{A}\wedge \textbf{B} &= \langle \textbf{A}\textbf{B}\rangle_{3}\,.
+\textbf{A}\cdot \textbf{B} &= \langle\textbf{A}\textbf{B}\rangle_{1}\,,\\
+\textbf{A}\wedge \textbf{B} &= \langle\textbf{A}\textbf{B}\rangle_{3}\,.
 \end{align}$$
 
 The reflection of $\textbf{u}$ with respect to the plane represented by $\textbf{B}$ assumes the form
@@ -423,7 +423,11 @@ $$\begin{align}
 &= (\partial_1 u - \partial_2 v)\textbf{e}_1 +  (\partial_1 v + \partial_2 u) \textbf{e}_2 \,,
 \end{align}$$
 
-which vanishes for analytic function due to the Cauchy-Riemann equations. Acting twice yields
+which vanishes for analytic function due to the Cauchy-Riemann equations. We generalize this concept by defining the analytic multi-vector-valued functions satisfying the equation 
+
+$$\nabla F = 0\,.$$ 
+
+Acting twice with the gradient operator yields the Laplace operator
 
 $$\begin{align} 
 \nabla^2 f 
@@ -439,22 +443,22 @@ Finally, let's invert the gradient operator. First, consider the gradient acting
 
 $$\begin{align}
 p(\textbf{x}_0)
-&\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
-&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}\textbf{x}+ \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\\
-&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x} + \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}
+&\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
+&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}^2x+ \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
+&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x + \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x
 \end{align}$$
 
-with the familiar two-dimensional integration, assuming $\textbf{f}$ and $\nabla \textbf{f}$ to be well-behaved for large $\|\textbf{x}\|$. The decomposition $\nabla \textbf{f} =\nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}$, shows that the divergence $\nabla \cdot \textbf{f}$ corresponds to the real part of $p$ and the curl $\nabla \wedge \textbf{f}$ corresponds to the imaginary part of $p$. In general, we need both the divergence and the curl to invert the gradient equation.
+upto analytic scalar-valued functions with the familiar two-dimensional integration, assuming $\textbf{f}$ and $\nabla \textbf{f}$ to be well-behaved for large $\|\textbf{x}\|$. The decomposition $\nabla \textbf{f} =\nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}$, shows that the divergence $\nabla \cdot \textbf{f}$ corresponds to the real part of $p$ and the curl $\nabla \wedge \textbf{f}$ corresponds to the imaginary part of $p$. In general, we need both the divergence and the curl to invert the gradient equation.
 
 Second, consider the gradient of a vector field $\nabla \textbf{p} = f$ for some (possibly complex) scalar field $f$. Upon acting with the gradient operator, we find the vector Poisson equation $\Delta \textbf{p}=\nabla f$, yielding the solution
 
 $$\begin{align}
-\textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}\textbf{x}\,.
+\textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,.
 \end{align}$$
 
-It thus follows that for general (suitably well-behaved) multi-vector functions in $\mathbb{G}^2$, satisfying the equation $\nabla A = B$, the inverse gradient, 
+upto analytic vector-valued functions. It thus follows that for general (suitably well-behaved) multi-vector functions in $\mathbb{G}^2$, satisfying the equation $\nabla A = B$, the inverse gradient, 
 
-$$A(\textbf{x}_0) \sim \nabla^{-1} B (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x}) \ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}\textbf{x}$$
+$$A(\textbf{x}_0) \sim \nabla^{-1} B (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x}) \ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x$$
 
 using the multi-vector Poisson equation $\Delta A = \nabla B$, up to analytic functions. That is to say, if $A$ solves $\nabla A = B$ and $F$ is analytic, $\nabla F=0$, and then so does the sum $A+F$.
 
@@ -500,7 +504,7 @@ The fundamental theorem of calculus assumes
 
 $$\int_M \mathrm{d}^m\textbf{x}\ \partial F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.$$
 
-where the vector derivative $\partial$ can be seen as a projection of $\nabla$ onto $M$. For analytic functions, $\partial F = 0$, we retrieve a generalization of Cauchy's theorem 
+where the vector derivative $\partial$ can be seen as a projection of $\nabla$ onto $M$. Given a parametrization $\textbf{x}(u_1,\dots,u_m)$ of $M$ at $\textbf{x}$, we find the basis $\{\partial_{u_1}\textbf{x},\dots,\partial_{u_m}\textbf{x}\}$ of the tangent space $T_\textbf{x}M$. Defining the dual basis $\{x^{u_j}\}_{j=1,\dots,m}$ by $\partial_{u_j} \textbf{x}\cdot \textbf{x}^{u_k}=\delta_{jk}$, the vector derivative yields $\partial =\textbf{x}^{u_1} \partial_{u_1} + \dots + \textbf{x}^{u_m} \partial_{u_m}.$ For analytic functions, $\partial F = 0$, we retrieve a generalization of Cauchy's theorem 
 
 $$\int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F = 0\,.$$
 
