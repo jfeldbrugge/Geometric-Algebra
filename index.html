@@ -125,7 +125,7 @@ of vector analysis.</p>
 vectors can be expressed in terms of the more familiar inner and outer
 products</p>
 <p><span class="math display">\[\textbf{u}\textbf{v} =
-\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\]</span></p>
+\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,\]</span></p>
 <p>and</p>
 <p><span class="math display">\[\textbf{v}\textbf{u} =
 \textbf{u}\cdot\textbf{v} - \textbf{u}\wedge \textbf{v}\,.\]</span></p>
@@ -151,7 +151,7 @@ class="math inline">\(\textbf{e}_1=\hat{\textbf{x}}\)</span> and <span
 class="math inline">\(\textbf{e}_2=\hat{\textbf{y}}\)</span>. Geometric
 algebra is spanned by the elements</p>
 <p><span class="math display">\[\{1, \textbf{e}_1, \textbf{e}_2,
-\textbf{e}_1\textbf{e}_2\}\]</span></p>
+\textbf{e}_1\textbf{e}_2\}\,,\]</span></p>
 <p>where <span class="math inline">\(1\)</span> is the unit scalar,
 <span class="math inline">\(\textbf{e}_1\)</span> and <span
 class="math inline">\(\textbf{e}_2\)</span> are the unit vectors and
@@ -169,7 +169,7 @@ these four combinations using the anti-commutative property,
 class="math inline">\(\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2\)</span>.
 A multi-vector is an object of the form</p>
 <p><span class="math display">\[A = a + b\ \textbf{e}_1 + c\
-\textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2\]</span></p>
+\textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2\,,\]</span></p>
 <p>with for real numbers <span class="math inline">\(a,b,c,d \in
 \mathbb{R}\)</span>. The product of two multi-vectors follows from the
 associative nature of the geometric product and the multiplication table
@@ -259,7 +259,7 @@ z \textbf{u} &amp;= (a + \textbf{i}\ d)(b\ \textbf{e}_1 + c\
 \textbf{e}_2)\\
 &amp;= (ab + dc)\textbf{e}_1 + (ac- db)\textbf{e}_2\\
 &amp;= |z| \left[(b \cos \theta +c \sin\theta)\textbf{e}_1 + (- b
-\sin\theta + c \cos \theta )\textbf{e}_2\right]
+\sin\theta + c \cos \theta )\textbf{e}_2\right]\,,
 \end{align}\]</span></p>
 <p>writing the complex number in its polar decomposition <span
 class="math inline">\(z=|z| e^{\textbf{i}\ \theta} = |z|\cos \theta +
@@ -345,7 +345,7 @@ class="math inline">\(\textbf{u}\)</span> in the line associated to
 \textbf{v})\textbf{v}^{-1}\\
 &amp;= (\textbf{u}\cdot \textbf{v} - \textbf{u}\wedge
 \textbf{v})\textbf{v}^{-1}\\
-&amp;= \textbf{v}\textbf{u}\textbf{v}^{-1}
+&amp;= \textbf{v}\textbf{u}\textbf{v}^{-1}\,.
 \end{align}\]</span></p>
 <p>We saw above that the rotor <span
 class="math inline">\(R_\theta\)</span> can be written as the geometric
@@ -427,7 +427,7 @@ exterior product of three vectors</p>
 <p><span class="math display">\[\begin{align}
 \textbf{u}\wedge \textbf{v} \wedge \textbf{w}
 &amp;= \textbf{u} \cdot (\textbf{v} \times \textbf{w})\\
-&amp;= \alpha\ \textbf{I}
+&amp;= \alpha\ \textbf{I}\,,
 \end{align}\]</span></p>
 <p>with <span class="math inline">\(|\alpha|\)</span> the volume of the
 parallelepiped spanned by the three vectors (and the cross-product is
@@ -454,7 +454,7 @@ class="math inline">\(\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2
 \textbf{e}_1 = -\textbf{I}\)</span>.</p>
 <p>The multiplication of the bases elements follows the rule</p>
 <p><span class="math display">\[\textbf{e}_i \textbf{e}_j = \delta_{ij}
-+ \textbf{I} \epsilon_{ijk}\textbf{e}_k\]</span></p>
++ \textbf{I} \epsilon_{ijk}\textbf{e}_k\,,\]</span></p>
 <p>which is known as the Pauli algebra of quantum mechanics. The Pauli
 spin matrices</p>
 <p><span class="math display">\[\begin{align}
@@ -471,7 +471,7 @@ by an angle <span class="math inline">\(\theta\)</span> in the plane
 <span class="math inline">\(\textbf{B} = a\ \textbf{B}_1 + b\
 \textbf{B}_2 + c\ \textbf{B}_3\)</span> is given by the conjugation</p>
 <p><span class="math display">\[\textbf{u}_{rot} = R_\theta \textbf{u}
-R_\theta^{-1}\]</span></p>
+R_\theta^{-1}\,,\]</span></p>
 <p>with the rotor <span class="math inline">\(R_\theta = e^{-\textbf{B}
 \theta/2}\)</span>, where the exponentiation of the pseudovector is
 defined as <span class="math inline">\(e^{\textbf{B} \theta}=\cos \theta
@@ -679,7 +679,7 @@ by an angle <span class="math inline">\(\theta\)</span> in the plane
 <span class="math inline">\(\textbf{B}\)</span> is given by the
 conjugation</p>
 <p><span class="math display">\[\textbf{u}_{rot} = R_\theta \textbf{u}
-R_\theta^{-1}\]</span></p>
+R_\theta^{-1}\,,\]</span></p>
 <p>with the rotor <span class="math inline">\(R_\theta = e^{-\textbf{B}
 \theta/2}\)</span>, where the exponentiation of the blade is defined as
 <span class="math inline">\(e^{\textbf{B} \theta}=\cos \theta +
@@ -691,7 +691,7 @@ class="math inline">\(\textbf{u}\)</span> is rotates by <span
 class="math inline">\(R_1\)</span> and <span
 class="math inline">\(R_2\)</span> we obtain</p>
 <p><span class="math display">\[\textbf{u}_{rot} = R_2 R_1 \textbf{u}
-R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}\]</span></p>
+R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}\,.\]</span></p>
 <p>Given a rotation <span class="math inline">\(R_1 = e^{- \textbf{i}\
 \theta/2}\)</span> with a given angle <span
 class="math inline">\(\textbf{i}\ \theta\)</span> with the bi-vector
@@ -782,7 +782,7 @@ operator</p>
 \nabla^2 f &amp;= (\partial_1^2 f + \partial_2^2 f)  +  (\partial_1
 \partial_2 f - \partial_1 \partial_2 f) \textbf{i}\\
 &amp;= \partial_1^2 f + \partial_2^2 f\\
-&amp;= \Delta f
+&amp;= \Delta f\,,
 \end{align}\]</span> as one might expect. When acting twice on a vector
 function, we obtain the Laplace operator acting on the components</p>
 <p><span class="math display">\[\begin{align}
@@ -793,7 +793,7 @@ function, we obtain the Laplace operator acting on the components</p>
 &amp;= (\partial_1^2 f_1 + \partial_2^2 f_1)\textbf{e}_1 +
 (\partial_2^2 f_2 + \partial_1^2 f_2)\textbf{e}_2\\
 &amp;= \Delta f_1 \textbf{e}_1 + \Delta f_2 \textbf{e}_2\\
-&amp;= \Delta \textbf{f}
+&amp;= \Delta \textbf{f}\,.
 \end{align}\]</span></p>
 <p>We thus see that geometric calculus simplifies vector calculus in
 several respects. Moreover, these results generalize to the
@@ -848,7 +848,7 @@ p(\textbf{x}_0)
 &amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
 \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x +
 \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times
-\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x
+\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,,
 \end{align}\]</span></p>
 <p>upto analytic scalar-valued functions with the familiar
 two-dimensional integration, assuming <span
@@ -880,7 +880,7 @@ class="math inline">\(\mathbb{G}^2\)</span>, satisfying the equation
 gradient,</p>
 <p><span class="math display">\[A(\textbf{x}_0) \sim \nabla^{-1} B
 (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x})
-\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x\]</span></p>
+\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x\,,\]</span></p>
 <p>using the multi-vector Poisson equation <span
 class="math inline">\(\Delta A = \nabla B\)</span>, up to analytic
 functions. That is to say, if <span class="math inline">\(A\)</span>
@@ -898,7 +898,7 @@ algebra <span class="math inline">\(\mathbb{G}^n\)</span> to itself.</p>
 <p>For these functions, we define the directional derivative with the
 limit</p>
 <p><span class="math display">\[ \partial_A F(X) = \lim_{\tau \to 0}
-\frac{F(X + \tau \mathcal{P}_X(A)) - F(X)}{\tau}\]</span></p>
+\frac{F(X + \tau \mathcal{P}_X(A)) - F(X)}{\tau}\,,\]</span></p>
 <p>where <span class="math inline">\(\mathcal{P}_X(A)\)</span> is the
 projection of <span class="math inline">\(A\)</span> onto the grades of
 <span class="math inline">\(X\)</span>. When <span
@@ -907,7 +907,7 @@ projection forces directional derivatives in multi-vector directions
 other than the vectors to zero.</p>
 <p>Using the partial derivative, we define the multi-vector gradient</p>
 <p><span class="math display">\[ \nabla = \sum_J \textbf{e}_J^{-1}
-\partial_J\]</span></p>
+\partial_J\,,\]</span></p>
 <p>where we use multi-index notation, <em>i.e.</em>, for the set of
 increasing indices <span
 class="math inline">\(J=\{j_1,\dots,j_k\}\)</span>, with <span
@@ -925,7 +925,7 @@ do not naturally fit in traditional vector analysis.</p>
 <p>The divergence and curl of a <span
 class="math inline">\(k\)</span>-vector are defined as</p>
 <p><span class="math display">\[\begin{align}
-\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\\
+\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\,,\\
 \nabla \wedge \textbf{f} = \langle \nabla \textbf{f}\rangle_{k+1}\,,
 \end{align}\]</span></p>
 <p>like the inner and cross-product before. The inner and cross-product
@@ -942,7 +942,7 @@ class="math inline">\(\mathbb{R}^n\)</span>. The integral of a
 multi-vector <span class="math inline">\(F:\mathbb{R}^n\to
 \mathbb{G}^n\)</span> is defined as</p>
 <p><span class="math display">\[\int_M \mathrm{d}^m\textbf{x}\ F =
-\int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)\]</span></p>
+\int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)\,,\]</span></p>
 <p>where <span class="math inline">\(\mathrm{d}^mx\)</span> is the <span
 class="math inline">\(m\)</span>-volume element of <span
 class="math inline">\(M\)</span> at the vector <span
@@ -960,18 +960,31 @@ class="math inline">\(\partial\)</span> can be seen as a projection of
 <span class="math inline">\(\nabla\)</span> onto <span
 class="math inline">\(M\)</span>. Given a parametrization <span
 class="math inline">\(\textbf{x}(u_1,\dots,u_m)\)</span> of <span
-class="math inline">\(M\)</span> at <span
+class="math inline">\(M\)</span> in an neighborhood of <span
 class="math inline">\(\textbf{x}\)</span>, we find the basis <span
-class="math inline">\(\{\partial_{u_1}\textbf{x},\dots,\partial_{u_m}\textbf{x}\}\)</span>
-of the tangent space <span class="math inline">\(T_\textbf{x}M\)</span>.
-Defining the dual basis <span
-class="math inline">\(\{x^{u_j}\}_{j=1,\dots,m}\)</span> by <span
-class="math inline">\(\partial_{u_j} \textbf{x}\cdot
-\textbf{x}^{u_k}=\delta_{jk}\)</span>, the vector derivative yields
-<span class="math inline">\(\partial =\textbf{x}^{u_1} \partial_{u_1} +
-\dots + \textbf{x}^{u_m} \partial_{u_m}.\)</span> For analytic
-functions, <span class="math inline">\(\partial F = 0\)</span>, we
-retrieve a generalization of Cauchy’s theorem</p>
+class="math inline">\(\{\textbf{x}_{u_1},\dots,\textbf{x}_{u_1}\}\)</span>
+of the tangent space <span class="math inline">\(T_\textbf{x}M\)</span>
+with <span class="math inline">\(\textbf{x}_{u_j} =
+\partial_{u_j}\textbf{x}(u_1,\dots,u_m)\)</span> for <span
+class="math inline">\(j=1,\dots,m\)</span>. Defining the dual basis
+<span class="math inline">\(\{x^{u_j}\}_{j=1,\dots,m}\)</span> of <span
+class="math inline">\(T_\textbf{x}M\)</span> by the condition <span
+class="math inline">\(\textbf{x}_{u_j}\cdot
+\textbf{x}^{u_k}=\delta_{jk}\)</span> for all <span
+class="math inline">\(j\)</span> and <span
+class="math inline">\(k=1,\dots,m\)</span>, we construct the vector
+derivative on <span class="math inline">\(M\)</span> as</p>
+<p><span class="math display">\[\partial =\textbf{x}^{u_1}
+\partial_{u_1} + \dots + \textbf{x}^{u_m} \partial_{u_m}.\]</span></p>
+<p>We can show that this definition is equivalent to a projection of
+<span class="math inline">\(\nabla\)</span> onto the tangent space <span
+class="math inline">\(T_\textbf{x}M\)</span>, making it independent of
+the parametrization of <span class="math inline">\(M\)</span>. An
+analytic functions on <span class="math inline">\(M\)</span>, is defined
+by the condition</p>
+<p><span class="math display">\[\partial F = 0\,.\]</span></p>
+<p>The fundamental theorem of gemetric calculus generalizes Cauchy’s
+theorem for analytic functions,</p>
 <p><span class="math display">\[\int_{\partial M}
 \mathrm{d}^{m-1}\textbf{x}\ F = 0\,.\]</span></p>
 <p>More generally, when <span class="math inline">\(F\)</span> is
@@ -1001,7 +1014,7 @@ its integral</p>
 \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
 \mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x}) - \int_V
 \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
-\mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]\]</span></p>
+\mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]\,,\]</span></p>
 <p>where <span class="math inline">\(V\)</span> is a <span
 class="math inline">\(n\)</span>-dimensional region of <span
 class="math inline">\(\mathbb{R}^n\)</span>. Note that when <span
@@ -1021,7 +1034,7 @@ class="math inline">\(F\)</span> using the relation</p>
 \int_{V} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla
 F(\textbf{x}) - \int_{\partial V}
 \frac{\mathrm{d}^{m-1}x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}}
-\mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]\]</span></p>
+\mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]\,,\]</span></p>
 <p>for <span class="math inline">\(n&gt;2\)</span> where <span
 class="math inline">\(\textbf{n}(\textbf{x})\)</span> is the unit
 outward normal to <span class="math inline">\(\partial V\)</span>
@@ -1036,13 +1049,16 @@ class="math inline">\(T_\textbf{x}V\)</span>.</p>
 behaved for large <span class="math inline">\(\textbf{x}\)</span>, in
 particular <span class="math inline">\(\lim_{\textbf{x} \to
 \infty}F(\textbf{x})=0\)</span> and <span class="math inline">\(|\nabla
-F(\textbf{x})| = O(\|\textbf{x}\|^{-2})\)</span>, we find the simpler
+F(\textbf{x})| = O(\|\textbf{x}\|^{-2}),\)</span> we find the simpler
 result</p>
 <p><span class="math display">\[\begin{align}
 P(\textbf{x}_0) &amp;= \frac{1}{(n-2)\Omega_n}
 \int_{\mathbb{R}^n} \frac{\mathrm{d}^m
-x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})
+x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\,.
 \end{align}\]</span></p>
+<p>This result generalizes the Green’s functions we saw in the
+two-dimensional case.</p>
 <h3 id="aplications-in-physics">Aplications in Physics</h3>
+<p>Let’s consider some examples.</p>
 </body>
 </html>

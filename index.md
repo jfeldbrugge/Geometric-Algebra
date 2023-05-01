@@ -52,7 +52,7 @@ We will see that this outer product coincides with the outer product of vector a
 
 From these definitions, it follows that the geometric product of two vectors can be expressed in terms of the more familiar inner and outer products
 
-$$\textbf{u}\textbf{v} = \textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}$$
+$$\textbf{u}\textbf{v} = \textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,$$
 
 and
 
@@ -65,11 +65,11 @@ To develop intuition, we briefly study the geometric implications of this constr
 ### Two-dimensional plane
 Consider the two-dimensional plane $\mathbb{R}^2$ spanned by the orthonormal unit vectors $\textbf{e}_1=\hat{\textbf{x}}$ and $\textbf{e}_2=\hat{\textbf{y}}$. Geometric algebra is spanned by the elements 
 
-$$\{1, \textbf{e}_1, \textbf{e}_2, \textbf{e}_1\textbf{e}_2\}$$ 
+$$\{1, \textbf{e}_1, \textbf{e}_2, \textbf{e}_1\textbf{e}_2\}\,,$$ 
 
 where $1$ is the unit scalar, $\textbf{e}_1$ and $\textbf{e}_2$ are the unit vectors and $\textbf{e}_1\textbf{e}_2$ is the unique bi-vector representing an oriented area element. This is the *canonical basis* of the geometric algebra $\mathbb{G}^2$. We cannot generate more bases elements, as the unit vectors $\textbf{e}_1$ and $\textbf{e}_2$ are orthogonal and objects consisting of the geometric product of three or more bases elements of $\mathbb{R}^2$ can be reduced to these four combinations using the anti-commutative property, *e.g.*, $\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2$. A multi-vector is an object of the form 
 
-$$A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2$$
+$$A = a + b\ \textbf{e}_1 + c\ \textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2\,,$$
 
 with for real numbers $a,b,c,d \in \mathbb{R}$. The product of two multi-vectors follows from the associative nature of the geometric product and the multiplication table of the bases elements of $\mathbb{R}^2$, $\textbf{e}_1^2=\textbf{e}_2^2=1$ and $\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2$, as we saw above. 
 
@@ -117,7 +117,7 @@ with the polar representation $z_1=|z_1|e^{\textbf{i}\ \theta_1},$ $z_2=|z_2|e^{
 $$\begin{align}
 z \textbf{u} &= (a + \textbf{i}\ d)(b\ \textbf{e}_1 + c\ \textbf{e}_2)\\
 &= (ab + dc)\textbf{e}_1 + (ac- db)\textbf{e}_2\\
-&= |z| \left[(b \cos \theta +c \sin\theta)\textbf{e}_1 + (- b \sin\theta + c \cos \theta )\textbf{e}_2\right]
+&= |z| \left[(b \cos \theta +c \sin\theta)\textbf{e}_1 + (- b \sin\theta + c \cos \theta )\textbf{e}_2\right]\,,
 \end{align}$$
 
 writing the complex number in its polar decomposition $z=|z| e^{\textbf{i}\ \theta} = |z|\cos \theta + \textbf{i}\ |z| \sin \theta$. The inverse multiplication $\textbf{u}z$ yields a rotation by the same angle in the opposite direction $\theta \mapsto -\theta$. More generally, we can write a rotation of a vector $\textbf{u}$ by an angle $\theta$ more symmetrically using the conjugation
@@ -171,7 +171,7 @@ $$\begin{align}
 &= \textbf{u}_{\|} - \textbf{u}_\perp\\
 &= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1} -(\textbf{u}\wedge \textbf{v})\textbf{v}^{-1}\\
 &= (\textbf{u}\cdot \textbf{v} - \textbf{u}\wedge \textbf{v})\textbf{v}^{-1}\\
-&= \textbf{v}\textbf{u}\textbf{v}^{-1}
+&= \textbf{v}\textbf{u}\textbf{v}^{-1}\,.
 \end{align}$$
 
 We saw above that the rotor $R_\theta$ can be written as the geometric product of two unit vectors $\textbf{v},\textbf{w}$ with an angular separation $-\theta/2$. It thus follows that every rotation is the result of two reflections 
@@ -212,7 +212,7 @@ The canonical tri-vector is known as the pseudoscalar $\textbf{I} = \textbf{e}_1
 $$\begin{align}
 \textbf{u}\wedge \textbf{v} \wedge \textbf{w} 
 &= \textbf{u} \cdot (\textbf{v} \times \textbf{w})\\
-&= \alpha\ \textbf{I}
+&= \alpha\ \textbf{I}\,,
 \end{align}$$
 
 with $|\alpha|$ the volume of the parallelepiped spanned by the three vectors (and the cross-product is defined below). The sign is the orientation of the triple $(\textbf{u}, \textbf{v}, \textbf{w})$. 
@@ -225,7 +225,7 @@ with the inverse $\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2 \textbf{e}_1 = -\tex
 
 The multiplication of the bases elements follows the rule
 
-$$\textbf{e}_i \textbf{e}_j = \delta_{ij} + \textbf{I} \epsilon_{ijk}\textbf{e}_k$$
+$$\textbf{e}_i \textbf{e}_j = \delta_{ij} + \textbf{I} \epsilon_{ijk}\textbf{e}_k\,,$$
 
 which is known as the Pauli algebra of quantum mechanics. The Pauli spin matrices
 
@@ -240,7 +240,7 @@ thus form a representation of the algebra of three-dimensional space.
 #### Rotations
 Rotations of vectors can again be implemented with the rotors. Given a vector $\textbf{u}$. Its rotation by an angle $\theta$ in the plane $\textbf{B} = a\ \textbf{B}_1 + b\ \textbf{B}_2 + c\ \textbf{B}_3$ is given by the conjugation
 
-$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
+$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}\,,$$
 
 with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the pseudovector is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta$, which makes sense since the pseudovectors $\textbf{B}_1,$ $\textbf{B}_2,$ $\textbf{B}_3$ squares to $-1$ like the bi-vector $\textbf{i}$ in the two-dimensional setting. In $\mathbb{G}^3$, we can also express these rotors in terms of the quaternions. In fact, each pseudovector $\textbf{B}$ represents a two-dimensional plane with an associated geometric subalgebra isomorphic to $\mathbb{G}^2$. The rotor is again the geometric product of two unit vectors spanning the plane with an angle $-\theta/2$. 
 
@@ -345,13 +345,13 @@ The reflection of $\textbf{u}$ in $\textbf{B}$ takes the form $\textbf{u}_{ref}=
 #### Reflections and projections
 Rotations of vectors can again be implemented with the rotors. Given a vector $\textbf{u}$. Its rotation by an angle $\theta$ in the plane $\textbf{B}$ is given by the conjugation
 
-$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}$$
+$$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}\,,$$
 
 with the rotor $R_\theta = e^{-\textbf{B} \theta/2}$, where the exponentiation of the blade is defined as $e^{\textbf{B} \theta}=\cos \theta + \textbf{B} \sin \theta.$
 
 Two subsequent rotations $R_1$ and $R_2$ lead to a rotation of the rotor, $R_3 = R_2 R_1$. If $\textbf{u}$ is rotates by $R_1$ and $R_2$ we obtain
 
-$$\textbf{u}_{rot} = R_2 R_1 \textbf{u} R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}$$
+$$\textbf{u}_{rot} = R_2 R_1 \textbf{u} R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}\,.$$
 
 Given a rotation $R_1 = e^{- \textbf{i}\ \theta/2}$ with a given angle $\textbf{i}\ \theta$ with the bi-vector $\textbf{i}$ and the angle $\theta$ we can rotate the plane of rotation with a rotor $R_2$ to the plane $\textbf{i}' = R_2 \textbf{i} R_2^{-1}$. The resulting rotor transforms as
 
@@ -401,7 +401,7 @@ When acting twice on a real scalar function, we obtain the Laplace operator
 $$\begin{align}
 \nabla^2 f &= (\partial_1^2 f + \partial_2^2 f)  +  (\partial_1 \partial_2 f - \partial_1 \partial_2 f) \textbf{i}\\
 &= \partial_1^2 f + \partial_2^2 f\\
-&= \Delta f
+&= \Delta f\,,
 \end{align}$$
 as one might expect. When acting twice on a vector function, we obtain the Laplace operator acting on the components
 
@@ -411,7 +411,7 @@ $$\begin{align}
 &= (\partial_1^2 f_1 + \partial_2^2 f_1)\textbf{e}_1 + 
 (\partial_2^2 f_2 + \partial_1^2 f_2)\textbf{e}_2\\
 &= \Delta f_1 \textbf{e}_1 + \Delta f_2 \textbf{e}_2\\
-&= \Delta \textbf{f}
+&= \Delta \textbf{f}\,.
 \end{align}$$
 
 We thus see that geometric calculus simplifies vector calculus in several respects. Moreover, these results generalize to the three-dimensional setting, yielding the three-dimensional gradient, divergence, curl, and Laplace operator in terms of the single operator $\nabla$.
@@ -445,7 +445,7 @@ $$\begin{align}
 p(\textbf{x}_0)
 &\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
 &= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}^2x+ \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
-&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x + \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x
+&= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x + \frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times \textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,,
 \end{align}$$
 
 upto analytic scalar-valued functions with the familiar two-dimensional integration, assuming $\textbf{f}$ and $\nabla \textbf{f}$ to be well-behaved for large $\|\textbf{x}\|$. The decomposition $\nabla \textbf{f} =\nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}$, shows that the divergence $\nabla \cdot \textbf{f}$ corresponds to the real part of $p$ and the curl $\nabla \wedge \textbf{f}$ corresponds to the imaginary part of $p$. In general, we need both the divergence and the curl to invert the gradient equation.
@@ -458,7 +458,7 @@ $$\begin{align}
 
 upto analytic vector-valued functions. It thus follows that for general (suitably well-behaved) multi-vector functions in $\mathbb{G}^2$, satisfying the equation $\nabla A = B$, the inverse gradient, 
 
-$$A(\textbf{x}_0) \sim \nabla^{-1} B (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x}) \ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x$$
+$$A(\textbf{x}_0) \sim \nabla^{-1} B (\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x}) \ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x\,,$$
 
 using the multi-vector Poisson equation $\Delta A = \nabla B$, up to analytic functions. That is to say, if $A$ solves $\nabla A = B$ and $F$ is analytic, $\nabla F=0$, and then so does the sum $A+F$.
 
@@ -468,20 +468,20 @@ Of course, there is no reason why we would need to restrict ourselves to the two
 
 For these functions, we define the directional derivative with the limit 
 
-$$ \partial_A F(X) = \lim_{\tau \to 0} \frac{F(X + \tau \mathcal{P}_X(A)) - F(X)}{\tau}$$
+$$ \partial_A F(X) = \lim_{\tau \to 0} \frac{F(X + \tau \mathcal{P}_X(A)) - F(X)}{\tau}\,,$$
 
 where $\mathcal{P}_X(A)$ is the projection of $A$ onto the grades of $X$. When $F:\mathbb{R}^n \to \mathbb{G}^n$ the projection forces directional derivatives in multi-vector directions other than the vectors to zero.
 
 Using the partial derivative, we define the multi-vector gradient
 
-$$ \nabla = \sum_J \textbf{e}_J^{-1} \partial_J$$
+$$ \nabla = \sum_J \textbf{e}_J^{-1} \partial_J\,,$$
 
 where we use multi-index notation, *i.e.*, for the set of increasing indices $J=\{j_1,\dots,j_k\}$, with $1 \leq j_a < j_b \leq n$ when $a < b$, we write the canonical bases element $\textbf{e}_J=\textbf{e}_{j_1}\dots \textbf{e}_{j_k}$ and the corresponding directional derivative $\partial_J = \partial_{e_J}$. Note that the inverse of a bases element $\textbf{e}_J^{-1}=(-1)^{(|J|-1)|J|/2} \textbf{e}_J$ with $|J|$ the number of elements in $J$. This generalized gradient enables the study of a multitude of problems that do not naturally fit in traditional vector analysis.
 
 The divergence and curl of a $k$-vector are defined as
 
 $$\begin{align}
-\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\\
+\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\,,\\
 \nabla \wedge \textbf{f} = \langle \nabla \textbf{f}\rangle_{k+1}\,,
 \end{align}$$
 
@@ -496,7 +496,7 @@ generalizing the Cauchy-Riemann equations.
 #### Generalized integrals
 Let $M$ be a compact oriented $m$-dimensional manifold in $\mathbb{R}^n$. The integral of a multi-vector $F:\mathbb{R}^n\to \mathbb{G}^n$ is defined as
 
-$$\int_M \mathrm{d}^m\textbf{x}\ F = \int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)$$
+$$\int_M \mathrm{d}^m\textbf{x}\ F = \int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)\,,$$
 
 where $\mathrm{d}^mx$ is the $m$-volume element of $M$ at the vector $\textbf{x}$ and $\textbf{I}_m(\textbf{x})$ is the pseudoscalar of the tangent space of $M$ at $\textbf{x}$, *i.e.*, $T_\textbf{x}M$.
 
@@ -504,7 +504,15 @@ The fundamental theorem of calculus assumes
 
 $$\int_M \mathrm{d}^m\textbf{x}\ \partial F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.$$
 
-where the vector derivative $\partial$ can be seen as a projection of $\nabla$ onto $M$. Given a parametrization $\textbf{x}(u_1,\dots,u_m)$ of $M$ at $\textbf{x}$, we find the basis $\{\partial_{u_1}\textbf{x},\dots,\partial_{u_m}\textbf{x}\}$ of the tangent space $T_\textbf{x}M$. Defining the dual basis $\{x^{u_j}\}_{j=1,\dots,m}$ by $\partial_{u_j} \textbf{x}\cdot \textbf{x}^{u_k}=\delta_{jk}$, the vector derivative yields $\partial =\textbf{x}^{u_1} \partial_{u_1} + \dots + \textbf{x}^{u_m} \partial_{u_m}.$ For analytic functions, $\partial F = 0$, we retrieve a generalization of Cauchy's theorem 
+where the vector derivative $\partial$ can be seen as a projection of $\nabla$ onto $M$. Given a parametrization $\textbf{x}(u_1,\dots,u_m)$ of $M$ in an neighborhood of $\textbf{x}$, we find the basis $\{\textbf{x}_{u_1},\dots,\textbf{x}_{u_1}\}$ of the tangent space $T_\textbf{x}M$ with $\textbf{x}_{u_j} = \partial_{u_j}\textbf{x}(u_1,\dots,u_m)$ for $j=1,\dots,m$. Defining the dual basis $\{x^{u_j}\}_{j=1,\dots,m}$ of $T_\textbf{x}M$ by the condition $\textbf{x}_{u_j}\cdot \textbf{x}^{u_k}=\delta_{jk}$ for all $j$ and $k=1,\dots,m$, we construct the vector derivative on $M$ as 
+
+$$\partial =\textbf{x}^{u_1} \partial_{u_1} + \dots + \textbf{x}^{u_m} \partial_{u_m}.$$ 
+
+We can show that this definition is equivalent to a projection of $\nabla$ onto the tangent space $T_\textbf{x}M$, making it independent of the parametrization of $M$. An analytic functions on $M$, is defined by the condition
+
+$$\partial F = 0\,.$$ 
+
+The fundamental theorem of gemetric calculus generalizes Cauchy's theorem for analytic functions,
 
 $$\int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F = 0\,.$$
 
@@ -520,7 +528,7 @@ $$\begin{align}
 Now let's consider the more general identity relating the function to its integral
 
 $$ F(\textbf{x}_0) = \frac{(-1)^n}{\Omega_n \textbf{I}} \left[ 
-\int_{\partial V} \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n} \mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x}) - \int_V \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n} \mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]$$
+\int_{\partial V} \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n} \mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x}) - \int_V \frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n} \mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]\,,$$
 
 where $V$ is a $n$-dimensional region of $\mathbb{R}^n$. Note that when $F$ is analytic,
 
@@ -532,15 +540,18 @@ generalizing Cauchy's integral formula.
 This relation enables us to invert the gradient operator. Let $\nabla P = F$, we can reconstruct $P$ from $F$ using the relation 
 
 $$ P(\textbf{x}_0) = \frac{1}{(n-2)\Omega_n} \left[ 
-\int_{V} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x}) - \int_{\partial V} \frac{\mathrm{d}^{m-1}x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]$$
+\int_{V} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x}) - \int_{\partial V} \frac{\mathrm{d}^{m-1}x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]\,,$$
 
 for $n>2$ where $\textbf{n}(\textbf{x})$ is the unit outward normal to $\partial V$ defined as $\textbf{n}=\textbf{I}^{-1}\textbf{I}(\textbf{x})$ where $\textbf{I}$ is the pseudoscalar of $\mathbb{R}^n$ and $\textbf{I}(\textbf{x})$ is the pseudoscalar of the tangent space $T_\textbf{x}V$.
 
-When the gradient $F$ is well behaved for large $\textbf{x}$, in particular $\lim_{\textbf{x} \to \infty}F(\textbf{x})=0$ and $|\nabla F(\textbf{x})| =  O(\|\textbf{x}\|^{-2})$, we find the simpler result
+When the gradient $F$ is well behaved for large $\textbf{x}$, in particular $\lim_{\textbf{x} \to \infty}F(\textbf{x})=0$ and $|\nabla F(\textbf{x})| =  O(\|\textbf{x}\|^{-2}),$ we find the simpler result
 
 $$\begin{align}
 P(\textbf{x}_0) &= \frac{1}{(n-2)\Omega_n}
-\int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})
+\int_{\mathbb{R}^n} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\,.
 \end{align}$$
 
+This result generalizes the Green's functions we saw in the two-dimensional case.
+
 ### Aplications in Physics
+Let's consider some examples.
