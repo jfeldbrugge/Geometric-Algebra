@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Job Feldbrugge" />
+  <title>Space-time algebra</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel = "icon" href = "figures/icon.png" type = "image/x-icon"><br />
+  <a href="https://jfeldbrugge.github.io/">Home</a>
+  <a href="https://jfeldbrugge.github.io/Projects-and-Codes/">Projects
+  and Code</a>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Space-time algebra</h1>
+<p class="author">Job Feldbrugge</p>
+</header>
+<p>In order to apply geometric algebra to relativity, we develop
+space-time algebra.</p>
+<p>Let’s consider the orthogonal space-time basis <span
+class="math inline">\(\gamma_\mu\)</span> with</p>
+<p><span class="math display">\[\begin{align}
+\gamma_0^2=1,\quad \gamma_0 \cdot \gamma_i = 0,\quad \gamma_i \cdot
+\gamma_j = - \delta_{ij}\,.
+\end{align}\]</span></p>
+<p>A space-time event is denoted by the vector</p>
+<p><span class="math display">\[x = x^\mu \gamma_\mu = t \gamma_0 + x^i
+\gamma_i\,,\]</span></p>
+<p>with the coordinates <span
+class="math inline">\((t,x^1,x^2,x^3)\)</span>. The geometric algebra of
+space-time consists of a scalar <span class="math inline">\(1\)</span>.
+We have four vectors</p>
+<p><span class="math display">\[\gamma_0,
+\gamma_1,\gamma_2,\gamma_3,\]</span></p>
+<p>representing the space-time directions. We have six bi-vectors</p>
+<p><span class="math display">\[\gamma_1 \gamma_0,
+\gamma_2\gamma_0,\gamma_3\gamma_0,\gamma_1\gamma_2,\gamma_1\gamma_3,\gamma_2\gamma_3,\]</span></p>
+<p>of which <span class="math inline">\(\sigma_i=\gamma_i
+\gamma_0\)</span> satisfying</p>
+<p><span class="math display">\[\sigma_i \cdot \sigma_j =
+\delta_{ij}\]</span></p>
+<p>and <span class="math inline">\((\gamma_i \gamma_j )^2=-1\)</span>.
+More generally,</p>
+<p><span class="math display">\[\gamma_\mu \gamma_\nu + \gamma_\nu
+\gamma_\mu = 2 \eta_{\mu\nu}\,,\]</span></p>
+<p>with <span class="math inline">\(\eta_{\mu\nu}=\text{diag}(1, -1, -1,
+-1).\)</span> That is to say, different basis elements anti-commute.</p>
+<p>We have four tri-vectors</p>
+<p><span class="math display">\[\gamma_0\gamma_1\gamma_2,
+\gamma_0\gamma_1\gamma_3,
+\gamma_0\gamma_2\gamma_3,\gamma_1\gamma_2\gamma_3,\]</span></p>
+<p>that are dual to the vectors. Finally, we have a singel grade-<span
+class="math inline">\(4\)</span> pseudovector</p>
+<p><span class="math display">\[I =
+\gamma_0\gamma_1\gamma_2\gamma_3.\]</span></p>
+<p>Let <span class="math inline">\(x = t \gamma_0 + x^i
+\gamma_i\)</span>, and use <span class="math inline">\(\gamma_0\)</span>
+to perform a space-time split</p>
+<p><span class="math display">\[x \gamma_0 = x \cdot \gamma_0 + x \wedge
+\gamma_0 = t + \textbf{x}\,,\]</span></p>
+<p>where <span class="math inline">\(t=x \cdot \gamma_0\)</span> is the
+time and the relative space variable <span
+class="math inline">\(\textbf{x} = x \wedge \gamma_0 = x^i \gamma_i
+\wedge \gamma_0 = x^i \sigma_i\)</span> which is a bi-vector. More
+generally, given a reference frame with four velocity <span
+class="math inline">\(v\)</span>, we have the space-time split <span
+class="math inline">\(t= x \cdot v\)</span> and <span
+class="math inline">\(\textbf{x} = x \wedge v\)</span>. The bivectors
+<span class="math inline">\(\sigma_i\)</span> form a basis for
+three-dimensional space. Note that</p>
+<p><span class="math display">\[x^2 = (x \gamma_0)(\gamma_0 x) =
+(t+\textbf{x})(t-\textbf{x}) = t^2 - \textbf{x}^2\,.\]</span></p>
+</body>
+</html>
