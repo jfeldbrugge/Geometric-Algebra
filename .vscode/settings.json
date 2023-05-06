@@ -4,6 +4,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "index.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "spacetime.md"
         }
     ]
 }

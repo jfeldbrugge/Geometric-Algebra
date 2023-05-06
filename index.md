@@ -342,7 +342,7 @@ $$\begin{align}
 
 The reflection of $\textbf{u}$ in $\textbf{B}$ takes the form $\textbf{u}_{ref}=(-1)^{k+1}\textbf{B} \textbf{u} \textbf{B}^{-1}$. When working with the dual $\textbf{b}=\textbf{B}^*$, we obtain the relation $\textbf{u}_{ref} = -\textbf{b}\textbf{u}\textbf{b}^{-1}$.
 
-#### Reflections and projections
+#### Rotations
 Rotations of vectors can again be implemented with the rotors. Given a vector $\textbf{u}$. Its rotation by an angle $\theta$ in the plane $\textbf{B}$ is given by the conjugation
 
 $$\textbf{u}_{rot} = R_\theta \textbf{u} R_\theta^{-1}\,,$$
