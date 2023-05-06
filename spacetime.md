@@ -57,8 +57,8 @@ $$\begin{align}
 In these notes, we use the Einstein summation convention to sum over repeated Latin and Greek indices representing space and spacetime sums, *i.e.,* $x^\mu \gamma_\mu = \sum_{\mu=0}^3 x^\mu \gamma_\mu$ and $x^i \gamma_i = \sum_{i=1}^3 x^i \gamma_i\,.$ In this reference frame the vector $\gamma_0$ points in the time direction and the vectors $\gamma_i$ for $i=1,2,3$ point in the space directions. Given these basis vectors, we construct a basis for the spacetime algebra $\mathbb{G}^{3,1}$ using the standard geometric product (which is again anti-symmetric for orthogonal vectors, *i.e.,* $\gamma_\mu \gamma_\nu = - \gamma_\nu \gamma_\mu$ for $\mu \neq \nu$): 
 
 - The basis includes a single scalar $1$. The scalar is timelike since $1^2=1$.
-- The basis includes the four vectors $\gamma_0, \gamma_1, \gamma_2,$ and $\gamma_3$, signifying the temporal and spatial directions. Note that the timelike basis vector squares to one, *i.e.,* $\gamma_0^2=+1$, and the spacial basis vectors square to minus one, *i.e.,* $\gamma_i^2=-1$.
-- The basis includes of six bivectors $\gamma_1 \gamma_0, \gamma_2\gamma_0,\gamma_3\gamma_0,\gamma_1\gamma_2,\gamma_1\gamma_3,\gamma_2\gamma_3.$ The first three basis vectors are timelike, *i.e.,* as they square to one $(\gamma_i \gamma_0)^2=+1$ for $i=1,2,3$. The latter three are spacelike, *i.e.,* they square to minus one $(\gamma_i \gamma_j)^2=-1$ assuming $i \neq j$.
+- The basis includes the four vectors $\gamma_0, \gamma_1, \gamma_2,$ and $\gamma_3$, signifying the timelike and spacelike directions. Note that the timelike basis vector squares to one, *i.e.,* $\gamma_0^2=+1$, and the spacial basis vectors square to minus one, *i.e.,* $\gamma_i^2=-1$.
+- The basis includes of six bivectors $\gamma_1 \gamma_0, \gamma_2\gamma_0,\gamma_3\gamma_0,\gamma_1\gamma_2,\gamma_1\gamma_3,\gamma_2\gamma_3.$ The first three basis vectors are timelike, *i.e.,* as they square to one $(\gamma_i \gamma_0)^2=+1$ for $i=1,2,3$. The latter three are spacelike, *i.e.,* they square to minus one $(\gamma_i \gamma_j)^2=-1$ assuming $i \neq j\,.$
 - The basis includes four trivectors $\gamma_0\gamma_1\gamma_2, \gamma_0\gamma_1\gamma_3, \gamma_0\gamma_2\gamma_3,\gamma_1\gamma_2\gamma_3\,.$ The first three are spacelike, *i.e.,* as they square to one $(\gamma_0 \gamma_i \gamma_j)^2=-1$ for $i \neq j$. The last one is timelike, *i.e.,* it squares to one $(\gamma_1\gamma_2\gamma_3)^2=+1\,.$
 - Finally, the basis includes a single four-vector known as the pseudoscalar $I = \gamma_0\gamma_1\gamma_2\gamma_3\,.$ The pseudoscalar is spacelike since $I^2=-1\,.$
 
@@ -101,7 +101,7 @@ and thus generate a geometric algebra with the basis
 
 $$\{1, \sigma_1, \sigma_2, \sigma_3, \sigma_1 \sigma_2, \sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}\,.$$
 
-The bivectors of the space algebra are the spatial bivectors of the underlying spacetime algebra, 
+The bivectors of the space algebra are the spacelike bivectors of the underlying spacetime algebra, 
 
 $$\sigma_i\sigma_j= -\gamma_i\gamma_j\,.$$
 
@@ -180,16 +180,24 @@ $$R= e^{-\sigma_1 \alpha /2}$$
 
 where the rapidity $\alpha$, defined by $\tanh \alpha = \|\textbf{v}\|\,,$ is a parametrization of the magnitude of the relative velocity vector. Explicitly, 
 
-$$e^{\sigma_1 \alpha} = \cosh \alpha + \sigma_1 \sinh \alpha/2$$ 
+$$e^{\sigma_1 \alpha} = \cosh \alpha + \sigma_1 \sinh \alpha$$ 
 
 since $\sigma_1^2 = 1$. A general Lorentz boost is implemented by the equation
 
 $$x' = e^{-\hat{\textbf{v}} \alpha /2} x e^{\hat{\textbf{v}} \alpha /2}\,,$$
 
-with $\tanh \alpha = \|\textbf{v}\|$ and $\hat{\textbf{v}}^2=-1$. A general Lorentz transformation includes both spacetime boosts and space rotations. These transformations are implemented by the rotor equation
+with $\tanh \alpha = \|\textbf{v}\|$ and $\hat{\textbf{v}}^2=1$. A general Lorentz transformation includes both spacetime boosts and space rotations. These transformations are implemented by the rotor equation
 
 $$x' = e^{-B \alpha /2} x e^{B \alpha /2} $$
 
 with the general unit bivector $B$ and the magnitude $\alpha$. The timelike bivectors $\sigma_i = \gamma_i \gamma_0$ generate the Lorentz boosts and the spacelike bivectors $\gamma_1\gamma_2,\gamma_1 \gamma_3, \gamma_2\gamma_3$ generate the rotations, as $(\gamma_i \gamma_0)^2=+1$ and $(\gamma_i \gamma_j)^2=-1$ for $i\neq j$.
+
+Note that the Lorentz transformation preserves the spacetime interval, *i.e.,*
+
+$$\begin{align}
+(x')^2 &= e^{-B \alpha /2 } x e^{B \alpha /2} e^{-B \alpha/2}x e^{B \alpha / 2}\\
+&= e^{-B \alpha /2 } x^2 e^{B \alpha / 2}\\
+&= x^2\,.
+\end{align}$$
 
 #### The Maxwell equations

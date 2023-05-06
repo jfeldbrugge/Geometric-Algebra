@@ -131,10 +131,10 @@ class="math inline">\(1\)</span>. The scalar is timelike since <span
 class="math inline">\(1^2=1\)</span>.</li>
 <li>The basis includes the four vectors <span
 class="math inline">\(\gamma_0, \gamma_1, \gamma_2,\)</span> and <span
-class="math inline">\(\gamma_3\)</span>, signifying the temporal and
-spatial directions. Note that the timelike basis vector squares to one,
-<em>i.e.,</em> <span class="math inline">\(\gamma_0^2=+1\)</span>, and
-the spacial basis vectors square to minus one, <em>i.e.,</em> <span
+class="math inline">\(\gamma_3\)</span>, signifying the timelike and
+spacelike directions. Note that the timelike basis vector squares to
+one, <em>i.e.,</em> <span class="math inline">\(\gamma_0^2=+1\)</span>,
+and the spacial basis vectors square to minus one, <em>i.e.,</em> <span
 class="math inline">\(\gamma_i^2=-1\)</span>.</li>
 <li>The basis includes of six bivectors <span
 class="math inline">\(\gamma_1 \gamma_0,
@@ -145,7 +145,7 @@ square to one <span class="math inline">\((\gamma_i
 class="math inline">\(i=1,2,3\)</span>. The latter three are spacelike,
 <em>i.e.,</em> they square to minus one <span
 class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> assuming <span
-class="math inline">\(i \neq j\)</span>.</li>
+class="math inline">\(i \neq j\,.\)</span></li>
 <li>The basis includes four trivectors <span
 class="math inline">\(\gamma_0\gamma_1\gamma_2,
 \gamma_0\gamma_1\gamma_3,
@@ -213,7 +213,7 @@ Indeed, the vectors are orthonormal</p>
 <p><span class="math display">\[\{1, \sigma_1, \sigma_2, \sigma_3,
 \sigma_1 \sigma_2,
 \sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}\,.\]</span></p>
-<p>The bivectors of the space algebra are the spatial bivectors of the
+<p>The bivectors of the space algebra are the spacelike bivectors of the
 underlying spacetime algebra,</p>
 <p><span class="math display">\[\sigma_i\sigma_j=
 -\gamma_i\gamma_j\,.\]</span></p>
@@ -332,14 +332,14 @@ defined by <span class="math inline">\(\tanh \alpha =
 \|\textbf{v}\|\,,\)</span> is a parametrization of the magnitude of the
 relative velocity vector. Explicitly,</p>
 <p><span class="math display">\[e^{\sigma_1 \alpha} = \cosh \alpha +
-\sigma_1 \sinh \alpha/2\]</span></p>
+\sigma_1 \sinh \alpha\]</span></p>
 <p>since <span class="math inline">\(\sigma_1^2 = 1\)</span>. A general
 Lorentz boost is implemented by the equation</p>
 <p><span class="math display">\[x&#39; = e^{-\hat{\textbf{v}} \alpha /2}
 x e^{\hat{\textbf{v}} \alpha /2}\,,\]</span></p>
 <p>with <span class="math inline">\(\tanh \alpha =
 \|\textbf{v}\|\)</span> and <span
-class="math inline">\(\hat{\textbf{v}}^2=-1\)</span>. A general Lorentz
+class="math inline">\(\hat{\textbf{v}}^2=1\)</span>. A general Lorentz
 transformation includes both spacetime boosts and space rotations. These
 transformations are implemented by the rotor equation</p>
 <p><span class="math display">\[x&#39; = e^{-B \alpha /2} x e^{B \alpha
@@ -353,6 +353,14 @@ bivectors <span class="math inline">\(\gamma_1\gamma_2,\gamma_1
 class="math inline">\((\gamma_i \gamma_0)^2=+1\)</span> and <span
 class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> for <span
 class="math inline">\(i\neq j\)</span>.</p>
+<p>Note that the Lorentz transformation preserves the spacetime
+interval, <em>i.e.,</em></p>
+<p><span class="math display">\[\begin{align}
+x&#39;^2 &amp;= e^{-B \alpha /2 } x e^{B \alpha /2} e^{-B \alpha/2}x
+e^{B \alpha / 2}\\
+&amp;= e^{-B \alpha /2 } x^2 e^{B \alpha / 2}\\
+&amp;= x^2\,.
+\end{align}\]</span></p>
 <h4 id="the-maxwell-equations">The Maxwell equations</h4>
 </body>
 </html>
