@@ -324,24 +324,39 @@ class="math inline">\(\mathbb{G}^2\)</span>.</p>
 <p>In <span class="math inline">\(\mathbb{G}^{3,1}\)</span>, the Lorentz
 boost in the <span class="math inline">\(x\)</span> direction assumes
 the form</p>
-<p><span class="math display">\[x&#39; = R x R^{-1}\]</span></p>
-<p>with the rotor defined as</p>
-<p><span class="math display">\[R= e^{-\sigma_1 \alpha /2}\]</span></p>
+<p><span class="math display">\[x&#39; = R_\alpha x
+R_{\alpha}^{-1}\]</span></p>
+<p>with the rotor corresponding to the Lorentz boost</p>
+<p><span class="math display">\[R_\alpha= e^{-\sigma_1 \alpha
+/2}\]</span></p>
 <p>where the rapidity <span class="math inline">\(\alpha\)</span>,
 defined by <span class="math inline">\(\tanh \alpha =
-\|\textbf{v}\|\,,\)</span> is a parametrization of the magnitude of the
-relative velocity vector. Explicitly,</p>
+\|\textbf{v}\|\,,\)</span> is a convenient parametrization of the
+magnitude of the relative velocity vector. Explicitly,</p>
 <p><span class="math display">\[e^{\sigma_1 \alpha} = \cosh \alpha +
 \sigma_1 \sinh \alpha\]</span></p>
-<p>since <span class="math inline">\(\sigma_1^2 = 1\)</span>. A general
-Lorentz boost is implemented by the equation</p>
+<p>since <span class="math inline">\(\sigma_1^2 = 1\)</span>. Upon
+expanding the exponentials, we obtain the familiar transformation</p>
+<p><span class="math display">\[\begin{align}
+t&#39; &amp;= t \cosh \alpha - x \sinh \alpha\,,\\
+x&#39; &amp;= x \cosh \alpha - t \sinh \alpha\,,\\
+y&#39; &amp;= y\,,\\
+z&#39; &amp;= z\,,
+\end{align}\]</span></p>
+<p>using the identities <span class="math inline">\(\sigma_1 \gamma_0=
+\gamma_1 = - \gamma_0 \sigma_1\,,\)</span> <span
+class="math inline">\(\sigma_1 \gamma_1= \gamma_0 = - \gamma_1
+\sigma_1\,,\)</span> <span class="math inline">\(\sigma_1 \gamma_2 =
+\gamma_2 \sigma_1\,,\)</span> and <span class="math inline">\(\sigma_1
+\gamma_3= \gamma_3 \sigma_1\,.\)</span> A general Lorentz boost is
+implemented by the equation</p>
 <p><span class="math display">\[x&#39; = e^{-\hat{\textbf{v}} \alpha /2}
 x e^{\hat{\textbf{v}} \alpha /2}\,,\]</span></p>
 <p>with <span class="math inline">\(\tanh \alpha =
 \|\textbf{v}\|\)</span> and <span
-class="math inline">\(\hat{\textbf{v}}^2=1\)</span>. A general Lorentz
-transformation includes both spacetime boosts and space rotations. These
-transformations are implemented by the rotor equation</p>
+class="math inline">\(\hat{\textbf{v}}^2=1\)</span>. A Lorentz
+transformation includes both spacetime boosts and space rotations,
+implemented by the rotor equation</p>
 <p><span class="math display">\[x&#39; = e^{-B \alpha /2} x e^{B \alpha
 /2} \]</span></p>
 <p>with the general unit bivector <span class="math inline">\(B\)</span>
@@ -349,14 +364,15 @@ and the magnitude <span class="math inline">\(\alpha\)</span>. The
 timelike bivectors <span class="math inline">\(\sigma_i = \gamma_i
 \gamma_0\)</span> generate the Lorentz boosts and the spacelike
 bivectors <span class="math inline">\(\gamma_1\gamma_2,\gamma_1
-\gamma_3, \gamma_2\gamma_3\)</span> generate the rotations, as <span
-class="math inline">\((\gamma_i \gamma_0)^2=+1\)</span> and <span
+\gamma_3, \gamma_2\gamma_3\)</span> generate the rotations, as the first
+are timelike <span class="math inline">\((\gamma_i
+\gamma_0)^2=+1\)</span> and the latter are spacelike <span
 class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> for <span
 class="math inline">\(i\neq j\)</span>.</p>
-<p>Note that the Lorentz transformation preserves the spacetime
-interval, <em>i.e.,</em></p>
+<p>The rotor parametrization of the Lorentz transformation makes it easy
+to show the invariance of the spacetime interval, <em>i.e.,</em></p>
 <p><span class="math display">\[\begin{align}
-x&#39;^2 &amp;= e^{-B \alpha /2 } x e^{B \alpha /2} e^{-B \alpha/2}x
+(x&#39;)^2 &amp;= e^{-B \alpha /2 } x e^{B \alpha /2} e^{-B \alpha/2}x
 e^{B \alpha / 2}\\
 &amp;= e^{-B \alpha /2 } x^2 e^{B \alpha / 2}\\
 &amp;= x^2\,.

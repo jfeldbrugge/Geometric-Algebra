@@ -172,27 +172,36 @@ These are the Lorentz boosts restricted to the $(t,x)$-plane. As a consequence, 
 
 In $\mathbb{G}^{3,1}$, the Lorentz boost in the $x$ direction assumes the form
 
-$$x' = R x R^{-1}$$
+$$x' = R_\alpha x R_{\alpha}^{-1}$$
 
-with the rotor defined as
+with the rotor corresponding to the Lorentz boost
 
-$$R= e^{-\sigma_1 \alpha /2}$$
+$$R_\alpha= e^{-\sigma_1 \alpha /2}$$
 
-where the rapidity $\alpha$, defined by $\tanh \alpha = \|\textbf{v}\|\,,$ is a parametrization of the magnitude of the relative velocity vector. Explicitly, 
+where the rapidity $\alpha$, defined by $\tanh \alpha = \|\textbf{v}\|\,,$ is a convenient parametrization of the magnitude of the relative velocity vector. Explicitly, 
 
 $$e^{\sigma_1 \alpha} = \cosh \alpha + \sigma_1 \sinh \alpha$$ 
 
-since $\sigma_1^2 = 1$. A general Lorentz boost is implemented by the equation
+since $\sigma_1^2 = 1$. Upon expanding the exponentials, we obtain the familiar transformation 
+
+$$\begin{align}
+t' &= t \cosh \alpha - x \sinh \alpha\,,\\
+x' &= x \cosh \alpha - t \sinh \alpha\,,\\
+y' &= y\,,\\
+z' &= z\,,
+\end{align}$$
+
+using the identities $\sigma_1 \gamma_0= \gamma_1 = - \gamma_0 \sigma_1\,,$ $\sigma_1 \gamma_1= \gamma_0 = - \gamma_1 \sigma_1\,,$ $\sigma_1 \gamma_2 = \gamma_2 \sigma_1\,,$ and $\sigma_1 \gamma_3= \gamma_3 \sigma_1\,.$ A general Lorentz boost is implemented by the equation
 
 $$x' = e^{-\hat{\textbf{v}} \alpha /2} x e^{\hat{\textbf{v}} \alpha /2}\,,$$
 
-with $\tanh \alpha = \|\textbf{v}\|$ and $\hat{\textbf{v}}^2=1$. A general Lorentz transformation includes both spacetime boosts and space rotations. These transformations are implemented by the rotor equation
+with $\tanh \alpha = \|\textbf{v}\|$ and $\hat{\textbf{v}}^2=1$. A Lorentz transformation includes both spacetime boosts and space rotations, implemented by the rotor equation
 
 $$x' = e^{-B \alpha /2} x e^{B \alpha /2} $$
 
-with the general unit bivector $B$ and the magnitude $\alpha$. The timelike bivectors $\sigma_i = \gamma_i \gamma_0$ generate the Lorentz boosts and the spacelike bivectors $\gamma_1\gamma_2,\gamma_1 \gamma_3, \gamma_2\gamma_3$ generate the rotations, as $(\gamma_i \gamma_0)^2=+1$ and $(\gamma_i \gamma_j)^2=-1$ for $i\neq j$.
+with the general unit bivector $B$ and the magnitude $\alpha$. The timelike bivectors $\sigma_i = \gamma_i \gamma_0$ generate the Lorentz boosts and the spacelike bivectors $\gamma_1\gamma_2,\gamma_1 \gamma_3, \gamma_2\gamma_3$ generate the rotations, as the first are timelike $(\gamma_i \gamma_0)^2=+1$ and the latter are spacelike $(\gamma_i \gamma_j)^2=-1$ for $i\neq j$.
 
-Note that the Lorentz transformation preserves the spacetime interval, *i.e.,*
+The rotor parametrization of the Lorentz transformation makes it easy to show the invariance of the spacetime interval, *i.e.,*
 
 $$\begin{align}
 (x')^2 &= e^{-B \alpha /2 } x e^{B \alpha /2} e^{-B \alpha/2}x e^{B \alpha / 2}\\
