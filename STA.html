@@ -55,14 +55,15 @@ regardless of the motion of the light source or observer.</li>
 <p>In special relativity, spacetime is described as the collection of
 spacetime events. In an inertial reference frame <span
 class="math inline">\(S\)</span>, defined by a non-accelerating
-observer, we describe the spacetime event in the coordinates <span
+observer, we describe a spacetime event <span
+class="math inline">\(x\)</span> with the coordinates <span
 class="math inline">\(x = (t,x,y,z)\)</span>. In an alternative inertial
 frame <span class="math inline">\(S&#39;\)</span>, defined by another
 non-accelerating observer moving with a velocity <span
 class="math inline">\(\textbf{v}\)</span> with respect to the first
-reference frame, the event is measured in terms of the coordinates <span
-class="math inline">\((t&#39;,x&#39;, y&#39;,z&#39;).\)</span> These
-coordinates are related by the Lorentz transformation</p>
+observer, the event is described by a second set of coordinates <span
+class="math inline">\(x = (t&#39;,x&#39;, y&#39;,z&#39;).\)</span> These
+coordinates are related by the Lorentz boost</p>
 <p><span class="math display">\[\begin{align}
 t&#39; &amp;= \gamma(t - \|\textbf{v}\| x / c^2)\,,\\
 x&#39; &amp;= \gamma(x - \|\textbf{v}\| t)\,,\\
@@ -75,52 +76,59 @@ with the Lorentz factor</p>
 <p><span class="math display">\[ \gamma =
 \frac{1}{\sqrt{1-\textbf{v}^2/c^2}}\,,\]</span></p>
 <p>and the speed of light in vacuum <span
-class="math inline">\(c\)</span>. From hereon, we will use units for
-which the speed of light <span class="math inline">\(c=1\)</span>.</p>
+class="math inline">\(c\)</span>. More general boosts follow by rotating
+space. We observe that the Lorentz boost transforms space into time and
+time into space, unlike the more familiar rotations and Galilean
+transformations in Euclidean space. From hereon, we will use units for
+which the speed of light <span class="math inline">\(c=1\)</span>. Space
+and time have the same dimensions and velocities are dimensionless.</p>
 <p>The Lorentz transformation is analogous to rotations in Euclidean
 space. However, there exists a key distinction between rotations and
-Lorentz transformations. While rotations are defined to preserve the
-distance between two points,</p>
+Lorentz transformations. While rotations preserve the distance between
+two points,</p>
 <p><span class="math display">\[\Delta \textbf{x}^2 = \Delta x^2 +
 \Delta y^2 + \Delta z^2\,,\]</span></p>
-<p>the Lorentz transformation preserves the spacetime distance</p>
+<p>the spacetime distance between events</p>
 <p><span class="math display">\[\Delta s^2 = \Delta t^2 - \Delta
 \textbf{x}^2\,,\]</span></p>
-<p>between events. The minus sign differentiates the temporal from the
-spatial directions.</p>
+<p>is invariant under the Lorentz transformation. The minus sign
+differentiates the time and space directions.</p>
 <p>Traditionally, special relativity describes the nature of spacetime
 using inertial coordinate frames. Geometric algebra attempts to develop
 a coordinate-free formulation, where the geometry of spacetime is
 written in terms of the language of multi-vectors.</p>
 <h3 id="spacetime-geometric-algebra">Spacetime geometric algebra</h3>
-<p>First, write the spacetime event in a given inertial reference frame,
-<span class="math inline">\(x = (t,x^1,x^2,x^3)\)</span>, as</p>
+<p>First, write the spacetime event <span
+class="math inline">\(x\)</span> in a given inertial reference frame
+<span class="math inline">\(S\)</span> as <span class="math inline">\(x
+= (t,x^1,x^2,x^3)\)</span> or equivalently</p>
 <p><span class="math display">\[x = x^\mu \gamma_\mu = t \gamma_0 + x^i
 \gamma_i\,,\]</span></p>
-<p>using the Einstein summation convention over repeated indices, with
-the orthonormal spacetime basis <span
+<p>with the orthonormal spacetime basis <span
 class="math inline">\(\gamma_\mu\)</span> defined as</p>
 <p><span class="math display">\[\begin{align}
 \gamma_0^2=1,\quad \gamma_0 \cdot \gamma_i = 0,\quad \gamma_i \cdot
 \gamma_j = - \delta_{ij}\,.
 \end{align}\]</span></p>
-<p>In this reference frame the vector <span
+<p>In these notes, we use the Einstein summation convention to sum over
+repeated Latin and Greek indices representing space and spacetime sums,
+<em>i.e.,</em> <span class="math inline">\(x^\mu \gamma_\mu =
+\sum_{\mu=0}^3 x^\mu \gamma_\mu\)</span> and <span
+class="math inline">\(x^i \gamma_i = \sum_{i=1}^3 x^i
+\gamma_i\,.\)</span> In this reference frame the vector <span
 class="math inline">\(\gamma_0\)</span> points in the time direction and
 the vectors <span class="math inline">\(\gamma_i\)</span> for <span
-class="math inline">\(i=1,2,3\)</span> point in the space directions. In
-these notes, we will let Latin and Greek letters respectively run over
-the spatial <span class="math inline">\(1,2,3\)</span> and spacetime
-indices <span class="math inline">\(0,1,2,3\)</span>. Given these basis
-vectors, we construct a basis for the spacetime algebra <span
-class="math inline">\(\mathbb{G}^{3,1}\)</span> using the standard
-geometric product (which is again anti-symmetric for orthogonal vectors,
-<em>i.e.,</em> <span class="math inline">\(\gamma_\mu \gamma_\nu = -
-\gamma_\nu \gamma_\mu\)</span> for <span class="math inline">\(\mu \neq
-\nu\)</span>):</p>
+class="math inline">\(i=1,2,3\)</span> point in the space directions.
+Given these basis vectors, we construct a basis for the spacetime
+algebra <span class="math inline">\(\mathbb{G}^{3,1}\)</span> using the
+standard geometric product (which is again anti-symmetric for orthogonal
+vectors, <em>i.e.,</em> <span class="math inline">\(\gamma_\mu
+\gamma_\nu = - \gamma_\nu \gamma_\mu\)</span> for <span
+class="math inline">\(\mu \neq \nu\)</span>):</p>
 <ul>
 <li>The basis includes a single scalar <span
-class="math inline">\(1\)</span>, as we saw in the Euclidean
-algebra.</li>
+class="math inline">\(1\)</span>. The scalar is timelike since <span
+class="math inline">\(1^2=1\)</span>.</li>
 <li>The basis includes the four vectors <span
 class="math inline">\(\gamma_0, \gamma_1, \gamma_2,\)</span> and <span
 class="math inline">\(\gamma_3\)</span>, signifying the temporal and
@@ -133,10 +141,11 @@ class="math inline">\(\gamma_1 \gamma_0,
 \gamma_2\gamma_0,\gamma_3\gamma_0,\gamma_1\gamma_2,\gamma_1\gamma_3,\gamma_2\gamma_3.\)</span>
 The first three basis vectors are timelike, <em>i.e.,</em> as they
 square to one <span class="math inline">\((\gamma_i
-\gamma_0)^2=+1\)</span> for <span class="math inline">\(i \neq
-j\)</span>. The latter three are spacelike, <em>i.e.,</em> they square
-to minus one <span class="math inline">\((\gamma_i
-\gamma_j)^2=-1\)</span>.</li>
+\gamma_0)^2=+1\)</span> for <span
+class="math inline">\(i=1,2,3\)</span>. The latter three are spacelike,
+<em>i.e.,</em> they square to minus one <span
+class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> assuming <span
+class="math inline">\(i \neq j\)</span>.</li>
 <li>The basis includes four trivectors <span
 class="math inline">\(\gamma_0\gamma_1\gamma_2,
 \gamma_0\gamma_1\gamma_3,
@@ -158,23 +167,25 @@ class="math inline">\(4\)</span> pseudoscalar play an important
 role.</p>
 <h4 id="spacetime-split">Spacetime split</h4>
 <p>Given an event in the spacetime algebra <span
-class="math inline">\(\mathbb{G}^{3,1}\)</span>, we would like to make a
-spacetime split to recover the three-dimensional space and corresponding
-geometric algebra <span class="math inline">\(\mathbb{G}^3\)</span>. In
-the coordinate system of an inertial observer, we write the event as the
-vector <span class="math inline">\(x = x^\mu \gamma_\mu\)</span> and
-perform the spacetime split with a right multiplication of the time
-vector</p>
+class="math inline">\(\mathbb{G}^{3,1}\)</span>, we would like to split
+spacetime into space and time, recovering three-dimensional space and
+the corresponding geometric algebra <span
+class="math inline">\(\mathbb{G}^3\)</span>. In the coordinate system of
+reference frame <span class="math inline">\(S\)</span>, we write the
+event as the vector <span class="math inline">\(x = x^\mu
+\gamma_\mu\)</span> and perform the spacetime split by right multiplying
+the time vector by <span class="math inline">\(\gamma_0\)</span>,</p>
 <p><span class="math display">\[\begin{align}
 x \gamma_0 &amp;= x \cdot \gamma_0 + x \wedge \gamma_0 \\
-&amp;= t + \textbf{x}\,,
+&amp;= t + \textbf{x}\,.
 \end{align}\]</span></p>
-<p>where the time <span class="math inline">\(t = x \cdot
+<p>We see that the time <span class="math inline">\(t = x \cdot
 \gamma_0\)</span> is a spacetime scalar and the relative position <span
 class="math inline">\(\textbf{x} = x \wedge \gamma_0 = x^i \gamma_i
-\wedge \gamma_0 = x^i \sigma_i\)</span> is a spacetime bivector. This
-split is motivated by the observation that the norm of a spacetime event
-is the invariant distance</p>
+\wedge \gamma_0 = x^i \sigma_i\)</span> with <span
+class="math inline">\(\sigma_i = \gamma_i \gamma_0\)</span> is a
+spacetime bivector. This split is motivated by the observation that the
+norm of a spacetime event is the invariant distance</p>
 <p><span class="math display">\[\begin{align}
 x^2 &amp;= x \gamma_0 \gamma_0 x\\
 &amp;=(x \cdot \gamma_0  + x \wedge \gamma_0)(x \cdot \gamma_0  - x
@@ -182,11 +193,10 @@ x^2 &amp;= x \gamma_0 \gamma_0 x\\
 &amp;=(t  + \textbf{x})(t  - \textbf{x})\\
 &amp;=t^2 - \textbf{x}^2\,.
 \end{align}\]</span></p>
-<p>The temporal bivectors of the spacetime algebra <span
-class="math inline">\(\sigma_i = \gamma_i \gamma_0\)</span> act as the
-basis vectors of the induced space algebra <span
-class="math inline">\(\mathbb{G}^3\)</span>. Indeed, the vectors are
-orthonormal</p>
+<p>The timelike bivectors of the spacetime algebra <span
+class="math inline">\(\sigma_i\)</span> act as the basis vectors of the
+induced space algebra <span class="math inline">\(\mathbb{G}^3\)</span>.
+Indeed, the vectors are orthonormal</p>
 <p><span class="math display">\[\begin{align}
 \sigma_i \cdot \sigma_j &amp;= \langle \gamma_i \gamma_0 \gamma_j
 \gamma_0 \rangle_0 \\
@@ -199,7 +209,7 @@ orthonormal</p>
 &amp;=-\gamma_j \gamma_0 \gamma_i \gamma_0\\
 &amp;=-\sigma_j \sigma_i\,,
 \end{align}\]</span></p>
-<p>and generate a geometric algebra with the basis</p>
+<p>and thus generate a geometric algebra with the basis</p>
 <p><span class="math display">\[\{1, \sigma_1, \sigma_2, \sigma_3,
 \sigma_1 \sigma_2,
 \sigma_1\sigma_3,\sigma_2\sigma_3,\sigma_1\sigma_2\sigma_3\}\,.\]</span></p>
@@ -215,9 +225,8 @@ class="math display">\[\sigma_1\sigma_2\sigma_3=\gamma_1\gamma_0\gamma_2\gamma_0
 =
 \gamma_0\gamma_1\gamma_2\gamma_0^2\gamma_3=\gamma_0\gamma_1\gamma_2\gamma_3
 = I\,.\]</span></p>
-<p>From the space algebra we see that the elements <span
-class="math inline">\(\sigma_i\)</span> are dual to the elements <span
-class="math inline">\(\sigma_i \sigma_j\)</span>, indeed,</p>
+<p>From the space algebra we see that the vectors are dual to the
+pseudovectors, <em>i.e.,</em></p>
 <p><span class="math display">\[\begin{align}
 \sigma_i^* &amp;=\sigma_i I^{-1} \\
 &amp;= \gamma_i \gamma_0 \gamma_3 \gamma_2 \gamma_1 \gamma_0\\
@@ -251,26 +260,25 @@ class="math inline">\(\frac{\mathrm{d}t}{\mathrm{d}\tau} = v\cdot
 \gamma_0\)</span> and <span
 class="math inline">\(\frac{\mathrm{d}\textbf{x}}{\mathrm{d}\tau}= v
 \wedge \gamma_0\)</span> and thus</p>
-<p><span class="math display">\[
+<p><span class="math display">\[\textbf{v} =
 \frac{\mathrm{d}\textbf{x}}{\mathrm{d}t} =
 \frac{\mathrm{d}\textbf{x}}{\mathrm{d}\tau}\frac{\mathrm{d}\tau}{\mathrm{d}t}
 = \frac{v \wedge \gamma_0}{v\cdot \gamma_0}.\]</span></p>
-<p>This is manifestly invariant under reparametrizations of the
-worldline.</p>
+<p>This construction for the derivative <span
+class="math inline">\(\textbf{v}\)</span> is manifestly invariant under
+reparametrizations of the worldline.</p>
 <h4 id="lorentz-transformations">Lorentz transformations</h4>
 <p>Different observers in different inertial reference frames split
-spacetime differently. Let’s first consider <span
-class="math inline">\(2\)</span>-dimensional spacetime <span
-class="math inline">\(\mathbb{G}^{1,1}\)</span>. In the original
-reference frame <span class="math inline">\(S\)</span>, <span
-class="math inline">\(\gamma_0\)</span> is the unit vector pointing in
-the temporal direction. An observer with a relative velocity <span
-class="math inline">\(\textbf{v}\)</span> in the <span
-class="math inline">\(x\)</span>-direction, defines a reference frame
-<span class="math inline">\(S&#39;\)</span> where the timelike basis
-vector is given by the four-velocity <span class="math inline">\(v =
-\gamma (\gamma_0 + \|\textbf{v}\|\gamma_1)\)</span>, where the Lorentz
-vector ensures that the norm</p>
+spacetime differently. Let’s first consider the <span
+class="math inline">\(2\)</span>-dimensional spacetime algebra <span
+class="math inline">\(\mathbb{G}^{1,1}\)</span>. An observer with a
+relative velocity <span class="math inline">\(\textbf{v}\)</span> in the
+<span class="math inline">\(x\)</span>-direction, defines a reference
+frame <span class="math inline">\(S&#39;\)</span> where the timelike
+basis vector is given by the four-velocity <span class="math inline">\(v
+= \gamma (\gamma_0 + \|\textbf{v}\|\gamma_1)\)</span>. The Lorentz
+factor ensures that the proper velocity has unit norm,
+<em>i.e.,</em></p>
 <p><span class="math display">\[\begin{align}
 v^2 &amp;= v \gamma_0 \gamma_0 v \\
 &amp;=\gamma^2(\gamma_0 \cdot \gamma_0 + \|\textbf{v}\| \gamma_1 \wedge
@@ -299,37 +307,51 @@ position</p>
 <p><span class="math display">\[\begin{align}
 \textbf{x}&#39; &amp;= x \wedge v\\
 &amp;=x^\mu \gamma_\mu \wedge v \\
+&amp;= \gamma \|\textbf{v}\| x^0 \gamma_0 \wedge \gamma_1 + \gamma x^1
+\gamma_1 \wedge \gamma_0 \\
 &amp;= \gamma( x^1 - \|\textbf{v}\| x^0) \sigma_1\,.
 \end{align}\]</span></p>
-<p>These are the Lorentz transformations we saw above. As a consequence,
-in <span class="math inline">\(2\)</span>-dimensional spacetime a
-Lorentz boost corresponds with multiplication by the bivector <span
-class="math inline">\(\gamma_0 v\)</span>, <em>i.e.,</em> <span
-class="math inline">\((x^0 + x^1 \sigma_1) \gamma_0 = x^0 \gamma_0 + x^1
-\gamma_1\)</span> by which <span class="math inline">\((x^0 + x^1
-\sigma_1) \gamma_0 v = t&#39; + \textbf{x}&#39;\)</span>. A Lorentz
-transformation acts as a rotation in <span
+<p>These are the Lorentz boosts restricted to the <span
+class="math inline">\((t,x)\)</span>-plane. As a consequence, a Lorentz
+boost of a spacetime event in <span
+class="math inline">\(\mathbb{G}^{1,1}\)</span> is implemented as the
+multiplication by the multi-vector <span class="math inline">\(\gamma_0
+v\)</span>, <em>i.e.,</em> <span class="math inline">\((t+\textbf{x})
+\gamma_0 v = t&#39; + \textbf{x}&#39;\)</span>. A Lorentz boost in <span
+class="math inline">\(\mathbb{G}^{1,1}\)</span> is analogous to a
+rotation in the geometric algebra <span
 class="math inline">\(\mathbb{G}^2\)</span>.</p>
-<p>It follows that in <span
-class="math inline">\(\mathbb{G}^{3,1}\)</span>, the Lorentz
-transformation in the <span class="math inline">\(x\)</span> direction
-is implemented using the rotor equation</p>
+<p>In <span class="math inline">\(\mathbb{G}^{3,1}\)</span>, the Lorentz
+boost in the <span class="math inline">\(x\)</span> direction assumes
+the form</p>
 <p><span class="math display">\[x&#39; = R x R^{-1}\]</span></p>
-<p>with the rotor</p>
+<p>with the rotor defined as</p>
 <p><span class="math display">\[R= e^{-\sigma_1 \alpha /2}\]</span></p>
-<p>with the rapidity <span class="math inline">\(\alpha\)</span> defined
-as <span class="math inline">\(\tanh \alpha = \|\textbf{v}\|\,,\)</span>
-where <span class="math inline">\(e^{\sigma_1 \alpha} = \cosh \alpha +
-\sigma_1 \sinh \alpha/2\)</span> since <span
-class="math inline">\(\sigma_1^2 = 1\)</span>. In general, a Lorentz
-transformation is obtained with a rotor <span
-class="math inline">\(R=e^{B \alpha /2}\)</span> with a general unit
-bivector <span class="math inline">\(B\)</span>. The spacelike bivectors
-<span class="math inline">\(\sigma_i\)</span> generate Lorentz boosts.
-The timelike bivectors <span
-class="math inline">\(\gamma_1\gamma_2,\gamma_1 \gamma_3,
-\gamma_2\gamma_3\)</span> generate rotations, since <span
-class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> when <span
+<p>where the rapidity <span class="math inline">\(\alpha\)</span>,
+defined by <span class="math inline">\(\tanh \alpha =
+\|\textbf{v}\|\,,\)</span> is a parametrization of the magnitude of the
+relative velocity vector. Explicitly,</p>
+<p><span class="math display">\[e^{\sigma_1 \alpha} = \cosh \alpha +
+\sigma_1 \sinh \alpha/2\]</span></p>
+<p>since <span class="math inline">\(\sigma_1^2 = 1\)</span>. A general
+Lorentz boost is implemented by the equation</p>
+<p><span class="math display">\[x&#39; = e^{-\hat{\textbf{v}} \alpha /2}
+x e^{\hat{\textbf{v}} \alpha /2}\,,\]</span></p>
+<p>with <span class="math inline">\(\tanh \alpha =
+\|\textbf{v}\|\)</span> and <span
+class="math inline">\(\hat{\textbf{v}}^2=-1\)</span>. A general Lorentz
+transformation includes both spacetime boosts and space rotations. These
+transformations are implemented by the rotor equation</p>
+<p><span class="math display">\[x&#39; = e^{-B \alpha /2} x e^{B \alpha
+/2} \]</span></p>
+<p>with the general unit bivector <span class="math inline">\(B\)</span>
+and the magnitude <span class="math inline">\(\alpha\)</span>. The
+timelike bivectors <span class="math inline">\(\sigma_i = \gamma_i
+\gamma_0\)</span> generate the Lorentz boosts and the spacelike
+bivectors <span class="math inline">\(\gamma_1\gamma_2,\gamma_1
+\gamma_3, \gamma_2\gamma_3\)</span> generate the rotations, as <span
+class="math inline">\((\gamma_i \gamma_0)^2=+1\)</span> and <span
+class="math inline">\((\gamma_i \gamma_j)^2=-1\)</span> for <span
 class="math inline">\(i\neq j\)</span>.</p>
 <h4 id="the-maxwell-equations">The Maxwell equations</h4>
 </body>
