@@ -554,6 +554,7 @@ P(\textbf{x}_0) &= \frac{1}{(n-2)\Omega_n}
 This result generalizes the Green's functions we saw in the two-dimensional case.
 
 ### Aplications in Physics
+Geometric algebra is a very natural language for problems in physics. We here go through a few examples.
 
 #### Maxwell equations
 The Maxwell equations in vaccuum for electromagnetism are often written as
@@ -594,16 +595,28 @@ $$\begin{align}
 \frac{J}{c \epsilon_0} = \frac{\rho}{\epsilon_0} - \frac{\textbf{J}}{c \epsilon_0}\,.
 \end{align}$$
 
-Equating the scalar and pseudoscalar parts yields the divergence of the electric and magnetic fields $\nabla \cdot \textbf{E} = \rho/\epsilon_0$ and $\nabla \cdot \textbf{B}=0$. The vector and bivector parts yield the curl of the electric and magnetic fields $\nabla \times \textbf{E} = - \partial_t \textbf{B}$ and $\nabla \times \textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t \textbf{E})\,.$ Applying the gradient $\partial_t/c + \nabla$ to the Maxwell equation 
+Equating the scalar and pseudoscalar parts yields the divergence of the electric and magnetic fields $\nabla \cdot \textbf{E} = \rho/\epsilon_0$ and $\nabla \cdot \textbf{B}=0$. The vector and bivector parts yield the curl of the electric and magnetic fields $\nabla \times \textbf{E} = - \partial_t \textbf{B}$ and $\nabla \times \textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t \textbf{E})\,.$ 
 
-$$(\partial_t/c + \nabla)^2 F = (\partial_t/c + \nabla) J =\partial_t \rho - \frac{\partial_t \textbf{J}}{c} + c \nabla \rho  - \nabla \cdot \textbf{J}- \nabla \wedge \textbf{J}$$
 
-yields the conservation of charge for the scalar part
+Applying the gradient $\partial_t/c - \nabla$ to the Maxwell equation 
+
+$$\begin{align}
+\left(\frac{\partial_t^2}{c^2} + \nabla^2\right) F &= \left(\frac{\partial_t}{c} - \nabla\right) J \\
+&=\left[\partial_t \rho  + \nabla \cdot \textbf{J}\right] - \left[c \nabla \rho + \frac{\partial_t \textbf{J}}{c}\right] + \nabla \wedge \textbf{J}
+\end{align}$$
+
+we find the conservation of charge
 
 $$
-0 = \partial_t \rho - \nabla \cdot \textbf{J} \,.
+0 = \partial_t \rho + \nabla \cdot \textbf{J} \,,
 $$
 
-When the current $J$ vanishes in a region, the field strength $F$ is an analytic function, $\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0$. In particular, we find the wave equation
+by noting that the left-hand side has a vanishing scalar part, for the Laplacian preserves the grades of a multi-vector.
 
-$$\left(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2\right)F = \left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)\left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla \right)F = 0\,.$$
+When the current $J$ vanishes in a region, the field strength $F$ is an analytic function, for $\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0$. In particular, we find the wave famous equation
+
+$$\left(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2\right)F = \left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla \right)\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0\,,$$
+
+by which $\partial_t^2 \textbf{E}= c^2 \nabla^2 \textbf{E}$ and $\partial_t^2 \textbf{B}= c^2 \nabla^2 \textbf{B}\,,$ where the electric field forms the vector and the magnetic field forms the pseudovector part.
+
+#### Symmetric spinning top

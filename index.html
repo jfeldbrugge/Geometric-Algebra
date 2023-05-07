@@ -1059,6 +1059,8 @@ x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\,.
 <p>This result generalizes the Green’s functions we saw in the
 two-dimensional case.</p>
 <h3 id="aplications-in-physics">Aplications in Physics</h3>
+<p>Geometric algebra is a very natural language for problems in physics.
+We here go through a few examples.</p>
 <h4 id="maxwell-equations">Maxwell equations</h4>
 <p>The Maxwell equations in vaccuum for electromagnetism are often
 written as</p>
@@ -1120,27 +1122,38 @@ bivector parts yield the curl of the electric and magnetic fields <span
 class="math inline">\(\nabla \times \textbf{E} = - \partial_t
 \textbf{B}\)</span> and <span class="math inline">\(\nabla \times
 \textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t
-\textbf{E})\,.\)</span> Applying the gradient <span
-class="math inline">\(\partial_t/c + \nabla\)</span> to the Maxwell
-equation</p>
-<p><span class="math display">\[(\partial_t/c + \nabla)^2 F =
-(\partial_t/c + \nabla) J =\partial_t \rho - \frac{\partial_t
-\textbf{J}}{c} + c \nabla \rho  - \nabla \cdot \textbf{J}- \nabla \wedge
-\textbf{J}\]</span></p>
-<p>yields the conservation of charge for the scalar part</p>
+\textbf{E})\,.\)</span></p>
+<p>Applying the gradient <span class="math inline">\(\partial_t/c -
+\nabla\)</span> to the Maxwell equation</p>
+<p><span class="math display">\[\begin{align}
+\left(\frac{\partial_t^2}{c^2} + \nabla^2\right) F &amp;=
+\left(\frac{\partial_t}{c} - \nabla\right) J \\
+&amp;=\left[\partial_t \rho  + \nabla \cdot \textbf{J}\right] - \left[c
+\nabla \rho + \frac{\partial_t \textbf{J}}{c}\right] + \nabla \wedge
+\textbf{J}
+\end{align}\]</span></p>
+<p>we find the conservation of charge</p>
 <p><span class="math display">\[
-0 = \partial_t \rho - \nabla \cdot \textbf{J} \,.
+0 = \partial_t \rho + \nabla \cdot \textbf{J} \,,
 \]</span></p>
+<p>by noting that the left-hand side has a vanishing scalar part, for
+the Laplacian preserves the grades of a multi-vector.</p>
 <p>When the current <span class="math inline">\(J\)</span> vanishes in a
 region, the field strength <span class="math inline">\(F\)</span> is an
-analytic function, <span
+analytic function, for <span
 class="math inline">\(\left(\frac{1}{c}\frac{\partial}{\partial t} +
-\nabla \right)F = 0\)</span>. In particular, we find the wave
+\nabla \right)F = 0\)</span>. In particular, we find the wave famous
 equation</p>
 <p><span class="math display">\[\left(\frac{1}{c^2}
 \frac{\partial^2}{\partial t^2} - \nabla^2\right)F =
-\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla
-\right)\left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla \right)F =
-0\,.\]</span></p>
+\left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla
+\right)\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F =
+0\,,\]</span></p>
+<p>by which <span class="math inline">\(\partial_t^2 \textbf{E}= c^2
+\nabla^2 \textbf{E}\)</span> and <span
+class="math inline">\(\partial_t^2 \textbf{B}= c^2 \nabla^2
+\textbf{B}\,,\)</span> where the electric field forms the vector and the
+magnetic field forms the pseudovector part.</p>
+<h4 id="symmetric-spinning-top">Symmetric spinning top</h4>
 </body>
 </html>
