@@ -210,3 +210,70 @@ $$\begin{align}
 \end{align}$$
 
 #### The Maxwell equations
+We can use these considerations to study Maxwell's theory of electromagnetism in spacetime. Firstly, define the vector derivative on spacetime
+
+$$\nabla = \gamma^\mu \partial_\mu\,,$$
+
+with $\partial_\mu = \frac{\partial}{\partial x^\mu}$, in units for which the speed of light in vacuum $c=1$. The spacetime split is achieved by multiplying $\nabla$ on the right by $\gamma_0$ 
+
+$$\nabla \gamma_0 = (\gamma^0 \partial_t + \gamma^i \partial_i)\gamma_0 = \partial_t - \sigma_i \partial_i = \partial_t - \bm{\nabla}\,,$$
+
+with $\sigma_i = \gamma_i \gamma_0$ and indices are raised and lowered with the Minkowski matric $\eta_{\mu \nu} = \text{diag}(1,-1,-1,-1)\,.$ As we saw in the study of Euclidean geometric algebras, the Maxwell equations assume the neat form
+
+$$\partial_t F + \bm{\nabla}F = \rho - \textbf{J}\,,$$
+
+with the field strength $F=\textbf{E} + I \textbf{B}$, the electric charge density $\rho$ and the electric current density $\textbf{J}$ in units for which the speed of light in vacuum $c=1$. Note that the field strength is a spacetime bivector, for which the timelike bivectors correspond to the electric and the spacelike bivectors correspond to the magnetic field components. 
+
+Introduce the spacetime current $J = \rho \gamma_0 + J_i \gamma_i$, by the spacetime split, 
+
+$$\rho = J \cdot \gamma_0\,,\quad \textbf{J} = J \wedge \gamma_0\,,$$
+
+we find a very neat covariant formulation of the Maxwell equations in spacetime
+
+$$\nabla F = J\,.$$
+
+Note that this spacetime current differs from the one we used in the formulation of the Maxwell equations in three-dimensional Euclidean space. This formulation is truly on spacetime embedding it manifestly in special relativity (where it belongs).
+
+The Maxwell equation in this form directly leads to the conservation of charge. After applying the vector derivative,
+
+$$\nabla^2 F = \nabla J = \nabla \cdot J + \nabla \wedge J\,,$$
+
+we directly obtain current conservation
+
+$$\nabla \cdot J =\frac{\partial \rho}{\partial t} + \bm{\nabla}\cdot \textbf{J} = 0\,,$$
+
+by looking for the scalar part. The Laplace operator preserves the grades of multi-vectors.
+
+Also, the equation $\nabla F=J$ leads to the observation 
+
+$$\nabla \cdot F = J \text{ and } \nabla \wedge F = 0\,,$$ 
+
+as the left-hand side is a spacetime vector. In tensor language, these two identities are given by
+
+$$\partial_\mu F^{\mu\nu} = J^\nu \text{ and } \epsilon^{\mu \nu \rho \sigma} \partial_\nu F_{\rho \sigma}=0\,.$$
+
+Geometric algebra describes in one equation what tensor algebra does in two.
+
+As $\nabla \wedge F =0$, we can write the field strength in terms of the vector potential
+
+$$F = \nabla \wedge A\,.$$
+
+In terms of the vector potential, the Maxwell equations read
+
+$$\nabla \cdot (\nabla \wedge A) = \nabla(\nabla \wedge A)= \nabla^2 A - \nabla(\nabla \cdot A) = J\,.$$
+
+Note that $A$ has some residual gauge freedom, since $A \mapsto A + \nabla \lambda$ for a spacetime scalar $\lambda$ leaves the field strength unchanged, *i.e.,*
+
+$$ F \mapsto \nabla \wedge (A + \nabla \lambda)=\nabla \wedge A+ \nabla \wedge \nabla \lambda= F\,.$$
+
+Here, we use the fact that $\nabla^2 \lambda$ is a scalar quantity by which $\nabla \wedge \nabla\lambda =0\,.$
+
+In the Lorentz gauge, 
+
+$$\nabla \cdot A =0\,,$$
+
+the Maxwell equation assumes the form 
+
+$$\nabla F = \nabla^2 A = J\,.$$
+
+Finally, note that while the electric and magnetic fields in the spacetime split appear as different objects (vectors and pseudovectors), from the perspective of the spacetime algebra, they are treated on the same footing. Both are simply spacetime bivectors. Under a Lorentz boost, $F' = R F R^{-1}\,,$ the electric and magnetic fields rotate into each other. One observer's electric field may appear as a magnetic field to another observer in the appropriate inertial reference frame.

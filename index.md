@@ -598,25 +598,23 @@ $$\begin{align}
 Equating the scalar and pseudoscalar parts yields the divergence of the electric and magnetic fields $\nabla \cdot \textbf{E} = \rho/\epsilon_0$ and $\nabla \cdot \textbf{B}=0$. The vector and bivector parts yield the curl of the electric and magnetic fields $\nabla \times \textbf{E} = - \partial_t \textbf{B}$ and $\nabla \times \textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t \textbf{E})\,.$ 
 
 
-Applying the gradient $\partial_t/c - \nabla$ to the Maxwell equation 
+Applying the spacetime gradient $c^{-1}\partial_t - \nabla$ to the Maxwell equation 
 
 $$\begin{align}
-\left(\frac{\partial_t^2}{c^2} + \nabla^2\right) F &= \left(\frac{\partial_t}{c} - \nabla\right) J \\
-&=\left[\partial_t \rho  + \nabla \cdot \textbf{J}\right] - \left[c \nabla \rho + \frac{\partial_t \textbf{J}}{c}\right] + \nabla \wedge \textbf{J}
+c^{-2}\partial_t^2 F + \nabla^2 F = \left(c^{-1} \partial_t - \nabla\right) J 
+=\left[\partial_t \rho  + \nabla \cdot \textbf{J}\right] - \left[c \nabla \rho + \frac{\partial_t \textbf{J}}{c}\right] + \nabla \wedge \textbf{J}
 \end{align}$$
 
 we find the conservation of charge
 
-$$
-0 = \partial_t \rho + \nabla \cdot \textbf{J} \,,
-$$
+$$0 = \partial_t \rho + \nabla \cdot \textbf{J} \,,$$
 
 by noting that the left-hand side has a vanishing scalar part, for the Laplacian preserves the grades of a multi-vector.
 
-When the current $J$ vanishes in a region, the field strength $F$ is an analytic function, for $\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0$. In particular, we find the wave famous equation
+When the current $J$ vanishes in a region, the field strength $F$ is an analytic function, for $\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0$. Indeed, in the absence of a source, we obtain the wave famous equation
 
-$$\left(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2\right)F = \left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla \right)\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0\,,$$
+$$ c^{-2} \partial_t^2 F - \nabla^2 F = \left(c^{-1} \partial_t - \nabla \right)\left(c^{-1}\partial_t + \nabla \right)F = 0\,,$$
 
-by which $\partial_t^2 \textbf{E}= c^2 \nabla^2 \textbf{E}$ and $\partial_t^2 \textbf{B}= c^2 \nabla^2 \textbf{B}\,,$ where the electric field forms the vector and the magnetic field forms the pseudovector part.
+by which $\partial_t^2 \textbf{E}= c^2 \nabla^2 \textbf{E}$ and $\partial_t^2 \textbf{B}= c^2 \nabla^2 \textbf{B}\,.$
 
 #### Symmetric spinning top
