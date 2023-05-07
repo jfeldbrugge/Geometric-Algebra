@@ -554,4 +554,56 @@ P(\textbf{x}_0) &= \frac{1}{(n-2)\Omega_n}
 This result generalizes the Green's functions we saw in the two-dimensional case.
 
 ### Aplications in Physics
-Let's consider some examples.
+
+#### Maxwell equations
+The Maxwell equations in vaccuum for electromagnetism are often written as
+
+$$\begin{align}
+\nabla \cdot \textbf{E}  &= \rho/ \epsilon_0 \quad
+&&\nabla \times \textbf{E} = -\partial_t \textbf{B}\\
+\nabla \cdot \textbf{B} &=0 \quad 
+&&\nabla \times \textbf{B} =\mu_0 (\textbf{J}+\epsilon_0 \partial_t \textbf{E})
+\end{align}$$
+
+with the electric and the magnetic fields $\textbf{E}$ and $\textbf{B}$, the electric charge density $\rho$, electric current density $\textbf{J}$, the permittivity of free space $\epsilon_0$ and the permeability of free space $\mu_0$. The latter two are related to the speed of light in vacuum by $c = 1/\sqrt{\epsilon_0 \mu_0}\,.$ 
+
+To express these equations in terms of geometric algebra, combine the electric charge and current into a multi-vector
+
+$$J = c \rho - \textbf{J}\,.$$
+
+The electric and magnetic fields form the field strength as a multi-vector
+
+$$ F = \textbf{E} + I c \textbf{B}\,.$$
+
+Note that the magnetic field is introduced as a bivector which is natural as the magnetic field transforms as a pseudovector under parity transformations. The Maxwell equations simplify to
+
+$$\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = \frac{J}{c \epsilon_0}\,.$$
+
+To see this, let's expand the equation and identify terms by their grade. The left-hand side splits off into a scalar, a vector, a bivector, and a trivector part
+
+$$\begin{align}
+\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)(\textbf{E} + I c \textbf{B})
+&= \frac{\partial_t \textbf{E}}{c} + \nabla \textbf{E} + I \partial_t \textbf{B} + I c \nabla \textbf{B}\\
+&= \frac{\partial_t \textbf{E}}{c} + \nabla \cdot \textbf{E} + \nabla \wedge \textbf{E} + I \partial_t \textbf{B} + I c \nabla \cdot \textbf{B}+ I c \nabla \wedge \textbf{B}\\
+&= \left[\nabla \cdot \textbf{E}\right] + \left[\frac{\partial_t \textbf{E}}{c} + I c \nabla \wedge \textbf{B}\right]+ \left[\nabla \wedge \textbf{E} + I \partial_t \textbf{B}\right]+ \left[I c \nabla \cdot \textbf{B}\right]\,.
+\end{align}$$
+
+The right-hand side decomposes into a scalar and a vector part
+
+$$\begin{align}
+\frac{J}{c \epsilon_0} = \frac{\rho}{\epsilon_0} - \frac{\textbf{J}}{c \epsilon_0}\,.
+\end{align}$$
+
+Equating the scalar and pseudoscalar parts yields the divergence of the electric and magnetic fields $\nabla \cdot \textbf{E} = \rho/\epsilon_0$ and $\nabla \cdot \textbf{B}=0$. The vector and bivector parts yield the curl of the electric and magnetic fields $\nabla \times \textbf{E} = - \partial_t \textbf{B}$ and $\nabla \times \textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t \textbf{E})\,.$ Applying the gradient $\partial_t/c + \nabla$ to the Maxwell equation 
+
+$$(\partial_t/c + \nabla)^2 F = (\partial_t/c + \nabla) J =\partial_t \rho - \frac{\partial_t \textbf{J}}{c} + c \nabla \rho  - \nabla \cdot \textbf{J}- \nabla \wedge \textbf{J}$$
+
+yields the conservation of charge for the scalar part
+
+$$
+0 = \partial_t \rho - \nabla \cdot \textbf{J} \,.
+$$
+
+When the current $J$ vanishes in a region, the field strength $F$ is an analytic function, $\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)F = 0$. In particular, we find the wave equation
+
+$$\left(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2\right)F = \left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)\left(\frac{1}{c}\frac{\partial}{\partial t} - \nabla \right)F = 0\,.$$

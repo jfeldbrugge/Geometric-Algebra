@@ -54,7 +54,7 @@ $$\begin{align}
 \gamma_0^2=1,\quad \gamma_0 \cdot \gamma_i = 0,\quad \gamma_i \cdot \gamma_j = - \delta_{ij}\,.
 \end{align}$$
 
-In these notes, we use the Einstein summation convention to sum over repeated Latin and Greek indices representing space and spacetime sums, *i.e.,* $x^\mu \gamma_\mu = \sum_{\mu=0}^3 x^\mu \gamma_\mu$ and $x^i \gamma_i = \sum_{i=1}^3 x^i \gamma_i\,.$ In this reference frame the vector $\gamma_0$ points in the time direction and the vectors $\gamma_i$ for $i=1,2,3$ point in the space directions. Given these basis vectors, we construct a basis for the spacetime algebra $\mathbb{G}^{3,1}$ using the standard geometric product (which is again anti-symmetric for orthogonal vectors, *i.e.,* $\gamma_\mu \gamma_\nu = - \gamma_\nu \gamma_\mu$ for $\mu \neq \nu$): 
+In these notes, we use the Einstein summation convention to sum over repeated Latin and Greek indices representing space and spacetime sums, *i.e.,* $x^\mu \gamma_\mu = \sum_{\mu=0}^3 x^\mu \gamma_\mu$ and $x^i \gamma_i = \sum_{i=1}^3 x^i \gamma_i\,.$ In this reference frame the vector $\gamma_0$ points in the time direction and the vectors $\gamma_i$ for $i=1,2,3$ point in the space directions. Given these basis vectors, we construct a basis for the spacetime algebra $\mathbb{G}^{1,3}$ using the standard geometric product (which is again anti-symmetric for orthogonal vectors, *i.e.,* $\gamma_\mu \gamma_\nu = - \gamma_\nu \gamma_\mu$ for $\mu \neq \nu$): 
 
 - The basis includes a single scalar $1$. The scalar is timelike since $1^2=1$.
 - The basis includes the four vectors $\gamma_0, \gamma_1, \gamma_2,$ and $\gamma_3$, signifying the timelike and spacelike directions. Note that the timelike basis vector squares to one, *i.e.,* $\gamma_0^2=+1$, and the spacial basis vectors square to minus one, *i.e.,* $\gamma_i^2=-1$.
@@ -65,7 +65,7 @@ In these notes, we use the Einstein summation convention to sum over repeated La
 This $16$-dimensional algebra leads to a consistent formulation of special relativity, where the bivectors, trivectors, and the grade-$4$ pseudoscalar play an important role.
 
 #### Spacetime split
-Given an event in the spacetime algebra $\mathbb{G}^{3,1}$, we would like to split spacetime into space and time, recovering three-dimensional space and the corresponding geometric algebra $\mathbb{G}^3$. In the coordinate system of reference frame $S$, we write the event as the vector $x = x^\mu \gamma_\mu$ and perform the spacetime split by right multiplying the time vector by $\gamma_0$,
+Given an event in the spacetime algebra $\mathbb{G}^{1,3}$, we would like to split spacetime into space and time, recovering three-dimensional space and the corresponding geometric algebra $\mathbb{G}^3$. In the coordinate system of reference frame $S$, we write the event as the vector $x = x^\mu \gamma_\mu$ and perform the spacetime split by right multiplying the time vector by $\gamma_0$,
 
 $$\begin{align}
 x \gamma_0 &= x \cdot \gamma_0 + x \wedge \gamma_0 \\
@@ -120,7 +120,7 @@ $$\begin{align}
 
 by which $\sigma_1^* =-\gamma_2 \gamma_3 = \sigma_2 \sigma_3,$ $\sigma_2^*=-\gamma_3 \gamma_1=\sigma_3 \sigma_1$ and $\sigma_3^*=-\gamma_1\gamma_2=\sigma_1\sigma_2\,.$
 
-The spacetime vectors and pseudovectors do not appear in this construction. We thus conclude that the even subalgebra of the spacetime algebra $\mathbb{G}^{3,1}$ is isomorphic with the three-dimensional vector algebra $\mathbb{G}^3$.
+The spacetime vectors and pseudovectors do not appear in this construction. We thus conclude that the even subalgebra of the spacetime algebra $\mathbb{G}^{1,3}$ is isomorphic with the three-dimensional vector algebra $\mathbb{G}^3$.
 
 Given a worldline $x(\tau)$ with the proper time along the worldline $\tau$, define the proper velocity $v= \frac{\mathrm{d}x}{\mathrm{d}\tau}$, where the proper velocity is a unit vector, *i.e.,* $v^2=1$. We can relate the proper velocity to the inertial frame velocity $\textbf{v} = \frac{\mathrm{d}\textbf{x}}{\mathrm{d}t}$ with the spacetime split, 
 
@@ -170,7 +170,7 @@ $$\begin{align}
 
 These are the Lorentz boosts restricted to the $(t,x)$-plane. As a consequence, a Lorentz boost of a spacetime event in $\mathbb{G}^{1,1}$ is implemented as the multiplication by the multi-vector $\gamma_0 v$, *i.e.,* $(t+\textbf{x}) \gamma_0 v = t' + \textbf{x}'$. A Lorentz boost in $\mathbb{G}^{1,1}$ is analogous to a rotation in the geometric algebra $\mathbb{G}^2$.
 
-In $\mathbb{G}^{3,1}$, the Lorentz boost in the $x$ direction assumes the form
+In $\mathbb{G}^{1,3}$, the Lorentz boost in the $x$ direction assumes the form
 
 $$x' = R_\alpha x R_{\alpha}^{-1}$$
 
