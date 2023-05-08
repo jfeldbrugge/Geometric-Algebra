@@ -272,8 +272,10 @@ In the Lorentz gauge,
 
 $$\nabla \cdot A =0\,,$$
 
-the Maxwell equation assumes the form 
+the field strength $F = \nabla A$ and the Maxwell equation assumes the form 
 
 $$\nabla F = \nabla^2 A = J\,.$$
+
+Note that the Lorentz condition does not completely fix the gauge, as $A \mapsto A + \nabla \lambda$ with $\nabla^2 \lambda = 0$ satisfies the Lorentz condition and preserves the field strength.
 
 Finally, note that while the electric and magnetic fields in the spacetime split appear as different objects (vectors and pseudovectors), from the perspective of the spacetime algebra, they are treated on the same footing. Both are simply spacetime bivectors. Under a Lorentz boost, $F' = R F R^{-1}\,,$ the electric and magnetic fields rotate into each other. One observer's electric field may appear as a magnetic field to another observer in the appropriate inertial reference frame.
