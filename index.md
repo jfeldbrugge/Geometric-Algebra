@@ -617,4 +617,176 @@ $$ c^{-2} \partial_t^2 F - \nabla^2 F = \left(c^{-1} \partial_t - \nabla \right)
 
 by which $\partial_t^2 \textbf{E}= c^2 \nabla^2 \textbf{E}$ and $\partial_t^2 \textbf{B}= c^2 \nabla^2 \textbf{B}\,.$
 
-#### Symmetric spinning top
+#### Rigid body
+
+The motion of a rigid body can be decomposed in the motion of the center of mass $\bm{x}$ and a rotation $\bm{Q}$. The configuration space of a rigid body thus consists of the six-dimensional space
+
+$$\mathcal{M} = \mathbb{E}^3 + SO(3)$$
+
+##### Traditional treatment
+Traditionally, the orientation $\bm{Q}$ of a point on the rigid body with respect to the center of mass is written in terms of three Euler angles $(\psi, \theta, \phi)\,.$ The kinetic energy of the rigid body consists of a part associated with the center of mass and a term associated with the rotation
+
+$$\begin{align}
+T &= \frac{m}{2} \dot{\bm{x}}\cdot \dot{\bm{x}} + \frac{1}{2} \bm{\omega} \cdot \mathcal{I} \bm{\omega}\\
+&=\frac{m}{2}(\dot{x}^2 + \dot{y}^2 + \dot{z}^2) + \frac{i_1}{2}(\dot{\psi} \sin \phi \sin \theta  + \dot{\theta} \cos \phi)^2 + \frac{i_2}{2}(\dot{\psi} \cos \phi \sin \theta - \dot{\theta} \sin \phi)^2 + \frac{i_3}{2}(\dot{\psi} \cos \theta + \dot{\phi})^2\,.
+\end{align}$$
+
+with the mass of the body $m$, the angular velocity $\bm{\omega} = \dot{\bm{Q}}$, and the moment of inertia tensor $\mathcal{I}$ and the associated principal moments of inertia $i_1,$ $i_2,$ and $i_3.$ In the equation above we use the principal axis as the reference frame of the body. 
+
+When the rigid body interacts with the external world through the potential $U(\bm{x},\bm{Q})$, the rigid body is neatly described by the Lagrangian
+
+$$L = T - U\,.$$
+
+The equations of motion of the rigid body, interacting with the external world follow from the standard Euler-Lagrange equations,
+
+$$\begin{align}
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial \bm{x}}\right) - \frac{\partial L}{\partial \bm{x}} &= 0\,,\\
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial \bm{Q}}\right) - \frac{\partial L}{\partial \bm{Q}} &= 0\,.
+\end{align}$$
+
+##### Geometric algebra treatment
+Geometric algebra provides an alternative way of describing the dynamics of a rigid body. Consider a frame of vectors $\{\bm{f}_k(t)\}$ rotating in space with respect to the fixed orthonormal frame $\{\bm{e}_k\}\,,$ representing the orientation of the rigid body. The angular velocity $\bm{\omega}$ is defined by the equation
+
+$$\dot{\bm{f}}_k = \bm{\omega} \times \bm{f}_k\,.$$
+
+The angular velocity $\bm{\omega}$ is a pseudovector (invariant under parity transformations), represents a rotation in a plane, and is thus most naturally represented by the angular bivector
+
+$$\Omega = I \bm{\omega}\,.$$
+
+It follows that $\dot{\bm{f}}_k = \bm{f}_k \cdot \Omega\,.$
+
+In geometric algebra, the dynamics of the frame $\{\bm{f}_k\}$ can be captured in a single object using the time-dependent rotor $R(t)$ using the conjugation
+
+$$\bm{f}_k(t) = R(t) \bm{e}_k R^{\dagger}(t)\,.$$
+
+The rotor $R(t)$ is a unit even multivector, *i.e.,* $R R^\dagger=1\,,$ with the reverse denoted by the dagger. The angular bivector is related to the rotor, by the equation
+
+$$\dot{R} = -\frac{1}{2} \Omega R\,.$$
+
+To see this, differentiate the definition of the rotor once
+
+$$\dot{\bm{f}}_k = \dot{R} \bm{e}_k R^\dagger + R \bm{e}_k \dot{R}= \dot{R}R^\dagger \bm{f}_k + \bm{f}_k R \dot{R}^\dagger\,.$$
+
+Since $RR^\dagger = 1$, we obtain the identity 
+
+$$ 0 = \frac{\mathrm{d}}{\mathrm{d}t}(RR^\dagger) = \dot{R} R^\dagger + R \dot{R}^\dagger\,,$$ 
+
+by which $\dot{R}R^\dagger = -(\dot{R} R^\dagger)^\dagger\,.$ As the product $\dot{R} R^\dagger$ has an even grade and is equal to the negative of its own reverse, it must thus be a bivector. Bivectors commute with vectors from which it follows that
+
+$$\dot{\bm{f}}_k = (2 \dot{R} R^\dagger)\cdot \bm{f}_k\,,$$
+
+from which we obtain the identities $\dot{R} = -\frac{1}{2} \Omega R\,,$ $\dot{R}^\dagger = \frac{1}{2} R^\dagger \Omega\,.$ This should not come as a surprise, as for constant angular bivector $\Omega$, we obtain the rotor
+
+$$R(t) = e^{-\Omega t /2} R_0\,,$$
+
+with $R_0$ the rotor at $t=0\,.$
+
+**Velocity**
+Now, consider a point $\bm{y}$ on a rigid body. We can write the position of the point as
+
+$$\bm{y}(t) = R(t) \bm{x}_r R^\dagger(t) + \bar{\bm{x}}(t)\,,$$
+
+with $\bar{\bm{x}}(t)$ the center of mass and $\bm{x}_r$ the position of the reference point with respect to the center of mass in a stationary reference copy of the rigid body. The velocity of the point $\bm{v}(t)=\dot{y}(t)$ assumes the form
+
+$$\begin{align}
+\bm{v}
+&= \dot{R} \bm{x}_r R^\dagger + R \bm{x}_r \dot{R}^\dagger + \dot{\bar{\bm{x}}}\\
+&= -\frac{1}{2} \Omega R \bm{x}_r R^\dagger + \frac{1}{2} R \bm{x}_r R^\dagger \Omega + \bar{\bm{v}}\\
+&=(R\bm{x}_r R^\dagger) \cdot \Omega + \bar{\bm{v}}\,.
+\end{align}$$
+
+When rotating the angular velocity to the reference frame $\Omega_B = R^\dagger \Omega R$, we find $\dot{R} = -\frac{1}{2}R\Omega_B$ and $\dot{R}^\dagger = \frac{1}{2} \Omega_B R^\dagger\,.$ The velocity now assumes the form
+
+$$\bm{v} = R\ \bm{x}_r \cdot \Omega_B R^\dagger+ \bar{\bm{v}}\,.$$
+
+**Angular momentum**
+The angular momentum bivector (again a pseudovector describing the rotation in a plane) can be written as
+
+$$\begin{align}
+L &= \int \mathrm{d}^3 x_r \rho(\bm{y}- \bar{\bm{x}}) \wedge (\bm{v}-\bar{\bm{v}})\\
+&= \int \mathrm{d}^3x_r \rho (R \bm{x}_r R^\dagger) \wedge (R \bm{x}_r\cdot \Omega_B R^\dagger )\\
+&= R \left(\int \mathrm{d}^3 x_r \rho \bm{x}_r \wedge (\bm{x}_r \cdot \Omega_B)\right)R^\dagger\,,
+\end{align}$$
+
+with $\rho$ the mass density of the rigid body.
+
+**Inertia tensor**
+Now, define the inertia tensor $\mathcal{I}$ as the linear map
+
+$$\mathcal{I}(B) = \int \mathrm{d}^3 x \rho \bm{x} \wedge (\bm{x} \cdot B)$$
+
+mapping bivectors to bivectors. Given a bivector $B$ the bivector $\mathcal{I}(B)$ is the angular momentum about the center of mass of the rotation in the $B$ plane. The angular momentum assumes the form 
+
+$$ L = R \mathcal{I}(\Omega_B)R^\dagger\,.$$
+
+Given this map, we can define the familiar matrix representation by projecting it onto a bivector basis 
+
+$$\mathcal{I}_{ij} = -(I \bm{e}_i)\cdot \mathcal{I}(I \bm{e}_j)\,.$$
+
+This matrix turns out to be symmetric and positive definite. Its eigenvectors give the principal axes and its eigenvalues $i_1,i_2,i_3$, the associated principal moments of inertia.
+
+**Kinetic energy**
+The kinetic energy  of the rigid body reads
+
+$$\begin{align}
+T &= \frac{1}{2} \int \mathrm{d}^3 x \rho (R \bm{x}\cdot \Omega_B R^\dagger +\bar{\bm{v}})^2\\
+&= \frac{1}{2} \int \mathrm{d}^3 x \rho (\bm{x} \cdot \Omega_B)^2 + \frac{1}{2} M \bar{\bm{v}}^2\,,
+\end{align}$$
+
+with the total mass of the rigid body $M\,.$ In terms of the moment of inertia, we obtain the familiar expression
+
+$$\begin{align}
+T &= \frac{1}{2} M \bm{v}^2 + \frac{1}{2} \Omega_B^\dagger \cdot \mathcal{I}(\Omega_B)\\
+&=\frac{1}{2} M \bm{v}^2 + \frac{1}{2} \Omega^\dagger \cdot L\,,
+\end{align}$$
+
+where we for simplicity have dropped the bar over the velocity of the center of mass.
+
+**Torque**
+The torque bivector $N$ on the rigid body affects the body by the differential equation
+
+$$\dot{L} = N\,.$$
+
+**Euler-Lagrange equations**
+The Lagrangian of the system $\bar{L}$ (not to be confused with the angular momentum bivector $L$) can be written as 
+
+$$\bar{L} = \frac{1}{2} M \bm{v}^2 + \frac{1}{2} \Omega_B^\dagger \cdot \mathcal{I}(\Omega_B) - U(\bm{x},R)$$
+
+in the configuration space consisting of the position of the center of mass $\bm{x}$ and the orientation described by the rotor $R$, with $\Omega_B =-2 R^\dagger \dot{R}\,.$ The restricting on the rotors $RR^\dagger=1$ makes the direct evaluation of the Euler Lagrange equations difficult. For this reason, replace the rotor $R$ with a general even multi-vector $\psi$ and impose the constraint $\psi \psi^\dagger=1$ with a Lagrange multiplier. Note that such a general even multi-vector has four real dimensions ($1$ scalar + $3$ bivectors basis vectors = $4$ dimensions) and is known as a spinor. This spinor is directly related to the $2$ spinor of the Pauli equation for non-relativistic particles with spin $1/2\,.$ The Lagrangian now assumes the form
+
+$$\bar{L} = \frac{1}{2}M \dot{x}^2 - \frac{1}{2} \Omega_B \cdot \mathcal{I(\Omega_B)} - U(\bm{x},\psi) - \lambda(\psi \psi^\dagger -1)$$
+
+with the angular velocity bivector in the reference system 
+$$\Omega_B=-\psi^\dagger \dot{\psi} + \dot{\psi}^\dagger \psi$$
+
+and the Lagrange multiplier $\lambda$. Note that this form for the angular velocity bivector reduces to the earlier definition when $\psi \psi^\dagger=1\,.$ The Euler-Lagrange equation now yields
+
+$$\begin{align}
+\partial_{\bm{x}}\bar{L} - \frac{\mathrm{d}}{\mathrm{d}t}(\partial_{\dot{\bm{x}}}\bar{L}) &=0\,,\\
+\partial_{\psi}\bar{L} - \frac{\mathrm{d}}{\mathrm{d}t}(\partial_{\dot{\psi}}\bar{L}) &=0\,,\\
+\partial_\lambda \bar{L} = 0\,.
+\end{align}$$
+
+In the absence of a force, the equation of motion for $\psi$ reduces to 
+
+$$\mathcal{I}(\dot{\Omega}_B) - \Omega_B \mathcal{I}(\Omega_B) = \lambda\,.$$
+
+The scalar part provides $\lambda$ and yields the conservation of rotational energy $-\frac{1}{2} \Omega_B \cdot \mathcal{I}(\Omega_B)$. The bivector part yields 
+
+$$\mathcal{I}(\dot{\Omega}_B)- \frac{1}{2}\Omega_B \mathcal{I}(\Omega_B)+  \frac{1}{2}\mathcal{I}(\Omega_B)\Omega_B =\mathcal{I}(\dot{\Omega}_B)- \Omega_B \times \mathcal{I}(\Omega_B) = 0$$
+
+by which the angular momentum bivector is conserved $\dot{L}=0\,.$ When there is a torque, 
+
+$$\bm{N} = R(\mathcal{I}(\dot{\Omega}_B) - \Omega_B \times \mathcal{I}(\Omega_B))R^\dagger\,.$$
+
+In these equations, I used the cross product on bivectors $A\times B = \frac{1}{2}(AB-BA)\,.$
+
+Finally, note that the Pauli spinor
+
+$$|\psi\rangle = \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}$$
+
+maps onto the even multi-vector spinor
+
+$$\psi = a^0 + \sum_{k=1}^3 a^k I \bm{e}_k\,,$$
+
+consisting of a scalar and three bivector terms. Hence, spinors are not necessarily quantum objects.
