@@ -777,16 +777,35 @@ $$\mathcal{I}(\dot{\Omega}_B)- \frac{1}{2}\Omega_B \mathcal{I}(\Omega_B)+  \frac
 
 by which the angular momentum bivector is conserved $\dot{L}=0\,.$ When there is a torque, 
 
-$$\bm{N} = R(\mathcal{I}(\dot{\Omega}_B) - \Omega_B \times \mathcal{I}(\Omega_B))R^\dagger\,.$$
+$$N = - \partial_\psi U =  R(\mathcal{I}(\dot{\Omega}_B) - \Omega_B \times \mathcal{I}(\Omega_B))R^\dagger\,.$$
 
 In these equations, I used the cross product on bivectors $A\times B = \frac{1}{2}(AB-BA)\,.$
 
-Finally, note that the Pauli spinor
+Finally, the Pauli spinor
 
 $$|\psi\rangle = \begin{pmatrix} a^0 + i a^3 \\ -a^2 + i a^1 \end{pmatrix}$$
 
-maps onto the even multi-vector spinor
+maps onto the even multi-vectors of $\mathbb{G}^3\,,$
 
 $$\psi = a^0 + \sum_{k=1}^3 a^k I \bm{e}_k\,,$$
 
-consisting of a scalar and three bivector terms. Hence, spinors are not necessarily quantum objects.
+consisting of a scalar and three bivector terms. This object behaves as a spinor under the geometric product as the even subalgebra spanned by $1, \bm{e}_1, \bm{e}_2,\bm{e}_3$ is isomorphic to the Pauli spinor algebra, as
+
+$$\textbf{e}_i \textbf{e}_j = \delta_{ij} +  \epsilon_{ijk}I \textbf{e}_k\,.$$
+
+This algebra is usually represented by the Pauli spin matrices in physics
+
+$$\begin{align}
+\text{I} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},\ 
+\sigma_1=\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},\
+\sigma_2=\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix},\
+\sigma_3=\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+\end{align}$$
+
+satisfying
+
+$$\sigma_i \sigma_j = \delta_{ij}\text{I} + i \epsilon_{ijk}\sigma_k\,,$$
+
+These two algebras are isomorphic upon the isomorphism $\bm{e}_i \leftrightarrow \sigma_i\,,$ as the pseudoscalar is a complex structure, *i.e.,* $I^2=-1$ like $i=\sqrt{-1}\,.$ 
+
+Hence, spinors are not necessarily quantum objects but already play a role in the Lagrangian of rigid bodies describing classical spin.

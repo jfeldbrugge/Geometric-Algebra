@@ -1391,17 +1391,41 @@ class="math inline">\(-\frac{1}{2} \Omega_B \cdot
 0\]</span></p>
 <p>by which the angular momentum bivector is conserved <span
 class="math inline">\(\dot{L}=0\,.\)</span> When there is a torque,</p>
-<p><span class="math display">\[\bm{N} = R(\mathcal{I}(\dot{\Omega}_B) -
-\Omega_B \times \mathcal{I}(\Omega_B))R^\dagger\,.\]</span></p>
+<p><span class="math display">\[N = - \partial_\psi U
+=  R(\mathcal{I}(\dot{\Omega}_B) - \Omega_B \times
+\mathcal{I}(\Omega_B))R^\dagger\,.\]</span></p>
 <p>In these equations, I used the cross product on bivectors <span
 class="math inline">\(A\times B = \frac{1}{2}(AB-BA)\,.\)</span></p>
-<p>Finally, note that the Pauli spinor</p>
+<p>Finally, the Pauli spinor</p>
 <p><span class="math display">\[|\psi\rangle = \begin{pmatrix} a^0 + i
 a^3 \\ -a^2 + i a^1 \end{pmatrix}\]</span></p>
-<p>maps onto the even multi-vector spinor</p>
+<p>maps onto the even multi-vectors of <span
+class="math inline">\(\mathbb{G}^3\,,\)</span></p>
 <p><span class="math display">\[\psi = a^0 + \sum_{k=1}^3 a^k I
 \bm{e}_k\,,\]</span></p>
-<p>consisting of a scalar and three bivector terms. Hence, spinors are
-not necessarily quantum objects.</p>
+<p>consisting of a scalar and three bivector terms. This object behaves
+as a spinor under the geometric product as the even subalgebra spanned
+by <span class="math inline">\(1, \bm{e}_1, \bm{e}_2,\bm{e}_3\)</span>
+is isomorphic to the Pauli spinor algebra, as</p>
+<p><span class="math display">\[\textbf{e}_i \textbf{e}_j = \delta_{ij}
++  \epsilon_{ijk}I \textbf{e}_k\,.\]</span></p>
+<p>This algebra is usually represented by the Pauli spin matrices in
+physics</p>
+<p><span class="math display">\[\begin{align}
+\text{I} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\
+\sigma_1=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix},\
+\sigma_2=\begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix},\
+\sigma_3=\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix},
+\end{align}\]</span></p>
+<p>satisfying</p>
+<p><span class="math display">\[\sigma_i \sigma_j = \delta_{ij}\text{I}
++ i \epsilon_{ijk}\sigma_k\,,\]</span></p>
+<p>These two algebras are isomorphic upon the isomorphism <span
+class="math inline">\(\bm{e}_i \leftrightarrow \sigma_i\,,\)</span> as
+the pseudoscalar is a complex structure, <em>i.e.,</em> <span
+class="math inline">\(I^2=-1\)</span> like <span
+class="math inline">\(i=\sqrt{-1}\,.\)</span></p>
+<p>Hence, spinors are not necessarily quantum objects but already play a
+role in the Lagrangian of rigid bodies describing classical spin.</p>
 </body>
 </html>
