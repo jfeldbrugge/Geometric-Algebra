@@ -60,21 +60,22 @@ class="math inline">\(x\)</span> with the coordinates <span
 class="math inline">\(x = (t,x,y,z)\)</span>. In an alternative inertial
 frame <span class="math inline">\(S&#39;\)</span>, defined by another
 non-accelerating observer moving with a velocity <span
-class="math inline">\(\textbf{v}\)</span> with respect to the first
+class="math inline">\(\boldsymbol{v}\)</span> with respect to the first
 observer, the event is described by a second set of coordinates <span
 class="math inline">\(x = (t&#39;,x&#39;, y&#39;,z&#39;).\)</span> These
 coordinates are related by the Lorentz boost</p>
 <p><span class="math display">\[\begin{align}
-t&#39; &amp;= \gamma(t - \|\textbf{v}\| x / c^2)\,,\\
-x&#39; &amp;= \gamma(x - \|\textbf{v}\| t)\,,\\
+t&#39; &amp;= \gamma(t - \|\boldsymbol{v}\| x / c^2)\,,\\
+x&#39; &amp;= \gamma(x - \|\boldsymbol{v}\| t)\,,\\
 y&#39; &amp;= y\,,\\
 z&#39; &amp;= z\,,
 \end{align}\]</span></p>
-<p>assuming the velocity <span class="math inline">\(\textbf{v}\)</span>
-is oriented in the <span class="math inline">\(x\)</span>-direction and
-with the Lorentz factor</p>
+<p>assuming the velocity <span
+class="math inline">\(\boldsymbol{v}\)</span> is oriented in the <span
+class="math inline">\(x\)</span>-direction and with the Lorentz
+factor</p>
 <p><span class="math display">\[ \gamma =
-\frac{1}{\sqrt{1-\textbf{v}^2/c^2}}\,,\]</span></p>
+\frac{1}{\sqrt{1-\boldsymbol{v}^2/c^2}}\,,\]</span></p>
 <p>and the speed of light in vacuum <span
 class="math inline">\(c\)</span>. More general boosts follow by rotating
 space. We observe that the Lorentz boost transforms space into time and
@@ -86,11 +87,11 @@ and time have the same dimensions and velocities are dimensionless.</p>
 space. However, there exists a key distinction between rotations and
 Lorentz transformations. While rotations preserve the distance between
 two points,</p>
-<p><span class="math display">\[\Delta \textbf{x}^2 = \Delta x^2 +
+<p><span class="math display">\[\Delta \boldsymbol{x}^2 = \Delta x^2 +
 \Delta y^2 + \Delta z^2\,,\]</span></p>
 <p>the spacetime distance between events</p>
 <p><span class="math display">\[\Delta s^2 = \Delta t^2 - \Delta
-\textbf{x}^2\,,\]</span></p>
+\boldsymbol{x}^2\,,\]</span></p>
 <p>is invariant under the Lorentz transformation. The minus sign
 differentiates the time and space directions.</p>
 <p>Traditionally, special relativity describes the nature of spacetime
@@ -177,11 +178,11 @@ event as the vector <span class="math inline">\(x = x^\mu
 the time vector by <span class="math inline">\(\gamma_0\)</span>,</p>
 <p><span class="math display">\[\begin{align}
 x \gamma_0 &amp;= x \cdot \gamma_0 + x \wedge \gamma_0 \\
-&amp;= t + \textbf{x}\,.
+&amp;= t + \boldsymbol{x}\,.
 \end{align}\]</span></p>
 <p>We see that the time <span class="math inline">\(t = x \cdot
 \gamma_0\)</span> is a spacetime scalar and the relative position <span
-class="math inline">\(\textbf{x} = x \wedge \gamma_0 = x^i \gamma_i
+class="math inline">\(\boldsymbol{x} = x \wedge \gamma_0 = x^i \gamma_i
 \wedge \gamma_0 = x^i \sigma_i\)</span> with <span
 class="math inline">\(\sigma_i = \gamma_i \gamma_0\)</span> is a
 spacetime bivector. This split is motivated by the observation that the
@@ -190,8 +191,8 @@ norm of a spacetime event is the invariant distance</p>
 x^2 &amp;= x \gamma_0 \gamma_0 x\\
 &amp;=(x \cdot \gamma_0  + x \wedge \gamma_0)(x \cdot \gamma_0  - x
 \wedge \gamma_0)\\
-&amp;=(t  + \textbf{x})(t  - \textbf{x})\\
-&amp;=t^2 - \textbf{x}^2\,.
+&amp;=(t  + \boldsymbol{x})(t  - \boldsymbol{x})\\
+&amp;=t^2 - \boldsymbol{x}^2\,.
 \end{align}\]</span></p>
 <p>The timelike bivectors of the spacetime algebra <span
 class="math inline">\(\sigma_i\)</span> act as the basis vectors of the
@@ -249,42 +250,43 @@ class="math inline">\(\tau\)</span>, define the proper velocity <span
 class="math inline">\(v= \frac{\mathrm{d}x}{\mathrm{d}\tau}\)</span>,
 where the proper velocity is a unit vector, <em>i.e.,</em> <span
 class="math inline">\(v^2=1\)</span>. We can relate the proper velocity
-to the inertial frame velocity <span class="math inline">\(\textbf{v} =
-\frac{\mathrm{d}\textbf{x}}{\mathrm{d}t}\)</span> with the spacetime
+to the inertial frame velocity <span
+class="math inline">\(\boldsymbol{v} =
+\frac{\mathrm{d}\boldsymbol{x}}{\mathrm{d}t}\)</span> with the spacetime
 split,</p>
 <p><span class="math display">\[ v \gamma_0 =
 \frac{\mathrm{d}}{\mathrm{d} \tau}(x \gamma_0) =
-\frac{\mathrm{d}}{\mathrm{d}\tau}(t+\textbf{x})\]</span></p>
+\frac{\mathrm{d}}{\mathrm{d}\tau}(t+\boldsymbol{x})\]</span></p>
 <p>by which <span
 class="math inline">\(\frac{\mathrm{d}t}{\mathrm{d}\tau} = v\cdot
 \gamma_0\)</span> and <span
-class="math inline">\(\frac{\mathrm{d}\textbf{x}}{\mathrm{d}\tau}= v
+class="math inline">\(\frac{\mathrm{d}\boldsymbol{x}}{\mathrm{d}\tau}= v
 \wedge \gamma_0\)</span> and thus</p>
-<p><span class="math display">\[\textbf{v} =
-\frac{\mathrm{d}\textbf{x}}{\mathrm{d}t} =
-\frac{\mathrm{d}\textbf{x}}{\mathrm{d}\tau}\frac{\mathrm{d}\tau}{\mathrm{d}t}
+<p><span class="math display">\[\boldsymbol{v} =
+\frac{\mathrm{d}\boldsymbol{x}}{\mathrm{d}t} =
+\frac{\mathrm{d}\boldsymbol{x}}{\mathrm{d}\tau}\frac{\mathrm{d}\tau}{\mathrm{d}t}
 = \frac{v \wedge \gamma_0}{v\cdot \gamma_0}.\]</span></p>
 <p>This construction for the derivative <span
-class="math inline">\(\textbf{v}\)</span> is manifestly invariant under
-reparametrizations of the worldline.</p>
+class="math inline">\(\boldsymbol{v}\)</span> is manifestly invariant
+under reparametrizations of the worldline.</p>
 <h4 id="lorentz-transformations">Lorentz transformations</h4>
 <p>Different observers in different inertial reference frames split
 spacetime differently. Let’s first consider the <span
 class="math inline">\(2\)</span>-dimensional spacetime algebra <span
 class="math inline">\(\mathbb{G}^{1,1}\)</span>. An observer with a
-relative velocity <span class="math inline">\(\textbf{v}\)</span> in the
-<span class="math inline">\(x\)</span>-direction, defines a reference
-frame <span class="math inline">\(S&#39;\)</span> where the timelike
-basis vector is given by the four-velocity <span class="math inline">\(v
-= \gamma (\gamma_0 + \|\textbf{v}\|\gamma_1)\)</span>. The Lorentz
-factor ensures that the proper velocity has unit norm,
-<em>i.e.,</em></p>
+relative velocity <span class="math inline">\(\boldsymbol{v}\)</span> in
+the <span class="math inline">\(x\)</span>-direction, defines a
+reference frame <span class="math inline">\(S&#39;\)</span> where the
+timelike basis vector is given by the four-velocity <span
+class="math inline">\(v = \gamma (\gamma_0 +
+\|\boldsymbol{v}\|\gamma_1)\)</span>. The Lorentz factor ensures that
+the proper velocity has unit norm, <em>i.e.,</em></p>
 <p><span class="math display">\[\begin{align}
 v^2 &amp;= v \gamma_0 \gamma_0 v \\
-&amp;=\gamma^2(\gamma_0 \cdot \gamma_0 + \|\textbf{v}\| \gamma_1 \wedge
-\gamma_0)(\gamma_0 \cdot \gamma_0 - \|\textbf{v}\| \gamma_1 \wedge
-\gamma_0)\\
-&amp;=\gamma^2 (1 - \textbf{v}^2) \\
+&amp;=\gamma^2(\gamma_0 \cdot \gamma_0 + \|\boldsymbol{v}\| \gamma_1
+\wedge \gamma_0)(\gamma_0 \cdot \gamma_0 - \|\boldsymbol{v}\| \gamma_1
+\wedge \gamma_0)\\
+&amp;=\gamma^2 (1 - \boldsymbol{v}^2) \\
 &amp;= 1\,.
 \end{align}\]</span></p>
 <p>The spacetime split in the reference frame <span
@@ -292,32 +294,33 @@ class="math inline">\(S&#39;\)</span> takes the form</p>
 <p><span class="math display">\[\begin{align}
 x v
 &amp;=  x \cdot v + x \wedge v\\
-&amp;= t&#39; + \textbf{x}&#39;\,,
+&amp;= t&#39; + \boldsymbol{x}&#39;\,,
 \end{align}\]</span></p>
 <p>with the time</p>
 <p><span class="math display">\[\begin{align}
 t&#39; &amp;= x \cdot v \\
 &amp;=x^\mu \gamma_\mu \cdot v \\
-&amp;= \gamma  (x^0 \gamma_0 \cdot \gamma_0 +\|\textbf{v}\| x^1 \gamma_1
-\cdot \gamma_1)\\
-&amp;= \gamma  (x^0 -\|\textbf{v}\| x^1)\,,
+&amp;= \gamma  (x^0 \gamma_0 \cdot \gamma_0 +\|\boldsymbol{v}\| x^1
+\gamma_1 \cdot \gamma_1)\\
+&amp;= \gamma  (x^0 -\|\boldsymbol{v}\| x^1)\,,
 \end{align}\]</span></p>
 <p>where <span class="math inline">\(\mu=0,1\)</span>, and the relative
 position</p>
 <p><span class="math display">\[\begin{align}
-\textbf{x}&#39; &amp;= x \wedge v\\
+\boldsymbol{x}&#39; &amp;= x \wedge v\\
 &amp;=x^\mu \gamma_\mu \wedge v \\
-&amp;= \gamma \|\textbf{v}\| x^0 \gamma_0 \wedge \gamma_1 + \gamma x^1
-\gamma_1 \wedge \gamma_0 \\
-&amp;= \gamma( x^1 - \|\textbf{v}\| x^0) \sigma_1\,.
+&amp;= \gamma \|\boldsymbol{v}\| x^0 \gamma_0 \wedge \gamma_1 + \gamma
+x^1 \gamma_1 \wedge \gamma_0 \\
+&amp;= \gamma( x^1 - \|\boldsymbol{v}\| x^0) \sigma_1\,.
 \end{align}\]</span></p>
 <p>These are the Lorentz boosts restricted to the <span
 class="math inline">\((t,x)\)</span>-plane. As a consequence, a Lorentz
 boost of a spacetime event in <span
 class="math inline">\(\mathbb{G}^{1,1}\)</span> is implemented as the
 multiplication by the multi-vector <span class="math inline">\(\gamma_0
-v\)</span>, <em>i.e.,</em> <span class="math inline">\((t+\textbf{x})
-\gamma_0 v = t&#39; + \textbf{x}&#39;\)</span>. A Lorentz boost in <span
+v\)</span>, <em>i.e.,</em> <span
+class="math inline">\((t+\boldsymbol{x}) \gamma_0 v = t&#39; +
+\boldsymbol{x}&#39;\)</span>. A Lorentz boost in <span
 class="math inline">\(\mathbb{G}^{1,1}\)</span> is analogous to a
 rotation in the geometric algebra <span
 class="math inline">\(\mathbb{G}^2\)</span>.</p>
@@ -331,7 +334,7 @@ R_{\alpha}^{-1}\]</span></p>
 /2}\]</span></p>
 <p>where the rapidity <span class="math inline">\(\alpha\)</span>,
 defined by <span class="math inline">\(\tanh \alpha =
-\|\textbf{v}\|\,,\)</span> is a convenient parametrization of the
+\|\boldsymbol{v}\|\,,\)</span> is a convenient parametrization of the
 magnitude of the relative velocity vector. Explicitly,</p>
 <p><span class="math display">\[e^{\sigma_1 \alpha} = \cosh \alpha +
 \sigma_1 \sinh \alpha\]</span></p>
@@ -350,11 +353,11 @@ class="math inline">\(\sigma_1 \gamma_1= \gamma_0 = - \gamma_1
 \gamma_2 \sigma_1\,,\)</span> and <span class="math inline">\(\sigma_1
 \gamma_3= \gamma_3 \sigma_1\,.\)</span> A general Lorentz boost is
 implemented by the equation</p>
-<p><span class="math display">\[x&#39; = e^{-\hat{\textbf{v}} \alpha /2}
-x e^{\hat{\textbf{v}} \alpha /2}\,,\]</span></p>
+<p><span class="math display">\[x&#39; = e^{-\hat{\boldsymbol{v}} \alpha
+/2} x e^{\hat{\boldsymbol{v}} \alpha /2}\,,\]</span></p>
 <p>with <span class="math inline">\(\tanh \alpha =
-\|\textbf{v}\|\)</span> and <span
-class="math inline">\(\hat{\textbf{v}}^2=1\)</span>. A Lorentz
+\|\boldsymbol{v}\|\)</span> and <span
+class="math inline">\(\hat{\boldsymbol{v}}^2=1\)</span>. A Lorentz
 transformation includes both spacetime boosts and space rotations,
 implemented by the rotor equation</p>
 <p><span class="math display">\[x&#39; = e^{-B \alpha /2} x e^{B \alpha
@@ -391,26 +394,26 @@ class="math inline">\(\nabla\)</span> on the right by <span
 class="math inline">\(\gamma_0\)</span></p>
 <p><span class="math display">\[\nabla \gamma_0 = (\gamma^0 \partial_t +
 \gamma^i \partial_i)\gamma_0 = \partial_t - \sigma_i \partial_i =
-\partial_t - \bm{\nabla}\,,\]</span></p>
+\partial_t - \boldsymbol{\nabla}\,,\]</span></p>
 <p>with <span class="math inline">\(\sigma_i = \gamma_i
 \gamma_0\)</span> and indices are raised and lowered with the Minkowski
 matric <span class="math inline">\(\eta_{\mu \nu} =
 \text{diag}(1,-1,-1,-1)\,.\)</span> As we saw in the study of Euclidean
 geometric algebras, the Maxwell equations assume the neat form</p>
-<p><span class="math display">\[\partial_t F + \bm{\nabla}F = \rho -
-\textbf{J}\,,\]</span></p>
-<p>with the field strength <span class="math inline">\(F=\textbf{E} + I
-\textbf{B}\)</span>, the electric charge density <span
+<p><span class="math display">\[\partial_t F + \boldsymbol{\nabla}F =
+\rho - \boldsymbol{J}\,,\]</span></p>
+<p>with the field strength <span class="math inline">\(F=\boldsymbol{E}
++ I \boldsymbol{B}\)</span>, the electric charge density <span
 class="math inline">\(\rho\)</span> and the electric current density
-<span class="math inline">\(\textbf{J}\)</span> in units for which the
-speed of light in vacuum <span class="math inline">\(c=1\)</span>. Note
-that the field strength is a spacetime bivector, for which the timelike
-bivectors correspond to the electric and the spacelike bivectors
-correspond to the magnetic field components.</p>
+<span class="math inline">\(\boldsymbol{J}\)</span> in units for which
+the speed of light in vacuum <span class="math inline">\(c=1\)</span>.
+Note that the field strength is a spacetime bivector, for which the
+timelike bivectors correspond to the electric and the spacelike
+bivectors correspond to the magnetic field components.</p>
 <p>Introduce the spacetime current <span class="math inline">\(J = \rho
 \gamma_0 + J_i \gamma_i\)</span>, by the spacetime split,</p>
 <p><span class="math display">\[\rho = J \cdot \gamma_0\,,\quad
-\textbf{J} = J \wedge \gamma_0\,,\]</span></p>
+\boldsymbol{J} = J \wedge \gamma_0\,,\]</span></p>
 <p>we find a very neat covariant formulation of the Maxwell equations in
 spacetime</p>
 <p><span class="math display">\[\nabla F = J\,.\]</span></p>
@@ -424,7 +427,8 @@ of charge. After applying the vector derivative,</p>
 \nabla \wedge J\,,\]</span></p>
 <p>we directly obtain current conservation</p>
 <p><span class="math display">\[\nabla \cdot J =\frac{\partial
-\rho}{\partial t} + \bm{\nabla}\cdot \textbf{J} = 0\,,\]</span></p>
+\rho}{\partial t} + \boldsymbol{\nabla}\cdot \boldsymbol{J} =
+0\,,\]</span></p>
 <p>by looking for the scalar part. The Laplace operator preserves the
 grades of multi-vectors.</p>
 <p>Also, the equation <span class="math inline">\(\nabla F=J\)</span>

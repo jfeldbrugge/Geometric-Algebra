@@ -64,13 +64,13 @@ class="math inline">\(\mathbb{G}^n\)</span> to the vector space <span
 class="math inline">\(\mathbb{R}^n\)</span>:</em></p>
 <ul>
 <li>G5: <span
-class="math inline">\(\textbf{u}\textbf{u}=\textbf{u}\cdot\textbf{u} =
-\|\textbf{u}\|^2\)</span> <em>for all vectors</em> <span
-class="math inline">\(\textbf{u} \in \mathbb{R}^n\)</span>,</li>
+class="math inline">\(\boldsymbol{u}\boldsymbol{u}=\boldsymbol{u}\cdot\boldsymbol{u}
+= \|\boldsymbol{u}\|^2\)</span> <em>for all vectors</em> <span
+class="math inline">\(\boldsymbol{u} \in \mathbb{R}^n\)</span>,</li>
 </ul>
 <p><em>by which nonzero vectors have an inverse in <span
 class="math inline">\(\mathbb{G}^n\)</span> given by <span
-class="math inline">\(\textbf{u}^{-1}=\textbf{u}/\|\textbf{u}\|\)</span>
+class="math inline">\(\boldsymbol{u}^{-1}=\boldsymbol{u}/\|\boldsymbol{u}\|\)</span>
 and a way to construct the multivectors in <span
 class="math inline">\(\mathbb{G}^n\)</span> from the vectors in <span
 class="math inline">\(\mathbb{R}^n\)</span></em></p>
@@ -85,25 +85,28 @@ richer way to do geometry and calculus.</p>
 <p>In particular, from the condition G5 we obtain an identity relating
 the inner product to the geometric product for general vectors <span
 class="math display">\[\begin{align}
-\textbf{u}\cdot\textbf{v}
-&amp;= \frac{1}{2}((\textbf{u} +  \textbf{v})\cdot(\textbf{u}
-+  \textbf{v}) - \textbf{u}\cdot\textbf{u} -\textbf{v} \cdot
-\textbf{v})\\
-&amp;= \frac{1}{2}((\textbf{u} +  \textbf{v})^2- \textbf{u}\textbf{u}
--\textbf{v}\textbf{v})\\
-&amp;= \frac{1}{2}(\textbf{u} \textbf{v} + \textbf{v}\textbf{u})\,.
+\boldsymbol{u}\cdot\boldsymbol{v}
+&amp;= \frac{1}{2}((\boldsymbol{u}
++  \boldsymbol{v})\cdot(\boldsymbol{u} +  \boldsymbol{v}) -
+\boldsymbol{u}\cdot\boldsymbol{u} -\boldsymbol{v} \cdot
+\boldsymbol{v})\\
+&amp;= \frac{1}{2}((\boldsymbol{u} +  \boldsymbol{v})^2-
+\boldsymbol{u}\boldsymbol{u} -\boldsymbol{v}\boldsymbol{v})\\
+&amp;= \frac{1}{2}(\boldsymbol{u} \boldsymbol{v} +
+\boldsymbol{v}\boldsymbol{u})\,.
 \end{align}\]</span> When two vectors are orthogonal, <em>i.e.,</em>
-<span class="math inline">\(\textbf{u} \cdot \textbf{v}=0\)</span>, the
-geometric product of the vectors is skew-symmetric <span
-class="math display">\[ \textbf{u} \textbf{v} = -\textbf{v}
-\textbf{u}\,.\]</span></p>
+<span class="math inline">\(\boldsymbol{u} \cdot
+\boldsymbol{v}=0\)</span>, the geometric product of the vectors is
+skew-symmetric <span class="math display">\[ \boldsymbol{u}
+\boldsymbol{v} = -\boldsymbol{v} \boldsymbol{u}\,.\]</span></p>
 <p>The product of two orthogonal vectors is neither a scalar nor a
 vector, since its square is negative <span
-class="math inline">\((\textbf{u}\textbf{v})^2=\textbf{u}\textbf{v}\textbf{u}\textbf{v}=-\textbf{u}\textbf{u}
-\textbf{v}\textbf{v}=-\|\textbf{u}\|^2 \|\textbf{v}\|^2\)</span>. It is
-an object known as a bi-vector representing an oriented area element
-(spanned by <span class="math inline">\(\textbf{u}\)</span> and <span
-class="math inline">\(\textbf{v}\)</span>), the first instance of an
+class="math inline">\((\boldsymbol{u}\boldsymbol{v})^2=\boldsymbol{u}\boldsymbol{v}\boldsymbol{u}\boldsymbol{v}=-\boldsymbol{u}\boldsymbol{u}
+\boldsymbol{v}\boldsymbol{v}=-\|\boldsymbol{u}\|^2
+\|\boldsymbol{v}\|^2\)</span>. It is an object known as a bi-vector
+representing an oriented area element (spanned by <span
+class="math inline">\(\boldsymbol{u}\)</span> and <span
+class="math inline">\(\boldsymbol{v}\)</span>), the first instance of an
 element of the geometric algebra <span
 class="math inline">\(\mathbb{G}^n\)</span> that is not present in
 vector algebra <span class="math inline">\(\mathbb{R}^n\)</span>.</p>
@@ -111,351 +114,375 @@ vector algebra <span class="math inline">\(\mathbb{R}^n\)</span>.</p>
 to <span class="math inline">\(\mathbb{R}^n\)</span>, and leads to an
 alternative definition of the inner product of vectors as the
 symmetrized product,</p>
-<p><span class="math display">\[\textbf{u}\cdot \textbf{v} =
-\frac{1}{2}(\textbf{u}\textbf{v} + \textbf{v}
-\textbf{u})\,.\]</span></p>
+<p><span class="math display">\[\boldsymbol{u}\cdot \boldsymbol{v} =
+\frac{1}{2}(\boldsymbol{u}\boldsymbol{v} + \boldsymbol{v}
+\boldsymbol{u})\,.\]</span></p>
 <p>The anti-symmetrized product is known as the outer product of the
 vectors</p>
-<p><span class="math display">\[\textbf{u}\wedge \textbf{v} =
-\frac{1}{2}(\textbf{u}\textbf{v} - \textbf{v}
-\textbf{u})\,.\]</span></p>
+<p><span class="math display">\[\boldsymbol{u}\wedge \boldsymbol{v} =
+\frac{1}{2}(\boldsymbol{u}\boldsymbol{v} - \boldsymbol{v}
+\boldsymbol{u})\,.\]</span></p>
 <p>We will see that this outer product coincides with the outer product
 of vector analysis.</p>
 <p>From these definitions, it follows that the geometric product of two
 vectors can be expressed in terms of the more familiar inner and outer
 products</p>
-<p><span class="math display">\[\textbf{u}\textbf{v} =
-\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,\]</span></p>
+<p><span class="math display">\[\boldsymbol{u}\boldsymbol{v} =
+\boldsymbol{u}\cdot\boldsymbol{v} + \boldsymbol{u}\wedge
+\boldsymbol{v}\,,\]</span></p>
 <p>and</p>
-<p><span class="math display">\[\textbf{v}\textbf{u} =
-\textbf{u}\cdot\textbf{v} - \textbf{u}\wedge \textbf{v}\,.\]</span></p>
+<p><span class="math display">\[\boldsymbol{v}\boldsymbol{u} =
+\boldsymbol{u}\cdot\boldsymbol{v} - \boldsymbol{u}\wedge
+\boldsymbol{v}\,.\]</span></p>
 <p>Note that the geometric product of vectors is invertible, unlike the
 inner or outer products that constitute them. For parallel vectors (with
-<span class="math inline">\(\textbf{u} = a \textbf{v}\)</span> with
-<span class="math inline">\(a \in \mathbb{R}\)</span>), the geometric
-product reduces to the inner product <span
-class="math inline">\(\textbf{u}\textbf{v} = \textbf{u}\cdot
-\textbf{v}\)</span> (using condition G2). For orthogonal vectors, the
-geometric product reduces to the outer product <span
-class="math inline">\(\textbf{u}\textbf{v} = \textbf{u}\wedge
-\textbf{v}\)</span>. For a general set of vectors, the geometric product
-leads to a multi-vector, where the scalar part represents the inner and
-the bi-vector part represents the outer product.</p>
+<span class="math inline">\(\boldsymbol{u} = a \boldsymbol{v}\)</span>
+with <span class="math inline">\(a \in \mathbb{R}\)</span>), the
+geometric product reduces to the inner product <span
+class="math inline">\(\boldsymbol{u}\boldsymbol{v} = \boldsymbol{u}\cdot
+\boldsymbol{v}\)</span> (using condition G2). For orthogonal vectors,
+the geometric product reduces to the outer product <span
+class="math inline">\(\boldsymbol{u}\boldsymbol{v} =
+\boldsymbol{u}\wedge \boldsymbol{v}\)</span>. For a general set of
+vectors, the geometric product leads to a multi-vector, where the scalar
+part represents the inner and the bi-vector part represents the outer
+product.</p>
 <p>To develop intuition, we briefly study the geometric implications of
 this construction on two- and three-dimensional Euclidean space.</p>
 <h3 id="two-dimensional-plane">Two-dimensional plane</h3>
 <p>Consider the two-dimensional plane <span
 class="math inline">\(\mathbb{R}^2\)</span> spanned by the orthonormal
 unit vectors <span
-class="math inline">\(\textbf{e}_1=\hat{\textbf{x}}\)</span> and <span
-class="math inline">\(\textbf{e}_2=\hat{\textbf{y}}\)</span>. Geometric
-algebra is spanned by the elements</p>
-<p><span class="math display">\[\{1, \textbf{e}_1, \textbf{e}_2,
-\textbf{e}_1\textbf{e}_2\}\,,\]</span></p>
+class="math inline">\(\boldsymbol{e}_1=\hat{\boldsymbol{x}}\)</span> and
+<span
+class="math inline">\(\boldsymbol{e}_2=\hat{\boldsymbol{y}}\)</span>.
+Geometric algebra is spanned by the elements</p>
+<p><span class="math display">\[\{1, \boldsymbol{e}_1, \boldsymbol{e}_2,
+\boldsymbol{e}_1\boldsymbol{e}_2\}\,,\]</span></p>
 <p>where <span class="math inline">\(1\)</span> is the unit scalar,
-<span class="math inline">\(\textbf{e}_1\)</span> and <span
-class="math inline">\(\textbf{e}_2\)</span> are the unit vectors and
-<span class="math inline">\(\textbf{e}_1\textbf{e}_2\)</span> is the
-unique bi-vector representing an oriented area element. This is the
+<span class="math inline">\(\boldsymbol{e}_1\)</span> and <span
+class="math inline">\(\boldsymbol{e}_2\)</span> are the unit vectors and
+<span class="math inline">\(\boldsymbol{e}_1\boldsymbol{e}_2\)</span> is
+the unique bi-vector representing an oriented area element. This is the
 <em>canonical basis</em> of the geometric algebra <span
 class="math inline">\(\mathbb{G}^2\)</span>. We cannot generate more
 bases elements, as the unit vectors <span
-class="math inline">\(\textbf{e}_1\)</span> and <span
-class="math inline">\(\textbf{e}_2\)</span> are orthogonal and objects
-consisting of the geometric product of three or more bases elements of
-<span class="math inline">\(\mathbb{R}^2\)</span> can be reduced to
-these four combinations using the anti-commutative property,
+class="math inline">\(\boldsymbol{e}_1\)</span> and <span
+class="math inline">\(\boldsymbol{e}_2\)</span> are orthogonal and
+objects consisting of the geometric product of three or more bases
+elements of <span class="math inline">\(\mathbb{R}^2\)</span> can be
+reduced to these four combinations using the anti-commutative property,
 <em>e.g.</em>, <span
-class="math inline">\(\textbf{e}_1\textbf{e}_2\textbf{e}_1=-\textbf{e}_1\textbf{e}_1\textbf{e}_2=-\textbf{e}_2\)</span>.
+class="math inline">\(\boldsymbol{e}_1\boldsymbol{e}_2\boldsymbol{e}_1=-\boldsymbol{e}_1\boldsymbol{e}_1\boldsymbol{e}_2=-\boldsymbol{e}_2\)</span>.
 A multi-vector is an object of the form</p>
-<p><span class="math display">\[A = a + b\ \textbf{e}_1 + c\
-\textbf{e}_2 + d\ \textbf{e}_1\textbf{e}_2\,,\]</span></p>
+<p><span class="math display">\[A = a + b\ \boldsymbol{e}_1 + c\
+\boldsymbol{e}_2 + d\ \boldsymbol{e}_1\boldsymbol{e}_2\,,\]</span></p>
 <p>with for real numbers <span class="math inline">\(a,b,c,d \in
 \mathbb{R}\)</span>. The product of two multi-vectors follows from the
 associative nature of the geometric product and the multiplication table
 of the bases elements of <span
 class="math inline">\(\mathbb{R}^2\)</span>, <span
-class="math inline">\(\textbf{e}_1^2=\textbf{e}_2^2=1\)</span> and <span
-class="math inline">\(\textbf{e}_1\textbf{e}_2=-\textbf{e}_1\textbf{e}_2\)</span>,
+class="math inline">\(\boldsymbol{e}_1^2=\boldsymbol{e}_2^2=1\)</span>
+and <span
+class="math inline">\(\boldsymbol{e}_1\boldsymbol{e}_2=-\boldsymbol{e}_1\boldsymbol{e}_2\)</span>,
 as we saw above.</p>
 <p>Explicitly, the geometric product of two vectors takes the form</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u} \textbf{v}
-&amp;= (a_1 \textbf{e}_1 + b_1 \textbf{e}_2)(a_2 \textbf{e}_1 + b_2
-\textbf{e}_2)\\
+\boldsymbol{u} \boldsymbol{v}
+&amp;= (a_1 \boldsymbol{e}_1 + b_1 \boldsymbol{e}_2)(a_2
+\boldsymbol{e}_1 + b_2 \boldsymbol{e}_2)\\
 &amp;=(a_1 a_2 + b_1 b_2) + (a_1 b_2 - b_1
-a_2)\textbf{e}_1\textbf{e}_2\\
-&amp;=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,
+a_2)\boldsymbol{e}_1\boldsymbol{e}_2\\
+&amp;=\boldsymbol{u}\cdot\boldsymbol{v} + \boldsymbol{u}\wedge
+\boldsymbol{v}\,,
 \end{align}\]</span></p>
 <p>where we identify the familiar inner product <span
-class="math inline">\(\textbf{u}\cdot\textbf{v}=a_1 a_2 + b_1 b_2 =
-\|\textbf{u}\| \|\textbf{v}\| \cos\theta\)</span> written in terms of
-the angle between the two vectors <span
+class="math inline">\(\boldsymbol{u}\cdot\boldsymbol{v}=a_1 a_2 + b_1
+b_2 = \|\boldsymbol{u}\| \|\boldsymbol{v}\| \cos\theta\)</span> written
+in terms of the angle between the two vectors <span
 class="math inline">\(\theta\)</span>. The outer product</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}\wedge \textbf{v} &amp;= (a_1 b_2 - b_1
-a_2)\textbf{e}_1\textbf{e}_2 \\
-&amp;= \|\textbf{u}\| \|\textbf{v}\| \sin \theta \
-\textbf{e}_1\textbf{e}_2
+\boldsymbol{u}\wedge \boldsymbol{v} &amp;= (a_1 b_2 - b_1
+a_2)\boldsymbol{e}_1\boldsymbol{e}_2 \\
+&amp;= \|\boldsymbol{u}\| \|\boldsymbol{v}\| \sin \theta \
+\boldsymbol{e}_1\boldsymbol{e}_2
 \end{align}\]</span></p>
 <p>is the signed area of the parallelogram spanned by the two vectors
-<span class="math inline">\(\textbf{u}\)</span> and <span
-class="math inline">\(\textbf{v}.\)</span></p>
-<p>As <span class="math inline">\(\textbf{e}_1\)</span> and <span
-class="math inline">\(\textbf{e}_2\)</span> are orthogonal, the
-bi-vector <span class="math inline">\(\textbf{e}_1\textbf{e}_2\)</span>
-squares to <span class="math inline">\(-1\)</span>, from which it
-follows that we can identify this bi-vector with the square root of
-unity <span class="math inline">\(\textbf{e}_1\textbf{e}_2 =
-\textbf{i}=\sqrt{-1}\)</span>. The complete product of basis elements in
-<span class="math inline">\(\mathbb{R}^n\)</span> is generally an
-important element in geometric algebra, as it is the only <span
-class="math inline">\(n\)</span>-vector in the canonical basis, denoted
-as the pseudoscalar of the algebra <span
-class="math inline">\(\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n\)</span>.</p>
+<span class="math inline">\(\boldsymbol{u}\)</span> and <span
+class="math inline">\(\boldsymbol{v}.\)</span></p>
+<p>As <span class="math inline">\(\boldsymbol{e}_1\)</span> and <span
+class="math inline">\(\boldsymbol{e}_2\)</span> are orthogonal, the
+bi-vector <span
+class="math inline">\(\boldsymbol{e}_1\boldsymbol{e}_2\)</span> squares
+to <span class="math inline">\(-1\)</span>, from which it follows that
+we can identify this bi-vector with the square root of unity <span
+class="math inline">\(\boldsymbol{e}_1\boldsymbol{e}_2 =
+\boldsymbol{i}=\sqrt{-1}\)</span>. The complete product of basis
+elements in <span class="math inline">\(\mathbb{R}^n\)</span> is
+generally an important element in geometric algebra, as it is the only
+<span class="math inline">\(n\)</span>-vector in the canonical basis,
+denoted as the pseudoscalar of the algebra <span
+class="math inline">\(\boldsymbol{I}=\boldsymbol{e}_1\boldsymbol{e}_2\dots\boldsymbol{e}_n\)</span>.</p>
 <p>In the two-dimensional setting, geometric algebra unifies
 two-dimensional vector analysis with complex analysis, <span
-class="math inline">\(A=(a + \textbf{i}\ d) + (b\ \textbf{e}_1 + c\
-\textbf{e}_2)\)</span>. Two notions of vectors in the plane with a
-distinct set of products that normally do not communicate with each
+class="math inline">\(A=(a + \boldsymbol{i}\ d) + (b\ \boldsymbol{e}_1 +
+c\ \boldsymbol{e}_2)\)</span>. Two notions of vectors in the plane with
+a distinct set of products that normally do not communicate with each
 other. In geometric algebra the interactions between the vectors and
 complex numbers are central. Writing the outer product of two vectors as
-<span class="math inline">\(\textbf{u}\wedge \textbf{v} =
-\|\textbf{u}\|\|\textbf{v}\| \sin\theta\, \textbf{i}\)</span>, with the
-traditional cross-product <span class="math inline">\(\textbf{u}\times
-\textbf{v} = -\textbf{u}\wedge\textbf{v}\ \textbf{i} =
-\|\textbf{u}\|\|\textbf{v}\| \sin\theta\)</span>, the geometric product
-of two vectors assumes the form</p>
+<span class="math inline">\(\boldsymbol{u}\wedge \boldsymbol{v} =
+\|\boldsymbol{u}\|\|\boldsymbol{v}\| \sin\theta\,
+\boldsymbol{i}\)</span>, with the traditional cross-product <span
+class="math inline">\(\boldsymbol{u}\times \boldsymbol{v} =
+-\boldsymbol{u}\wedge\boldsymbol{v}\ \boldsymbol{i} =
+\|\boldsymbol{u}\|\|\boldsymbol{v}\| \sin\theta\)</span>, the geometric
+product of two vectors assumes the form</p>
 <p><span class="math display">\[
 \begin{align}
-\textbf{u} \textbf{v} &amp;= \|\textbf{u}\| \|\textbf{v}\| (\cos \theta
-+ \textbf{i} \sin \theta)\\
-&amp;= \|\textbf{u}\| \|\textbf{v}\| e^{\textbf{i}\ \theta}\,,
+\boldsymbol{u} \boldsymbol{v} &amp;= \|\boldsymbol{u}\|
+\|\boldsymbol{v}\| (\cos \theta + \boldsymbol{i} \sin \theta)\\
+&amp;= \|\boldsymbol{u}\| \|\boldsymbol{v}\| e^{\boldsymbol{i}\
+\theta}\,,
 \end{align}
 \]</span></p>
 <p>independent of the bases elements, where we define the exponentiation
 of a bi-vector using Euler’s identity <span
-class="math inline">\(e^{\textbf{i}\ \theta}=\cos\theta + \textbf{i}\sin
-\theta\)</span>.</p>
+class="math inline">\(e^{\boldsymbol{i}\ \theta}=\cos\theta +
+\boldsymbol{i}\sin \theta\)</span>.</p>
 <h4 id="rotations">Rotations</h4>
 <p>The addition of both complex numbers and vectors acts componentwise.
 The product of two complex numbers <span class="math inline">\(z_1=a_1 +
-\textbf{i}\ d_1,\)</span> <span class="math inline">\(z_2=a_2
-+\textbf{i}\ d_2\)</span>, is implemented as the product of the absolute
-value and a rotation of the arguments</p>
+\boldsymbol{i}\ d_1,\)</span> <span class="math inline">\(z_2=a_2
++\boldsymbol{i}\ d_2\)</span>, is implemented as the product of the
+absolute value and a rotation of the arguments</p>
 <p><span class="math display">\[\begin{align}
-z_1 z_2 &amp;= (a_1 a_2 - d_1 d_2) + (a_1 d_2 + d_1 a_2)\ \textbf{i}\\
-&amp;= |z_1||z_2| e^{\textbf{i}(\theta_1+\theta_2)}\,,
+z_1 z_2 &amp;= (a_1 a_2 - d_1 d_2) + (a_1 d_2 + d_1 a_2)\
+\boldsymbol{i}\\
+&amp;= |z_1||z_2| e^{\boldsymbol{i}(\theta_1+\theta_2)}\,,
 \end{align}\]</span></p>
 <p>with the polar representation <span
-class="math inline">\(z_1=|z_1|e^{\textbf{i}\ \theta_1},\)</span> <span
-class="math inline">\(z_2=|z_2|e^{\textbf{i}\ \theta_2}\)</span>. The
-product of two vectors was discussed above. When multiplying a complex
-number <span class="math inline">\(z=a+\textbf{i}\ d\)</span> with a
-vector <span class="math inline">\(\textbf{u} = b\ \textbf{e}_1 + c\
-\textbf{e}_2\)</span>, we find a rotation</p>
+class="math inline">\(z_1=|z_1|e^{\boldsymbol{i}\ \theta_1},\)</span>
+<span class="math inline">\(z_2=|z_2|e^{\boldsymbol{i}\
+\theta_2}\)</span>. The product of two vectors was discussed above. When
+multiplying a complex number <span
+class="math inline">\(z=a+\boldsymbol{i}\ d\)</span> with a vector <span
+class="math inline">\(\boldsymbol{u} = b\ \boldsymbol{e}_1 + c\
+\boldsymbol{e}_2\)</span>, we find a rotation</p>
 <p><span class="math display">\[\begin{align}
-z \textbf{u} &amp;= (a + \textbf{i}\ d)(b\ \textbf{e}_1 + c\
-\textbf{e}_2)\\
-&amp;= (ab + dc)\textbf{e}_1 + (ac- db)\textbf{e}_2\\
-&amp;= |z| \left[(b \cos \theta +c \sin\theta)\textbf{e}_1 + (- b
-\sin\theta + c \cos \theta )\textbf{e}_2\right]\,,
+z \boldsymbol{u} &amp;= (a + \boldsymbol{i}\ d)(b\ \boldsymbol{e}_1 + c\
+\boldsymbol{e}_2)\\
+&amp;= (ab + dc)\boldsymbol{e}_1 + (ac- db)\boldsymbol{e}_2\\
+&amp;= |z| \left[(b \cos \theta +c \sin\theta)\boldsymbol{e}_1 + (- b
+\sin\theta + c \cos \theta )\boldsymbol{e}_2\right]\,,
 \end{align}\]</span></p>
 <p>writing the complex number in its polar decomposition <span
-class="math inline">\(z=|z| e^{\textbf{i}\ \theta} = |z|\cos \theta +
-\textbf{i}\ |z| \sin \theta\)</span>. The inverse multiplication <span
-class="math inline">\(\textbf{u}z\)</span> yields a rotation by the same
-angle in the opposite direction <span class="math inline">\(\theta
-\mapsto -\theta\)</span>. More generally, we can write a rotation of a
-vector <span class="math inline">\(\textbf{u}\)</span> by an angle <span
+class="math inline">\(z=|z| e^{\boldsymbol{i}\ \theta} = |z|\cos \theta
++ \boldsymbol{i}\ |z| \sin \theta\)</span>. The inverse multiplication
+<span class="math inline">\(\boldsymbol{u}z\)</span> yields a rotation
+by the same angle in the opposite direction <span
+class="math inline">\(\theta \mapsto -\theta\)</span>. More generally,
+we can write a rotation of a vector <span
+class="math inline">\(\boldsymbol{u}\)</span> by an angle <span
 class="math inline">\(\theta\)</span> more symmetrically using the
 conjugation</p>
-<p><span class="math display">\[\textbf{u}_{rot} = e^{-\textbf{i}\
-\theta/2}\ \textbf{u}\ e^{\textbf{i}\ \theta /2}\,,\]</span></p>
+<p><span class="math display">\[\boldsymbol{u}_{rot} =
+e^{-\boldsymbol{i}\ \theta/2}\ \boldsymbol{u}\ e^{\boldsymbol{i}\ \theta
+/2}\,,\]</span></p>
 <p>where the multi-vector <span class="math inline">\(R_\theta =
-e^{-\textbf{i}\ \theta/2}\)</span> is known as the rotor, with its
+e^{-\boldsymbol{i}\ \theta/2}\)</span> is known as the rotor, with its
 inverse <span class="math inline">\(R_\theta^{-1}=R_{-\theta}\)</span>
 as</p>
 <p><span class="math display">\[\begin{align}
 R_\theta  R_\theta^{-1}
-&amp;= (\cos (\theta/2) - \textbf{i}\ \sin (\theta/2)) (\cos (\theta/2)
-+ \textbf{i}\ \sin (\theta/2))\\
+&amp;= (\cos (\theta/2) - \boldsymbol{i}\ \sin (\theta/2)) (\cos
+(\theta/2) + \boldsymbol{i}\ \sin (\theta/2))\\
 &amp;= \cos^2 (\theta/2) + \sin^2(\theta/2) =1\,.
 \end{align}\]</span></p>
 <p>As we will see, this notion of rotation generalizes to
 higher-dimensional spaces. The conjugation of a vector with a rotor
 preserves the length of the vector, as</p>
 <p><span class="math display">\[\begin{align}
-\| R_\theta \textbf{u} R_\theta^{-1}\|^2 &amp;= R_\theta \textbf{u}
-R_\theta^{-1} R_\theta \textbf{u} R_\theta^{-1}\\
-&amp;= R_\theta \textbf{u} \textbf{u} R_\theta^{-1}\\
-&amp;=  \|\textbf{u}\|^2 R_\theta  R_\theta^{-1}\\
-&amp;=  \|\textbf{u}\|^2\,.
+\| R_\theta \boldsymbol{u} R_\theta^{-1}\|^2 &amp;= R_\theta
+\boldsymbol{u} R_\theta^{-1} R_\theta \boldsymbol{u} R_\theta^{-1}\\
+&amp;= R_\theta \boldsymbol{u} \boldsymbol{u} R_\theta^{-1}\\
+&amp;=  \|\boldsymbol{u}\|^2 R_\theta  R_\theta^{-1}\\
+&amp;=  \|\boldsymbol{u}\|^2\,.
 \end{align}\]</span></p>
 <p>Rotors are the multi-vectors resulting from the geometric products of
 unit vectors.</p>
 <h4 id="normals">Normals</h4>
 <p>It follows that the product of a vector with the pseudoscalar yields
 its normal</p>
-<p><span class="math display">\[\textbf{i} (a \textbf{e}_1 + b
-\textbf{e}_2)  = a \textbf{e}_1 \textbf{e}_2 \textbf{e}_1 + b
-\textbf{e}_1 \textbf{e}_2 \textbf{e}_2 = b \textbf{e}_1 - a
-\textbf{e}_2.\]</span></p>
+<p><span class="math display">\[\boldsymbol{i} (a \boldsymbol{e}_1 + b
+\boldsymbol{e}_2)  = a \boldsymbol{e}_1 \boldsymbol{e}_2
+\boldsymbol{e}_1 + b \boldsymbol{e}_1 \boldsymbol{e}_2 \boldsymbol{e}_2
+= b \boldsymbol{e}_1 - a \boldsymbol{e}_2.\]</span></p>
 <p>As normals are very common in geometry, let’s write it in terms of
 the duality operator</p>
-<p><span class="math display">\[ \textbf{u}^* = \textbf{u}\
-\textbf{i}^{-1}\,,\]</span></p>
+<p><span class="math display">\[ \boldsymbol{u}^* = \boldsymbol{u}\
+\boldsymbol{i}^{-1}\,,\]</span></p>
 <p>with the inverse of the pseudoscalar <span
-class="math inline">\(\textbf{i}^{-1} = \textbf{e}_2\textbf{e}_1 = -
-\textbf{i}\)</span>. Using the duality operator, we can rewrite the
-definition of the cross-product in terms of the outer product</p>
-<p><span class="math display">\[\textbf{u}\times \textbf{v} =
-(\textbf{u}\wedge \textbf{v})^*\,.\]</span></p>
+class="math inline">\(\boldsymbol{i}^{-1} =
+\boldsymbol{e}_2\boldsymbol{e}_1 = - \boldsymbol{i}\)</span>. Using the
+duality operator, we can rewrite the definition of the cross-product in
+terms of the outer product</p>
+<p><span class="math display">\[\boldsymbol{u}\times \boldsymbol{v} =
+(\boldsymbol{u}\wedge \boldsymbol{v})^*\,.\]</span></p>
 <h4 id="projections-and-reflections">Projections and reflections</h4>
 <p>Another central operation in geometry is reflections. Given two
-vectors <span class="math inline">\(\textbf{u}\)</span> and <span
-class="math inline">\(\textbf{v}\)</span>, we can decompose the first
-one into a component parallel and orthogonal to the second,
-<em>i.e.,</em> <span class="math inline">\(\textbf{u} = \textbf{u}_{\|}
-+ \textbf{u}_\perp\)</span>. In the language of geometric algebra, we
-obtain a very simple construction</p>
+vectors <span class="math inline">\(\boldsymbol{u}\)</span> and <span
+class="math inline">\(\boldsymbol{v}\)</span>, we can decompose the
+first one into a component parallel and orthogonal to the second,
+<em>i.e.,</em> <span class="math inline">\(\boldsymbol{u} =
+\boldsymbol{u}_{\|} + \boldsymbol{u}_\perp\)</span>. In the language of
+geometric algebra, we obtain a very simple construction</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1}\,,\\
-\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
-\textbf{v})\textbf{v}^{-1}\,,
+\boldsymbol{u}_{\|} &amp;= (\boldsymbol{u}\cdot
+\boldsymbol{v})\boldsymbol{v}^{-1}\,,\\
+\boldsymbol{u}_{\perp} &amp;= (\boldsymbol{u}\wedge
+\boldsymbol{v})\boldsymbol{v}^{-1}\,,
 \end{align}\]</span></p>
 <p>which can be proven by substituting <span
-class="math inline">\(\textbf{u} = \textbf{u}_{\|} +
-\textbf{u}_\perp\)</span> in the above equations with the conditions
-<span class="math inline">\(\textbf{u}_\perp \cdot \textbf{v}=0\)</span>
-and <span class="math inline">\(\textbf{u}_{\|} \wedge
-\textbf{v}=0\)</span>. The reflection of a vector <span
-class="math inline">\(\textbf{u}\)</span> through the line spanned by
-<span class="math inline">\(\textbf{v}\)</span> is given by the
-conjugation of <span class="math inline">\(\textbf{u}\)</span> by <span
-class="math inline">\(\textbf{v}\)</span>, <em>i.e.,</em> given <span
-class="math inline">\(\textbf{u} = \textbf{u}_{\|} +
-\textbf{u}_\perp\)</span>, the reflection of <span
-class="math inline">\(\textbf{u}\)</span> in the line associated to
-<span class="math inline">\(\textbf{v}\)</span> yields</p>
+class="math inline">\(\boldsymbol{u} = \boldsymbol{u}_{\|} +
+\boldsymbol{u}_\perp\)</span> in the above equations with the conditions
+<span class="math inline">\(\boldsymbol{u}_\perp \cdot
+\boldsymbol{v}=0\)</span> and <span
+class="math inline">\(\boldsymbol{u}_{\|} \wedge
+\boldsymbol{v}=0\)</span>. The reflection of a vector <span
+class="math inline">\(\boldsymbol{u}\)</span> through the line spanned
+by <span class="math inline">\(\boldsymbol{v}\)</span> is given by the
+conjugation of <span class="math inline">\(\boldsymbol{u}\)</span> by
+<span class="math inline">\(\boldsymbol{v}\)</span>, <em>i.e.,</em>
+given <span class="math inline">\(\boldsymbol{u} = \boldsymbol{u}_{\|} +
+\boldsymbol{u}_\perp\)</span>, the reflection of <span
+class="math inline">\(\boldsymbol{u}\)</span> in the line associated to
+<span class="math inline">\(\boldsymbol{v}\)</span> yields</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}_{ref}
-&amp;= \textbf{u}_{\|} - \textbf{u}_\perp\\
-&amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1} -(\textbf{u}\wedge
-\textbf{v})\textbf{v}^{-1}\\
-&amp;= (\textbf{u}\cdot \textbf{v} - \textbf{u}\wedge
-\textbf{v})\textbf{v}^{-1}\\
-&amp;= \textbf{v}\textbf{u}\textbf{v}^{-1}\,.
+\boldsymbol{u}_{ref}
+&amp;= \boldsymbol{u}_{\|} - \boldsymbol{u}_\perp\\
+&amp;= (\boldsymbol{u}\cdot \boldsymbol{v})\boldsymbol{v}^{-1}
+-(\boldsymbol{u}\wedge \boldsymbol{v})\boldsymbol{v}^{-1}\\
+&amp;= (\boldsymbol{u}\cdot \boldsymbol{v} - \boldsymbol{u}\wedge
+\boldsymbol{v})\boldsymbol{v}^{-1}\\
+&amp;= \boldsymbol{v}\boldsymbol{u}\boldsymbol{v}^{-1}\,.
 \end{align}\]</span></p>
 <p>We saw above that the rotor <span
 class="math inline">\(R_\theta\)</span> can be written as the geometric
 product of two unit vectors <span
-class="math inline">\(\textbf{v},\textbf{w}\)</span> with an angular
-separation <span class="math inline">\(-\theta/2\)</span>. It thus
-follows that every rotation is the result of two reflections</p>
-<p><span class="math display">\[ \textbf{u}_{rot} =
-\textbf{v}(\textbf{w} \textbf{u} \textbf{w}^{-1})
-\textbf{v}^{-1}\,.\]</span></p>
+class="math inline">\(\boldsymbol{v},\boldsymbol{w}\)</span> with an
+angular separation <span class="math inline">\(-\theta/2\)</span>. It
+thus follows that every rotation is the result of two reflections</p>
+<p><span class="math display">\[ \boldsymbol{u}_{rot} =
+\boldsymbol{v}(\boldsymbol{w} \boldsymbol{u} \boldsymbol{w}^{-1})
+\boldsymbol{v}^{-1}\,.\]</span></p>
 <h4 id="volumes">Volumes</h4>
 <p>The area of a bi-vector <span
-class="math inline">\(\textbf{B}=\textbf{b}_1 \textbf{b}_2\)</span> is
-defined as the volume of the space spanned by the vectors <span
-class="math inline">\(\|
-\textbf{B}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\)</span>.</p>
+class="math inline">\(\boldsymbol{B}=\boldsymbol{b}_1
+\boldsymbol{b}_2\)</span> is defined as the volume of the space spanned
+by the vectors <span class="math inline">\(\|
+\boldsymbol{B}\|=\|\boldsymbol{b}_1\|\|\boldsymbol{b}_2\|\)</span>.</p>
 <h3 id="three-dimensional-space">Three-dimensional space</h3>
 <p>Consider the orthonormal basis <span
-class="math inline">\(\{\textbf{e}_1,\textbf{e}_2,\textbf{e}_3\}\)</span>
+class="math inline">\(\{\boldsymbol{e}_1,\boldsymbol{e}_2,\boldsymbol{e}_3\}\)</span>
 of the three-dimensional Euclidean plane <span
 class="math inline">\(\mathbb{R}^3\)</span>. The corresponding geometric
 algebra <span class="math inline">\(\mathbb{G}^3\)</span> is spanned by
 the elements</p>
-<p><span class="math display">\[\{1, \textbf{e}_1, \textbf{e}_2,
-\textbf{e}_3, \textbf{e}_1\textbf{e}_2, \textbf{e}_1\textbf{e}_3,
-\textbf{e}_2\textbf{e}_3,
-\textbf{e}_1\textbf{e}_2\textbf{e}_3\}\]</span></p>
+<p><span class="math display">\[\{1, \boldsymbol{e}_1, \boldsymbol{e}_2,
+\boldsymbol{e}_3, \boldsymbol{e}_1\boldsymbol{e}_2,
+\boldsymbol{e}_1\boldsymbol{e}_3, \boldsymbol{e}_2\boldsymbol{e}_3,
+\boldsymbol{e}_1\boldsymbol{e}_2\boldsymbol{e}_3\}\]</span></p>
 <p>consisting of the unit scalar, three vectors corresponding to the
 three independent directions, three bi-vectors corresponding to the
 three independent two-dimensional hyperplanes, and a unique tri-vector
 corresponding to the volume element.</p>
 <p>The product of two vectors takes the form</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}\textbf{v}
-&amp;= (a_1 \textbf{e}_1+b_1 \textbf{e}_2+c_1 \textbf{e}_1) (a_2
-\textbf{e}_1+b_2 \textbf{e}_2+c_2 \textbf{e}_1) \\
+\boldsymbol{u}\boldsymbol{v}
+&amp;= (a_1 \boldsymbol{e}_1+b_1 \boldsymbol{e}_2+c_1 \boldsymbol{e}_1)
+(a_2 \boldsymbol{e}_1+b_2 \boldsymbol{e}_2+c_2 \boldsymbol{e}_1) \\
 &amp;= (a_1 a_2 + b_1 b_2 + c_1 c_2) + (a_1 b_2 - b_1 a_2)
-\textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+
-(b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\\
-&amp;=\textbf{u}\cdot\textbf{v} + \textbf{u}\wedge \textbf{v}\,,
+\boldsymbol{e}_1\boldsymbol{e}_2+ (a_1 c_2 - c_1
+a_2)\boldsymbol{e}_1\boldsymbol{e}_3+ (b_1 c_2 - c_1
+b_2)\boldsymbol{e}_2\boldsymbol{e}_3\\
+&amp;=\boldsymbol{u}\cdot\boldsymbol{v} + \boldsymbol{u}\wedge
+\boldsymbol{v}\,,
 \end{align}\]</span></p>
 <p>where we again can identify the inner product <span
-class="math inline">\(\textbf{u} \cdot \textbf{v} = a_1 a_2 + b_1 b_2 +
-c_1 c_2\)</span> and the outer product <span
-class="math inline">\(\textbf{u}\wedge \textbf{v} = (a_1 b_2 - b_1 a_2)
-\textbf{e}_1\textbf{e}_2+ (a_1 c_2 - c_1 a_2)\textbf{e}_1\textbf{e}_3+
-(b_1 c_2 - c_1 b_2)\textbf{e}_2\textbf{e}_3\)</span>.</p>
+class="math inline">\(\boldsymbol{u} \cdot \boldsymbol{v} = a_1 a_2 +
+b_1 b_2 + c_1 c_2\)</span> and the outer product <span
+class="math inline">\(\boldsymbol{u}\wedge \boldsymbol{v} = (a_1 b_2 -
+b_1 a_2) \boldsymbol{e}_1\boldsymbol{e}_2+ (a_1 c_2 - c_1
+a_2)\boldsymbol{e}_1\boldsymbol{e}_3+ (b_1 c_2 - c_1
+b_2)\boldsymbol{e}_2\boldsymbol{e}_3\)</span>.</p>
 <p>The bi-vectors, corresponding to oriented area elements, span a space
 whose elements are known as pseudovectors. A pseudovector is of the form
-<span class="math inline">\(\textbf{B} = a\ \textbf{B}_1 + b\
-\textbf{B}_2 + c\ \textbf{B}_3\)</span> where <span
-class="math inline">\(\textbf{B}_1=\textbf{e}_2 \textbf{e}_3,\)</span>
-<span class="math inline">\(\textbf{B}_2 = \textbf{e}_3
-\textbf{e}_1\)</span> and <span class="math inline">\(\textbf{B}_3 =
-\textbf{e}_1 \textbf{e}_2\)</span> with the product <span
-class="math inline">\(\textbf{B}_i \textbf{B}_j = -\delta_{ij} -
-\epsilon_{ijk}\textbf{B}_k\)</span> with the Kronneker delta <span
+<span class="math inline">\(\boldsymbol{B} = a\ \boldsymbol{B}_1 + b\
+\boldsymbol{B}_2 + c\ \boldsymbol{B}_3\)</span> where <span
+class="math inline">\(\boldsymbol{B}_1=\boldsymbol{e}_2
+\boldsymbol{e}_3,\)</span> <span class="math inline">\(\boldsymbol{B}_2
+= \boldsymbol{e}_3 \boldsymbol{e}_1\)</span> and <span
+class="math inline">\(\boldsymbol{B}_3 = \boldsymbol{e}_1
+\boldsymbol{e}_2\)</span> with the product <span
+class="math inline">\(\boldsymbol{B}_i \boldsymbol{B}_j = -\delta_{ij} -
+\epsilon_{ijk}\boldsymbol{B}_k\)</span> with the Kronneker delta <span
 class="math inline">\(\delta_{ij}\)</span> and the Levi-Civita symbol
 <span class="math inline">\(\epsilon_{ijk}\)</span>. This coincides with
 the pseudovectors known in physics since they are invariant under the
-parity operation <span class="math inline">\(\textbf{e}_i\mapsto -
-\textbf{e}_i\)</span>. The product of two pseudovectors yields the
+parity operation <span class="math inline">\(\boldsymbol{e}_i\mapsto -
+\boldsymbol{e}_i\)</span>. The product of two pseudovectors yields the
 multi-vector</p>
 <p><span class="math display">\[\begin{align}
-\textbf{A} \textbf{B} &amp;= (a_1\ \textbf{B}_1 + b_1\ \textbf{B}_2 +
-c_1\ \textbf{B}_3)(a_2\ \textbf{B}_1 + b_2\ \textbf{B}_2 + c_2\
-\textbf{B}_3)\\
-&amp;= -(a_1 a_2 + b_1 b_2 + c_1 c_2) - (b_1 c_2 - c_1 b_2) \textbf{B}_1
-- (c_1 a_2 - a_1 c_2) \textbf{B}_2  - (a_1 b_2 - b_1 a_2)
-\textbf{B}_3\,.
+\boldsymbol{A} \boldsymbol{B} &amp;= (a_1\ \boldsymbol{B}_1 + b_1\
+\boldsymbol{B}_2 + c_1\ \boldsymbol{B}_3)(a_2\ \boldsymbol{B}_1 + b_2\
+\boldsymbol{B}_2 + c_2\ \boldsymbol{B}_3)\\
+&amp;= -(a_1 a_2 + b_1 b_2 + c_1 c_2) - (b_1 c_2 - c_1 b_2)
+\boldsymbol{B}_1 - (c_1 a_2 - a_1 c_2) \boldsymbol{B}_2  - (a_1 b_2 -
+b_1 a_2) \boldsymbol{B}_3\,.
 \end{align}\]</span></p>
 <p>The bi-vectors can be associated to the quaternions <span
-class="math inline">\(\textbf{i} = \textbf{B}_1,\)</span> <span
-class="math inline">\(\textbf{j} = -\textbf{B}_2\)</span>, <span
-class="math inline">\(\textbf{k}=\textbf{B}_3\)</span>.</p>
+class="math inline">\(\boldsymbol{i} = \boldsymbol{B}_1,\)</span> <span
+class="math inline">\(\boldsymbol{j} = -\boldsymbol{B}_2\)</span>, <span
+class="math inline">\(\boldsymbol{k}=\boldsymbol{B}_3\)</span>.</p>
 <p>The canonical tri-vector is known as the pseudoscalar <span
-class="math inline">\(\textbf{I} = \textbf{e}_1 \textbf{e}_2
-\textbf{e}_3\)</span>, representing the oriented volume element. The
+class="math inline">\(\boldsymbol{I} = \boldsymbol{e}_1 \boldsymbol{e}_2
+\boldsymbol{e}_3\)</span>, representing the oriented volume element. The
 exterior product of three vectors</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}\wedge \textbf{v} \wedge \textbf{w}
-&amp;= \textbf{u} \cdot (\textbf{v} \times \textbf{w})\\
-&amp;= \alpha\ \textbf{I}\,,
+\boldsymbol{u}\wedge \boldsymbol{v} \wedge \boldsymbol{w}
+&amp;= \boldsymbol{u} \cdot (\boldsymbol{v} \times \boldsymbol{w})\\
+&amp;= \alpha\ \boldsymbol{I}\,,
 \end{align}\]</span></p>
 <p>with <span class="math inline">\(|\alpha|\)</span> the volume of the
 parallelepiped spanned by the three vectors (and the cross-product is
 defined below). The sign is the orientation of the triple <span
-class="math inline">\((\textbf{u}, \textbf{v}, \textbf{w})\)</span>.</p>
+class="math inline">\((\boldsymbol{u}, \boldsymbol{v},
+\boldsymbol{w})\)</span>.</p>
 <p>The geometric product of the pseudoscalar with a vector is a
-bi-vector, <span class="math inline">\(\textbf{e}_1 \textbf{I} =
-\textbf{B}_1,\)</span> <span class="math inline">\(\textbf{e}_2
-\textbf{I} = \textbf{B}_2,\)</span> and <span
-class="math inline">\(\textbf{e}_3 \textbf{I} = \textbf{B}_3\)</span>.
-Note that the pseudovector is normal to the original vector (together
-they span the space <span class="math inline">\(\textbf{I}\)</span>).
-When acting on the pseudovectors, we retrieve the normal vectors, <span
-class="math inline">\(\textbf{B}_1 \textbf{I}= -\textbf{e}_1,\)</span>
-<span class="math inline">\(\textbf{B}_2 \textbf{I}= -
-\textbf{e}_2,\)</span> and <span class="math inline">\(\textbf{B}_3
-\textbf{I}= -\textbf{e}_3\)</span>. Hence, the pseudoscalar maps the
-vectors to the pseudovectors and pseudovectors to vectors. This is again
-nicely implemented by the duality operator</p>
-<p><span class="math display">\[\textbf{u}^* = \textbf{u}\
-\textbf{I}^{-1}\,,\]</span></p>
+bi-vector, <span class="math inline">\(\boldsymbol{e}_1 \boldsymbol{I} =
+\boldsymbol{B}_1,\)</span> <span class="math inline">\(\boldsymbol{e}_2
+\boldsymbol{I} = \boldsymbol{B}_2,\)</span> and <span
+class="math inline">\(\boldsymbol{e}_3 \boldsymbol{I} =
+\boldsymbol{B}_3\)</span>. Note that the pseudovector is normal to the
+original vector (together they span the space <span
+class="math inline">\(\boldsymbol{I}\)</span>). When acting on the
+pseudovectors, we retrieve the normal vectors, <span
+class="math inline">\(\boldsymbol{B}_1 \boldsymbol{I}=
+-\boldsymbol{e}_1,\)</span> <span class="math inline">\(\boldsymbol{B}_2
+\boldsymbol{I}= - \boldsymbol{e}_2,\)</span> and <span
+class="math inline">\(\boldsymbol{B}_3 \boldsymbol{I}=
+-\boldsymbol{e}_3\)</span>. Hence, the pseudoscalar maps the vectors to
+the pseudovectors and pseudovectors to vectors. This is again nicely
+implemented by the duality operator</p>
+<p><span class="math display">\[\boldsymbol{u}^* = \boldsymbol{u}\
+\boldsymbol{I}^{-1}\,,\]</span></p>
 <p>with the inverse <span
-class="math inline">\(\textbf{I}^{-1}=\textbf{e}_3 \textbf{e}_2
-\textbf{e}_1 = -\textbf{I}\)</span>.</p>
+class="math inline">\(\boldsymbol{I}^{-1}=\boldsymbol{e}_3
+\boldsymbol{e}_2 \boldsymbol{e}_1 = -\boldsymbol{I}\)</span>.</p>
 <p>The multiplication of the bases elements follows the rule</p>
-<p><span class="math display">\[\textbf{e}_i \textbf{e}_j = \delta_{ij}
-+ \textbf{I} \epsilon_{ijk}\textbf{e}_k\,,\]</span></p>
+<p><span class="math display">\[\boldsymbol{e}_i \boldsymbol{e}_j =
+\delta_{ij} + \boldsymbol{I}
+\epsilon_{ijk}\boldsymbol{e}_k\,,\]</span></p>
 <p>which is known as the Pauli algebra of quantum mechanics. The Pauli
 spin matrices</p>
 <p><span class="math display">\[\begin{align}
@@ -467,41 +494,44 @@ spin matrices</p>
 space.</p>
 <h4 id="rotations-1">Rotations</h4>
 <p>Rotations of vectors can again be implemented with the rotors. Given
-a vector <span class="math inline">\(\textbf{u}\)</span>. Its rotation
-by an angle <span class="math inline">\(\theta\)</span> in the plane
-<span class="math inline">\(\textbf{B} = a\ \textbf{B}_1 + b\
-\textbf{B}_2 + c\ \textbf{B}_3\)</span> is given by the conjugation</p>
-<p><span class="math display">\[\textbf{u}_{rot} = R_\theta \textbf{u}
-R_\theta^{-1}\,,\]</span></p>
-<p>with the rotor <span class="math inline">\(R_\theta = e^{-\textbf{B}
-\theta/2}\)</span>, where the exponentiation of the pseudovector is
-defined as <span class="math inline">\(e^{\textbf{B} \theta}=\cos \theta
-+ \textbf{B} \sin \theta\)</span>, which makes sense since the
-pseudovectors <span class="math inline">\(\textbf{B}_1,\)</span> <span
-class="math inline">\(\textbf{B}_2,\)</span> <span
-class="math inline">\(\textbf{B}_3\)</span> squares to <span
+a vector <span class="math inline">\(\boldsymbol{u}\)</span>. Its
+rotation by an angle <span class="math inline">\(\theta\)</span> in the
+plane <span class="math inline">\(\boldsymbol{B} = a\ \boldsymbol{B}_1 +
+b\ \boldsymbol{B}_2 + c\ \boldsymbol{B}_3\)</span> is given by the
+conjugation</p>
+<p><span class="math display">\[\boldsymbol{u}_{rot} = R_\theta
+\boldsymbol{u} R_\theta^{-1}\,,\]</span></p>
+<p>with the rotor <span class="math inline">\(R_\theta =
+e^{-\boldsymbol{B} \theta/2}\)</span>, where the exponentiation of the
+pseudovector is defined as <span class="math inline">\(e^{\boldsymbol{B}
+\theta}=\cos \theta + \boldsymbol{B} \sin \theta\)</span>, which makes
+sense since the pseudovectors <span
+class="math inline">\(\boldsymbol{B}_1,\)</span> <span
+class="math inline">\(\boldsymbol{B}_2,\)</span> <span
+class="math inline">\(\boldsymbol{B}_3\)</span> squares to <span
 class="math inline">\(-1\)</span> like the bi-vector <span
-class="math inline">\(\textbf{i}\)</span> in the two-dimensional
+class="math inline">\(\boldsymbol{i}\)</span> in the two-dimensional
 setting. In <span class="math inline">\(\mathbb{G}^3\)</span>, we can
 also express these rotors in terms of the quaternions. In fact, each
-pseudovector <span class="math inline">\(\textbf{B}\)</span> represents
-a two-dimensional plane with an associated geometric subalgebra
-isomorphic to <span class="math inline">\(\mathbb{G}^2\)</span>. The
-rotor is again the geometric product of two unit vectors spanning the
-plane with an angle <span class="math inline">\(-\theta/2\)</span>.</p>
+pseudovector <span class="math inline">\(\boldsymbol{B}\)</span>
+represents a two-dimensional plane with an associated geometric
+subalgebra isomorphic to <span
+class="math inline">\(\mathbb{G}^2\)</span>. The rotor is again the
+geometric product of two unit vectors spanning the plane with an angle
+<span class="math inline">\(-\theta/2\)</span>.</p>
 <p>When rotating around a unit vector <span
-class="math inline">\(\textbf{n}\)</span> we obtain the rotor <span
-class="math inline">\(R=e^{-\textbf{n}\, \textbf{I}\,
+class="math inline">\(\boldsymbol{n}\)</span> we obtain the rotor <span
+class="math inline">\(R=e^{-\boldsymbol{n}\, \boldsymbol{I}\,
 \theta/2}\)</span>.</p>
 <h4 id="normals-1">Normals</h4>
 <p>The dual of a multi-vector is given by the operation</p>
-<p><span class="math display">\[ A^* = A \textbf{I}^{-1}\,.
+<p><span class="math display">\[ A^* = A \boldsymbol{I}^{-1}\,.
 \]</span></p>
 <p>Scalars are dual to pseudoscalars. Vectors are dual to the
 pseudovectors representing the normal planes. The traditional
 cross-product of two vectors is the dual of the outer product</p>
-<p><span class="math display">\[ \textbf{u} \times \textbf{v} =
-(\textbf{u} \wedge \textbf{v})^*\,.\]</span></p>
+<p><span class="math display">\[ \boldsymbol{u} \times \boldsymbol{v} =
+(\boldsymbol{u} \wedge \boldsymbol{v})^*\,.\]</span></p>
 <p>Note that the cross-product only makes sense in the two- and
 three-dimensional context. In higher-dimensional spaces, the
 pseudovectors do not map so neatly on the vectors. The outer product is
@@ -510,75 +540,79 @@ class="math inline">\(n\)</span>-dimensional Euclidean space.</p>
 <h4 id="projections-and-reflections-1">Projections and reflections</h4>
 <p>Just like in the two-dimensional case, we can use the language of
 geometric algebra to define projections and reflections. Given a vector
-<span class="math inline">\(\textbf{u}\)</span> we can decompose the
+<span class="math inline">\(\boldsymbol{u}\)</span> we can decompose the
 vector in a component parallel <span
-class="math inline">\(\textbf{u}_\|\)</span> and normal <span
-class="math inline">\(\textbf{u}_\perp\)</span> to another vector <span
-class="math inline">\(\textbf{v}\)</span>. These components again look
-like</p>
+class="math inline">\(\boldsymbol{u}_\|\)</span> and normal <span
+class="math inline">\(\boldsymbol{u}_\perp\)</span> to another vector
+<span class="math inline">\(\boldsymbol{v}\)</span>. These components
+again look like</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{v})\textbf{v}^{-1}\,,\\
-\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
-\textbf{v})\textbf{v}^{-1}\,.
+\boldsymbol{u}_{\|} &amp;= (\boldsymbol{u}\cdot
+\boldsymbol{v})\boldsymbol{v}^{-1}\,,\\
+\boldsymbol{u}_{\perp} &amp;= (\boldsymbol{u}\wedge
+\boldsymbol{v})\boldsymbol{v}^{-1}\,.
 \end{align}\]</span></p>
 <p>The reflection of the vector <span
-class="math inline">\(\textbf{u}\)</span> in the line represented by
-<span class="math inline">\(\textbf{v}\)</span> again yields the
-conjugation of <span class="math inline">\(\textbf{u}\)</span> by <span
-class="math inline">\(\textbf{v}\)</span>, <em>i.e.,</em></p>
-<p><span class="math display">\[\textbf{u}_{ref} = \textbf{u}_{\|} -
-\textbf{u}_{\perp} = \textbf{v}\textbf{u}\textbf{v}^{-1}.\]</span></p>
+class="math inline">\(\boldsymbol{u}\)</span> in the line represented by
+<span class="math inline">\(\boldsymbol{v}\)</span> again yields the
+conjugation of <span class="math inline">\(\boldsymbol{u}\)</span> by
+<span class="math inline">\(\boldsymbol{v}\)</span>, <em>i.e.,</em></p>
+<p><span class="math display">\[\boldsymbol{u}_{ref} =
+\boldsymbol{u}_{\|} - \boldsymbol{u}_{\perp} =
+\boldsymbol{v}\boldsymbol{u}\boldsymbol{v}^{-1}.\]</span></p>
 <p>However in the three-dimensional setting, unlike the two-dimensional
 case, we might want to decompose a vector <span
-class="math inline">\(\textbf{u}\)</span> into a term parallel and
+class="math inline">\(\boldsymbol{u}\)</span> into a term parallel and
 normal to a plane represented by a pseudovector <span
-class="math inline">\(\textbf{B}\)</span>. Geometric algebra beautifully
-extends this formula with the identities</p>
+class="math inline">\(\boldsymbol{B}\)</span>. Geometric algebra
+beautifully extends this formula with the identities</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{B})\textbf{B}^{-1}\,,\\
-\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
-\textbf{B})\textbf{B}^{-1}\,.
+\boldsymbol{u}_{\|} &amp;= (\boldsymbol{u}\cdot
+\boldsymbol{B})\boldsymbol{B}^{-1}\,,\\
+\boldsymbol{u}_{\perp} &amp;= (\boldsymbol{u}\wedge
+\boldsymbol{B})\boldsymbol{B}^{-1}\,.
 \end{align}\]</span></p>
 <p>A non-zero pseudovector always has an inverse, since <span
-class="math inline">\((\textbf{e}_1
-\textbf{e}_2)^{-1}=\textbf{e}_2\textbf{e}_1\)</span>.</p>
+class="math inline">\((\boldsymbol{e}_1
+\boldsymbol{e}_2)^{-1}=\boldsymbol{e}_2\boldsymbol{e}_1\)</span>.</p>
 <p>Where the inner and outer product of a vector and a bi-vector <span
-class="math inline">\(\textbf{A},\textbf{B}\)</span> are defined as the
-<span class="math inline">\(1\)</span>- and <span
+class="math inline">\(\boldsymbol{A},\boldsymbol{B}\)</span> are defined
+as the <span class="math inline">\(1\)</span>- and <span
 class="math inline">\(3\)</span>-vector part of their geometric
 product</p>
 <p><span class="math display">\[\begin{align}
-\textbf{A}\cdot \textbf{B} &amp;=
-\langle\textbf{A}\textbf{B}\rangle_{1}\,,\\
-\textbf{A}\wedge \textbf{B} &amp;=
-\langle\textbf{A}\textbf{B}\rangle_{3}\,.
+\boldsymbol{A}\cdot \boldsymbol{B} &amp;=
+\langle\boldsymbol{A}\boldsymbol{B}\rangle_{1}\,,\\
+\boldsymbol{A}\wedge \boldsymbol{B} &amp;=
+\langle\boldsymbol{A}\boldsymbol{B}\rangle_{3}\,.
 \end{align}\]</span></p>
-<p>The reflection of <span class="math inline">\(\textbf{u}\)</span>
+<p>The reflection of <span class="math inline">\(\boldsymbol{u}\)</span>
 with respect to the plane represented by <span
-class="math inline">\(\textbf{B}\)</span> assumes the form</p>
-<p><span class="math display">\[\textbf{u}_{ref} = \textbf{u}_{\|} -
-\textbf{u}_\perp = -\textbf{B} \textbf{u}
-\textbf{B}^{-1}\,,\]</span></p>
+class="math inline">\(\boldsymbol{B}\)</span> assumes the form</p>
+<p><span class="math display">\[\boldsymbol{u}_{ref} =
+\boldsymbol{u}_{\|} - \boldsymbol{u}_\perp = -\boldsymbol{B}
+\boldsymbol{u} \boldsymbol{B}^{-1}\,,\]</span></p>
 <p>using the observation that the geometric product of a vector with a
 bi-vector assumes the form</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}\textbf{B} &amp;= \textbf{u}\cdot\textbf{B} + \textbf{u}\wedge
-\textbf{B}\,,\\
-\textbf{B}\textbf{u} &amp;= \textbf{u}\cdot\textbf{B} - \textbf{u}\wedge
-\textbf{B}\,.
+\boldsymbol{u}\boldsymbol{B} &amp;= \boldsymbol{u}\cdot\boldsymbol{B} +
+\boldsymbol{u}\wedge \boldsymbol{B}\,,\\
+\boldsymbol{B}\boldsymbol{u} &amp;= \boldsymbol{u}\cdot\boldsymbol{B} -
+\boldsymbol{u}\wedge \boldsymbol{B}\,.
 \end{align}\]</span></p>
 <p>This decomposition is not generally true for the geometric product of
 multi-vectors.</p>
 <h4 id="volumes-1">Volumes</h4>
 <p>The area of a bi-vector <span
-class="math inline">\(\textbf{B}=\textbf{b}_1 \textbf{b}_2\)</span> is
-defined as the volume of the space spanned by the vectors <span
-class="math inline">\(\|
-\textbf{B}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\)</span>. The volume of a
-tri-vector <span class="math inline">\(\textbf{T}=\textbf{b}_1
-\textbf{b}_2\textbf{b}_3\)</span> is defined as the volume of the space
-spanned by the vectors <span class="math inline">\(\|
-\textbf{T}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|\|\textbf{b}_3\|\)</span>.</p>
+class="math inline">\(\boldsymbol{B}=\boldsymbol{b}_1
+\boldsymbol{b}_2\)</span> is defined as the volume of the space spanned
+by the vectors <span class="math inline">\(\|
+\boldsymbol{B}\|=\|\boldsymbol{b}_1\|\|\boldsymbol{b}_2\|\)</span>. The
+volume of a tri-vector <span
+class="math inline">\(\boldsymbol{T}=\boldsymbol{b}_1
+\boldsymbol{b}_2\boldsymbol{b}_3\)</span> is defined as the volume of
+the space spanned by the vectors <span class="math inline">\(\|
+\boldsymbol{T}\|=\|\boldsymbol{b}_1\|\|\boldsymbol{b}_2\|\|\boldsymbol{b}_3\|\)</span>.</p>
 <h3 id="n-dimensional-space"><span
 class="math inline">\(n\)</span>-dimensional space</h3>
 <p>These notions neatly generalize to the geometric algebra <span
@@ -586,10 +620,10 @@ class="math inline">\(\mathbb{G}^n\)</span> extending the vector algebra
 of the <span class="math inline">\(n\)</span>-dimensional Euclidean
 plane <span class="math inline">\(\mathbb{R}^n\)</span>. Given an
 orthonormal basis <span
-class="math inline">\(\{\textbf{e}_1,\dots,\textbf{e}_n\}\)</span>, the
-geometric algebra has a canonical basis of the form</p>
-<p><span class="math display">\[\{1, \textbf{e}_1,
-\textbf{e}_2,\dots,\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n
+class="math inline">\(\{\boldsymbol{e}_1,\dots,\boldsymbol{e}_n\}\)</span>,
+the geometric algebra has a canonical basis of the form</p>
+<p><span class="math display">\[\{1, \boldsymbol{e}_1,
+\boldsymbol{e}_2,\dots,\boldsymbol{e}_1\boldsymbol{e}_2\dots\boldsymbol{e}_n
 \}\]</span></p>
 <p>consisting of a scalar and <span
 class="math inline">\(m\)</span>-vectors with <span
@@ -599,32 +633,33 @@ class="math inline">\(k\)</span>-dimensional hyperspace, which that can
 be identified by a <em><span class="math inline">\(k\)</span>-blade</em>
 consisting of the product of a set of <span
 class="math inline">\(k\)</span> orthogonal vectors <span
-class="math inline">\(\textbf{B} =
-\textbf{b}_1\textbf{b}_2\dots\textbf{b}_k\)</span> spanning the
-hyperspace. Vectors and bi-vectors are examples of grade <span
+class="math inline">\(\boldsymbol{B} =
+\boldsymbol{b}_1\boldsymbol{b}_2\dots\boldsymbol{b}_k\)</span> spanning
+the hyperspace. Vectors and bi-vectors are examples of grade <span
 class="math inline">\(1\)</span> and grande <span
 class="math inline">\(2\)</span> blades (we use boldface capitals for
 blades and normal capitals for general multi-vectors). In general, every
 <span class="math inline">\(n\)</span>-vector is a blade as it can be
 written using a suitable orthogonal basis. A blade is included in
-another blade, <span class="math inline">\(\textbf{A} \subset
-\textbf{B},\)</span> when the associated hyperplane is included in the
-larger hyperplane.</p>
+another blade, <span class="math inline">\(\boldsymbol{A} \subset
+\boldsymbol{B},\)</span> when the associated hyperplane is included in
+the larger hyperplane.</p>
 <h4 id="normals-2">Normals</h4>
 <p>The pseudoscalar <span
-class="math inline">\(\textbf{I}=\textbf{e}_1\textbf{e}_2\dots\textbf{e}_n\)</span>,
+class="math inline">\(\boldsymbol{I}=\boldsymbol{e}_1\boldsymbol{e}_2\dots\boldsymbol{e}_n\)</span>,
 associated to the space <span
 class="math inline">\(\mathbb{R}^n\)</span>, is an important element of
 the geometric algebra as it allows us to relate the multi-vectors to
 their dual,</p>
-<p><span class="math display">\[A^* = A\ \textbf{I}^{-1}\,,\]</span></p>
+<p><span class="math display">\[A^* = A\
+\boldsymbol{I}^{-1}\,,\]</span></p>
 <p>with the inverse pseudoscalar <span
-class="math inline">\(\textbf{I}^{-1}=\textbf{e}_n\dots\textbf{e}_1\)</span>.
+class="math inline">\(\boldsymbol{I}^{-1}=\boldsymbol{e}_n\dots\boldsymbol{e}_1\)</span>.
 The <em>orthogonal complement</em> of a <span
 class="math inline">\(j\)</span>-blade <span
-class="math inline">\(\textbf{B}\)</span> is the <span
+class="math inline">\(\boldsymbol{B}\)</span> is the <span
 class="math inline">\((n-1)\)</span>-blade <span
-class="math inline">\(\textbf{B}^*\)</span> consisting of the normal
+class="math inline">\(\boldsymbol{B}^*\)</span> consisting of the normal
 basis vectors.</p>
 <h4 id="inner-and-outer-products">Inner and outer products</h4>
 <p>Let <span class="math inline">\(\langle C \rangle_j\)</span> denote
@@ -637,10 +672,10 @@ class="math inline">\((j-k)\)</span>- and <span
 class="math inline">\((j+k)\)</span>-vector part of the geometric
 product</p>
 <p><span class="math display">\[\begin{align}
-\textbf{A}\cdot \textbf{B} &amp;= \langle
-\textbf{A}\textbf{B}\rangle_{k-j}\,,\\
-\textbf{A}\wedge \textbf{B} &amp;= \langle
-\textbf{A}\textbf{B}\rangle_{k+j}\,.
+\boldsymbol{A}\cdot \boldsymbol{B} &amp;= \langle
+\boldsymbol{A}\boldsymbol{B}\rangle_{k-j}\,,\\
+\boldsymbol{A}\wedge \boldsymbol{B} &amp;= \langle
+\boldsymbol{A}\boldsymbol{B}\rangle_{k+j}\,.
 \end{align}\]</span></p>
 <p>The geometric product of a <span class="math inline">\(j\)</span>-
 and a <span class="math inline">\(k\)</span>-blade consists of
@@ -653,79 +688,83 @@ blades with linearity.</p>
 <p>The geometric product of a vector with a <span
 class="math inline">\(k\)</span>-blade assumes the form</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}\textbf{B} &amp;= \textbf{u}\cdot\textbf{B} + \textbf{u}\wedge
-\textbf{B}\,.
+\boldsymbol{u}\boldsymbol{B} &amp;= \boldsymbol{u}\cdot\boldsymbol{B} +
+\boldsymbol{u}\wedge \boldsymbol{B}\,.
 \end{align}\]</span></p>
 <h4 id="reflections-and-projections">Reflections and projections</h4>
 <p>We can always write a vector <span
-class="math inline">\(\textbf{u}=\textbf{u}_{\|}+\textbf{u}_\perp\)</span>
+class="math inline">\(\boldsymbol{u}=\boldsymbol{u}_{\|}+\boldsymbol{u}_\perp\)</span>
 in terms of a parallel and an orthogonal part with respect to a blade
-<span class="math inline">\(\textbf{B}\)</span>, with</p>
+<span class="math inline">\(\boldsymbol{B}\)</span>, with</p>
 <p><span class="math display">\[\begin{align}
-\textbf{u}_{\|} &amp;= (\textbf{u}\cdot \textbf{B})\textbf{B}^{-1}\,,\\
-\textbf{u}_{\perp} &amp;= (\textbf{u}\wedge
-\textbf{B})\textbf{B}^{-1}\,.
+\boldsymbol{u}_{\|} &amp;= (\boldsymbol{u}\cdot
+\boldsymbol{B})\boldsymbol{B}^{-1}\,,\\
+\boldsymbol{u}_{\perp} &amp;= (\boldsymbol{u}\wedge
+\boldsymbol{B})\boldsymbol{B}^{-1}\,.
 \end{align}\]</span></p>
-<p>The reflection of <span class="math inline">\(\textbf{u}\)</span> in
-<span class="math inline">\(\textbf{B}\)</span> takes the form <span
-class="math inline">\(\textbf{u}_{ref}=(-1)^{k+1}\textbf{B} \textbf{u}
-\textbf{B}^{-1}\)</span>. When working with the dual <span
-class="math inline">\(\textbf{b}=\textbf{B}^*\)</span>, we obtain the
-relation <span class="math inline">\(\textbf{u}_{ref} =
--\textbf{b}\textbf{u}\textbf{b}^{-1}\)</span>.</p>
+<p>The reflection of <span class="math inline">\(\boldsymbol{u}\)</span>
+in <span class="math inline">\(\boldsymbol{B}\)</span> takes the form
+<span
+class="math inline">\(\boldsymbol{u}_{ref}=(-1)^{k+1}\boldsymbol{B}
+\boldsymbol{u} \boldsymbol{B}^{-1}\)</span>. When working with the dual
+<span class="math inline">\(\boldsymbol{b}=\boldsymbol{B}^*\)</span>, we
+obtain the relation <span class="math inline">\(\boldsymbol{u}_{ref} =
+-\boldsymbol{b}\boldsymbol{u}\boldsymbol{b}^{-1}\)</span>.</p>
 <h4 id="rotations-2">Rotations</h4>
 <p>Rotations of vectors can again be implemented with the rotors. Given
-a vector <span class="math inline">\(\textbf{u}\)</span>. Its rotation
-by an angle <span class="math inline">\(\theta\)</span> in the plane
-<span class="math inline">\(\textbf{B}\)</span> is given by the
-conjugation</p>
-<p><span class="math display">\[\textbf{u}_{rot} = R_\theta \textbf{u}
-R_\theta^{-1}\,,\]</span></p>
-<p>with the rotor <span class="math inline">\(R_\theta = e^{-\textbf{B}
-\theta/2}\)</span>, where the exponentiation of the blade is defined as
-<span class="math inline">\(e^{\textbf{B} \theta}=\cos \theta +
-\textbf{B} \sin \theta.\)</span></p>
+a vector <span class="math inline">\(\boldsymbol{u}\)</span>. Its
+rotation by an angle <span class="math inline">\(\theta\)</span> in the
+plane <span class="math inline">\(\boldsymbol{B}\)</span> is given by
+the conjugation</p>
+<p><span class="math display">\[\boldsymbol{u}_{rot} = R_\theta
+\boldsymbol{u} R_\theta^{-1}\,,\]</span></p>
+<p>with the rotor <span class="math inline">\(R_\theta =
+e^{-\boldsymbol{B} \theta/2}\)</span>, where the exponentiation of the
+blade is defined as <span class="math inline">\(e^{\boldsymbol{B}
+\theta}=\cos \theta + \boldsymbol{B} \sin \theta.\)</span></p>
 <p>Two subsequent rotations <span class="math inline">\(R_1\)</span> and
 <span class="math inline">\(R_2\)</span> lead to a rotation of the
 rotor, <span class="math inline">\(R_3 = R_2 R_1\)</span>. If <span
-class="math inline">\(\textbf{u}\)</span> is rotates by <span
+class="math inline">\(\boldsymbol{u}\)</span> is rotates by <span
 class="math inline">\(R_1\)</span> and <span
 class="math inline">\(R_2\)</span> we obtain</p>
-<p><span class="math display">\[\textbf{u}_{rot} = R_2 R_1 \textbf{u}
-R_1^{-1} R_2^{-1} = (R_2 R_1) \textbf{u} (R_2 R_1)^{-1}\,.\]</span></p>
-<p>Given a rotation <span class="math inline">\(R_1 = e^{- \textbf{i}\
-\theta/2}\)</span> with a given angle <span
-class="math inline">\(\textbf{i}\ \theta\)</span> with the bi-vector
-<span class="math inline">\(\textbf{i}\)</span> and the angle <span
+<p><span class="math display">\[\boldsymbol{u}_{rot} = R_2 R_1
+\boldsymbol{u} R_1^{-1} R_2^{-1} = (R_2 R_1) \boldsymbol{u} (R_2
+R_1)^{-1}\,.\]</span></p>
+<p>Given a rotation <span class="math inline">\(R_1 = e^{-
+\boldsymbol{i}\ \theta/2}\)</span> with a given angle <span
+class="math inline">\(\boldsymbol{i}\ \theta\)</span> with the bi-vector
+<span class="math inline">\(\boldsymbol{i}\)</span> and the angle <span
 class="math inline">\(\theta\)</span> we can rotate the plane of
 rotation with a rotor <span class="math inline">\(R_2\)</span> to the
-plane <span class="math inline">\(\textbf{i}&#39; = R_2 \textbf{i}
-R_2^{-1}\)</span>. The resulting rotor transforms as</p>
+plane <span class="math inline">\(\boldsymbol{i}&#39; = R_2
+\boldsymbol{i} R_2^{-1}\)</span>. The resulting rotor transforms as</p>
 <p><span class="math display">\[\begin{align}
-R_3 &amp;= e^{-\textbf{i}&#39;\ \theta/2} \\
-&amp;= e^{-R_2 \textbf{i} R_2^{-1}\ \theta/2} \\
-&amp;= R_2 e^{-\textbf{i} \ \theta/2}R_2^{-1} \\
-&amp;= e^{-R_2 \textbf{i} R_2^{-1}\ \theta/2} \\
+R_3 &amp;= e^{-\boldsymbol{i}&#39;\ \theta/2} \\
+&amp;= e^{-R_2 \boldsymbol{i} R_2^{-1}\ \theta/2} \\
+&amp;= R_2 e^{-\boldsymbol{i} \ \theta/2}R_2^{-1} \\
+&amp;= e^{-R_2 \boldsymbol{i} R_2^{-1}\ \theta/2} \\
 &amp;= R_2 R_1 R_2^{-1}\,.
 \end{align}\]</span></p>
 <p>Hence the rotor transforms in the same way as vectors under
 rotations.</p>
 <h4 id="volumes-2">Volumes</h4>
 <p>The volume (norm) of a <span class="math inline">\(k\)</span>-blade
-<span class="math inline">\(\textbf{B}=\textbf{b}_1 \cdots
-\textbf{b}_k\)</span> is defined as the volume of the space spanned by
-the vectors <span class="math inline">\(\|
-\textbf{B}\|=\|\textbf{b}_1\|\cdots\|\textbf{b}_k\|\)</span>.</p>
+<span class="math inline">\(\boldsymbol{B}=\boldsymbol{b}_1 \cdots
+\boldsymbol{b}_k\)</span> is defined as the volume of the space spanned
+by the vectors <span class="math inline">\(\|
+\boldsymbol{B}\|=\|\boldsymbol{b}_1\|\cdots\|\boldsymbol{b}_k\|\)</span>.</p>
 <h4 id="complex-numbers">Complex numbers</h4>
 <p>Each hyperplane in <span class="math inline">\(\mathbb{R}^n\)</span>,
 corresponding to a bi-vector yields a geometric subalgebra isomorphic to
 <span class="math inline">\(\mathbb{G}^2\)</span>. In this space, we
-identify the complex numbers <span class="math inline">\(\{a+\textbf{i}\
-b\}\)</span>. Analogously, every three-dimensional hyperspace yields a
-geometric subalgebra isomorphic to <span
-class="math inline">\(\mathbb{G}^3\)</span> with a quaternion subalgebra
-with the complex numbers <span class="math inline">\(\{a + \textbf{i}\ b
-+ \textbf{j}\ c + \textbf{k}\ d \}.\)</span></p>
+identify the complex numbers <span
+class="math inline">\(\{a+\boldsymbol{i}\ b\}\)</span>. Analogously,
+every three-dimensional hyperspace yields a geometric subalgebra
+isomorphic to <span class="math inline">\(\mathbb{G}^3\)</span> with a
+quaternion subalgebra with the complex numbers <span
+class="math inline">\(\{a + \boldsymbol{i}\ b + \boldsymbol{j}\ c +
+\boldsymbol{k}\ d \}.\)</span></p>
 <h3 id="geometric-calculus">Geometric calculus</h3>
 <p>We now develop calculus in the setting of geometric algebra. In both
 function and vector calculus, we study both scalar- and vector-valued
@@ -739,8 +778,8 @@ class="math inline">\(\mathbb{C}\)</span> while satisfying the
 Cauchy-Riemann equations. In calculus, we not only study these functions
 but also their rate of change through the derivative, and in particular
 the gradient operator</p>
-<p><span class="math display">\[\nabla = \textbf{e}_1 \partial_1 + \dots
-+ \textbf{e}_n \partial_n\,.\]</span></p>
+<p><span class="math display">\[\nabla = \boldsymbol{e}_1 \partial_1 +
+\dots + \boldsymbol{e}_n \partial_n\,.\]</span></p>
 <p>These notions of change are unified and generalized in geometric
 calculus.</p>
 <h4 id="two-dimensional-plane-1">Two-dimensional plane</h4>
@@ -749,52 +788,54 @@ and vector-valued functions. The gradient operator acting on the real
 scalar function <span class="math inline">\(f:\mathbb{R}^2\to
 \mathbb{R}\)</span> yields the standard result</p>
 <p><span class="math display">\[\begin{align}
-\nabla f &amp;=  \partial_1 f \textbf{e}_1 +  \partial_2 f
-\textbf{e}_2\,.\\
+\nabla f &amp;=  \partial_1 f \boldsymbol{e}_1 +  \partial_2 f
+\boldsymbol{e}_2\,.\\
 \end{align}\]</span></p>
 <p>However, when acting on the vector function <span
-class="math inline">\(\textbf{f} = f_1 \textbf{e}_1 + f_2
-\textbf{e}_2:\mathbb{R}^2\to \mathbb{R}\)</span> (which is not allowed
-in vector calculus),</p>
+class="math inline">\(\boldsymbol{f} = f_1 \boldsymbol{e}_1 + f_2
+\boldsymbol{e}_2:\mathbb{R}^2\to \mathbb{R}\)</span> (which is not
+allowed in vector calculus),</p>
 <p><span class="math display">\[\begin{align}
-\nabla \textbf{f} &amp;= \textbf{e}_1(\partial_1 f_1 \textbf{e}_1 +
-\partial_1 f_2 \textbf{e}_2) + \textbf{e}_2(\partial_2 f_1 \textbf{e}_1
-+ \partial_2 f_2 \textbf{e}_2)\\
+\nabla \boldsymbol{f} &amp;= \boldsymbol{e}_1(\partial_1 f_1
+\boldsymbol{e}_1 + \partial_1 f_2 \boldsymbol{e}_2) +
+\boldsymbol{e}_2(\partial_2 f_1 \boldsymbol{e}_1 + \partial_2 f_2
+\boldsymbol{e}_2)\\
 &amp;= (\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
-\partial_2 f_1)\textbf{e}_1\textbf{e}_2\\
+\partial_2 f_1)\boldsymbol{e}_1\boldsymbol{e}_2\\
 &amp;= (\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
-\partial_2 f_1) \textbf{i}\\
-&amp;= \nabla \cdot \textbf{f} + \nabla \wedge \textbf{f}\,,
+\partial_2 f_1) \boldsymbol{i}\\
+&amp;= \nabla \cdot \boldsymbol{f} + \nabla \wedge \boldsymbol{f}\,,
 \end{align}\]</span></p>
 <p>we obtain both the divergence <span class="math inline">\(\nabla
-\cdot \textbf{f} = \partial_1 f_1 + \partial_2 f_2\)</span> and the curl
-<span class="math inline">\(\nabla \wedge \textbf{f} = (\partial_1 f_2 -
-\partial_2 f_1)\textbf{i}\)</span> or in more traditional notation <span
-class="math inline">\(\nabla \times \textbf{f} = (\nabla \wedge
-\textbf{f})^* = \partial_1 f_2 - \partial_2 f_1\)</span>. The gradient
-thus unifies the divergence and the curl, giving the flow of the vector
-field in or out of a point and the rotation in the plane <span
-class="math inline">\(\textbf{i}\)</span>. Note that the gradient
+\cdot \boldsymbol{f} = \partial_1 f_1 + \partial_2 f_2\)</span> and the
+curl <span class="math inline">\(\nabla \wedge \boldsymbol{f} =
+(\partial_1 f_2 - \partial_2 f_1)\boldsymbol{i}\)</span> or in more
+traditional notation <span class="math inline">\(\nabla \times
+\boldsymbol{f} = (\nabla \wedge \boldsymbol{f})^* = \partial_1 f_2 -
+\partial_2 f_1\)</span>. The gradient thus unifies the divergence and
+the curl, giving the flow of the vector field in or out of a point and
+the rotation in the plane <span
+class="math inline">\(\boldsymbol{i}\)</span>. Note that the gradient
 operator on a vector-valued function is invertible unlike the divergence
 or curl (as we will see below).</p>
 <p>When acting twice on a real scalar function, we obtain the Laplace
 operator</p>
 <p><span class="math display">\[\begin{align}
 \nabla^2 f &amp;= (\partial_1^2 f + \partial_2^2 f)  +  (\partial_1
-\partial_2 f - \partial_1 \partial_2 f) \textbf{i}\\
+\partial_2 f - \partial_1 \partial_2 f) \boldsymbol{i}\\
 &amp;= \partial_1^2 f + \partial_2^2 f\\
 &amp;= \Delta f\,,
 \end{align}\]</span> as one might expect. When acting twice on a vector
 function, we obtain the Laplace operator acting on the components</p>
 <p><span class="math display">\[\begin{align}
-\nabla^2 \textbf{f}
-&amp;= (\textbf{e}_1 \partial_1 + \textbf{e}_2
+\nabla^2 \boldsymbol{f}
+&amp;= (\boldsymbol{e}_1 \partial_1 + \boldsymbol{e}_2
 \partial_2)\left((\partial_1 f_1 + \partial_2 f_2)  +  (\partial_1 f_2 -
-\partial_2 f_1) \textbf{i}\right)\\
-&amp;= (\partial_1^2 f_1 + \partial_2^2 f_1)\textbf{e}_1 +
-(\partial_2^2 f_2 + \partial_1^2 f_2)\textbf{e}_2\\
-&amp;= \Delta f_1 \textbf{e}_1 + \Delta f_2 \textbf{e}_2\\
-&amp;= \Delta \textbf{f}\,.
+\partial_2 f_1) \boldsymbol{i}\right)\\
+&amp;= (\partial_1^2 f_1 + \partial_2^2 f_1)\boldsymbol{e}_1 +
+(\partial_2^2 f_2 + \partial_1^2 f_2)\boldsymbol{e}_2\\
+&amp;= \Delta f_1 \boldsymbol{e}_1 + \Delta f_2 \boldsymbol{e}_2\\
+&amp;= \Delta \boldsymbol{f}\,.
 \end{align}\]</span></p>
 <p>We thus see that geometric calculus simplifies vector calculus in
 several respects. Moreover, these results generalize to the
@@ -802,16 +843,17 @@ three-dimensional setting, yielding the three-dimensional gradient,
 divergence, curl, and Laplace operator in terms of the single operator
 <span class="math inline">\(\nabla\)</span>.</p>
 <p>However, more remarkably, it also allows us to differentiate
-complex-valued functions <span class="math inline">\(f = u + \textbf{i}\
-v:\mathbb{C} \to \mathbb{C}\)</span>, when identifying the vectors <span
-class="math inline">\(\textbf{e}_1\)</span> and <span
-class="math inline">\(\textbf{e}_2\)</span> with the real and imaginary
-directions,</p>
+complex-valued functions <span class="math inline">\(f = u +
+\boldsymbol{i}\ v:\mathbb{C} \to \mathbb{C}\)</span>, when identifying
+the vectors <span class="math inline">\(\boldsymbol{e}_1\)</span> and
+<span class="math inline">\(\boldsymbol{e}_2\)</span> with the real and
+imaginary directions,</p>
 <p><span class="math display">\[\begin{align}
-\nabla f &amp;= \textbf{e}_1( \partial_1 u + \textbf{i}\ \partial_1 v) +
-\textbf{e}_2(\partial_2 u + \textbf{i}\ \partial_2 v)\\
-&amp;= (\partial_1 u - \partial_2 v)\textbf{e}_1 +  (\partial_1 v +
-\partial_2 u) \textbf{e}_2 \,,
+\nabla f &amp;= \boldsymbol{e}_1( \partial_1 u + \boldsymbol{i}\
+\partial_1 v) + \boldsymbol{e}_2(\partial_2 u + \boldsymbol{i}\
+\partial_2 v)\\
+&amp;= (\partial_1 u - \partial_2 v)\boldsymbol{e}_1 +  (\partial_1 v +
+\partial_2 u) \boldsymbol{e}_2 \,,
 \end{align}\]</span></p>
 <p>which vanishes for analytic function due to the Cauchy-Riemann
 equations. We generalize this concept by defining the analytic
@@ -821,67 +863,75 @@ multi-vector-valued functions satisfying the equation</p>
 operator</p>
 <p><span class="math display">\[\begin{align}
 \nabla^2 f
-&amp;= (\textbf{e}_1 \partial_1 + \textbf{e}_2
-\partial_2)\left((\partial_1 u - \partial_2 v)\textbf{e}_1
-+  (\partial_1 v + \partial_2 u) \textbf{e}_2\right)\\
+&amp;= (\boldsymbol{e}_1 \partial_1 + \boldsymbol{e}_2
+\partial_2)\left((\partial_1 u - \partial_2 v)\boldsymbol{e}_1
++  (\partial_1 v + \partial_2 u) \boldsymbol{e}_2\right)\\
 &amp;= (\partial_1^2 u + \partial_2^2 u) + (\partial_1^2 v +
-\partial_2^2 v)\textbf{i}\\
-&amp;= \Delta u + \Delta v \ \textbf{i}\\
+\partial_2^2 v)\boldsymbol{i}\\
+&amp;= \Delta u + \Delta v \ \boldsymbol{i}\\
 &amp;= \Delta f\,.
 \end{align}\]</span></p>
 <p>Hence, analytic functions are harmonic functions for which <span
 class="math inline">\(\Delta f=0\)</span>.</p>
 <p>Finally, let’s invert the gradient operator. First, consider the
 gradient acting on a (possibly complex) scalar field <span
-class="math inline">\(\nabla p = \textbf{f}\)</span> for some given
-vector field <span class="math inline">\(\textbf{f}\)</span>. Acting
+class="math inline">\(\nabla p = \boldsymbol{f}\)</span> for some given
+vector field <span class="math inline">\(\boldsymbol{f}\)</span>. Acting
 with the gradient operator, we obtain the Poisson equation <span
-class="math inline">\(\Delta p=\nabla \textbf{f},\)</span> which can be
-solved with the Green’s function method</p>
+class="math inline">\(\Delta p=\nabla \boldsymbol{f},\)</span> which can
+be solved with the Green’s function method</p>
 <p><span class="math display">\[\begin{align}
-p(\textbf{x}_0)
+p(\boldsymbol{x}_0)
 &amp;\sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
-\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
+\boldsymbol{f}(\boldsymbol{x})
+\ln\|\boldsymbol{x}-\boldsymbol{x}_0\|\mathrm{d}^2x\\
 &amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
-\textbf{f}(\textbf{x}) \ln(\|\textbf{x}-\textbf{x}_0\|)\mathrm{d}^2x+
-\frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge \textbf{f}(\textbf{x})
-\ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\\
+\boldsymbol{f}(\boldsymbol{x})
+\ln(\|\boldsymbol{x}-\boldsymbol{x}_0\|)\mathrm{d}^2x+
+\frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \wedge
+\boldsymbol{f}(\boldsymbol{x})
+\ln\|\boldsymbol{x}-\boldsymbol{x}_0\|\mathrm{d}^2x\\
 &amp;= \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla \cdot
-\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x +
-\frac{\textbf{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times
-\textbf{f}(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,,
+\boldsymbol{f}(\boldsymbol{x})
+\ln\|\boldsymbol{x}-\boldsymbol{x}_0\|\mathrm{d}^2x +
+\frac{\boldsymbol{i}}{2\pi}\int_{\mathbb{R}^2} \nabla \times
+\boldsymbol{f}(\boldsymbol{x})
+\ln\|\boldsymbol{x}-\boldsymbol{x}_0\|\mathrm{d}^2x\,,
 \end{align}\]</span></p>
 <p>upto analytic scalar-valued functions with the familiar
 two-dimensional integration, assuming <span
-class="math inline">\(\textbf{f}\)</span> and <span
-class="math inline">\(\nabla \textbf{f}\)</span> to be well-behaved for
-large <span class="math inline">\(\|\textbf{x}\|\)</span>. The
-decomposition <span class="math inline">\(\nabla \textbf{f} =\nabla
-\cdot \textbf{f} + \nabla \wedge \textbf{f}\)</span>, shows that the
-divergence <span class="math inline">\(\nabla \cdot \textbf{f}\)</span>
-corresponds to the real part of <span class="math inline">\(p\)</span>
-and the curl <span class="math inline">\(\nabla \wedge
-\textbf{f}\)</span> corresponds to the imaginary part of <span
-class="math inline">\(p\)</span>. In general, we need both the
-divergence and the curl to invert the gradient equation.</p>
+class="math inline">\(\boldsymbol{f}\)</span> and <span
+class="math inline">\(\nabla \boldsymbol{f}\)</span> to be well-behaved
+for large <span class="math inline">\(\|\boldsymbol{x}\|\)</span>. The
+decomposition <span class="math inline">\(\nabla \boldsymbol{f} =\nabla
+\cdot \boldsymbol{f} + \nabla \wedge \boldsymbol{f}\)</span>, shows that
+the divergence <span class="math inline">\(\nabla \cdot
+\boldsymbol{f}\)</span> corresponds to the real part of <span
+class="math inline">\(p\)</span> and the curl <span
+class="math inline">\(\nabla \wedge \boldsymbol{f}\)</span> corresponds
+to the imaginary part of <span class="math inline">\(p\)</span>. In
+general, we need both the divergence and the curl to invert the gradient
+equation.</p>
 <p>Second, consider the gradient of a vector field <span
-class="math inline">\(\nabla \textbf{p} = f\)</span> for some (possibly
-complex) scalar field <span class="math inline">\(f\)</span>. Upon
-acting with the gradient operator, we find the vector Poisson equation
-<span class="math inline">\(\Delta \textbf{p}=\nabla f\)</span>,
-yielding the solution</p>
+class="math inline">\(\nabla \boldsymbol{p} = f\)</span> for some
+(possibly complex) scalar field <span class="math inline">\(f\)</span>.
+Upon acting with the gradient operator, we find the vector Poisson
+equation <span class="math inline">\(\Delta \boldsymbol{p}=\nabla
+f\)</span>, yielding the solution</p>
 <p><span class="math display">\[\begin{align}
-\textbf{p}(\textbf{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2} \nabla
-f(\textbf{x}) \ln\|\textbf{x}-\textbf{x}_0\|\mathrm{d}^2x\,.
+\boldsymbol{p}(\boldsymbol{x}_0) \sim \frac{1}{2\pi}\int_{\mathbb{R}^2}
+\nabla f(\boldsymbol{x})
+\ln\|\boldsymbol{x}-\boldsymbol{x}_0\|\mathrm{d}^2x\,.
 \end{align}\]</span></p>
 <p>upto analytic vector-valued functions. It thus follows that for
 general (suitably well-behaved) multi-vector functions in <span
 class="math inline">\(\mathbb{G}^2\)</span>, satisfying the equation
 <span class="math inline">\(\nabla A = B\)</span>, the inverse
 gradient,</p>
-<p><span class="math display">\[A(\textbf{x}_0) \sim \nabla^{-1} B
-(\textbf{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla B(\textbf{x})
-\ln \|\textbf{x}-\textbf{x}_0\| \mathrm{d}^2x\,,\]</span></p>
+<p><span class="math display">\[A(\boldsymbol{x}_0) \sim \nabla^{-1} B
+(\boldsymbol{x}_0)= \frac{1}{2\pi} \int_{\mathbb{R}^2} \nabla
+B(\boldsymbol{x}) \ln \|\boldsymbol{x}-\boldsymbol{x}_0\|
+\mathrm{d}^2x\,,\]</span></p>
 <p>using the multi-vector Poisson equation <span
 class="math inline">\(\Delta A = \nabla B\)</span>, up to analytic
 functions. That is to say, if <span class="math inline">\(A\)</span>
@@ -907,27 +957,30 @@ class="math inline">\(F:\mathbb{R}^n \to \mathbb{G}^n\)</span> the
 projection forces directional derivatives in multi-vector directions
 other than the vectors to zero.</p>
 <p>Using the partial derivative, we define the multi-vector gradient</p>
-<p><span class="math display">\[ \nabla = \sum_J \textbf{e}_J^{-1}
+<p><span class="math display">\[ \nabla = \sum_J \boldsymbol{e}_J^{-1}
 \partial_J\,,\]</span></p>
 <p>where we use multi-index notation, <em>i.e.</em>, for the set of
 increasing indices <span
 class="math inline">\(J=\{j_1,\dots,j_k\}\)</span>, with <span
 class="math inline">\(1 \leq j_a &lt; j_b \leq n\)</span> when <span
 class="math inline">\(a &lt; b\)</span>, we write the canonical bases
-element <span class="math inline">\(\textbf{e}_J=\textbf{e}_{j_1}\dots
-\textbf{e}_{j_k}\)</span> and the corresponding directional derivative
-<span class="math inline">\(\partial_J = \partial_{e_J}\)</span>. Note
-that the inverse of a bases element <span
-class="math inline">\(\textbf{e}_J^{-1}=(-1)^{(|J|-1)|J|/2}
-\textbf{e}_J\)</span> with <span class="math inline">\(|J|\)</span> the
-number of elements in <span class="math inline">\(J\)</span>. This
+element <span
+class="math inline">\(\boldsymbol{e}_J=\boldsymbol{e}_{j_1}\dots
+\boldsymbol{e}_{j_k}\)</span> and the corresponding directional
+derivative <span class="math inline">\(\partial_J =
+\partial_{e_J}\)</span>. Note that the inverse of a bases element <span
+class="math inline">\(\boldsymbol{e}_J^{-1}=(-1)^{(|J|-1)|J|/2}
+\boldsymbol{e}_J\)</span> with <span class="math inline">\(|J|\)</span>
+the number of elements in <span class="math inline">\(J\)</span>. This
 generalized gradient enables the study of a multitude of problems that
 do not naturally fit in traditional vector analysis.</p>
 <p>The divergence and curl of a <span
 class="math inline">\(k\)</span>-vector are defined as</p>
 <p><span class="math display">\[\begin{align}
-\nabla \cdot \textbf{f} = \langle \nabla \textbf{f}\rangle_{k-1}\,,\\
-\nabla \wedge \textbf{f} = \langle \nabla \textbf{f}\rangle_{k+1}\,,
+\nabla \cdot \boldsymbol{f} = \langle \nabla
+\boldsymbol{f}\rangle_{k-1}\,,\\
+\nabla \wedge \boldsymbol{f} = \langle \nabla
+\boldsymbol{f}\rangle_{k+1}\,,
 \end{align}\]</span></p>
 <p>like the inner and cross-product before. The inner and cross-product
 of a multi-vector function follow from linearity.</p>
@@ -942,58 +995,62 @@ when</p>
 class="math inline">\(\mathbb{R}^n\)</span>. The integral of a
 multi-vector <span class="math inline">\(F:\mathbb{R}^n\to
 \mathbb{G}^n\)</span> is defined as</p>
-<p><span class="math display">\[\int_M \mathrm{d}^m\textbf{x}\ F =
-\int_M \textbf{I}_m(\textbf{x}) \mathrm{d}^m x F(x)\,,\]</span></p>
+<p><span class="math display">\[\int_M \mathrm{d}^m\boldsymbol{x}\ F =
+\int_M \boldsymbol{I}_m(\boldsymbol{x}) \mathrm{d}^m x
+F(x)\,,\]</span></p>
 <p>where <span class="math inline">\(\mathrm{d}^mx\)</span> is the <span
 class="math inline">\(m\)</span>-volume element of <span
 class="math inline">\(M\)</span> at the vector <span
-class="math inline">\(\textbf{x}\)</span> and <span
-class="math inline">\(\textbf{I}_m(\textbf{x})\)</span> is the
+class="math inline">\(\boldsymbol{x}\)</span> and <span
+class="math inline">\(\boldsymbol{I}_m(\boldsymbol{x})\)</span> is the
 pseudoscalar of the tangent space of <span
 class="math inline">\(M\)</span> at <span
-class="math inline">\(\textbf{x}\)</span>, <em>i.e.</em>, <span
-class="math inline">\(T_\textbf{x}M\)</span>.</p>
+class="math inline">\(\boldsymbol{x}\)</span>, <em>i.e.</em>, <span
+class="math inline">\(T_\boldsymbol{x}M\)</span>.</p>
 <p>The fundamental theorem of calculus assumes</p>
-<p><span class="math display">\[\int_M \mathrm{d}^m\textbf{x}\ \partial
-F = \int_{\partial M}\mathrm{d}^{m-1}\textbf{x}\ F\,.\]</span></p>
+<p><span class="math display">\[\int_M \mathrm{d}^m\boldsymbol{x}\
+\partial F = \int_{\partial M}\mathrm{d}^{m-1}\boldsymbol{x}\
+F\,.\]</span></p>
 <p>where the vector derivative <span
 class="math inline">\(\partial\)</span> can be seen as a projection of
 <span class="math inline">\(\nabla\)</span> onto <span
 class="math inline">\(M\)</span>. Given a parametrization <span
-class="math inline">\(\textbf{x}(u_1,\dots,u_m)\)</span> of <span
+class="math inline">\(\boldsymbol{x}(u_1,\dots,u_m)\)</span> of <span
 class="math inline">\(M\)</span> in an neighborhood of <span
-class="math inline">\(\textbf{x}\)</span>, we find the basis <span
-class="math inline">\(\{\textbf{x}_{u_1},\dots,\textbf{x}_{u_1}\}\)</span>
-of the tangent space <span class="math inline">\(T_\textbf{x}M\)</span>
-with <span class="math inline">\(\textbf{x}_{u_j} =
-\partial_{u_j}\textbf{x}(u_1,\dots,u_m)\)</span> for <span
+class="math inline">\(\boldsymbol{x}\)</span>, we find the basis <span
+class="math inline">\(\{\boldsymbol{x}_{u_1},\dots,\boldsymbol{x}_{u_1}\}\)</span>
+of the tangent space <span
+class="math inline">\(T_\boldsymbol{x}M\)</span> with <span
+class="math inline">\(\boldsymbol{x}_{u_j} =
+\partial_{u_j}\boldsymbol{x}(u_1,\dots,u_m)\)</span> for <span
 class="math inline">\(j=1,\dots,m\)</span>. Defining the dual basis
 <span class="math inline">\(\{x^{u_j}\}_{j=1,\dots,m}\)</span> of <span
-class="math inline">\(T_\textbf{x}M\)</span> by the condition <span
-class="math inline">\(\textbf{x}_{u_j}\cdot
-\textbf{x}^{u_k}=\delta_{jk}\)</span> for all <span
+class="math inline">\(T_\boldsymbol{x}M\)</span> by the condition <span
+class="math inline">\(\boldsymbol{x}_{u_j}\cdot
+\boldsymbol{x}^{u_k}=\delta_{jk}\)</span> for all <span
 class="math inline">\(j\)</span> and <span
 class="math inline">\(k=1,\dots,m\)</span>, we construct the vector
 derivative on <span class="math inline">\(M\)</span> as</p>
-<p><span class="math display">\[\partial =\textbf{x}^{u_1}
-\partial_{u_1} + \dots + \textbf{x}^{u_m} \partial_{u_m}.\]</span></p>
+<p><span class="math display">\[\partial =\boldsymbol{x}^{u_1}
+\partial_{u_1} + \dots + \boldsymbol{x}^{u_m}
+\partial_{u_m}.\]</span></p>
 <p>We can show that this definition is equivalent to a projection of
 <span class="math inline">\(\nabla\)</span> onto the tangent space <span
-class="math inline">\(T_\textbf{x}M\)</span>, making it independent of
-the parametrization of <span class="math inline">\(M\)</span>. An
+class="math inline">\(T_\boldsymbol{x}M\)</span>, making it independent
+of the parametrization of <span class="math inline">\(M\)</span>. An
 analytic functions on <span class="math inline">\(M\)</span>, is defined
 by the condition</p>
 <p><span class="math display">\[\partial F = 0\,.\]</span></p>
 <p>The fundamental theorem of gemetric calculus generalizes Cauchy’s
 theorem for analytic functions,</p>
 <p><span class="math display">\[\int_{\partial M}
-\mathrm{d}^{m-1}\textbf{x}\ F = 0\,.\]</span></p>
+\mathrm{d}^{m-1}\boldsymbol{x}\ F = 0\,.\]</span></p>
 <p>More generally, when <span class="math inline">\(F\)</span> is
 meromorphic and has a set of poles at <span
-class="math inline">\(\textbf{x}_k\)</span> with the residue <span
+class="math inline">\(\boldsymbol{x}_k\)</span> with the residue <span
 class="math inline">\(R_k\)</span>, that is to say <span
-class="math inline">\(\partial F(\textbf{x}) = \sum_k \Omega_n R_k
-\delta(\textbf{x}-\textbf{x}_k)\)</span> with the volume <span
+class="math inline">\(\partial F(\boldsymbol{x}) = \sum_k \Omega_n R_k
+\delta(\boldsymbol{x}-\boldsymbol{x}_k)\)</span> with the volume <span
 class="math inline">\(\Omega_n\)</span> of the <span
 class="math inline">\((n-1)\)</span>-sphere and the Dirac delta function
 <span class="math inline">\(\delta\)</span>, then the fundamental
@@ -1001,61 +1058,65 @@ theorem of calculus yields the <span
 class="math inline">\(n\)</span>-dimensional generalization of the
 residue theorem</p>
 <p><span class="math display">\[\begin{align}
-\int_{\partial M} \mathrm{d}^{m-1}\textbf{x}\ F
-&amp;= \int_M \mathrm{d}^m\textbf{x}\ \partial F \\
-&amp;= \int_M \mathrm{d}^m x\ \textbf{I}(\textbf{x}) \sum_k \Omega_n R_k
-\delta(\textbf{x}-\textbf{x}_k)\\
-&amp;=\Omega_n \sum_k \textbf{I}(\textbf{x}_k)R_k\,.
+\int_{\partial M} \mathrm{d}^{m-1}\boldsymbol{x}\ F
+&amp;= \int_M \mathrm{d}^m\boldsymbol{x}\ \partial F \\
+&amp;= \int_M \mathrm{d}^m x\ \boldsymbol{I}(\boldsymbol{x}) \sum_k
+\Omega_n R_k \delta(\boldsymbol{x}-\boldsymbol{x}_k)\\
+&amp;=\Omega_n \sum_k \boldsymbol{I}(\boldsymbol{x}_k)R_k\,.
 \end{align}\]</span></p>
 <p>Now let’s consider the more general identity relating the function to
 its integral</p>
-<p><span class="math display">\[ F(\textbf{x}_0) =
-\frac{(-1)^n}{\Omega_n \textbf{I}} \left[
+<p><span class="math display">\[ F(\boldsymbol{x}_0) =
+\frac{(-1)^n}{\Omega_n \boldsymbol{I}} \left[
 \int_{\partial V}
-\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
-\mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x}) - \int_V
-\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
-\mathrm{d}^n \textbf{x}\ \nabla F(\textbf{x})\right]\,,\]</span></p>
+\frac{\boldsymbol{x}-\boldsymbol{x}_0}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^n}
+\mathrm{d}^{n-1}\boldsymbol{x}\ F(\boldsymbol{x}) - \int_V
+\frac{\boldsymbol{x}-\boldsymbol{x}_0}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^n}
+\mathrm{d}^n \boldsymbol{x}\ \nabla
+F(\boldsymbol{x})\right]\,,\]</span></p>
 <p>where <span class="math inline">\(V\)</span> is a <span
 class="math inline">\(n\)</span>-dimensional region of <span
 class="math inline">\(\mathbb{R}^n\)</span>. Note that when <span
 class="math inline">\(F\)</span> is analytic,</p>
-<p><span class="math display">\[ F(\textbf{x}_0) =
-\frac{(-1)^n}{\Omega_n \textbf{I}}
+<p><span class="math display">\[ F(\boldsymbol{x}_0) =
+\frac{(-1)^n}{\Omega_n \boldsymbol{I}}
 \int_{\partial V}
-\frac{\textbf{x}-\textbf{x}_0}{\|\textbf{x}-\textbf{x}_0\|^n}
-\mathrm{d}^{n-1}\textbf{x}\ F(\textbf{x})\,,\]</span></p>
+\frac{\boldsymbol{x}-\boldsymbol{x}_0}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^n}
+\mathrm{d}^{n-1}\boldsymbol{x}\ F(\boldsymbol{x})\,,\]</span></p>
 <p>generalizing Cauchy’s integral formula.</p>
 <p>This relation enables us to invert the gradient operator. Let <span
 class="math inline">\(\nabla P = F\)</span>, we can reconstruct <span
 class="math inline">\(P\)</span> from <span
 class="math inline">\(F\)</span> using the relation</p>
-<p><span class="math display">\[ P(\textbf{x}_0) =
+<p><span class="math display">\[ P(\boldsymbol{x}_0) =
 \frac{1}{(n-2)\Omega_n} \left[
-\int_{V} \frac{\mathrm{d}^m x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla
-F(\textbf{x}) - \int_{\partial V}
-\frac{\mathrm{d}^{m-1}x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}}
-\mathrm{n}(\textbf{x})\ \nabla F(\textbf{x})\right]\,,\]</span></p>
+\int_{V} \frac{\mathrm{d}^m
+x}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^{n-2}} \nabla F(\boldsymbol{x}) -
+\int_{\partial V}
+\frac{\mathrm{d}^{m-1}x}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^{n-2}}
+\mathrm{n}(\boldsymbol{x})\ \nabla
+F(\boldsymbol{x})\right]\,,\]</span></p>
 <p>for <span class="math inline">\(n&gt;2\)</span> where <span
-class="math inline">\(\textbf{n}(\textbf{x})\)</span> is the unit
-outward normal to <span class="math inline">\(\partial V\)</span>
+class="math inline">\(\boldsymbol{n}(\boldsymbol{x})\)</span> is the
+unit outward normal to <span class="math inline">\(\partial V\)</span>
 defined as <span
-class="math inline">\(\textbf{n}=\textbf{I}^{-1}\textbf{I}(\textbf{x})\)</span>
-where <span class="math inline">\(\textbf{I}\)</span> is the
+class="math inline">\(\boldsymbol{n}=\boldsymbol{I}^{-1}\boldsymbol{I}(\boldsymbol{x})\)</span>
+where <span class="math inline">\(\boldsymbol{I}\)</span> is the
 pseudoscalar of <span class="math inline">\(\mathbb{R}^n\)</span> and
-<span class="math inline">\(\textbf{I}(\textbf{x})\)</span> is the
-pseudoscalar of the tangent space <span
-class="math inline">\(T_\textbf{x}V\)</span>.</p>
+<span class="math inline">\(\boldsymbol{I}(\boldsymbol{x})\)</span> is
+the pseudoscalar of the tangent space <span
+class="math inline">\(T_\boldsymbol{x}V\)</span>.</p>
 <p>When the gradient <span class="math inline">\(F\)</span> is well
-behaved for large <span class="math inline">\(\textbf{x}\)</span>, in
-particular <span class="math inline">\(\lim_{\textbf{x} \to
-\infty}F(\textbf{x})=0\)</span> and <span class="math inline">\(|\nabla
-F(\textbf{x})| = O(\|\textbf{x}\|^{-2}),\)</span> we find the simpler
-result</p>
+behaved for large <span class="math inline">\(\boldsymbol{x}\)</span>,
+in particular <span class="math inline">\(\lim_{\boldsymbol{x} \to
+\infty}F(\boldsymbol{x})=0\)</span> and <span
+class="math inline">\(|\nabla F(\boldsymbol{x})| =
+O(\|\boldsymbol{x}\|^{-2}),\)</span> we find the simpler result</p>
 <p><span class="math display">\[\begin{align}
-P(\textbf{x}_0) &amp;= \frac{1}{(n-2)\Omega_n}
+P(\boldsymbol{x}_0) &amp;= \frac{1}{(n-2)\Omega_n}
 \int_{\mathbb{R}^n} \frac{\mathrm{d}^m
-x}{\|\textbf{x}-\textbf{x}_0\|^{n-2}} \nabla F(\textbf{x})\,.
+x}{\|\boldsymbol{x}-\boldsymbol{x}_0\|^{n-2}} \nabla
+F(\boldsymbol{x})\,.
 \end{align}\]</span></p>
 <p>This result generalizes the Green’s functions we saw in the
 two-dimensional case.</p>
@@ -1066,28 +1127,30 @@ We here go through a few examples.</p>
 <p>The Maxwell equations in vaccuum for electromagnetism are often
 written as</p>
 <p><span class="math display">\[\begin{align}
-\nabla \cdot \textbf{E}  &amp;= \rho/ \epsilon_0 \quad
-&amp;&amp;\nabla \times \textbf{E} = -\partial_t \textbf{B}\\
-\nabla \cdot \textbf{B} &amp;=0 \quad
-&amp;&amp;\nabla \times \textbf{B} =\mu_0 (\textbf{J}+\epsilon_0
-\partial_t \textbf{E})
+\nabla \cdot \boldsymbol{E}  &amp;= \rho/ \epsilon_0 \quad
+&amp;&amp;\nabla \times \boldsymbol{E} = -\partial_t \boldsymbol{B}\\
+\nabla \cdot \boldsymbol{B} &amp;=0 \quad
+&amp;&amp;\nabla \times \boldsymbol{B} =\mu_0 (\boldsymbol{J}+\epsilon_0
+\partial_t \boldsymbol{E})
 \end{align}\]</span></p>
 <p>with the electric and the magnetic fields <span
-class="math inline">\(\textbf{E}\)</span> and <span
-class="math inline">\(\textbf{B}\)</span>, the electric charge density
-<span class="math inline">\(\rho\)</span>, electric current density
-<span class="math inline">\(\textbf{J}\)</span>, the permittivity of
-free space <span class="math inline">\(\epsilon_0\)</span> and the
-permeability of free space <span class="math inline">\(\mu_0\)</span>.
-The latter two are related to the speed of light in vacuum by <span
-class="math inline">\(c = 1/\sqrt{\epsilon_0 \mu_0}\,.\)</span></p>
+class="math inline">\(\boldsymbol{E}\)</span> and <span
+class="math inline">\(\boldsymbol{B}\)</span>, the electric charge
+density <span class="math inline">\(\rho\)</span>, electric current
+density <span class="math inline">\(\boldsymbol{J}\)</span>, the
+permittivity of free space <span
+class="math inline">\(\epsilon_0\)</span> and the permeability of free
+space <span class="math inline">\(\mu_0\)</span>. The latter two are
+related to the speed of light in vacuum by <span class="math inline">\(c
+= 1/\sqrt{\epsilon_0 \mu_0}\,.\)</span></p>
 <p>To express these equations in terms of geometric algebra, combine the
 electric charge and current into a multi-vector</p>
-<p><span class="math display">\[J = c \rho - \textbf{J}\,.\]</span></p>
+<p><span class="math display">\[J = c \rho -
+\boldsymbol{J}\,.\]</span></p>
 <p>The electric and magnetic fields form the field strength as a
 multi-vector</p>
-<p><span class="math display">\[ F = \textbf{E} + I c
-\textbf{B}\,.\]</span></p>
+<p><span class="math display">\[ F = \boldsymbol{E} + I c
+\boldsymbol{B}\,.\]</span></p>
 <p>Note that the magnetic field is introduced as a bivector which is
 natural as the magnetic field transforms as a pseudovector under parity
 transformations. The Maxwell equations simplify to</p>
@@ -1098,45 +1161,45 @@ class="math display">\[\left(\frac{1}{c}\frac{\partial}{\partial t} +
 grade. The left-hand side splits off into a scalar, a vector, a
 bivector, and a trivector part</p>
 <p><span class="math display">\[\begin{align}
-\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla \right)(\textbf{E}
-+ I c \textbf{B})
-&amp;= \frac{\partial_t \textbf{E}}{c} + \nabla \textbf{E} + I
-\partial_t \textbf{B} + I c \nabla \textbf{B}\\
-&amp;= \frac{\partial_t \textbf{E}}{c} + \nabla \cdot \textbf{E} +
-\nabla \wedge \textbf{E} + I \partial_t \textbf{B} + I c \nabla \cdot
-\textbf{B}+ I c \nabla \wedge \textbf{B}\\
-&amp;= \left[\nabla \cdot \textbf{E}\right] + \left[\frac{\partial_t
-\textbf{E}}{c} + I c \nabla \wedge \textbf{B}\right]+ \left[\nabla
-\wedge \textbf{E} + I \partial_t \textbf{B}\right]+ \left[I c \nabla
-\cdot \textbf{B}\right]\,.
+\left(\frac{1}{c}\frac{\partial}{\partial t} + \nabla
+\right)(\boldsymbol{E} + I c \boldsymbol{B})
+&amp;= \frac{\partial_t \boldsymbol{E}}{c} + \nabla \boldsymbol{E} + I
+\partial_t \boldsymbol{B} + I c \nabla \boldsymbol{B}\\
+&amp;= \frac{\partial_t \boldsymbol{E}}{c} + \nabla \cdot \boldsymbol{E}
++ \nabla \wedge \boldsymbol{E} + I \partial_t \boldsymbol{B} + I c
+\nabla \cdot \boldsymbol{B}+ I c \nabla \wedge \boldsymbol{B}\\
+&amp;= \left[\nabla \cdot \boldsymbol{E}\right] + \left[\frac{\partial_t
+\boldsymbol{E}}{c} + I c \nabla \wedge \boldsymbol{B}\right]+
+\left[\nabla \wedge \boldsymbol{E} + I \partial_t \boldsymbol{B}\right]+
+\left[I c \nabla \cdot \boldsymbol{B}\right]\,.
 \end{align}\]</span></p>
 <p>The right-hand side decomposes into a scalar and a vector part</p>
 <p><span class="math display">\[\begin{align}
-\frac{J}{c \epsilon_0} = \frac{\rho}{\epsilon_0} - \frac{\textbf{J}}{c
-\epsilon_0}\,.
+\frac{J}{c \epsilon_0} = \frac{\rho}{\epsilon_0} -
+\frac{\boldsymbol{J}}{c \epsilon_0}\,.
 \end{align}\]</span></p>
 <p>Equating the scalar and pseudoscalar parts yields the divergence of
 the electric and magnetic fields <span class="math inline">\(\nabla
-\cdot \textbf{E} = \rho/\epsilon_0\)</span> and <span
-class="math inline">\(\nabla \cdot \textbf{B}=0\)</span>. The vector and
-bivector parts yield the curl of the electric and magnetic fields <span
-class="math inline">\(\nabla \times \textbf{E} = - \partial_t
-\textbf{B}\)</span> and <span class="math inline">\(\nabla \times
-\textbf{B} = \mu_0(\textbf{J} - \epsilon_0 \partial_t
-\textbf{E})\,.\)</span></p>
+\cdot \boldsymbol{E} = \rho/\epsilon_0\)</span> and <span
+class="math inline">\(\nabla \cdot \boldsymbol{B}=0\)</span>. The vector
+and bivector parts yield the curl of the electric and magnetic fields
+<span class="math inline">\(\nabla \times \boldsymbol{E} = - \partial_t
+\boldsymbol{B}\)</span> and <span class="math inline">\(\nabla \times
+\boldsymbol{B} = \mu_0(\boldsymbol{J} - \epsilon_0 \partial_t
+\boldsymbol{E})\,.\)</span></p>
 <p>Applying the spacetime gradient <span
 class="math inline">\(c^{-1}\partial_t - \nabla\)</span> to the Maxwell
 equation</p>
 <p><span class="math display">\[\begin{align}
 c^{-2}\partial_t^2 F + \nabla^2 F = \left(c^{-1} \partial_t -
 \nabla\right) J
-=\left[\partial_t \rho  + \nabla \cdot \textbf{J}\right] - \left[c
-\nabla \rho + \frac{\partial_t \textbf{J}}{c}\right] + \nabla \wedge
-\textbf{J}
+=\left[\partial_t \rho  + \nabla \cdot \boldsymbol{J}\right] - \left[c
+\nabla \rho + \frac{\partial_t \boldsymbol{J}}{c}\right] + \nabla \wedge
+\boldsymbol{J}
 \end{align}\]</span></p>
 <p>we find the conservation of charge</p>
 <p><span class="math display">\[0 = \partial_t \rho + \nabla \cdot
-\textbf{J} \,,\]</span></p>
+\boldsymbol{J} \,,\]</span></p>
 <p>by noting that the left-hand side has a vanishing scalar part, for
 the Laplacian preserves the grades of a multi-vector.</p>
 <p>When the current <span class="math inline">\(J\)</span> vanishes in a
@@ -1148,76 +1211,83 @@ obtain the wave famous equation</p>
 <p><span class="math display">\[ c^{-2} \partial_t^2 F - \nabla^2 F =
 \left(c^{-1} \partial_t - \nabla \right)\left(c^{-1}\partial_t + \nabla
 \right)F = 0\,,\]</span></p>
-<p>by which <span class="math inline">\(\partial_t^2 \textbf{E}= c^2
-\nabla^2 \textbf{E}\)</span> and <span
-class="math inline">\(\partial_t^2 \textbf{B}= c^2 \nabla^2
-\textbf{B}\,.\)</span></p>
+<p>by which <span class="math inline">\(\partial_t^2 \boldsymbol{E}= c^2
+\nabla^2 \boldsymbol{E}\)</span> and <span
+class="math inline">\(\partial_t^2 \boldsymbol{B}= c^2 \nabla^2
+\boldsymbol{B}\,.\)</span></p>
 <h4 id="rigid-body">Rigid body</h4>
 <p>The motion of a rigid body can be decomposed in the motion of the
-center of mass <span class="math inline">\(\bm{x}\)</span> and a
-rotation <span class="math inline">\(\bm{Q}\)</span>. The configuration
-space of a rigid body thus consists of the six-dimensional space</p>
+center of mass <span class="math inline">\(\boldsymbol{x}\)</span> and a
+rotation <span class="math inline">\(\boldsymbol{Q}\)</span>. The
+configuration space of a rigid body thus consists of the six-dimensional
+space</p>
 <p><span class="math display">\[\mathcal{M} = \mathbb{E}^3 +
 SO(3)\]</span></p>
 <h5 id="traditional-treatment">Traditional treatment</h5>
 <p>Traditionally, the orientation <span
-class="math inline">\(\bm{Q}\)</span> of a point on the rigid body with
-respect to the center of mass is written in terms of three Euler angles
-<span class="math inline">\((\psi, \theta, \phi)\,.\)</span> The kinetic
-energy of the rigid body consists of a part associated with the center
-of mass and a term associated with the rotation</p>
+class="math inline">\(\boldsymbol{Q}\)</span> of a point on the rigid
+body with respect to the center of mass is written in terms of three
+Euler angles <span class="math inline">\((\psi, \theta,
+\phi)\,.\)</span> The kinetic energy of the rigid body consists of a
+part associated with the center of mass and a term associated with the
+rotation</p>
 <p><span class="math display">\[\begin{align}
-T &amp;= \frac{m}{2} \dot{\bm{x}}\cdot \dot{\bm{x}} + \frac{1}{2}
-\bm{\omega} \cdot \mathcal{I} \bm{\omega}\\
+T &amp;= \frac{m}{2} \dot{\boldsymbol{x}}\cdot \dot{\boldsymbol{x}} +
+\frac{1}{2} \boldsymbol{\omega} \cdot \mathcal{I} \boldsymbol{\omega}\\
 &amp;=\frac{m}{2}(\dot{x}^2 + \dot{y}^2 + \dot{z}^2) +
 \frac{i_1}{2}(\dot{\psi} \sin \phi \sin \theta  + \dot{\theta} \cos
 \phi)^2 + \frac{i_2}{2}(\dot{\psi} \cos \phi \sin \theta - \dot{\theta}
 \sin \phi)^2 + \frac{i_3}{2}(\dot{\psi} \cos \theta + \dot{\phi})^2\,.
 \end{align}\]</span></p>
 <p>with the mass of the body <span class="math inline">\(m\)</span>, the
-angular velocity <span class="math inline">\(\bm{\omega} =
-\dot{\bm{Q}}\)</span>, and the moment of inertia tensor <span
+angular velocity <span class="math inline">\(\boldsymbol{\omega} =
+\dot{\boldsymbol{Q}}\)</span>, and the moment of inertia tensor <span
 class="math inline">\(\mathcal{I}\)</span> and the associated principal
 moments of inertia <span class="math inline">\(i_1,\)</span> <span
 class="math inline">\(i_2,\)</span> and <span
 class="math inline">\(i_3.\)</span> In the equation above we use the
 principal axis as the reference frame of the body.</p>
 <p>When the rigid body interacts with the external world through the
-potential <span class="math inline">\(U(\bm{x},\bm{Q})\)</span>, the
+potential <span
+class="math inline">\(U(\boldsymbol{x},\boldsymbol{Q})\)</span>, the
 rigid body is neatly described by the Lagrangian</p>
 <p><span class="math display">\[L = T - U\,.\]</span></p>
 <p>The equations of motion of the rigid body, interacting with the
 external world follow from the standard Euler-Lagrange equations,</p>
 <p><span class="math display">\[\begin{align}
 \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial
-\bm{x}}\right) - \frac{\partial L}{\partial \bm{x}} &amp;= 0\,,\\
+\boldsymbol{x}}\right) - \frac{\partial L}{\partial \boldsymbol{x}}
+&amp;= 0\,,\\
 \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial
-\bm{Q}}\right) - \frac{\partial L}{\partial \bm{Q}} &amp;= 0\,.
+\boldsymbol{Q}}\right) - \frac{\partial L}{\partial \boldsymbol{Q}}
+&amp;= 0\,.
 \end{align}\]</span></p>
 <h5 id="geometric-algebra-treatment">Geometric algebra treatment</h5>
 <p>Geometric algebra provides an alternative way of describing the
 dynamics of a rigid body. Consider a frame of vectors <span
-class="math inline">\(\{\bm{f}_k(t)\}\)</span> rotating in space with
-respect to the fixed orthonormal frame <span
-class="math inline">\(\{\bm{e}_k\}\,,\)</span> representing the
+class="math inline">\(\{\boldsymbol{f}_k(t)\}\)</span> rotating in space
+with respect to the fixed orthonormal frame <span
+class="math inline">\(\{\boldsymbol{e}_k\}\,,\)</span> representing the
 orientation of the rigid body. The angular velocity <span
-class="math inline">\(\bm{\omega}\)</span> is defined by the
+class="math inline">\(\boldsymbol{\omega}\)</span> is defined by the
 equation</p>
-<p><span class="math display">\[\dot{\bm{f}}_k = \bm{\omega} \times
-\bm{f}_k\,.\]</span></p>
-<p>The angular velocity <span class="math inline">\(\bm{\omega}\)</span>
-is a pseudovector (invariant under parity transformations), represents a
-rotation in a plane, and is thus most naturally represented by the
-angular bivector</p>
-<p><span class="math display">\[\Omega = I \bm{\omega}\,.\]</span></p>
-<p>It follows that <span class="math inline">\(\dot{\bm{f}}_k = \bm{f}_k
-\cdot \Omega\,.\)</span></p>
+<p><span class="math display">\[\dot{\boldsymbol{f}}_k =
+\boldsymbol{\omega} \times \boldsymbol{f}_k\,.\]</span></p>
+<p>The angular velocity <span
+class="math inline">\(\boldsymbol{\omega}\)</span> is a pseudovector
+(invariant under parity transformations), represents a rotation in a
+plane, and is thus most naturally represented by the angular
+bivector</p>
+<p><span class="math display">\[\Omega = I
+\boldsymbol{\omega}\,.\]</span></p>
+<p>It follows that <span class="math inline">\(\dot{\boldsymbol{f}}_k =
+\boldsymbol{f}_k \cdot \Omega\,.\)</span></p>
 <p>In geometric algebra, the dynamics of the frame <span
-class="math inline">\(\{\bm{f}_k\}\)</span> can be captured in a single
-object using the time-dependent rotor <span
+class="math inline">\(\{\boldsymbol{f}_k\}\)</span> can be captured in a
+single object using the time-dependent rotor <span
 class="math inline">\(R(t)\)</span> using the conjugation</p>
-<p><span class="math display">\[\bm{f}_k(t) = R(t) \bm{e}_k
-R^{\dagger}(t)\,.\]</span></p>
+<p><span class="math display">\[\boldsymbol{f}_k(t) = R(t)
+\boldsymbol{e}_k R^{\dagger}(t)\,.\]</span></p>
 <p>The rotor <span class="math inline">\(R(t)\)</span> is a unit even
 multivector, <em>i.e.,</em> <span class="math inline">\(R
 R^\dagger=1\,,\)</span> with the reverse denoted by the dagger. The
@@ -1225,8 +1295,9 @@ angular bivector is related to the rotor, by the equation</p>
 <p><span class="math display">\[\dot{R} = -\frac{1}{2} \Omega
 R\,.\]</span></p>
 <p>To see this, differentiate the definition of the rotor once</p>
-<p><span class="math display">\[\dot{\bm{f}}_k = \dot{R} \bm{e}_k
-R^\dagger + R \bm{e}_k \dot{R}= \dot{R}R^\dagger \bm{f}_k + \bm{f}_k R
+<p><span class="math display">\[\dot{\boldsymbol{f}}_k = \dot{R}
+\boldsymbol{e}_k R^\dagger + R \boldsymbol{e}_k \dot{R}=
+\dot{R}R^\dagger \boldsymbol{f}_k + \boldsymbol{f}_k R
 \dot{R}^\dagger\,.\]</span></p>
 <p>Since <span class="math inline">\(RR^\dagger = 1\)</span>, we obtain
 the identity</p>
@@ -1238,8 +1309,8 @@ R^\dagger)^\dagger\,.\)</span> As the product <span
 class="math inline">\(\dot{R} R^\dagger\)</span> has an even grade and
 is equal to the negative of its own reverse, it must thus be a bivector.
 Bivectors commute with vectors from which it follows that</p>
-<p><span class="math display">\[\dot{\bm{f}}_k = (2 \dot{R}
-R^\dagger)\cdot \bm{f}_k\,,\]</span></p>
+<p><span class="math display">\[\dot{\boldsymbol{f}}_k = (2 \dot{R}
+R^\dagger)\cdot \boldsymbol{f}_k\,,\]</span></p>
 <p>from which we obtain the identities <span
 class="math inline">\(\dot{R} = -\frac{1}{2} \Omega R\,,\)</span> <span
 class="math inline">\(\dot{R}^\dagger = \frac{1}{2} R^\dagger
@@ -1251,48 +1322,49 @@ R_0\,,\]</span></p>
 <p>with <span class="math inline">\(R_0\)</span> the rotor at <span
 class="math inline">\(t=0\,.\)</span></p>
 <p><strong>Velocity</strong> Now, consider a point <span
-class="math inline">\(\bm{y}\)</span> on a rigid body. We can write the
-position of the point as</p>
-<p><span class="math display">\[\bm{y}(t) = R(t) \bm{x}_r R^\dagger(t) +
-\bar{\bm{x}}(t)\,,\]</span></p>
-<p>with <span class="math inline">\(\bar{\bm{x}}(t)\)</span> the center
-of mass and <span class="math inline">\(\bm{x}_r\)</span> the position
-of the reference point with respect to the center of mass in a
-stationary reference copy of the rigid body. The velocity of the point
-<span class="math inline">\(\bm{v}(t)=\dot{y}(t)\)</span> assumes the
-form</p>
+class="math inline">\(\boldsymbol{y}\)</span> on a rigid body. We can
+write the position of the point as</p>
+<p><span class="math display">\[\boldsymbol{y}(t) = R(t)
+\boldsymbol{x}_r R^\dagger(t) + \bar{\boldsymbol{x}}(t)\,,\]</span></p>
+<p>with <span class="math inline">\(\bar{\boldsymbol{x}}(t)\)</span> the
+center of mass and <span class="math inline">\(\boldsymbol{x}_r\)</span>
+the position of the reference point with respect to the center of mass
+in a stationary reference copy of the rigid body. The velocity of the
+point <span class="math inline">\(\boldsymbol{v}(t)=\dot{y}(t)\)</span>
+assumes the form</p>
 <p><span class="math display">\[\begin{align}
-\bm{v}
-&amp;= \dot{R} \bm{x}_r R^\dagger + R \bm{x}_r \dot{R}^\dagger +
-\dot{\bar{\bm{x}}}\\
-&amp;= -\frac{1}{2} \Omega R \bm{x}_r R^\dagger + \frac{1}{2} R \bm{x}_r
-R^\dagger \Omega + \bar{\bm{v}}\\
-&amp;=(R\bm{x}_r R^\dagger) \cdot \Omega + \bar{\bm{v}}\,.
+\boldsymbol{v}
+&amp;= \dot{R} \boldsymbol{x}_r R^\dagger + R \boldsymbol{x}_r
+\dot{R}^\dagger + \dot{\bar{\boldsymbol{x}}}\\
+&amp;= -\frac{1}{2} \Omega R \boldsymbol{x}_r R^\dagger + \frac{1}{2} R
+\boldsymbol{x}_r R^\dagger \Omega + \bar{\boldsymbol{v}}\\
+&amp;=(R\boldsymbol{x}_r R^\dagger) \cdot \Omega +
+\bar{\boldsymbol{v}}\,.
 \end{align}\]</span></p>
 <p>When rotating the angular velocity to the reference frame <span
 class="math inline">\(\Omega_B = R^\dagger \Omega R\)</span>, we find
 <span class="math inline">\(\dot{R} = -\frac{1}{2}R\Omega_B\)</span> and
 <span class="math inline">\(\dot{R}^\dagger = \frac{1}{2} \Omega_B
 R^\dagger\,.\)</span> The velocity now assumes the form</p>
-<p><span class="math display">\[\bm{v} = R\ \bm{x}_r \cdot \Omega_B
-R^\dagger+ \bar{\bm{v}}\,.\]</span></p>
+<p><span class="math display">\[\boldsymbol{v} = R\ \boldsymbol{x}_r
+\cdot \Omega_B R^\dagger+ \bar{\boldsymbol{v}}\,.\]</span></p>
 <p><strong>Angular momentum</strong> The angular momentum bivector
 (again a pseudovector describing the rotation in a plane) can be written
 as</p>
 <p><span class="math display">\[\begin{align}
-L &amp;= \int \mathrm{d}^3 x_r \rho(\bm{y}- \bar{\bm{x}}) \wedge
-(\bm{v}-\bar{\bm{v}})\\
-&amp;= \int \mathrm{d}^3x_r \rho (R \bm{x}_r R^\dagger) \wedge (R
-\bm{x}_r\cdot \Omega_B R^\dagger )\\
-&amp;= R \left(\int \mathrm{d}^3 x_r \rho \bm{x}_r \wedge (\bm{x}_r
-\cdot \Omega_B)\right)R^\dagger\,,
+L &amp;= \int \mathrm{d}^3 x_r \rho(\boldsymbol{y}-
+\bar{\boldsymbol{x}}) \wedge (\boldsymbol{v}-\bar{\boldsymbol{v}})\\
+&amp;= \int \mathrm{d}^3x_r \rho (R \boldsymbol{x}_r R^\dagger) \wedge
+(R \boldsymbol{x}_r\cdot \Omega_B R^\dagger )\\
+&amp;= R \left(\int \mathrm{d}^3 x_r \rho \boldsymbol{x}_r \wedge
+(\boldsymbol{x}_r \cdot \Omega_B)\right)R^\dagger\,,
 \end{align}\]</span></p>
 <p>with <span class="math inline">\(\rho\)</span> the mass density of
 the rigid body.</p>
 <p><strong>Inertia tensor</strong> Now, define the inertia tensor <span
 class="math inline">\(\mathcal{I}\)</span> as the linear map</p>
 <p><span class="math display">\[\mathcal{I}(B) = \int \mathrm{d}^3 x
-\rho \bm{x} \wedge (\bm{x} \cdot B)\]</span></p>
+\rho \boldsymbol{x} \wedge (\boldsymbol{x} \cdot B)\]</span></p>
 <p>mapping bivectors to bivectors. Given a bivector <span
 class="math inline">\(B\)</span> the bivector <span
 class="math inline">\(\mathcal{I}(B)\)</span> is the angular momentum
@@ -1303,8 +1375,8 @@ form</p>
 \mathcal{I}(\Omega_B)R^\dagger\,.\]</span></p>
 <p>Given this map, we can define the familiar matrix representation by
 projecting it onto a bivector basis</p>
-<p><span class="math display">\[\mathcal{I}_{ij} = -(I \bm{e}_i)\cdot
-\mathcal{I}(I \bm{e}_j)\,.\]</span></p>
+<p><span class="math display">\[\mathcal{I}_{ij} = -(I
+\boldsymbol{e}_i)\cdot \mathcal{I}(I \boldsymbol{e}_j)\,.\]</span></p>
 <p>This matrix turns out to be symmetric and positive definite. Its
 eigenvectors give the principal axes and its eigenvalues <span
 class="math inline">\(i_1,i_2,i_3\)</span>, the associated principal
@@ -1312,18 +1384,19 @@ moments of inertia.</p>
 <p><strong>Kinetic energy</strong> The kinetic energy of the rigid body
 reads</p>
 <p><span class="math display">\[\begin{align}
-T &amp;= \frac{1}{2} \int \mathrm{d}^3 x \rho (R \bm{x}\cdot \Omega_B
-R^\dagger +\bar{\bm{v}})^2\\
-&amp;= \frac{1}{2} \int \mathrm{d}^3 x \rho (\bm{x} \cdot \Omega_B)^2 +
-\frac{1}{2} M \bar{\bm{v}}^2\,,
+T &amp;= \frac{1}{2} \int \mathrm{d}^3 x \rho (R \boldsymbol{x}\cdot
+\Omega_B R^\dagger +\bar{\boldsymbol{v}})^2\\
+&amp;= \frac{1}{2} \int \mathrm{d}^3 x \rho (\boldsymbol{x} \cdot
+\Omega_B)^2 + \frac{1}{2} M \bar{\boldsymbol{v}}^2\,,
 \end{align}\]</span></p>
 <p>with the total mass of the rigid body <span
 class="math inline">\(M\,.\)</span> In terms of the moment of inertia,
 we obtain the familiar expression</p>
 <p><span class="math display">\[\begin{align}
-T &amp;= \frac{1}{2} M \bm{v}^2 + \frac{1}{2} \Omega_B^\dagger \cdot
-\mathcal{I}(\Omega_B)\\
-&amp;=\frac{1}{2} M \bm{v}^2 + \frac{1}{2} \Omega^\dagger \cdot L\,,
+T &amp;= \frac{1}{2} M \boldsymbol{v}^2 + \frac{1}{2} \Omega_B^\dagger
+\cdot \mathcal{I}(\Omega_B)\\
+&amp;=\frac{1}{2} M \boldsymbol{v}^2 + \frac{1}{2} \Omega^\dagger \cdot
+L\,,
 \end{align}\]</span></p>
 <p>where we for simplicity have dropped the bar over the velocity of the
 center of mass.</p>
@@ -1335,14 +1408,15 @@ the differential equation</p>
 system <span class="math inline">\(\bar{L}\)</span> (not to be confused
 with the angular momentum bivector <span
 class="math inline">\(L\)</span>) can be written as</p>
-<p><span class="math display">\[\bar{L} = \frac{1}{2} M \bm{v}^2 +
-\frac{1}{2} \Omega_B^\dagger \cdot \mathcal{I}(\Omega_B) -
-U(\bm{x},R)\]</span></p>
+<p><span class="math display">\[\bar{L} = \frac{1}{2} M \boldsymbol{v}^2
++ \frac{1}{2} \Omega_B^\dagger \cdot \mathcal{I}(\Omega_B) -
+U(\boldsymbol{x},R)\]</span></p>
 <p>in the configuration space consisting of the position of the center
-of mass <span class="math inline">\(\bm{x}\)</span> and the orientation
-described by the rotor <span class="math inline">\(R\)</span>, with
-<span class="math inline">\(\Omega_B =-2 R^\dagger \dot{R}\,.\)</span>
-The restricting on the rotors <span
+of mass <span class="math inline">\(\boldsymbol{x}\)</span> and the
+orientation described by the rotor <span
+class="math inline">\(R\)</span>, with <span
+class="math inline">\(\Omega_B =-2 R^\dagger \dot{R}\,.\)</span> The
+restricting on the rotors <span
 class="math inline">\(RR^\dagger=1\)</span> makes the direct evaluation
 of the Euler Lagrange equations difficult. For this reason, replace the
 rotor <span class="math inline">\(R\)</span> with a general even
@@ -1358,8 +1432,8 @@ non-relativistic particles with spin <span
 class="math inline">\(1/2\,.\)</span> The Lagrangian now assumes the
 form</p>
 <p><span class="math display">\[\bar{L} = \frac{1}{2}M \dot{x}^2 -
-\frac{1}{2} \Omega_B \cdot \mathcal{I(\Omega_B)} - U(\bm{x},\psi) -
-\lambda(\psi \psi^\dagger -1)\]</span></p>
+\frac{1}{2} \Omega_B \cdot \mathcal{I(\Omega_B)} -
+U(\boldsymbol{x},\psi) - \lambda(\psi \psi^\dagger -1)\]</span></p>
 <p>with the angular velocity bivector in the reference system <span
 class="math display">\[\Omega_B=-\psi^\dagger \dot{\psi} +
 \dot{\psi}^\dagger \psi\]</span></p>
@@ -1369,8 +1443,8 @@ angular velocity bivector reduces to the earlier definition when <span
 class="math inline">\(\psi \psi^\dagger=1\,.\)</span> The Euler-Lagrange
 equation now yields</p>
 <p><span class="math display">\[\begin{align}
-\partial_{\bm{x}}\bar{L} -
-\frac{\mathrm{d}}{\mathrm{d}t}(\partial_{\dot{\bm{x}}}\bar{L})
+\partial_{\boldsymbol{x}}\bar{L} -
+\frac{\mathrm{d}}{\mathrm{d}t}(\partial_{\dot{\boldsymbol{x}}}\bar{L})
 &amp;=0\,,\\
 \partial_{\psi}\bar{L} -
 \frac{\mathrm{d}}{\mathrm{d}t}(\partial_{\dot{\psi}}\bar{L})
@@ -1403,13 +1477,14 @@ a^3 \\ -a^2 + i a^1 \end{pmatrix}\]</span></p>
 <p>maps onto the even multi-vectors of <span
 class="math inline">\(\mathbb{G}^3\,,\)</span></p>
 <p><span class="math display">\[\psi = a^0 + \sum_{k=1}^3 a^k I
-\bm{e}_k\,,\]</span></p>
+\boldsymbol{e}_k\,,\]</span></p>
 <p>consisting of a scalar and three bivector terms. This object behaves
 as a spinor under the geometric product as the even subalgebra spanned
-by <span class="math inline">\(1, \bm{e}_1, \bm{e}_2,\bm{e}_3\)</span>
-is isomorphic to the Pauli spinor algebra, as</p>
-<p><span class="math display">\[\textbf{e}_i \textbf{e}_j = \delta_{ij}
-+  \epsilon_{ijk}I \textbf{e}_k\,.\]</span></p>
+by <span class="math inline">\(1, \boldsymbol{e}_1,
+\boldsymbol{e}_2,\boldsymbol{e}_3\)</span> is isomorphic to the Pauli
+spinor algebra, as</p>
+<p><span class="math display">\[\boldsymbol{e}_i \boldsymbol{e}_j =
+\delta_{ij} +  \epsilon_{ijk}I \boldsymbol{e}_k\,.\]</span></p>
 <p>This algebra is usually represented by the Pauli spin matrices in
 physics</p>
 <p><span class="math display">\[\begin{align}
@@ -1422,9 +1497,9 @@ physics</p>
 <p><span class="math display">\[\sigma_i \sigma_j = \delta_{ij}\text{I}
 + i \epsilon_{ijk}\sigma_k\,,\]</span></p>
 <p>These two algebras are isomorphic upon the isomorphism <span
-class="math inline">\(\bm{e}_i \leftrightarrow \sigma_i\,,\)</span> as
-the pseudoscalar is a complex structure, <em>i.e.,</em> <span
-class="math inline">\(I^2=-1\)</span> like <span
+class="math inline">\(\boldsymbol{e}_i \leftrightarrow
+\sigma_i\,,\)</span> as the pseudoscalar is a complex structure,
+<em>i.e.,</em> <span class="math inline">\(I^2=-1\)</span> like <span
 class="math inline">\(i=\sqrt{-1}\,.\)</span></p>
 <p>Hence, spinors are not necessarily quantum objects but already play a
 role in the Lagrangian of rigid bodies describing classical spin.</p>
