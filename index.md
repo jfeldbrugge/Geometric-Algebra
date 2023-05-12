@@ -180,6 +180,7 @@ $$ \textbf{u}_{rot} = \textbf{v}(\textbf{w} \textbf{u} \textbf{w}^{-1}) \textbf{
 
 #### Volumes
 The area of a bi-vector $\textbf{B}=\textbf{b}_1 \textbf{b}_2$ is defined as the volume of the space spanned by the vectors $\| \textbf{B}\|=\|\textbf{b}_1\|\|\textbf{b}_2\|$.
+
 ### Three-dimensional space
 Consider the orthonormal basis $\{\textbf{e}_1,\textbf{e}_2,\textbf{e}_3\}$ of the three-dimensional Euclidean plane $\mathbb{R}^3$. The corresponding geometric algebra $\mathbb{G}^3$ is spanned by the elements 
 
