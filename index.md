@@ -1,6 +1,6 @@
 ---
 title: Geometric Algebra
-author: Job Feldbrugge
+author: Job Leon Feldbrugge
 header-includes:
     <link rel = "icon" href = "figures/icon.png" type = "image/x-icon"> 
     <div class="topnav">
