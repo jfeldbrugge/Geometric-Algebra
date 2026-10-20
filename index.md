@@ -2,11 +2,18 @@
 title: Geometric Algebra
 author: Job Leon Feldbrugge
 header-includes:
-    <link rel = "icon" href = "figures/icon.png" type = "image/x-icon"> 
+  - |
+    ```{=html}
+    <link rel="icon" href="figures/icon.png" type="image/x-icon">
+    ```
+include-before:
+  - |
+    ```{=html}
     <div class="topnav">
       <a href="https://jfeldbrugge.github.io/">Home</a>
       <a href="https://jfeldbrugge.github.io/Projects-and-Codes/">Projects and Code</a>
     </div>
+    ```
 ---
 
 Geometric algebra is an extension of vector algebra introducing the notion of a multi-vector, uniting different fields of mathematics in a single language. In these notes, I try to learn the subject following *"A Survey of Geometric Algebra and Geometric Calculus"* by Alan Macdonald.

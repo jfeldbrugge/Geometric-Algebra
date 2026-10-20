@@ -2,11 +2,18 @@
 title: Spacetime algebra
 author: Job Leon Feldbrugge
 header-includes:
-    <link rel = "icon" href = "figures/icon.png" type = "image/x-icon"> 
+  - |
+    ```{=html}
+    <link rel="icon" href="figures/icon.png" type="image/x-icon">
+    ```
+include-before:
+  - |
+    ```{=html}
     <div class="topnav">
       <a href="https://jfeldbrugge.github.io/">Home</a>
       <a href="https://jfeldbrugge.github.io/Projects-and-Codes/">Projects and Code</a>
     </div>
+    ```
 ---
 
 To apply the tools of geometric algebra to special relativity, we extend the definitions of multi-vectors and geometric products to spacetime. Spacetime differs from Euclidean space, in that the metric is no-longer positive definite. However, as the positivity of the norm is nowhere assumed in the construction of geometric algebra on Euclidean space, we extend the construction to spacetime without any trouble. 
